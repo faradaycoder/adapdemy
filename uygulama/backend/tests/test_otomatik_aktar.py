@@ -72,7 +72,7 @@ def test_bulutta_okunan_kagit_degerlendirmesi_aktarilir(istemci, tmp_path, monke
 
     (tmp_path / "degerlendirmeler").mkdir()
     (tmp_path / "degerlendirmeler" / "oto3.json").write_text(json.dumps({
-        "teslim_id": tid, "soru_seti": "mat6_bolunebilme",
+        "soru_seti": "mat6_bolunebilme",  # teslim_id yok: bekleyen tek teslim bulunur
         "sorular": {"9": {"okunan": "4+★ 3'ün katı: 2, 5, 8 → 15",
                           "kararlar": {"1": ["biliyor", "Çift."], "2": ["biliyor", "2, 5, 8."], "3": ["biliyor", "15."]}}}}),
         encoding="utf-8")
@@ -83,6 +83,9 @@ def test_bulutta_okunan_kagit_degerlendirmesi_aktarilir(istemci, tmp_path, monke
     assert [x["durum"] for x in s9["adimlar"]] == ["biliyor"] * 3 and {x["kaynak"] for x in s9["adimlar"]} == {"sistem"}
     assert s9["metin_cevap"].endswith("→ 15")
     assert otomatik_aktar.calistir(tmp_path) == []  # bir kez
+    (tmp_path / "degerlendirmeler" / "oto3b.json").write_text(json.dumps({"soru_seti": "mat6_bolunebilme", "sorular": {}}),
+                                                               encoding="utf-8")
+    assert "0 teslim var" in otomatik_aktar.calistir(tmp_path)[0]  # bekleyen kalmadı: teslim_id ister
 
 
 

@@ -11,6 +11,8 @@ Kararlar kaynak='sistem' olarak yazılır; öğretmen değerlendirme ekranında 
 Veritabanı kimliklerini bilmeden yazmak için (bulutta Claude ile): "soru_seti" verilir, sorular o setin sorular.json'undaki
 "no" ile, adımlar rubrikteki sırasıyla (1'den) anılır; aktarırken teslimin sınavındaki aynı metinli soruya çevrilir:
   {"teslim_id": 12, "soru_seti": "mat6_bolunebilme", "sorular": {"6": {"okunan": "...", "kararlar": {"1": ["biliyor", "..."]}}}}
+"soru_seti" varken "teslim_id" yazılmayabilir: o setin sınavında gönderilmiş ve henüz hiç değerlendirilmemiş tek bir teslim
+varsa o alınır; birden çoksa teslim_id istenir.
 
 Kullanım (backend klasöründe):  python -m app.degerlendirme_aktar ../ice_aktarma/degerlendirmeler/teslim2_deneme_ogrenci.json
 """
@@ -23,6 +25,8 @@ from pathlib import Path
 
 from .modeller import Cevap, CevapDosya, Soru, Teslim
 from .routers.sorular import _gorsel_kaydet
+from sqlalchemy import select
+
 from .vt import Oturum
 
 
@@ -30,7 +34,7 @@ def aktar(yol: str) -> list[str]:
     v = json.load(open(yol, encoding="utf-8"))
     rapor = []
     with Oturum() as vt:
-        t = vt.get(Teslim, v["teslim_id"])
+        t = vt.get(Teslim, v["teslim_id"]) if v.get("teslim_id") else _tek_bekleyen_teslim(vt, Path(yol).parent.parent / v["soru_seti"])
         if not t:
             raise SystemExit("Teslim bulunamadı.")
         sinav_sorulari = {x.soru_id for x in t.atama.sinav.sorular}
@@ -67,6 +71,17 @@ def aktar(yol: str) -> list[str]:
             t.genel_geri_bildirim, t.genel_kaynak = v["genel"], "sistem"
         vt.commit()
     return rapor
+
+
+def _tek_bekleyen_teslim(vt, set_klasoru: Path) -> Teslim:
+    """Setin sorularını içeren sınavlarda gönderilmiş, henüz hiçbir adımına karar verilmemiş teslim; tek olmalı."""
+    metinler = {s["metin"] for s in json.loads((set_klasoru / "sorular.json").read_text(encoding="utf-8"))["sorular"]}
+    adaylar = [t for t in vt.scalars(select(Teslim).where(Teslim.durum == "teslim", Teslim.degerlendirme == "bekliyor"))
+               if any(x.soru.metin in metinler for x in t.atama.sinav.sorular)
+               and not any(c.adimlar for c in t.cevaplar if c.secilen is None)]  # çoktan seçmeliler teslimde otomatik
+    if len(adaylar) != 1:
+        raise SystemExit(f"Bu sınavda değerlendirilmeyi bekleyen {len(adaylar)} teslim var; teslim_id yazılmalı.")
+    return adaylar[0]
 
 
 def _kimliklere_cevir(v: dict, set_klasoru: Path, sorular: list[Soru]) -> dict:
