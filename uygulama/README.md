@@ -21,7 +21,7 @@ uygulama/
 
 ## Çalıştırma (yerel)
 
-En kolayı: `EVALORA/EVALORA-Baslat.command` dosyasına çift tıkla. İkisini birden başlatır ve tarayıcıyı açar; pencere açık kaldıkça çalışır.
+En kolayı: `EVALORA/EVALORA-Baslat.command` dosyasına çift tıkla. İkisini birden başlatır ve tarayıcıyı açar; pencere açık kaldıkça çalışır. Açıkken iki dakikada bir GitHub'daki `main` dalını çeker ve `ice_aktarma/` altına gelen yeni soru setlerini öğretmenin bankasına kendiliğinden aktarır (`python -m app.otomatik_aktar`; her klasör bir kez). Birden çok öğretmen hesabı varsa `backend/.env`'ye `EVALORA_OGRETMEN_EPOSTA=<e-posta>` yazılır.
 
 Elle başlatmak için:
 
