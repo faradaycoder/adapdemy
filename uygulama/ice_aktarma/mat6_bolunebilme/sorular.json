@@ -1,0 +1,81 @@
+{
+  "kaynak": "6. sınıf matematik, 6. çalışma kâğıdı 2. sayfa: Bölünebilme Kurallarını Kullanalım (matematikbiz ve sinansarit; Murat'ın gönderdiği fotoğraf, 2026-10-04)",
+  "not": "Sorular Claude tarafından okunup çözüldü, rubrik adımları MK'lere eşlendi. Numaralar kâğıttakiyle aynı (6–10). Şıklı sorular (6, 7) tek soru olarak tutulur; şıklar rubrik adımlarında ayrılır.",
+  "ders": "Matematik",
+  "sinif_duzeyi": 6,
+  "sinav": {
+    "ad": "6. sınıf bölünebilme kuralları çalışma kâğıdı",
+    "sure_dk": 40,
+    "aciklama": "Soruları kâğıtta çözüp fotoğrafını yükleyebilir ya da cevabını yazabilirsin. Nedenini sorulan yerlerde gerekçeni yaz."
+  },
+  "sorular": [
+    {
+      "no": 6,
+      "gorsel": "soru6.jpg",
+      "cevap_bicimi": "yazili",
+      "metin": "Aşağıdaki boşlukları uygun sayılarla doldurunuz. a) 3 ile tam bölünebilen en küçük üç basamaklı doğal sayı: ... b) 4 ile tam bölünebilen en büyük iki basamaklı doğal sayı: ... c) 9 ile tam bölünebilen en küçük üç basamaklı doğal sayı: ... d) 5 ile bölünebilen, rakamları birbirinden farklı en büyük üç basamaklı sayı: ...",
+      "dogru_cevap": "a) 102  b) 96  c) 108  d) 985",
+      "cozum": "a) En küçük üç basamaklı sayı 100; rakamları toplamı 1 olduğundan 3'e bölünmez. 101 (toplam 2) de bölünmez, 102 (toplam 3) bölünür: 102. b) En büyük iki basamaklı sayı 99; son iki basamağı 4'ün katı olan en büyük iki basamaklı sayı 96'dır (96 = 4 × 24). c) Rakamları toplamı 9 olan en küçük üç basamaklı sayı 108'dir. d) 5 ile bölünmesi için birler basamağı 0 ya da 5 olmalı. Yüzler 9, onlar 8 seçilince birler 0 ya da 5 olabilir; en büyüğü 985.",
+      "adimlar": [
+        ["a) Rakamlar toplamı 3'ün katı olan en küçük üç basamaklı sayıyı bulur: 102.", "Mat01MK0065"],
+        ["b) Son iki basamağı 4'ün katı olan en büyük iki basamaklı sayıyı bulur: 96.", "Mat01MK0067"],
+        ["c) Rakamlar toplamı 9'un katı olan en küçük üç basamaklı sayıyı bulur: 108.", "Mat01MK0066"],
+        ["d) Birler basamağı 0 ya da 5 olan, rakamları farklı en büyük üç basamaklı sayıyı bulur: 985.", "Mat01MK0063"]
+      ]
+    },
+    {
+      "no": 7,
+      "gorsel": "soru7.jpg",
+      "cevap_bicimi": "yazili",
+      "metin": "2, 4, 5, 7 rakam kartlarının her biri yalnız bir kez kullanılarak dört basamaklı sayılar yazılıyor. a) 5 ile tam bölünebilen en büyük sayı: ... b) 2 ile tam bölünebilen en küçük sayı: ... c) Bu kartlarla yazılabilecek her sayı 9 ile tam bölünür mü? Nedenini yazınız.",
+      "dogru_cevap": "a) 7425  b) 2574  c) Evet; rakamlar toplamı her sayıda 2 + 4 + 5 + 7 = 18'dir ve 18, 9'un katıdır.",
+      "cozum": "a) 5 ile bölünmesi için birler basamağı 5 olmalı (0 kartı yok). Kalan 7, 4, 2 büyükten küçüğe dizilir: 7425. b) 2 ile bölünmesi için birler basamağı çift (2 ya da 4) olmalı. Birler 4 olursa kalan rakamlarla en küçük sayı 2574; birler 2 olursa 4572. En küçüğü 2574. c) Hangi sırayla yazılırsa yazılsın rakamlar aynıdır, rakamlar toplamı hep 18'dir. 18, 9'a tam bölündüğü için bu kartlarla yazılan her sayı 9 ile tam bölünür.",
+      "adimlar": [
+        ["a) Birler basamağına 5'i koyup kalan rakamları büyükten küçüğe dizerek 7425'i bulur.", "Mat01MK0063"],
+        ["b) Birler basamağına çift rakam koyup en küçük sayıyı karşılaştırarak 2574'ü bulur.", "Mat01MK0062"],
+        ["c) Rakamlar toplamını bulur (2 + 4 + 5 + 7 = 18) ve 18'in 9'un katı olduğunu belirler.", "Mat01MK0066"],
+        ["c) Rakamların yeri değişse de toplamın değişmediğini, bu yüzden yazılan her sayının 9 ile bölüneceğini gerekçelendirir.", "Mat01MK0070"]
+      ]
+    },
+    {
+      "no": 8,
+      "gorsel": "soru8.jpg",
+      "cevap_bicimi": "yazili",
+      "metin": "Bursa'daki bir fabrikada bir günde 1764 ürün üretilmiştir. Üretilen ürünler, hiç ürün artmayacak biçimde 4'erli ve 9'arlı kolilere ayrı ayrı yerleştirilebilir mi? Nedenlerini yazınız.",
+      "dogru_cevap": "Evet, ikisine de yerleştirilebilir. 1764'ün son iki basamağı 64, 4'ün katıdır; rakamları toplamı 1 + 7 + 6 + 4 = 18, 9'un katıdır.",
+      "cozum": "Hiç ürün artmaması, 1764'ün 4'e ve 9'a tam bölünmesi demektir. 4 ile: son iki basamak 64 = 4 × 16, tam bölünür (1764 ÷ 4 = 441 koli). 9 ile: rakamlar toplamı 1 + 7 + 6 + 4 = 18, 9'un katı; tam bölünür (1764 ÷ 9 = 196 koli). Ürünler hem 4'erli hem 9'arlı kolilere artmadan yerleştirilebilir.",
+      "adimlar": [
+        ["Son iki basamağın (64) 4'ün katı olduğunu belirleyip 4'erli kolilere artmadan yerleştirilebileceğini gerekçelendirir.", "Mat01MK0067"],
+        ["Rakamlar toplamının (18) 9'un katı olduğunu belirleyip 9'arlı kolilere artmadan yerleştirilebileceğini gerekçelendirir.", "Mat01MK0066"]
+      ]
+    },
+    {
+      "no": 9,
+      "gorsel": "soru9.jpg",
+      "cevap_bicimi": "yazili",
+      "metin": "Üç basamaklı 4★0 sayısı 6 ile tam bölünebildiğine göre ★ yerine yazılabilecek rakamların toplamı kaçtır?",
+      "dogru_cevap": "15",
+      "cozum": "6 ile bölünmesi için sayı hem 2'ye hem 3'e bölünmeli. Birler basamağı 0 olduğundan sayı çifttir, 2'ye bölünür. 3'e bölünmesi için 4 + ★ + 0 = 4 + ★ toplamı 3'ün katı olmalı: ★ = 2 (6), 5 (9), 8 (12). Rakamların toplamı 2 + 5 + 8 = 15.",
+      "birincil": "Mat01MK0068",
+      "adimlar": [
+        ["Birler basamağı 0 olduğundan sayının 2 ile bölündüğünü belirler.", "Mat01MK0062"],
+        ["4 + ★ toplamının 3'ün katı olması gerektiğinden ★ = 2, 5, 8 değerlerini bulur.", "Mat01MK0065"],
+        ["6 ile bölünebilmenin 2 ve 3 ile bölünebilmenin birlikte sağlanması olduğunu kullanır ve rakamların toplamını bulur: 2 + 5 + 8 = 15.", "Mat01MK0068"]
+      ]
+    },
+    {
+      "no": 10,
+      "gorsel": "soru10.jpg",
+      "cevap_bicimi": "yazili",
+      "metin": "Erzurum'dan Ankara'ya giden bir otobüsteki yolcu sayısı iki basamaklı bir doğal sayıdır. Bu sayının onlar basamağındaki rakam, birler basamağındaki rakamdan 3 eksiktir. Yolcu sayısı 9 ile tam bölünebildiğine göre otobüste kaç yolcu vardır?",
+      "dogru_cevap": "36",
+      "cozum": "Onlar basamağı birler basamağından 3 eksik olan iki basamaklı sayılar: 14, 25, 36, 47, 58, 69. 9 ile bölünmesi için rakamlar toplamı 9'un katı olmalı: 1+4=5, 2+5=7, 3+6=9, 4+7=11, 5+8=13, 6+9=15. Yalnız 36'nın rakamlar toplamı 9'dur. Otobüste 36 yolcu vardır.",
+      "birincil": "Mat01MK0066",
+      "adimlar": [
+        ["Onlar basamağı birler basamağından 3 eksik olan iki basamaklı sayıları belirler: 14, 25, 36, 47, 58, 69.", "Mat01MK0005"],
+        ["Rakamlar toplamıyla 9 ile bölünmeyi sınar ve 36'yı bulur.", "Mat01MK0066"],
+        ["Koşulları sırayla uygulayarak (önce basamak koşulu, sonra bölünebilme) problemi çözer.", "Mat01MK0019"]
+      ]
+    }
+  ]
+}
