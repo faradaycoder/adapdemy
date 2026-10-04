@@ -84,3 +84,20 @@ def test_bulutta_okunan_kagit_degerlendirmesi_aktarilir(istemci, tmp_path, monke
     assert s9["metin_cevap"].endswith("→ 15")
     assert otomatik_aktar.calistir(tmp_path) == []  # bir kez
 
+
+
+def test_video_dosyasi_degisince_yeniden_aktarilir(istemci, tmp_path, monkeypatch):
+    kayit_ol(istemci, "oto4@ornek.com", "ogretmen")
+    monkeypatch.setenv("EVALORA_OGRETMEN_EPOSTA", "oto4@ornek.com")
+    monkeypatch.setattr(otomatik_aktar, "KAYIT", tmp_path / "aktarilanlar.txt")
+    (tmp_path / "videolar").mkdir()
+    dosya = tmp_path / "videolar" / "v.json"
+    veri = {"videolar": {"abcdefghijk": {"kanal": "K", "baslik": "B", "sure": 600}}, "konular": {},
+            "parcalar": [{"mk": "Mat01MK0062", "tur": "konu", "video": "abcdefghijk", "bas": "0:10", "son": "1:00",
+                          "baslik": "2 ile bölünme", "neden": "deneme"}]}
+    dosya.write_text(json.dumps(veri), encoding="utf-8")
+    assert otomatik_aktar.calistir(tmp_path)[0].startswith("v: ")
+    assert otomatik_aktar.calistir(tmp_path) == []
+    veri["parcalar"][0]["son"] = "1:10"
+    dosya.write_text(json.dumps(veri), encoding="utf-8")
+    assert otomatik_aktar.calistir(tmp_path)[0].startswith("v: ")

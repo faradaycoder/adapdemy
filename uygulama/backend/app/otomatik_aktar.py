@@ -5,11 +5,13 @@ yazmadan uygulamaya girer. Her klasör bir kez aktarılır (backend/veri/aktaril
 olan klasör daha önce elle aktarılmış sayılır ve atlanır; öğretmenin sildiği sorular ve sınavlar geri gelmez.
 ice_aktarma/degerlendirmeler/ altındaki "soru_seti"li değerlendirmeler de (bulutta okunan öğrenci kâğıtları) bir kez,
 'sistem önerisi' olarak aktarılır; teslim henüz yoksa ya da hata varsa bir sonraki çalışmada yeniden denenir.
+ice_aktarma/videolar/ altındaki MK video parçaları, dosya her değiştiğinde yeniden aktarılır (aktarma güncelleyerek yapar).
 
 Öğretmen: EVALORA_OGRETMEN_EPOSTA ortam değişkeni (.env), yoksa tek öğretmen hesabı.
 Kullanım (backend klasöründe):  python -m app.otomatik_aktar
 """
 
+import hashlib
 import json
 import os
 from pathlib import Path
@@ -17,7 +19,7 @@ from pathlib import Path
 from sqlalchemy import select
 
 from .ayarlar import BACKEND, VERI
-from . import degerlendirme_aktar
+from . import degerlendirme_aktar, video_aktar
 from .ice_aktar import aktar
 from .modeller import Kullanici, Soru
 from .vt import Oturum, Taban, motor
@@ -63,6 +65,17 @@ def calistir(klasor: Path = KLASOR) -> list[str]:
             mesajlar.append(f"{j.stem}: değerlendirme aktarılamadı ({h}).")
             continue
         mesajlar.append(f"{j.stem}: değerlendirme önerisi aktarıldı ({'; '.join(rapor)}). Onay öğretmende.")
+        _isaretle(ad)
+    for j in sorted((klasor / "videolar").glob("*.json")):
+        ad = f"videolar/{j.name}:{hashlib.sha256(j.read_bytes()).hexdigest()[:12]}"
+        if ad in yapilan:
+            continue
+        try:
+            rapor = video_aktar.aktar(str(j))
+        except (SystemExit, Exception) as h:
+            mesajlar.append(f"{j.stem}: videolar aktarılamadı ({h}).")
+            continue
+        mesajlar.append(f"{j.stem}: {len(rapor)} video parçası aktarıldı.")
         _isaretle(ad)
     return mesajlar
 
