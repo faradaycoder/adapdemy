@@ -1,0 +1,148 @@
+{
+ "kaynak": "Claude, 2026-10-04: altyazılar (Mac üzerinden indirilen otomatik altyazı, zaman kodlu) okunarak bölündü. Partikül Matematik'te 6. sınıf bölünebilme videosu bulunamadı; Hocalara Geldik, Dersimis, Hız Yayınları, Sevimli Matematik ve Derslike kullanıldı. tur: konu = konu anlatımı, soru = benzer soru çözümü.",
+ "konular": {
+  "Mat01MK0062": "2 ile bölünebilme (son basamağa bak)",
+  "Mat01MK0063": "5 ile bölünebilme",
+  "Mat01MK0065": "3 ile bölünebilme (rakamlar toplamı)",
+  "Mat01MK0066": "9 ile bölünebilme (rakamlar toplamı)",
+  "Mat01MK0067": "4 ile bölünebilme (son iki basamak)",
+  "Mat01MK0068": "6 ile bölünebilme (2 ve 3 birlikte)"
+ },
+ "videolar": {
+  "rkR8rp7sn1w": {
+   "kanal": "Hocalara Geldik 6.Sınıf",
+   "baslik": "Bölünebilme Kuralları | 6. Sınıf Matematik Konu Anlatımı | 2025- 2026",
+   "sure": 872
+  },
+  "uBFydJkj8jc": {
+   "kanal": "Dersimis",
+   "baslik": "6. Sınıf Bölünebilme Kuralları Test 1 Çözümleri",
+   "sure": 1181
+  },
+  "JWgzENJsuDo": {
+   "kanal": "Hız Yayınları Ortaokul",
+   "baslik": "Bölünebilme Kuralları Konu Anlatımı, Soru Çözümü: 6. Sınıf Matematik #5",
+   "sure": 1150
+  },
+  "pwwnqW9QNfo": {
+   "kanal": "Sevimli Matematik",
+   "baslik": "8) Bölünebilme Kuralları Soru Çözümü |  6. Sınıf Matematik #bölünebilmekuralları",
+   "sure": 2038
+  },
+  "E0Zol07Zo-o": {
+   "kanal": "Derslike",
+   "baslik": "6. Sınıf Matematik | 1.Dönem 1.Yazılı Soruları",
+   "sure": 1371
+  }
+ },
+ "parcalar": [
+  {
+   "mk": "Mat01MK0062",
+   "tur": "konu",
+   "video": "rkR8rp7sn1w",
+   "bas": "0:26",
+   "son": "1:13",
+   "baslik": "2 ile bölünebilme: son basamak çift mi?",
+   "neden": "Kuralı ve örnekleri anlatıyor: son basamak 0, 2, 4, 6, 8."
+  },
+  {
+   "mk": "Mat01MK0062",
+   "tur": "soru",
+   "video": "rkR8rp7sn1w",
+   "bas": "5:48",
+   "son": "6:20",
+   "baslik": "9▢ sayısı 2'ye bölünüyorsa ▢ ne olabilir?",
+   "neden": "Bilinmeyen rakam sorusunda yalnız son basamağa bakıldığını, öbür basamağın önemsiz olduğunu vurguluyor (4★0 sorusundaki hatanın tam karşılığı)."
+  },
+  {
+   "mk": "Mat01MK0065",
+   "tur": "konu",
+   "video": "rkR8rp7sn1w",
+   "bas": "1:13",
+   "son": "2:13",
+   "baslik": "3 ile bölünebilme: rakamlar toplamı",
+   "neden": "Rakamlar toplamı 3'ün katıysa sayı 3'e bölünür; örneklerle."
+  },
+  {
+   "mk": "Mat01MK0065",
+   "tur": "soru",
+   "video": "JWgzENJsuDo",
+   "bas": "15:15",
+   "son": "16:08",
+   "baslik": "Bilinmeyen basamağa 3 ile bölünmeyi sağlayan rakamları bulmak",
+   "neden": "Toplamı tamamlayan en küçük rakamı bulup 3'er ekleyerek 2, 5, 8'i buluyor."
+  },
+  {
+   "mk": "Mat01MK0067",
+   "tur": "konu",
+   "video": "rkR8rp7sn1w",
+   "bas": "2:13",
+   "son": "3:28",
+   "baslik": "4 ile bölünebilme: son iki basamak",
+   "neden": "Son iki basamak 00 ya da 4'ün katı; iki basamaklı sayıda doğrudan bölme."
+  },
+  {
+   "mk": "Mat01MK0067",
+   "tur": "soru",
+   "video": "pwwnqW9QNfo",
+   "bas": "20:50",
+   "son": "22:35",
+   "baslik": "Turistleri 4 kişilik odalara artmadan yerleştirmek",
+   "neden": "Günlük hayat bağlamında 'hiç artmadan' = 4'e tam bölünme (koli sorusunun benzeri)."
+  },
+  {
+   "mk": "Mat01MK0063",
+   "tur": "konu",
+   "video": "rkR8rp7sn1w",
+   "bas": "3:25",
+   "son": "3:43",
+   "baslik": "5 ile bölünebilme: son basamak 0 ya da 5",
+   "neden": "Kısa kural anlatımı."
+  },
+  {
+   "mk": "Mat01MK0068",
+   "tur": "konu",
+   "video": "rkR8rp7sn1w",
+   "bas": "3:40",
+   "son": "4:42",
+   "baslik": "6 ile bölünebilme: hem 2'ye hem 3'e",
+   "neden": "Önce 2'ye (son basamak), sonra 3'e (rakamlar toplamı) bakılıyor; ikisi birlikte."
+  },
+  {
+   "mk": "Mat01MK0068",
+   "tur": "soru",
+   "video": "uBFydJkj8jc",
+   "bas": "5:30",
+   "son": "6:59",
+   "baslik": "3△58 sayısı 6'ya bölünüyorsa △ yerine yazılabilecek rakamların toplamı",
+   "neden": "4★0 sorusunun neredeyse aynısı: sayı zaten çift, yalnız 3 koşuluyla △ = 2, 5, 8, toplam 15."
+  },
+  {
+   "mk": "Mat01MK0068",
+   "tur": "soru",
+   "video": "E0Zol07Zo-o",
+   "bas": "4:51",
+   "son": "5:58",
+   "baslik": "Hangi sayı 6 ile kalansız bölünür?",
+   "neden": "Derslike: seçeneklerde önce çiftliği, sonra rakamlar toplamını sınıyor."
+  },
+  {
+   "mk": "Mat01MK0066",
+   "tur": "konu",
+   "video": "rkR8rp7sn1w",
+   "bas": "4:40",
+   "son": "5:26",
+   "baslik": "9 ile bölünebilme: rakamlar toplamı 9'un katı",
+   "neden": "3 kuralıyla farkını gösteriyor."
+  },
+  {
+   "mk": "Mat01MK0066",
+   "tur": "soru",
+   "video": "uBFydJkj8jc",
+   "bas": "2:22",
+   "son": "3:12",
+   "baslik": "382▢ sayısı 9'a bölünüyorsa ▢ kaçtır?",
+   "neden": "Rakamlar toplamını 9'un katına tamamlayarak bilinmeyen rakamı buluyor."
+  }
+ ]
+}
