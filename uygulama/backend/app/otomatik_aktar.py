@@ -3,6 +3,8 @@
 EVALORA-Baslat.command, GitHub'dan yeni içerik çektikçe bunu çalıştırır; böylece bulutta hazırlanan sınavlar elle komut
 yazmadan uygulamaya girer. Her klasör bir kez aktarılır (backend/veri/aktarilanlar.txt). Sorularından biri bankada zaten
 olan klasör daha önce elle aktarılmış sayılır ve atlanır; öğretmenin sildiği sorular ve sınavlar geri gelmez.
+ice_aktarma/degerlendirmeler/ altındaki "soru_seti"li değerlendirmeler de (bulutta okunan öğrenci kâğıtları) bir kez,
+'sistem önerisi' olarak aktarılır; teslim henüz yoksa ya da hata varsa bir sonraki çalışmada yeniden denenir.
 
 Öğretmen: EVALORA_OGRETMEN_EPOSTA ortam değişkeni (.env), yoksa tek öğretmen hesabı.
 Kullanım (backend klasöründe):  python -m app.otomatik_aktar
@@ -15,6 +17,7 @@ from pathlib import Path
 from sqlalchemy import select
 
 from .ayarlar import BACKEND, VERI
+from . import degerlendirme_aktar
 from .ice_aktar import aktar
 from .modeller import Kullanici, Soru
 from .vt import Oturum, Taban, motor
@@ -49,9 +52,24 @@ def calistir(klasor: Path = KLASOR) -> list[str]:
             sonuc = aktar(d, k.eposta)
             sinav = next((f" ve sınav #{sid}" for no, sid, _, _ in sonuc if no == "sınav"), "")
             mesajlar.append(f"{d.name}: {sum(1 for no, *_ in sonuc if no != 'sınav')} soru{sinav} aktarıldı (taslak).")
-        with KAYIT.open("a", encoding="utf-8") as f:
-            f.write(d.name + "\n")
+        _isaretle(d.name)
+    for j in sorted((klasor / "degerlendirmeler").glob("*.json")):
+        ad = f"degerlendirmeler/{j.name}"
+        if ad in yapilan or "soru_seti" not in json.loads(j.read_text(encoding="utf-8")):
+            continue
+        try:
+            rapor = degerlendirme_aktar.aktar(str(j))
+        except (SystemExit, Exception) as h:  # teslim henüz yok ya da veri hatalı: sonra yeniden denenir
+            mesajlar.append(f"{j.stem}: değerlendirme aktarılamadı ({h}).")
+            continue
+        mesajlar.append(f"{j.stem}: değerlendirme önerisi aktarıldı ({'; '.join(rapor)}). Onay öğretmende.")
+        _isaretle(ad)
     return mesajlar
+
+
+def _isaretle(ad: str) -> None:
+    with KAYIT.open("a", encoding="utf-8") as f:
+        f.write(ad + "\n")
 
 
 if __name__ == "__main__":

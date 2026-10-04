@@ -8,6 +8,10 @@ Dosya biçimi: uygulama/ice_aktarma/degerlendirmeler/*.json
 Kararlar kaynak='sistem' olarak yazılır; öğretmen değerlendirme ekranında görür, değiştirir ve onaylar.
 Öğretmenin daha önce verdiği kararların üstüne yazılmaz. 'okunan' metin, cevabın metni boşsa oraya konur.
 
+Veritabanı kimliklerini bilmeden yazmak için (bulutta Claude ile): "soru_seti" verilir, sorular o setin sorular.json'undaki
+"no" ile, adımlar rubrikteki sırasıyla (1'den) anılır; aktarırken teslimin sınavındaki aynı metinli soruya çevrilir:
+  {"teslim_id": 12, "soru_seti": "mat6_bolunebilme", "sorular": {"6": {"okunan": "...", "kararlar": {"1": ["biliyor", "..."]}}}}
+
 Kullanım (backend klasöründe):  python -m app.degerlendirme_aktar ../ice_aktarma/degerlendirmeler/teslim2_deneme_ogrenci.json
 """
 
@@ -30,6 +34,8 @@ def aktar(yol: str) -> list[str]:
         if not t:
             raise SystemExit("Teslim bulunamadı.")
         sinav_sorulari = {x.soru_id for x in t.atama.sinav.sorular}
+        if v.get("soru_seti"):
+            v = _kimliklere_cevir(v, Path(yol).parent.parent / v["soru_seti"], [x.soru for x in t.atama.sinav.sorular])
         for sid, s in v["sorular"].items():
             sid = int(sid)
             if sid not in sinav_sorulari:
@@ -61,6 +67,25 @@ def aktar(yol: str) -> list[str]:
             t.genel_geri_bildirim, t.genel_kaynak = v["genel"], "sistem"
         vt.commit()
     return rapor
+
+
+def _kimliklere_cevir(v: dict, set_klasoru: Path, sorular: list[Soru]) -> dict:
+    """Set numarası ve adım sırasıyla yazılmış değerlendirmeyi soru ve rubrik adımı kimliklerine çevirir."""
+    if not (set_klasoru / "sorular.json").is_file():
+        raise SystemExit(f"Soru seti bulunamadı: {set_klasoru.name}")
+    metinler = {str(s["no"]): s["metin"] for s in json.loads((set_klasoru / "sorular.json").read_text(encoding="utf-8"))["sorular"]}
+    yeni = {}
+    for no, s in v["sorular"].items():
+        q = next((q for q in sorular if q.metin == metinler.get(no)), None)
+        if not q:
+            raise SystemExit(f"Soru {no}: bu teslimin sınavında yok (ya da metni değiştirilmiş).")
+        kararlar = {}
+        for sira, karar in s["kararlar"].items():
+            if not 1 <= int(sira) <= len(q.adimlar):
+                raise SystemExit(f"Soru {no}: rubrikte {sira}. adım yok (soruda {len(q.adimlar)} adım var).")
+            kararlar[str(q.adimlar[int(sira) - 1].id)] = karar
+        yeni[str(q.id)] = {**s, "kararlar": kararlar}
+    return {**v, "sorular": yeni}
 
 
 if __name__ == "__main__":

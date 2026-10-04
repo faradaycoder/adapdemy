@@ -51,7 +51,7 @@ export default function Degerlendir() {
       <div className="o-ust kart">
         <div>
           <h1>{d.ogrenci}</h1>
-          <p className="soluk">{d.sinav_adi}</p>
+          <p className="soluk">{d.sinav_adi} · Teslim no: {teslimId}</p>
         </div>
         <div className="o-durum">
           <span className="buyuk">{d.puan.toFixed(2)} <small className="soluk">/ {d.en_yuksek.toFixed(2)}</small></span>
