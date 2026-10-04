@@ -1,0 +1,54 @@
+{
+  "teslim_id": 4,
+  "soru_seti": "mat6_bolunebilme",
+  "kaynak": "Öğrencinin sınavın tamamı için yüklediği kâğıt fotoğrafı (el yazısı). Claude tarafından okunup rubrik adımlarına göre değerlendirildi, 2026-10-04. Öneri; onay öğretmende.",
+  "sorular": {
+    "6": {
+      "okunan": "a) 102  b) 96  c) 108  d) 985",
+      "kararlar": {
+        "1": ["biliyor", "102 doğru: rakamlar toplamı 3."],
+        "2": ["biliyor", "96 doğru: son iki basamak 4'ün katı."],
+        "3": ["biliyor", "108 doğru: rakamlar toplamı 9."],
+        "4": ["biliyor", "985 doğru: birler 5, rakamlar farklı ve en büyük."]
+      },
+      "aciklama": "Dört boşluğu da doğru doldurdun; 3, 4, 9 ve 5 ile bölünebilme kurallarını yerinde kullandın."
+    },
+    "7": {
+      "okunan": "a) 745  b) 254  c) Tam bölünemez, çünkü rakamlar toplamı dokuzun katı değil.",
+      "kararlar": {
+        "1": ["biliyor", "Birler basamağına 5'i koyup kalanları büyükten küçüğe dizdi (745); 5 ile bölünme kuralı doğru. Ancak soru dört basamaklı sayı istiyor; 2 kartını kullanmadı, doğrusu 7425. Hata kuralda değil, soruyu okumada: öğretmen 'bilmiyor' yapabilir."],
+        "2": ["biliyor", "Çift rakamla bitirip en küçük dizilişi seçti (254); 2 ile bölünme kuralı doğru. Yine 3 kart kullandı (7 eksik), doğrusu 2574."],
+        "3": ["biliyor", "Gerekçesi rakamlar toplamına dayanıyor; üç kartla yazılan sayılarda (ör. 2+4+5=11) toplam gerçekten 9'un katı değil. Dört kartla toplam 18 olduğundan cevap yanlış; hata yine üç basamaklı okumadan."],
+        "4": ["olculemedi", "Rakamların yeri değişse de toplamın değişmediğini açıkça yazmadı; dört kartla akıl yürütmediği için ölçülemedi."]
+      },
+      "aciklama": "Soru, dört kartın hepsiyle dört basamaklı sayı istiyor; sen üç kart kullandın. a) Birler 5 olunca kalan 7, 4, 2 büyükten küçüğe: 7425. b) Birler çift olmalı; en küçüğü 2574. c) Dört rakamın toplamı 2 + 4 + 5 + 7 = 18, 9'un katı; rakamların yeri değişse de toplam hep 18 olduğu için bu kartlarla yazılan her sayı 9'a tam bölünür. Kuralları doğru biliyorsun; soruyu dikkatle okumak yeterli."
+    },
+    "8": {
+      "okunan": "Evet. Çünkü son 2 basamağı 4'ün katı ve rakamlar toplamı dokuzun katı.",
+      "kararlar": {
+        "1": ["biliyor", "Son iki basamağın 4'ün katı olduğunu gerekçe olarak verdi (64)."],
+        "2": ["biliyor", "Rakamlar toplamının 9'un katı olduğunu gerekçe olarak verdi (18)."]
+      },
+      "aciklama": "Doğru ve gerekçeli. Sayıları da yazsaydın daha güçlü olurdu: 64 = 4 × 16, 1 + 7 + 6 + 4 = 18."
+    },
+    "9": {
+      "okunan": "4★0 → ★: 2, 8;  8 + 2 = 10",
+      "kararlar": {
+        "1": ["bilmiyor", "★ yerine yalnız çift rakamları (2, 8) aldı, 5'i eledi: sayının çift olması için ★'nın çift olması gerektiğini düşünmüş. Oysa 2 ile bölünme birler basamağına bakar; birler 0 olduğundan sayı her durumda çift."],
+        "2": ["biliyor", "Bulduğu 2 ve 8, 4 + ★ toplamını 3'ün katı yapıyor; 3 ile bölünme kuralını doğru kullandı. 5'i kaçırması 1. adımdaki hatadan."],
+        "3": ["bilmiyor", "2 ve 3 ile bölünmeyi doğru birleştiremediği için 5 eksik kaldı; toplam 10 buldu, doğrusu 15."]
+      },
+      "aciklama": "6 ile bölünme için sayı hem 2'ye hem 3'e bölünmeli; bunu biliyorsun. Ama 2 ile bölünmede yalnız birler basamağına bakılır: 4★0'ın birler basamağı 0, yani sayı ★ ne olursa olsun çift. ★ için yalnız 3 koşuluna bakmalıydın: 4 + ★ = 6, 9, 12 → ★ = 2, 5, 8. Toplam 2 + 5 + 8 = 15."
+    },
+    "10": {
+      "okunan": "9 9",
+      "kararlar": {
+        "1": ["bilmiyor", "99 yazdı; onlar basamağının birler basamağından 3 eksik olması koşulunu kullanmadı (9, 9'dan 3 eksik değil)."],
+        "2": ["olculemedi", "99 sayısı 9'a bölünüyor ama koşula uyan sayılar arasında 9 kuralını sınamadığı için bu adım ölçülemedi."],
+        "3": ["bilmiyor", "Koşulları sırayla uygulamadı; sonuç 36 olmalıydı."]
+      },
+      "aciklama": "İki koşul var: onlar basamağı birler basamağından 3 eksik (14, 25, 36, 47, 58, 69) ve sayı 9'a bölünüyor (rakamlar toplamı 9'un katı). Bu sayılardan yalnız 36'da 3 + 6 = 9. Otobüste 36 yolcu var. 99, 9'a bölünüyor ama ilk koşula uymuyor."
+    }
+  },
+  "genel": "Bölünebilme kurallarını (3, 4, 5, 9) genel olarak biliyorsun; 6. ve 8. sorular tam. İki konuya dikkat: (1) Soruyu sonuna kadar oku: 7. soruda dört basamaklı sayı isteniyordu. (2) 2 ile bölünmede yalnız birler basamağına bakılır (9. soru). Problemde birden çok koşul varsa hepsini sırayla uygula (10. soru)."
+}
