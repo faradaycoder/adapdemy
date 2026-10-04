@@ -6,6 +6,7 @@ olan klasör daha önce elle aktarılmış sayılır ve atlanır; öğretmenin s
 ice_aktarma/degerlendirmeler/ altındaki "soru_seti"li değerlendirmeler de (bulutta okunan öğrenci kâğıtları) bir kez,
 'sistem önerisi' olarak aktarılır; teslim henüz yoksa ya da hata varsa bir sonraki çalışmada yeniden denenir.
 ice_aktarma/videolar/ altındaki MK video parçaları, dosya her değiştiğinde yeniden aktarılır (aktarma güncelleyerek yapar).
+Komut satırından çalışınca Claude'un istediği video altyazılarını da indirip gönderir (transkript_al.py).
 
 Öğretmen: EVALORA_OGRETMEN_EPOSTA ortam değişkeni (.env), yoksa tek öğretmen hesabı.
 Kullanım (backend klasöründe):  python -m app.otomatik_aktar
@@ -88,3 +89,11 @@ def _isaretle(ad: str) -> None:
 if __name__ == "__main__":
     for m in calistir():
         print(m)
+    try:
+        from . import transkript_al
+        for v in transkript_al.calistir():
+            print(f"Video altyazısı indirildi: {v}")
+        if m := transkript_al.gonder():  # önceki denemede gönderilemeyen de gider
+            print(m)
+    except Exception as h:
+        print(f"Video altyazıları alınamadı ({type(h).__name__}).")
