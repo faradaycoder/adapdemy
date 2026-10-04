@@ -1,0 +1,186 @@
+kod,ana_unite,yanilgi,ilgili_mikro_kazanimlar
+Mat01YG0001,01,Sayı yazılırken okunuşta geçmeyen bölüklere sıfır yazılmaz (iki milyon beş → 25).,Mat01MK0011
+Mat01YG0002,01,Çarpmada ikinci basamağın çarpım sonucu bir basamak sola kaydırılmadan yazılır.,Mat01MK0015
+Mat01YG0003,01,Bölme işleminde bölümün ara basamağına sıfır yazılmaz (612 ÷ 6 = 12).,Mat01MK0018
+Mat01YG0004,01,Kesir genişletilirken yalnızca pay ya da yalnızca payda çarpılır.,Mat01MK0027
+Mat01YG0005,01,Tam sayılı kesir bileşik kesre çevrilirken tam kısım yalnızca paya eklenir (2 1/3 = 3/3).,Mat01MK0031
+Mat01YG0006,01,"0,5 ile %5 aynı değerdir.",Mat01MK0033; Mat01MK0034
+Mat01YG0007,01,Paydası büyük olan kesir daha büyüktür (1/8 > 1/4).,Mat01MK0036; Mat01MK0040
+Mat01YG0008,01,Bir sayının katları da çarpanları gibi sınırlı sayıdadır.,Mat01MK0049
+Mat01YG0009,01,Son basamağı 3’e bölünebilen sayı 3’e tam bölünür (ör. 13).,Mat01MK0065
+Mat01YG0010,01,Bir sayının 6’ya bölünmesi için 3’e bölünmesi yeterlidir.,Mat01MK0068
+Mat01YG0011,01,1 bir asal sayıdır.,Mat01MK0073
+Mat01YG0012,01,Bütün tek sayılar asaldır.,Mat01MK0073
+Mat01YG0013,01,Ortak kat ile ortak bölen aynı şeydir; eşit paylaştırma problemlerinde ortak kat aranır.,Mat01MK0079; Mat01MK0080; Mat01MK0085; Mat01MK0086
+Mat01YG0014,01,"Ondalık kısmında daha çok basamak olan sayı daha büyüktür (0,125 > 0,5).",Mat01MK0091
+Mat01YG0015,01,Kesirlerle toplamada paylar ve paydalar ayrı ayrı toplanır (1/2 + 1/3 = 2/5).,Mat01MK0102; Mat01MK0145
+Mat01YG0016,01,Çarpma işleminin sonucu her zaman çarpılan sayılardan büyüktür (kesirlerde de).,Mat01MK0106
+Mat01YG0017,01,"Bir sayının %20’si, sayıdan 20 çıkarılarak bulunur.",Mat01MK0110
+Mat01YG0018,01,"Birim büyüdükçe ölçüm sayısı da büyür (3 m, 250 cm’den küçüktür).",Mat01MK0125; Mat01MK0126
+Mat01YG0019,01,Negatif sayılarda mutlak değeri büyük olan daha büyüktür (−5 > −2).,Mat01MK0130; Mat01MK0141
+Mat01YG0020,01,Negatif bir sayıyı çıkarmak sayıyı küçültür (5 − (−3) = 2).,Mat01MK0133
+Mat01YG0021,01,İki negatif sayının çarpımı negatiftir.,Mat01MK0134; Mat01MK0135
+Mat01YG0022,01,Mutlak değer sayının işaretini değiştirir (|3| = −3).,Mat01MK0137
+Mat01YG0023,01,Devirli ondalık gösterime sahip sayılar rasyonel sayı değildir.,Mat01MK0139; Mat01MK0140
+Mat01YG0024,01,"İki oran karşılaştırılırken farklara bakılır (2/4 ile 3/5 eşittir, çünkü ikisinde de fark 2).",Mat01MK0153
+Mat01YG0025,01,Biri artarken diğeri de artan her iki nicelik doğru orantılıdır (ör. yaş ve boy).,Mat01MK0163; Mat01MK0168
+Mat01YG0026,01,"Orantıda bilinmeyen, eşitliğin bir yanındaki sayıların farkıyla bulunur.",Mat01MK0167
+Mat01YG0027,01,Üslü ifadede taban ile üs çarpılır (2³ = 6).,Mat01MK0176
+Mat01YG0028,01,(−2)⁴ ile −2⁴ aynı değerdir.,Mat01MK0177
+Mat01YG0029,01,Sıfırıncı kuvvet sıfırdır (5⁰ = 0).,Mat01MK0179
+Mat01YG0030,01,Aynı tabanlı üslü ifadeler toplanırken üsler toplanır (2³ + 2⁴ = 2⁷).,Mat01MK0180; Mat01MK0204; Mat01MK0207; Mat01MK0208
+Mat01YG0031,01,Negatif üs sonucu negatif yapar (2⁻³ = −8).,Mat01MK0182; Mat01MK0204; Mat01MK0205; Mat01MK0206
+Mat01YG0032,01,Bir sayının karekökü o sayının yarısıdır (√16 = 8).,Mat01MK0213; Mat01MK0217
+Mat01YG0033,01,Karekökler toplanırken kök içleri toplanır (√9 + √16 = √25).,Mat01MK0215; Mat01MK0237; Mat01MK0239; Mat01MK0240
+Mat01YG0034,01,Bir sayının karekökü hem pozitif hem negatif değerdir (√16 = ±4).,Mat01MK0217
+Mat01YG0035,01,Ondalık kısmı uzun olan her sayı irrasyoneldir (devirli ondalıklar da).,Mat01MK0218; Mat01MK0219; Mat01MK0221
+Mat01YG0036,01,Kök içeren her sayı irrasyoneldir (√9 irrasyoneldir).,Mat01MK0222
+Mat01YG0037,01,"π sayısı 3,14'e ya da 22/7'ye eşittir, bu yüzden rasyoneldir.",Mat01MK0222
+Mat01YG0038,01,İki gerçek sayı arasında sonlu sayıda sayı vardır (ör. 1 ile 2 arasında hiç sayı yoktur ya da yalnızca birkaç ondalık sayı vardır).,Mat01MK0227
+Mat01YG0039,01,Açık aralık uç noktalarını da içerir; açık ve kapalı aralık aynı biçimde gösterilir.,Mat01MK0228; Mat01MK0229; Mat01MK0231; Mat01MK0232
+Mat01YG0040,01,Rasyonel üsle yazarken üs ile kök derecesi yer değiştirir (∛x² = x^(3/2)).,Mat01MK0233; Mat01MK0244; Mat01MK0234
+Mat01YG0041,01,A \ B ile B \ A aynı kümedir.,Mat01MK0261; Mat01MK0272
+Mat01YG0042,01,Tam sayılarda da iki sayı arasında her zaman başka bir tam sayı vardır.,Mat01MK0281
+Mat01YG0043,01,(a + b)² = a² + b²’dir.,Mat01MK0303
+Mat01YG0044,01,Bir sayının bölen sayısı asal çarpanlarının sayısına eşittir.,Mat01MK0305; Mat01MK0307
+Mat01YG0045,01,İki sayının EKOK’u her zaman bu sayıların çarpımıdır.,Mat01MK0311; Mat01MK0315
+Mat01YG0046,01,"Bir sayının 4’e bölümünden kalan, son basamağının 4’e bölümünden kalandır.",Mat01MK0331
+Mat02YG0001,02,"Eşittir işareti ""sonucu yaz"" anlamına gelir (3 + 4 = □ + 5 için □ = 7).",Mat02MK0001; Mat02MK0008
+Mat02YG0002,02,Dağılma özelliğinde yalnızca ilk terim çarpılır (3(x + 2) = 3x + 2).,Mat02MK0013; Mat02MK0014; Mat02MK0072
+Mat02YG0003,02,İşlemler her zaman soldan sağa sırayla yapılır (2 + 3 × 4 = 20).,Mat02MK0030
+Mat02YG0004,02,Örüntünün kuralı yalnızca bir önceki terime ne eklendiğidir; adım sayısıyla ilişki kurulmaz.,Mat02MK0040; Mat02MK0041
+Mat02YG0005,02,Algoritmada adımların sırası sonucu etkilemez.,Mat02MK0047; Mat02MK0094; Mat02MK0143; Mat02MK0148
+Mat02YG0006,02,"Cebirsel ifadedeki harf bir nesnenin kısaltmasıdır (3e = 3 elma), bir sayıyı temsil etmez.",Mat02MK0055
+Mat02YG0007,02,Bir örüntünün 10. terimi 5. teriminin iki katıdır.,Mat02MK0064; Mat02MK0065
+Mat02YG0008,02,Benzer olmayan terimler de toplanabilir (2x + 3 = 5x).,Mat02MK0069; Mat02MK0070; Mat02MK0071
+Mat02YG0009,02,Denklemde bir terim eşitliğin öbür yanına geçerken işareti değişmez.,Mat02MK0078
+Mat02YG0010,02,Eşitsizliğin iki yanı negatif bir sayıyla çarpılınca yön değişmez.,Mat02MK0079
+Mat02YG0011,02,Birkaç örnekte doğru çıkan bir önerme her zaman doğrudur; örnekler ispattır.,Mat02MK0088; Mat02MK0090
+Mat02YG0012,02,Koordinat düzleminin bölgeleri saat yönünde numaralandırılır.,Mat02MK0099; Mat02MK0103
+Mat02YG0013,02,"Sıralı ikilide sıra önemli değildir; (2, 3) ile (3, 2) aynı noktadır.",Mat02MK0100; Mat02MK0101; Mat02MK0102
+Mat02YG0014,02,Tablodaki her iki değişkenli ilişki doğrusaldır; değişim oranının sabit olup olmadığına bakmaya gerek yoktur.,Mat02MK0110
+Mat02YG0015,02,"Eğim, yatay değişimin dikey değişime oranıdır.",Mat02MK0119
+Mat02YG0016,02,f(x) = mx + n ifadesinde n eğimdir ya da grafiğin x eksenini kestiği noktadır.,Mat02MK0121
+Mat02YG0017,02,İki doğrunun kesişim noktası her zaman y ekseni üzerindedir.,Mat02MK0129
+Mat02YG0018,02,Paralel doğruların n değerleri (y eksenini kestikleri noktalar) de eşit olmalıdır.,Mat02MK0130; Mat02MK0138
+Mat02YG0019,02,Eğimleri zıt işaretli olan doğrular birbirine diktir (ör. eğimi 2 ve −2 olanlar).,Mat02MK0131; Mat02MK0139
+Mat02YG0020,02,Bağımlı değişken algoritmanın girdisidir.,Mat02MK0142
+Mat02YG0021,02,"f(x − 2) grafiği, f(x) grafiğinin 2 birim sola ötelenmesidir.",Mat02MK0155; Mat02MK0160
+Mat02YG0022,02,|x − 3| fonksiyonunun grafiğinin tepe noktası x = −3’tedir.,Mat02MK0169; Mat02MK0173
+Mat02YG0023,02,|x| < 3 eşitsizliğinin çözüm kümesi yalnızca x < 3’tür.,Mat02MK0181
+Mat02YG0024,02,Grafikte iki farklı x değerinin aynı y değerine gitmesi fonksiyon olmayı engeller.,Mat02MK0193; Mat02MK0195
+Mat02YG0025,02,f(x) = −x² ile f(x) = (−x)² aynı fonksiyondur.,Mat02MK0212
+Mat02YG0026,02,"y = (x − 2)² + 3 parabolünün tepe noktası (−2, 3)’tür.",Mat02MK0216
+Mat02YG0027,02,f(x) = √x fonksiyonu negatif sayılarda da tanımlıdır.,Mat02MK0237
+Mat02YG0028,02,f(x) = 1/x fonksiyonu x = 0 için 0 değerini alır.,Mat02MK0260
+Mat02YG0029,02,"f⁻¹(x), 1 / f(x) demektir.",Mat02MK0276; Mat02MK0277
+Mat02YG0030,02,x² = 9 denkleminin tek çözümü x = 3’tür.,Mat02MK0282
+Mat02YG0031,02,π sayısı 180’e eşittir.,Mat02MK0293; Mat02MK0294
+Mat02YG0032,02,Trigonometrik oranlar her bölgede pozitiftir.,Mat02MK0297
+Mat02YG0033,02,sin 2x fonksiyonunun periyodu 4π’dir.,Mat02MK0308; Mat02MK0312
+Mat02YG0034,02,sin x = 1/2 denkleminin tek çözümü x = 30°’dir.,Mat02MK0323; Mat02MK0325
+Mat02YG0035,02,2ˣ ile x² aynı hızda büyür.,Mat02MK0337; Mat02MK0338
+Mat02YG0036,02,log(a + b) = log a + log b’dir.,Mat02MK0351; Mat02MK0366
+Mat02YG0037,02,Taban 1’den küçük olsa da üstel eşitsizlikte yön değişmez.,Mat02MK0386
+Mat02YG0038,02,f∘g ile g∘f her zaman aynı fonksiyondur.,Mat02MK0401
+Mat02YG0039,02,Geometrik dizide ardışık terimler arasındaki fark sabittir.,Mat02MK0418
+Mat02YG0040,02,"Dizi, grafiği kesintisiz bir eğri olan bir fonksiyondur.",Mat02MK0429
+Mat02YG0041,02,n. dereceden bir polinomun her zaman n tane gerçek sıfırı vardır.,Mat02MK0437; Mat02MK0445
+Mat02YG0042,02,Rasyonel eşitsizlikte paydayı sıfır yapan değerler de çözüm kümesine dahildir.,Mat02MK0460
+Mat03YG0001,03,Işın iki yönde sonsuza uzanır.,Mat03MK0007
+Mat03YG0002,03,Doğru ile doğru parçası aynıdır; doğru çizildiği uzunluk kadardır.,Mat03MK0012; Mat03MK0013; Mat03MK0015
+Mat03YG0003,03,Açının ölçüsü kollarının uzunluğuna bağlıdır.,Mat03MK0021
+Mat03YG0004,03,Açıölçerde açının konumundan bağımsız olarak hep aynı ölçek okunur.,Mat03MK0021
+Mat03YG0005,03,Ters açılar bütünlerdir (toplamları 180°).,Mat03MK0034; Mat03MK0036
+Mat03YG0006,03,Kenarları eğri olan kapalı şekiller de çokgendir (daire bir çokgendir).,Mat03MK0039; Mat03MK0042
+Mat03YG0007,03,"Yöndeş açılar, doğrular paralel olmasa da eştir.",Mat03MK0060; Mat03MK0061
+Mat03YG0008,03,Büyük üçgenin iç açıları toplamı küçük üçgeninkinden fazladır.,Mat03MK0072
+Mat03YG0009,03,Kare bir dikdörtgen değildir; her dörtgen tek bir türe aittir.,Mat03MK0079; Mat03MK0243
+Mat03YG0010,03,Köşegenleri dik kesişen her dörtgen karedir.,Mat03MK0084; Mat03MK0086
+Mat03YG0011,03,Üçgenin yüksekliği her zaman üçgenin içinde kalır.,Mat03MK0097
+Mat03YG0012,03,Bir açının açıortayı karşı kenarı her zaman ortalar.,Mat03MK0099; Mat03MK0100
+Mat03YG0013,03,"En büyük açı en uzun kenarın karşısında değil, yanındadır.",Mat03MK0110; Mat03MK0111; Mat03MK0112
+Mat03YG0014,03,Kenar uzunlukları açı ölçüleriyle doğru orantılıdır; açı iki katına çıkınca karşısındaki kenar da iki katına çıkar.,Mat03MK0110
+Mat03YG0015,03,Herhangi iki kenarın toplamının üçüncüden büyük olması yeterlidir; en uzun kenarı kontrol etmeye gerek yoktur.,Mat03MK0115; Mat03MK0116
+Mat03YG0016,03,İki kenarın toplamı üçüncü kenara eşit olduğunda da üçgen oluşur.,Mat03MK0116; Mat03MK0118; Mat03MK0119; Mat03MK0150; Mat03MK0151; Mat03MK0152
+Mat03YG0017,03,Üç açısı karşılıklı eşit olan üçgenler eştir.,Mat03MK0122; Mat03MK0123; Mat03MK0124; Mat03MK0125; Mat03MK0127
+Mat03YG0018,03,İki kenar ve bu kenarların arasında olmayan bir açı eşse üçgenler her zaman eştir.,Mat03MK0123; Mat03MK0127
+Mat03YG0019,03,Eşlik gösteriminde (≅) köşelerin yazılış sırası önemli değildir.,Mat03MK0126
+Mat03YG0020,03,"Benzer üçgenlerde kenarlar aynı oranda değil, aynı miktarda artar (her kenara 2 cm eklemek).",Mat03MK0130; Mat03MK0131; Mat03MK0137
+Mat03YG0021,03,Benzer üçgenler eş olmalıdır; eş üçgenler benzer sayılmaz.,Mat03MK0136
+Mat03YG0022,03,"Hipotenüs, üçgenin tabanda (altta) çizilen kenarıdır.",Mat03MK0141
+Mat03YG0023,03,Dik üçgende kenarlar arasındaki ilişki a + b = c'dir (kareler alınmaz).,Mat03MK0143; Mat03MK0150; Mat03MK0151; Mat03MK0152
+Mat03YG0024,03,Pisagor bağıntısı her üçgende geçerlidir.,Mat03MK0144
+Mat03YG0025,03,Bir dış açının ölçüsü komşu iç açısının ölçüsüne eşittir.,Mat03MK0160; Mat03MK0164
+Mat03YG0026,03,Açı iki katına çıkınca sinüs değeri de iki katına çıkar.,Mat03MK0170; Mat03MK0177; Mat03MK0178; Mat03MK0179
+Mat03YG0027,03,Ağırlık merkezi kenarortayı iki eş parçaya böler.,Mat03MK0183; Mat03MK0200
+Mat03YG0028,03,Taban ve yükseklik ikişer katına çıkarsa üçgenin alanı da iki katına çıkar.,Mat03MK0201; Mat03MK0202; Mat03MK0208
+Mat03YG0029,03,Kosinüs teoremi yalnızca dik üçgende kullanılabilir.,Mat03MK0210; Mat03MK0212
+Mat03YG0030,03,Köşegenleri eşit olan her dörtgen bir dikdörtgendir.,Mat03MK0217; Mat03MK0231
+Mat03YG0031,03,Her çokgenin bütün köşegenleri çokgenin içinde kalır.,Mat03MK0244
+Mat03YG0032,03,Düzgün olmayan çokgenlerde iç açılar toplamı kenar sayısıyla belirlenmez.,Mat03MK0246; Mat03MK0255
+Mat03YG0033,03,Teğet çemberi iki noktada keser.,Mat03MK0288
+Mat03YG0034,03,"Çevre açı, aynı yayı gören merkez açıya eşittir.",Mat03MK0290; Mat03MK0299; Mat03MK0304
+Mat04YG0001,04,Alan ile çevre aynı birimle (cm) ifade edilir.,Mat04MK0007; Mat04MK0010; Mat04MK0011
+Mat04YG0002,04,Çevre uzunlukları eşit olan dikdörtgenlerin alanları da eşittir.,Mat04MK0015
+Mat04YG0003,04,Alan birimleri de uzunluk birimleri gibi 10’ar 10’ar büyür (1 m² = 10 dm²).,Mat04MK0026; Mat04MK0027; Mat04MK0028; Mat04MK0029
+Mat04YG0004,04,Paralelkenarın alanı iki komşu kenarının çarpımıdır.,Mat04MK0033
+Mat04YG0005,04,Üçgenin alanı taban ile yüksekliğin çarpımıdır; ikiye bölünmez.,Mat04MK0034; Mat04MK0036
+Mat04YG0006,04,Büyük çemberlerde çevrenin çapa oranı da büyüktür.,Mat04MK0056
+Mat04YG0007,04,Merkez açısı aynı olan yaylar her çemberde aynı uzunluktadır.,Mat04MK0065; Mat04MK0066
+Mat04YG0008,04,Üç görünümü verilen bir yapı her zaman tek bir biçimde kurulabilir.,Mat04MK0071
+Mat04YG0009,04,Prizmanın yüzey alanı yalnızca görünen üç yüzün alanları toplamıdır.,Mat04MK0073; Mat04MK0074
+Mat04YG0010,04,Prizmanın hacmi ayrıt uzunluklarının toplamıdır.,Mat04MK0078
+Mat04YG0011,04,Yüzey alanı ile hacim karıştırılır; yüzey alanı küp birimle (cm³) ifade edilir.,Mat04MK0079; Mat04MK0080; Mat04MK0149; Mat04MK0154; Mat04MK0155; Mat04MK0156
+Mat04YG0012,04,Hacim birimleri de uzunluk birimleri gibi 10’ar 10’ar büyür (1 m³ = 10 dm³).,Mat04MK0087
+Mat04YG0013,04,Merkez açı iki katına çıkınca daire diliminin alanı dört katına çıkar.,Mat04MK0102; Mat04MK0103
+Mat04YG0014,04,Yamuğun alanı paralel kenarlarından biri ile yüksekliğin çarpımıdır.,Mat04MK0111; Mat04MK0113
+Mat04YG0015,04,Koninin yanal yüzeyi açıldığında üçgen olur.,Mat04MK0139; Mat04MK0145
+Mat04YG0016,04,Doğru sayıda ve biçimde yüzü olan her açınım katlandığında cismi oluşturur; yüzlerin yerleşimi önemsizdir.,Mat04MK0141; Mat04MK0146
+Mat04YG0017,04,Silindirin yanal yüz açınımındaki dikdörtgenin bir kenarı taban çapına eşittir (taban çemberinin uzunluğuna değil).,Mat04MK0142
+Mat04YG0018,04,Silindirin yüzey alanında yalnızca bir taban alanı hesaba katılır.,Mat04MK0148; Mat04MK0149; Mat04MK0150
+Mat04YG0019,04,Silindirin hacmi hesaplanırken yarıçap yerine çap kullanılır.,Mat04MK0154
+Mat04YG0020,04,Koninin hacmi aynı taban ve yükseklikteki silindirin hacminin yarısıdır.,Mat04MK0166; Mat04MK0173
+Mat05YG0001,05,Eğik bir doğruya göre yansımada şekil yatay ya da dikey olarak kaydırılır.,Mat05MK0003
+Mat05YG0002,05,Yansıma şeklin boyutunu değiştirir.,Mat05MK0005
+Mat05YG0003,05,Ötelemede şeklin noktaları farklı miktarlarda kaydırılabilir.,Mat05MK0016; Mat05MK0020; Mat05MK0021
+Mat05YG0004,05,Öteleme şeklin boyutunu ya da duruşunu (yönünü) değiştirir.,Mat05MK0017; Mat05MK0018
+Mat05YG0005,05,"Sağa ya da sola ötelemede ordinat, yukarı ya da aşağı ötelemede apsis değişir.",Mat05MK0026; Mat05MK0031; Mat05MK0032; Mat05MK0039; Mat05MK0040
+Mat05YG0006,05,"x eksenine göre yansımada apsis, y eksenine göre yansımada ordinat işaret değiştirir.",Mat05MK0027; Mat05MK0028; Mat05MK0033; Mat05MK0034; Mat05MK0039; Mat05MK0040
+Mat05YG0007,05,Orijin etrafında 180° dönme ile x eksenine göre yansıma aynı görüntüyü verir.,Mat05MK0049; Mat05MK0052
+Mat06YG0001,06,Küçük ya da evreni temsil etmeyen bir örneklemden evren hakkında kesin sonuç çıkarılabilir.,Mat06MK0004; Mat06MK0019; Mat06MK0021; Mat06MK0022
+Mat06YG0002,06,Kategorik veri (ör. sevilen renk) için aritmetik ortalama hesaplanabilir.,Mat06MK0008; Mat06MK0011
+Mat06YG0003,06,Daire grafiğinde her kategori eşit büyüklükte bir dilimle gösterilir.,Mat06MK0015
+Mat06YG0004,06,Grafikte dikey eksenin sıfırdan başlamaması ya da ölçeğin değiştirilmesi yorumu etkilemez.,Mat06MK0024; Mat06MK0025
+Mat06YG0005,06,"Ortanca, veriler sıralanmadan ortadaki değerdir.",Mat06MK0031; Mat06MK0032
+Mat06YG0006,06,Ortalamaları eşit olan iki veri grubu aynı özelliktedir; yayılım önemsizdir.,Mat06MK0037; Mat06MK0042; Mat06MK0043
+Mat06YG0007,06,"Aritmetik ortalama, uç değer olsa bile veriyi her zaman en iyi temsil eden ölçüdür.",Mat06MK0044; Mat06MK0045
+Mat06YG0008,06,Kutu grafiğinde kutunun uzunluğu veri sayısını gösterir.,Mat06MK0049
+Mat06YG0009,06,İki kategorik değişken arasında ilişki varsa biri diğerinin nedenidir.,Mat06MK0057; Mat06MK0060
+Mat06YG0010,06,Serpme diyagramında noktalar tam bir doğru üzerinde değilse değişkenler arasında hiç ilişki yoktur.,Mat06MK0061
+Mat07YG0001,07,Bir olayın olasılığı 1’den büyük olabilir (ör. %150 ihtimal).,Mat07MK0003
+Mat07YG0002,07,"Her olayın olasılığı eşittir; bir olay ya olur ya olmaz, bu yüzden olasılığı %50'dir.",Mat07MK0005; Mat07MK0024
+Mat07YG0003,07,Az sayıda denemeyle bulunan deneysel olasılık teorik olasılığa eşit olmalıdır.,Mat07MK0008; Mat07MK0028
+Mat07YG0004,07,"Bir olayın tümleyeninin olasılığı, olayın olasılığının tersidir (1/P).",Mat07MK0012
+Mat07YG0005,07,"İki zar atıldığında toplamın 7 ve 2 gelme olasılıkları eşittir, çünkü ikisi de tek bir sayıdır.",Mat07MK0013
+Mat07YG0006,07,"Zar atıldığında ""tek sayı gelmesi"" ile ""asal sayı gelmesi"" ayrık olaylardır.",Mat07MK0016
+Mat07YG0007,07,Öznel olasılık kişisel tahmin olduğu için karar vermede hiçbir durumda kullanılamaz.,Mat07MK0020; Mat07MK0023; Mat07MK0029
+Mat07YG0008,07,Bağımsız denemelerde önceki sonuçlar sonrakini etkiler (5 kez yazı geldiyse sıradaki tura gelmelidir).,Mat07MK0028
+Mat07YG0009,07,"İki zar atıldığında (1, 2) ile (2, 1) aynı çıktıdır.",Mat07MK0031; Mat07MK0032; Mat07MK0033; Mat07MK0034
+Mat07YG0010,07,P(A | B) ile P(B | A) aynıdır.,Mat07MK0036; Mat07MK0039
+Mat07YG0011,07,Ayrık olaylar bağımsız olaylardır.,Mat07MK0041
+Mat07YG0012,07,Testi pozitif çıkan kişinin hasta olma olasılığı testin doğruluk oranına eşittir.,Mat07MK0042; Mat07MK0043
+Mat08YG0001,08,Paralel doğruların kestiği tüm parçalar birbirine eşittir.,Mat08MK0007; Mat08MK0011; Mat08MK0012
+Mat08YG0002,08,Öklid bağıntısında h² = p·k yerine h = p·k yazılır.,Mat08MK0013
+Mat09YG0001,09,"""veya"" bağlacı iki önermeden yalnızca birinin doğru olmasını gerektirir.",Mat09MK0007; Mat09MK0015
+Mat09YG0002,09,"""Her"" önermesinin değili ""hiçbiri"" önermesidir.",Mat09MK0013; Mat09MK0017
+Mat09YG0003,09,Ardışık seçimlerden oluşan sayma durumlarında seçenek sayıları her zaman toplanır.,Mat09MK0024
+Mat10YG0001,10,"İki nokta arasındaki uzaklık, koordinat farklarının toplamıdır.",Mat10MK0001; Mat10MK0005
+Mat10YG0002,10,Eğim açısı büyüdükçe eğim her zaman büyür (geniş açılarda da).,Mat10MK0011
+Mat11YG0001,11,Bir fonksiyonun bir noktadaki limiti her zaman o noktadaki değeridir.,Mat11MK0001; Mat11MK0007
+Mat11YG0002,11,0/0 belirsizliği olan limitin değeri 0’dır ya da limit yoktur.,Mat11MK0028; Mat11MK0029
+Mat11YG0003,11,Bir fonksiyon tanımlı olduğu her noktada süreklidir.,Mat11MK0030; Mat11MK0031; Mat11MK0032
+Mat11YG0004,11,"Bir fonksiyonun bir noktadaki türevi, fonksiyonun o noktadaki değeridir.",Mat11MK0033; Mat11MK0038; Mat11MK0039
+Mat11YG0005,11,Sürekli olan her fonksiyon türevlenebilirdir.,Mat11MK0057; Mat11MK0059
+Mat11YG0006,11,"Çarpımın türevi, türevlerin çarpımıdır.",Mat11MK0068; Mat11MK0083
+Mat11YG0007,11,Türevin sıfır olduğu her nokta bir maksimum ya da minimum noktasıdır.,Mat11MK0092; Mat11MK0098

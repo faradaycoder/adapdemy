@@ -1,0 +1,49 @@
+kod,sinif,tema_no,tema_adi,ana_tema,ornek_mikro_kod,tymm_unite_id,tymm_program_url
+Mat05-T1,5,1,Sayılar ve Nicelikler,01,Mat01MK0001,447; 449,https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-matematik-dersi/6
+Mat05-T2,5,2,İşlemlerle Cebirsel Düşünme,02,Mat02MK0001,450,https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-matematik-dersi/6
+Mat05-T3,5,3,Geometrik Şekiller,03,Mat03MK0001,448,https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-matematik-dersi/6
+Mat05-T4,5,4,Geometrik Nicelikler,04,Mat04MK0004,451,https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-matematik-dersi/6
+Mat05-T5,5,5,İstatistiksel Araştırma Süreci,06,Mat06MK0012,452,https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-matematik-dersi/6
+Mat05-T6,5,6,Veriden Olasılığa,07,Mat07MK0001,455,https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-matematik-dersi/6
+Mat06-T1,6,1,Sayılar ve Nicelikler,01,Mat01MK0048,456; 457,https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-matematik-dersi/7
+Mat06-T2,6,2,İşlemlerle Cebirsel Düşünme ve Değişimler,02,Mat02MK0049,458,https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-matematik-dersi/7
+Mat06-T3,6,3,Geometrik Şekiller,03,Mat03MK0056,459,https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-matematik-dersi/7
+Mat06-T4,6,4,Geometrik Nicelikler,04,Mat04MK0026,460,https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-matematik-dersi/7
+Mat06-T5,6,5,İstatistiksel Araştırma Süreci,06,Mat06MK0030,461,https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-matematik-dersi/7
+Mat06-T6,6,6,Veriden Olasılığa,07,Mat07MK0006,462,https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-matematik-dersi/7
+Mat07-T1,7,1,Sayılar ve Nicelikler,01,Mat01MK0128,463; 464,https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-matematik-dersi/8
+Mat07-T2,7,2,İşlemlerle Cebirsel Düşünme ve Değişimler,02,Mat02MK0050,465,https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-matematik-dersi/8
+Mat07-T3,7,3,Dönüşüm,05,Mat05MK0001,466,https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-matematik-dersi/8
+Mat07-T4,7,4,Geometrik Nicelikler,04,Mat04MK0067,467; 468,https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-matematik-dersi/8
+Mat07-T5,7,5,Geometrik Şekiller,03,Mat03MK0095,469,https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-matematik-dersi/8
+Mat07-T6,7,6,İstatistiksel Araştırma Süreci,06,Mat06MK0001,470,https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-matematik-dersi/8
+Mat07-T7,7,7,Veriden Olasılığa,07,Mat07MK0010,471,https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-matematik-dersi/8
+Mat08-T1,8,1,Sayılar ve Nicelikler,01,Mat01MK0175,472,https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-matematik-dersi/9
+Mat08-T2,8,2,Cebirsel Düşünme ve Değişimler,02,Mat02MK0096,473,https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-matematik-dersi/9
+Mat08-T3,8,3,Geometrik Şekiller,03,Mat03MK0105,474,https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-matematik-dersi/9
+Mat08-T4,8,4,Geometrik Nicelikler,04,Mat04MK0132,475,https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-matematik-dersi/9
+Mat08-T5,8,5,Dönüşüm,05,Mat05MK0016,476,https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-matematik-dersi/9
+Mat08-T6,8,6,İstatistiksel Araştırma Süreci,06,Mat06MK0001,477,https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-matematik-dersi/9
+Mat08-T7,8,7,Veriden Olasılığa,07,Mat07MK0017,478,https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-matematik-dersi/9
+Mat09-T1,9,1,Sayılar,01,Mat01MK0233,21,https://tymm.meb.gov.tr/ogretim-programlari/matematik-dersi/11
+Mat09-T2,9,2,Nicelikler ve Değişimler,02,Mat02MK0149,23,https://tymm.meb.gov.tr/ogretim-programlari/matematik-dersi/11
+Mat09-T3,9,3,Geometrik Şekiller,03,Mat03MK0159,25,https://tymm.meb.gov.tr/ogretim-programlari/matematik-dersi/11
+Mat09-T4,9,4,Eşlik ve Benzerlik,08,Mat08MK0001,83,https://tymm.meb.gov.tr/ogretim-programlari/matematik-dersi/11
+Mat09-T5,9,5,Algoritma ve Bilişim,09,Mat09MK0001,24,https://tymm.meb.gov.tr/ogretim-programlari/matematik-dersi/11
+Mat09-T6,9,6,İstatistiksel Araştırma Süreci,06,Mat06MK0046,91,https://tymm.meb.gov.tr/ogretim-programlari/matematik-dersi/11
+Mat09-T7,9,7,Veriden Olasılığa,07,Mat07MK0031,97,https://tymm.meb.gov.tr/ogretim-programlari/matematik-dersi/11
+Mat10-T1,10,1,Geometrik Şekiller,03,Mat03MK0166,260,https://tymm.meb.gov.tr/ogretim-programlari/matematik-dersi/12
+Mat10-T2,10,2,İstatistiksel Araştırma Süreci,06,Mat06MK0053,271,https://tymm.meb.gov.tr/ogretim-programlari/matematik-dersi/12
+Mat10-T3,10,3,Sayılar,01,Mat01MK0305,244,https://tymm.meb.gov.tr/ogretim-programlari/matematik-dersi/12
+Mat10-T4,10,4,Nicelikler ve Değişimler,02,Mat02MK0193,250,https://tymm.meb.gov.tr/ogretim-programlari/matematik-dersi/12
+Mat10-T5,10,5,"Sayma, Algoritma ve Bilişim",09,Mat09MK0023,251,https://tymm.meb.gov.tr/ogretim-programlari/matematik-dersi/12
+Mat10-T6,10,6,Analitik İnceleme,10,Mat10MK0001,263,https://tymm.meb.gov.tr/ogretim-programlari/matematik-dersi/12
+Mat10-T7,10,7,Veriden Olasılığa,07,Mat07MK0036,274,https://tymm.meb.gov.tr/ogretim-programlari/matematik-dersi/12
+Mat11-T1,11,1,İstatistiksel Araştırma Süreci,06,Mat06MK0058,298,https://tymm.meb.gov.tr/ogretim-programlari/matematik-dersi/13
+Mat11-T2,11,2,Geometrik Şekiller,03,Mat03MK0215,297,https://tymm.meb.gov.tr/ogretim-programlari/matematik-dersi/13
+Mat11-T3,11,3,Nicelikler ve Değişimler,02,Mat02MK0293,281; 295; 296,https://tymm.meb.gov.tr/ogretim-programlari/matematik-dersi/13
+Mat12-T1,12,1,Nicelikler ve Değişimler,02,Mat02MK0416,305; 306,https://tymm.meb.gov.tr/ogretim-programlari/matematik-dersi/14
+Mat12-T2,12,2,Geometrik Şekiller,03,Mat03MK0282,325,https://tymm.meb.gov.tr/ogretim-programlari/matematik-dersi/14
+Mat12-T3,12,3,Geometrik Cisimler,04,Mat04MK0157,329,https://tymm.meb.gov.tr/ogretim-programlari/matematik-dersi/14
+Mat12-T4,12,4,Değişimin Matematiği,11,Mat11MK0001,307; 318; 321,https://tymm.meb.gov.tr/ogretim-programlari/matematik-dersi/14
+Mat12-T5,12,5,Hazır Veriler Üzerinde Çalışma,06,Mat06MK0064,333,https://tymm.meb.gov.tr/ogretim-programlari/matematik-dersi/14

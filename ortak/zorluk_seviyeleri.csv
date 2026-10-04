@@ -1,0 +1,7 @@
+seviye,zorluk_alt,zorluk_ust,ad,aciklama,sayisal_ornek,sozel_ornek
+1,1,2,Giriş,"Tek bir bilgiyi tanır, adlandırır, hatırlar.",Fizik: birimi tanır,Tarih: olayı dönemiyle eşleştirir
+2,2,3,Anlama,Bir kavramı kendi sözleriyle açıklar ya da tek bir kuralı uygular.,Matematik: tek adımlı işlem,Türkçe: cümledeki ögeyi bulur
+3,3,4,Uygulama,"Bilinen bir yöntemi birkaç adımda uygular; örneklerden kural çıkarır, karşılaştırır.",Fizik: grafikten hız,Coğrafya: iki iklimi karşılaştırır
+4,4,5,Çözümleme ve yorumlama,"Bir kaynağı, metni, grafiği ya da haritayı kendisi yorumlar; neden-sonuç kurar, genellemeye ulaşır.",Fizik: grafikten hareket denklemi,Tarih: olayın nedenlerini kaynaktan çıkarır
+5,5,6,Sınama ve bütünleştirme,Farklı konuları bir araya getirir; bir iddiayı kanıtla ya da karşı örnekle sınar.,Fizik: modeli veriyle test eder,Edebiyat: yorumu metinden kanıtla destekler ya da çürütür
+6,6,7,Sentez ve değerlendirme,"Uzun bir öğrenme zincirinin tepesinde; özgün ürün ortaya koyar ya da gerekçeli yargıya varır, yeni bağlama aktarır. Üstü açıktır: 7–8 Seviye 7, 8–9 Seviye 8, …",Fizik: tahmin edip ölçümle sınar,Türkçe: görüşünü gerekçeleriyle savunan metin yazar

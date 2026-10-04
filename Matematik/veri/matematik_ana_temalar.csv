@@ -1,0 +1,12 @@
+kod,ad,siniflar,sinif_temalari,ornek_mikro_kod
+01,Sayılar ve Nicelikler,5; 6; 7; 8; 9; 10,Mat05-T1; Mat06-T1; Mat07-T1; Mat08-T1; Mat09-T1; Mat10-T3,Mat01MK0175
+02,Cebirsel Düşünme ve Değişimler,5; 6; 7; 8; 9; 10; 11; 12,Mat05-T2; Mat06-T2; Mat07-T2; Mat08-T2; Mat09-T2; Mat10-T4; Mat11-T3; Mat12-T1,Mat02MK0096
+03,Geometrik Şekiller,5; 6; 7; 8; 9; 10; 11; 12,Mat05-T3; Mat06-T3; Mat07-T5; Mat08-T3; Mat09-T3; Mat10-T1; Mat11-T2; Mat12-T2,Mat03MK0105
+04,Geometrik Nicelikler,5; 6; 7; 8; 12,Mat05-T4; Mat06-T4; Mat07-T4; Mat08-T4; Mat12-T3,Mat04MK0132
+05,Dönüşüm,7; 8,Mat07-T3; Mat08-T5,Mat05MK0016
+06,İstatistiksel Araştırma Süreci,5; 6; 7; 8; 9; 10; 11; 12,Mat05-T5; Mat06-T5; Mat07-T6; Mat08-T6; Mat09-T6; Mat10-T2; Mat11-T1; Mat12-T5,Mat06MK0001
+07,Veriden Olasılığa,5; 6; 7; 8; 9; 10,Mat05-T6; Mat06-T6; Mat07-T7; Mat08-T7; Mat09-T7; Mat10-T7,Mat07MK0017
+08,Eşlik ve Benzerlik,9,Mat09-T4,Mat08MK0001
+09,Algoritma ve Bilişim,9; 10,Mat09-T5; Mat10-T5,Mat09MK0001
+10,Analitik İnceleme,10,Mat10-T6,Mat10MK0001
+11,Değişimin Matematiği,12,Mat12-T4,Mat11MK0001

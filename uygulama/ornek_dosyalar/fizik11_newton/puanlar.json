@@ -1,0 +1,99 @@
+{
+ "1": {
+  "mkler": [
+   "Fiz02MK0111",
+   "Fiz02MK0112",
+   "Fiz02MK0113",
+   "Fiz02MK0110"
+  ],
+  "zorluk": 11.97,
+  "puan": [
+   2.77,
+   2.77,
+   2.77,
+   3.66
+  ],
+  "ifade": {
+   "Fiz02MK0111": "Etki-tepki kuvvetlerinin eşit büyüklükte olduğu genellemesini yapar.",
+   "Fiz02MK0112": "Etki-tepki kuvvetlerinin zıt yönde olduğu genellemesini yapar.",
+   "Fiz02MK0113": "Etki-tepki kuvvetlerinin farklı cisimlere etki ettiği genellemesini yapar.",
+   "Fiz02MK0110": "Aynı bileşke kuvvet altında kütle ile ivmenin ters orantılı olduğu ilişkisini keşfeder."
+  }
+ },
+ "2": {
+  "mkler": [
+   "Fiz02MK0140"
+  ],
+  "zorluk": 4.0,
+  "puan": [
+   0.8,
+   0.8,
+   0.8,
+   0.8,
+   0.8
+  ],
+  "ifade": {
+   "Fiz02MK0121": "Cisme etki eden kuvvetleri serbest cisim diyagramı üzerinde gösterir.",
+   "Fiz02MK0119": "Verilen bir durumda cisme etki eden sürtünme kuvvetini belirler ve yönünü gösterir.",
+   "Fiz02MK0139": "Fs = k·N modeliyle sürtünme kuvvetini hesaplar.",
+   "Fiz02MK0125": "Serbest cisim diyagramından net kuvveti bulur.",
+   "Fiz02MK0140": "Sürtünmeli yatay düzlemde cismin ivmesini Fnet = m·a ve Fs = k·N ile hesaplar."
+  }
+ },
+ "3": {
+  "mkler": [
+   "Fiz02MK0139"
+  ],
+  "zorluk": 3.61,
+  "puan": [
+   0.21,
+   0.85,
+   0.85,
+   0.85,
+   0.85
+  ],
+  "ifade": {
+   "Fiz02MK0129": "Statik sürtünmeyi harekete zorlanan durgun cisme etki eden kuvvet olarak tanımlar.",
+   "Fiz02MK0131": "Statik ve kinetik sürtünmeyi büyüklük bakımından karşılaştırır.",
+   "Fiz02MK0135": "Sürtünme kuvveti-uygulanan kuvvet grafiğini çizer.",
+   "Fiz02MK0136": "Grafikte statik sürtünmenin en büyük değerini gösterir.",
+   "Fiz02MK0139": "Fs = k·N modeliyle sürtünme kuvvetini hesaplar."
+  }
+ },
+ "4": {
+  "mkler": [
+   "Fiz02MK0127",
+   "Fiz02MK0128"
+  ],
+  "zorluk": 6.92,
+  "puan": [
+   0.86,
+   0.86,
+   0.86,
+   0.86,
+   3.46
+  ],
+  "ifade": {
+   "Fiz02MK0121": "Cisme etki eden kuvvetleri serbest cisim diyagramı üzerinde gösterir.",
+   "Fiz02MK0118": "Verilen bir durumda cisme etki eden gerilme kuvvetini belirler ve yönünü gösterir.",
+   "Fiz02MK0125": "Serbest cisim diyagramından net kuvveti bulur.",
+   "Fiz02MK0127": "İple bağlı ya da birbirine temas eden cisimlerden oluşan sistemlerde ortak ivmeyi hesaplar.",
+   "Fiz02MK0128": "İple bağlı cisimlerden oluşan sistemlerde ip gerilme kuvvetini hesaplar."
+  }
+ },
+ "5": {
+  "mkler": [
+   "Fiz02MK0138"
+  ],
+  "zorluk": 3.61,
+  "puan": [
+   1.04,
+   1.04,
+   1.54
+  ],
+  "ifade": {
+   "Fiz02MK0138": "Yürüme ve dönen tekerlek gibi kayarak ve dönerek öteleme durumlarında sürtünme kuvvetinin yönünü belirler.",
+   "Fiz02MK0108": "Bileşke kuvvet sıfırken hareketli cismin sabit hızla hareketine devam ettiği ilişkisini keşfeder."
+  }
+ }
+}

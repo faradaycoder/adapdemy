@@ -1,0 +1,156 @@
+{
+  "kaynak": "MEB Ölçme, Değerlendirme ve Sınav Hizmetleri Genel Müdürlüğü, Kazanım Kavrama Testi 16, 11. Sınıf Fizik, Enerji ve Hareket – 2",
+  "not": "Sorular 2026-10-04'te Claude tarafından okunup çözüldü ve rubrik adımları MK'lere eşlendi. Sorunun MK'leri, zorluk ve rubrik payları uygulamada eslestirme.py kurallarıyla hesaplanır. Öğretmen incelemesi gerekir (durum: taslak).",
+  "ders": "Fizik",
+  "sinif_duzeyi": 11,
+  "sorular": [
+    {
+      "no": 1, "gorsel": "soru01.png", "cevap_bicimi": "coktan_secmeli",
+      "metin": "Hava sürtünmesinin önemsiz olduğu ortamda bir cisim yukarı doğru 50 m/s hız ile atılıyor. Cismin atıldıktan 3 saniye sonra potansiyel enerjisi E₁, 7 saniye sonraki potansiyel enerjisi E₂ olduğuna göre E₁/E₂ oranı kaçtır? (g = 10 m/s²)",
+      "secenekler": [["A", "2/7", false], ["B", "4/9", false], ["C", "2/3", false], ["D", "1", true], ["E", "9/4", false]],
+      "dogru_cevap": "D",
+      "cozum": "h = v₀t − ½gt². t = 3 s: h = 150 − 45 = 105 m. t = 7 s: h = 350 − 245 = 105 m. Ep = mgh ve yükseklikler eşit olduğundan E₁/E₂ = 1.",
+      "birincil": "Fiz02MK0095",
+      "adimlar": [
+        ["3 s ve 7 s sonraki yükseklikleri h = v₀t − ½gt² ile hesaplar: ikisi de 105 m.", "Fiz02MK0095"],
+        ["Ep = mgh olduğundan potansiyel enerjilerin oranının yüksekliklerin oranına eşit olduğunu kullanır: E₁/E₂ = 1.", "Fiz04MK0096"]
+      ]
+    },
+    {
+      "no": 2, "gorsel": "soru02.png", "cevap_bicimi": "coktan_secmeli",
+      "metin": "Bir X cismi hava sürtünmesinin önemsiz olduğu ortamda şekildeki K noktasından serbest bırakılıyor. Noktalar arası uzaklıklar eşit ve h kadardır. Cismin L noktasındaki hızı v_L, M noktasındaki hızı v_M olduğuna göre v_L/v_M oranı kaçtır? (g = 10 m/s²)",
+      "secenekler": [["A", "1/√2", true], ["B", "1/2", false], ["C", "√2", false], ["D", "3/2", false], ["E", "2", false]],
+      "dogru_cevap": "A",
+      "cozum": "Mekanik enerji korunur: L'ye kadar mgh = ½mv_L², M'ye kadar mg·2h = ½mv_M². v_L² / v_M² = 1/2, v_L/v_M = 1/√2.",
+      "birincil": "Fiz04MK0099",
+      "adimlar": [
+        ["Kaybedilen potansiyel enerjinin kinetik enerjiye dönüştüğünü yazar: mgh = ½mv_L², 2mgh = ½mv_M².", "Fiz04MK0099"],
+        ["Kinetik enerji v² ile orantılı olduğundan hız oranını bulur: v_L/v_M = 1/√2.", "Fiz04MK0095"]
+      ]
+    },
+    {
+      "no": 3, "gorsel": "soru03.png", "cevap_bicimi": "coktan_secmeli",
+      "metin": "Sürtünmesiz ortamdaki sistemde X (3 kg, yerden 2 m yüksekte) ile Y (2 kg, yerden 1 m yüksekte) cisimleri makara üzerinden iple bağlıdır. Sistem bu şekilde serbest bırakıldıktan kaç saniye sonra X cismi yere çarpar? (g = 10 m/s²)",
+      "secenekler": [["A", "1/√2", false], ["B", "1/2", false], ["C", "√2", true], ["D", "3/2", false], ["E", "2", false]],
+      "dogru_cevap": "C",
+      "cozum": "Sistemin ivmesi a = (3 − 2)·10 / (3 + 2) = 2 m/s². X, ilk hızsız 2 m alır: 2 = ½·2·t², t = √2 s.",
+      "birincil": "Fiz02MK0126",
+      "adimlar": [
+        ["Net kuvvetten sistemin ivmesini bulur: a = (30 − 20) / 5 = 2 m/s².", "Fiz02MK0126"],
+        ["Δx = ½at² ile X'in 2 m'yi alma süresini bulur: t = √2 s.", "Fiz02MK0081"]
+      ]
+    },
+    {
+      "no": 4, "gorsel": "soru04.png", "cevap_bicimi": "coktan_secmeli",
+      "metin": "Özdeş X cismi F₁ kuvvetiyle h, F₂ kuvvetiyle de 2h kadar sabit hızla yukarı çekilmektedir. Sistemler sürtünmesiz olduğuna göre F₁ kuvvetinin yaptığı iş W₁'in, F₂ kuvvetinin yaptığı iş W₂'ye oranı W₁/W₂ kaçtır?",
+      "secenekler": [["A", "1/4", false], ["B", "1/2", true], ["C", "1", false], ["D", "2", false], ["E", "4", false]],
+      "dogru_cevap": "B",
+      "cozum": "Sürtünmesiz sistemde sabit hızla yapılan iş, cismin potansiyel enerjisindeki artışa eşittir; makara türü sonucu değiştirmez. W₁ = mgh, W₂ = mg·2h, W₁/W₂ = 1/2.",
+      "birincil": "Fiz04MK0064",
+      "adimlar": [
+        ["Sürtünmesiz sistemde yapılan işin cisme aktarılan enerjiye eşit olduğunu kullanır; makara türü sonucu değiştirmez.", "Fiz04MK0064"],
+        ["Potansiyel enerji artışlarını hesaplar: mgh ve 2mgh; oran 1/2.", "Fiz04MK0096"]
+      ]
+    },
+    {
+      "no": 5, "gorsel": "soru05.png", "cevap_bicimi": "coktan_secmeli",
+      "metin": "X cismine F kuvveti LN yolu boyunca etki etmektedir. Sadece LM aralığı sürtünmeli olup sürtünme katsayısı k = 0,2'dir. Noktalar arası uzaklıklar eşit olduğuna göre, F kuvvetinin LM aralığında yaptığı iş W₁'in, MN aralığında yaptığı iş W₂'ye oranı W₁/W₂ kaçtır?",
+      "secenekler": [["A", "1/5", false], ["B", "4/5", false], ["C", "1", true], ["D", "2", false], ["E", "5", false]],
+      "dogru_cevap": "C",
+      "cozum": "F kuvvetinin yaptığı iş W = F·Δx'tir; sürtünme F'nin işini değiştirmez. LM = MN olduğundan W₁/W₂ = 1.",
+      "birincil": "Fiz04MK0059",
+      "adimlar": [
+        ["Bir kuvvetin işinin yalnız o kuvvete ve yer değiştirmeye bağlı olduğunu (W = F·Δx), sürtünmenin F'nin işini değiştirmediğini kullanır; LM = MN olduğundan oran 1.", "Fiz04MK0059"]
+      ]
+    },
+    {
+      "no": 6, "gorsel": "soru06.png", "cevap_bicimi": "coktan_secmeli",
+      "metin": "Şekildeki sistemlerde X cismi F₁ kuvveti ile eğik düzlem üzerinden 2h yüksekliğine, F₂ kuvveti uygulanarak makara sistemi ile h yüksekliğine sabit hız ile çıkarılmaktadır. Her iki sistem de sürtünmesiz olduğuna göre, F₁ kuvvetinin yaptığı iş W₁'in, F₂ kuvvetinin yaptığı iş W₂'ye oranı W₁/W₂ kaçtır?",
+      "secenekler": [["A", "1/4", false], ["B", "1/2", false], ["C", "1", false], ["D", "2", true], ["E", "4", false]],
+      "dogru_cevap": "D",
+      "cozum": "Sürtünmesiz sistemlerde yapılan iş, potansiyel enerji artışına eşittir; eğik düzlem ve makara işten kazanç sağlamaz. W₁ = mg·2h, W₂ = mgh, W₁/W₂ = 2.",
+      "birincil": "Fiz04MK0064",
+      "adimlar": [
+        ["Eğik düzlemin ve makaranın işten kazanç sağlamadığını, yapılan işin aktarılan enerjiye eşit olduğunu kullanır.", "Fiz04MK0064"],
+        ["Potansiyel enerji artışlarını hesaplar: 2mgh ve mgh; oran 2.", "Fiz04MK0096"]
+      ]
+    },
+    {
+      "no": 7, "gorsel": "soru07.png", "cevap_bicimi": "coktan_secmeli",
+      "metin": "Şekildeki sürtünmesiz sistemde K cisminin kütlesi 2m, L cisminin kütlesi m olup küp şeklindeki cisimlerin kenar uzunlukları eşittir. Sistem sabit tutulurken K'nın (yerden 4h yüksekte) potansiyel enerjisi 8E'dir. Sistem serbest bırakılıp K ile L aynı hizaya geldikleri anda L'nin kinetik enerjisi kaç E olur?",
+      "secenekler": [["A", "2/3", true], ["B", "4/3", false], ["C", "2", false], ["D", "4", false], ["E", "6", false]],
+      "dogru_cevap": "A",
+      "cozum": "2m·g·4h = 8E ⇒ mgh = E. Aynı hizaya gelince K 2h iner, L 2h çıkar: sistemin potansiyel enerji kaybı 2m·g·2h − m·g·2h = 2mgh = 2E. Bu enerji toplam kinetik enerji olur. Cisimler aynı hızla hareket ettiğinden kinetik enerjiler kütlelerle orantılıdır: L'ninki 2E·(m/3m) = 2E/3.",
+      "birincil": "Fiz04MK0099",
+      "adimlar": [
+        ["K'nın potansiyel enerjisinden mgh = E bulur.", "Fiz04MK0096"],
+        ["Aynı hizaya gelince sistemin potansiyel enerji kaybını hesaplar: 2E.", "Fiz04MK0096"],
+        ["Sürtünmesiz sistemde kaybedilen potansiyel enerjinin toplam kinetik enerjiye dönüştüğünü kullanır.", "Fiz04MK0099"],
+        ["Aynı hızda kinetik enerjinin kütleyle orantılı olduğundan L'ninkini bulur: 2E/3.", "Fiz04MK0090"]
+      ]
+    },
+    {
+      "no": 8, "gorsel": "soru08.png", "cevap_bicimi": "coktan_secmeli",
+      "metin": "Bir asansör 60 kJ elektrik enerjisi harcayarak 400 kg yükü, bir binanın 12 m yüksekliğindeki 4. katına çıkarmaktadır. Buna göre, asansörün verimi en az yüzde kaçtır? (g = 10 m/s²)",
+      "secenekler": [["A", "48", false], ["B", "50", false], ["C", "60", false], ["D", "80", true], ["E", "90", false]],
+      "dogru_cevap": "D",
+      "cozum": "Faydalı enerji = mgh = 400·10·12 = 48 kJ. Verim = 48 / 60 = %80.",
+      "birincil": "Fiz04MK0134",
+      "adimlar": [
+        ["Faydalı enerjiyi yükün potansiyel enerji artışı olarak hesaplar: 48 kJ.", "Fiz04MK0096"],
+        ["Verimi faydalı enerjinin harcanan enerjiye oranı olarak bulur: %80.", "Fiz04MK0134"]
+      ]
+    },
+    {
+      "no": 9, "gorsel": "soru09.png", "cevap_bicimi": "coktan_secmeli",
+      "metin": "Verimi %80 olan bir su pompası 40 kJ enerji harcayarak 20 m derinliğindeki su kuyusundan en fazla kaç kg su yukarı çıkarabilir? (g = 10 m/s²)",
+      "secenekler": [["A", "320", false], ["B", "160", true], ["C", "32", false], ["D", "20", false], ["E", "16", false]],
+      "dogru_cevap": "B",
+      "cozum": "Faydalı enerji = 0,8·40 kJ = 32 kJ = m·10·20 ⇒ m = 160 kg.",
+      "birincil": "Fiz04MK0134",
+      "adimlar": [
+        ["Verim tanımından faydalı enerjiyi bulur: 32 kJ.", "Fiz04MK0134"],
+        ["Faydalı enerjiyi suyun potansiyel enerjisine eşitleyip kütleyi bulur: 160 kg.", "Fiz04MK0096"]
+      ]
+    },
+    {
+      "no": 10, "gorsel": "soru10.png", "cevap_bicimi": "coktan_secmeli",
+      "metin": "Sürtünmesiz ortamda kütlesi 2 kg olan X cismi yerden düşey yukarı doğru v = 50 m/s hız ile atılıyor. Cisim K noktasından yukarı doğru 20 m/s hız ile geçtiğine göre, K noktası yerden kaç metre yüksektedir? (g = 10 m/s²)",
+      "secenekler": [["A", "25", false], ["B", "45", false], ["C", "50", false], ["D", "80", false], ["E", "105", true]],
+      "dogru_cevap": "E",
+      "cozum": "½mv₀² = ½mv² + mgh ⇒ 1250 = 200 + 10h ⇒ h = 105 m.",
+      "birincil": "Fiz04MK0099",
+      "adimlar": [
+        ["Yerdeki ve K'deki kinetik enerjileri ½mv² ile yazar.", "Fiz04MK0095"],
+        ["Mekanik enerjinin korunumundan K'nin yüksekliğini bulur: 105 m.", "Fiz04MK0099"]
+      ]
+    },
+    {
+      "no": 11, "gorsel": "soru11.png", "cevap_bicimi": "coktan_secmeli",
+      "metin": "Şekildeki sistemde x kadar sıkıştırılmış yayın önüne m kütleli K cismi konulup yay serbest bırakılıyor. Yatay düzlem sürtünmesiz ve eğik düzlem sürtünmeli olduğuna göre, K cisminin eğik düzlem üzerinde çıkabileceği h yüksekliği; I. x yayı sıkıştırma miktarı, II. α eğim açısı, III. sürtünme katsayısı, IV. k yay sabiti, V. m cismin kütlesi niceliklerinden hangileri ile ters orantılıdır?",
+      "secenekler": [["A", "I ve V", false], ["B", "II ve IV", false], ["C", "III ve V", true], ["D", "II, III ve IV", false], ["E", "II, III ve V", false]],
+      "dogru_cevap": "C",
+      "cozum": "½kx² = mgh + Fs·(h/sinα), Fs = k_s·mg·cosα ⇒ h = kx² / [2mg(1 + k_s·cotα)]. h, kütleyle ters orantılı; sürtünme katsayısı arttıkça azalır; x² ve k ile doğru orantılı; α arttıkça artar. Cevap anahtarındaki C (III ve V). Not: sürtünme katsayısıyla ilişki tam ters orantı değil, azalan bir ilişkidir.",
+      "birincil": "Fiz04MK0133",
+      "adimlar": [
+        ["Yayın esneklik potansiyel enerjisini ½kx² olarak yazar.", "Fiz04MK0124"],
+        ["Eğik düzlemde sürtünme kuvvetini Fs = k·N (N = mg·cosα) ile ifade eder.", "Fiz02MK0139"],
+        ["Sürtünme kuvvetinin eğik düzlem boyunca yaptığı işi (ısıya giden enerjiyi) yazar.", "Fiz04MK0129"],
+        ["Enerji korunumundan h'yi değişkenler cinsinden kurar ve hangi niceliklerle ters orantılı olduğunu yorumlar.", "Fiz04MK0133"]
+      ]
+    },
+    {
+      "no": 12, "gorsel": "soru12.png", "cevap_bicimi": "coktan_secmeli",
+      "metin": "Kütlesi 5 kg olan X cismi eğik düzlemin en üst noktasındayken mekanik enerjisi E'dir. Cisim serbest bırakıldığında eğik düzlemin en alt noktasında kinetik enerjisi 2E/3 oluyor. Eğik düzlemin yüksekliği 6 m, eğim açısı 37°'dir. Buna göre, eğik düzlem üzerinde cisme etki eden sürtünme kuvveti kaç N'dur? (g = 10 m/s²; sin37° = 0,6)",
+      "secenekler": [["A", "5", false], ["B", "7,5", false], ["C", "10", true], ["D", "20", false], ["E", "25", false]],
+      "dogru_cevap": "C",
+      "cozum": "E = mgh = 5·10·6 = 300 J. Altta kinetik enerji 200 J, sürtünmeyle ısıya giden 100 J. Eğik düzlemin uzunluğu 6 / 0,6 = 10 m. Fs·10 = 100 ⇒ Fs = 10 N.",
+      "birincil": "Fiz04MK0129",
+      "adimlar": [
+        ["Tepedeki mekanik enerjiyi mgh ile hesaplar: E = 300 J.", "Fiz04MK0096"],
+        ["Kaybolan mekanik enerjinin sürtünmeyle ısıya dönüştüğünü görür: 100 J.", "Fiz04MK0097"],
+        ["Sürtünmenin yaptığı işten sürtünme kuvvetini bulur: yol 10 m, Fs = 10 N.", "Fiz04MK0129"]
+      ]
+    }
+  ]
+}

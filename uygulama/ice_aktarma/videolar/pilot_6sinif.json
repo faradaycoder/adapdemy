@@ -1,0 +1,185 @@
+{
+  "kaynak": "Claude, 2026-10-04: YouTube transkriptleri (otomatik altyazı, zaman kodlu) satır satır okundu; konu geçiş cümlelerinden bölündü, bazı sınırlar ekran görüntüsüyle doğrulandı. Kanallar Murat'ın seçimi: Partikül Matematik, Derslike. tur: konu = konu anlatımı, soru = benzer soru çözümü.",
+  "konular": {
+    "Mat01MK0106": "Bir sayının kesrini bulmak (kesirlerle çarpma)",
+    "Mat07MK0006": "Bir deneyde sonuçları saymak (sıklık)",
+    "Mat07MK0007": "Deneysel olasılık: kaç kere oldu / kaç kere denendi",
+    "Mat07MK0002": "Olasılığı yüzde olarak yazmak",
+    "Mat03MK0062": "İç ters açılar eşittir (Z kuralı)",
+    "Mat03MK0064": "Paralel doğrular arasında 180° kuralı (U kuralı)",
+    "Mat03MK0065": "Paralel doğrular arasında bilinmeyen açıyı bulmak"
+  },
+  "videolar": {
+    "2JxVYEMkiz4": {
+      "kanal": "Partikül Matematik",
+      "baslik": "6.Sınıf Matematik | Kesirlerle İşlemler | 2025",
+      "sure": 1822
+    },
+    "Sw6XM84eLxY": {
+      "kanal": "Derslike",
+      "baslik": "6.Sınıf Matematik 2.Dönem 1.Yazılı | Ülke Geneli",
+      "sure": 1266
+    },
+    "Bl0hYbEavtY": {
+      "kanal": "Partikül Matematik",
+      "baslik": "9.Sınıf Matematik 7.TEMA | Olasılık 1 | 32.Ders",
+      "sure": 1712
+    },
+    "Gv4mwq91R_I": {
+      "kanal": "Partikül Matematik",
+      "baslik": "7.Sınıf Matematik | Doğrular ve Açılar | 2025",
+      "sure": 1624
+    },
+    "KRR0tEogXoE": {
+      "kanal": "Partikül Matematik",
+      "baslik": "Yüzdeler | 5.Sınıf Matematik | 2024",
+      "sure": 1164
+    }
+  },
+  "parcalar": [
+    {
+      "mk": "Mat01MK0106",
+      "tur": "konu",
+      "video": "2JxVYEMkiz4",
+      "bas": "16:47",
+      "son": "18:16",
+      "baslik": "Kesirlerle çarpma ve bir sayının kesrini bulma",
+      "neden": "Çarpma kuralını verip 17:33'te 'bir şeyin kesrini bulmak çarpmadır (60 koyunun 2/7'si)' diyor; öğrencinin 400'ün 3/5'i hatasıyla birebir."
+    },
+    {
+      "mk": "Mat01MK0106",
+      "tur": "soru",
+      "video": "Sw6XM84eLxY",
+      "bas": "0:42",
+      "son": "2:57",
+      "baslik": "Yolun kesrini bul, kalanı hesapla",
+      "neden": "Ortak yazılı tarzı soru: parkurun kesrinin kesri bulunuyor, sonra bütünden çıkarılıp kalan bulunuyor; aynı strateji."
+    },
+    {
+      "mk": "Mat07MK0006",
+      "tur": "konu",
+      "video": "Bl0hYbEavtY",
+      "bas": "5:56",
+      "son": "6:42",
+      "baslik": "Sıklık nedir? Para atarak sonuçları saymak",
+      "neden": "Deneyde çıktıların kaç kez geldiğini (sıklık) ve toplamın deney sayısı olduğunu para atma örneğiyle anlatıyor."
+    },
+    {
+      "mk": "Mat07MK0006",
+      "tur": "soru",
+      "video": "Bl0hYbEavtY",
+      "bas": "7:09",
+      "son": "8:16",
+      "baslik": "Zar atışlarında sıklıkları saymak",
+      "neden": "25 zar atışının çetelesinden her sonucun sıklığını sayıp toplamı kontrol ediyor; öğrencinin tablodan yazıları sayma hatasının doğrusu."
+    },
+    {
+      "mk": "Mat07MK0007",
+      "tur": "konu",
+      "video": "Bl0hYbEavtY",
+      "bas": "6:42",
+      "son": "7:09",
+      "baslik": "Göreli sıklık: kaç kere geldi / kaç kere atıldı",
+      "neden": "Göreli sıklığı 'sıklık / deney sayısı' (20/50) olarak tanımlıyor; 5:28'de bunun deneysel olasılık olduğunu söylemişti."
+    },
+    {
+      "mk": "Mat07MK0007",
+      "tur": "soru",
+      "video": "Bl0hYbEavtY",
+      "bas": "22:51",
+      "son": "24:15",
+      "baslik": "Para atma deneyinde deneysel olasılık",
+      "neden": "10 ve 50 atışlık tablodan tura/yazı olasılığı; öğrencinin yazı-tura sorusuna çok yakın. Video 9. sınıf ama bu bölüm 6. sınıf düzeyinde. Sınır ekranda doğrulandı."
+    },
+    {
+      "mk": "Mat07MK0007",
+      "tur": "soru",
+      "video": "Sw6XM84eLxY",
+      "bas": "3:02",
+      "son": "4:19",
+      "baslik": "Tablodan deneysel olasılığı bulmak",
+      "neden": "Tablodaki sayıdan 'istenen / toplam' kesrini kuruyor (9/20); 6. sınıf ortak yazılı sorusu."
+    },
+    {
+      "mk": "Mat07MK0002",
+      "tur": "konu",
+      "video": "KRR0tEogXoE",
+      "bas": "1:15",
+      "son": "3:55",
+      "baslik": "Kesri yüzdeye çevirmek: paydayı 100 yap",
+      "neden": "Paydası 100 olan kesri yüzde okumayı, sonra 8/25 ve 17/20'yi genişletip yüzdeye çevirmeyi anlatıyor (5. sınıf)."
+    },
+    {
+      "mk": "Mat07MK0002",
+      "tur": "soru",
+      "video": "Sw6XM84eLxY",
+      "bas": "4:19",
+      "son": "4:52",
+      "baslik": "Olasılığı yüzde olarak yazmak",
+      "neden": "9/20'yi paydayı 100 yapacak şekilde genişletip %45 yazıyor; öğrencinin unuttuğu adım."
+    },
+    {
+      "mk": "Mat03MK0062",
+      "tur": "konu",
+      "video": "Gv4mwq91R_I",
+      "bas": "12:28",
+      "son": "13:15",
+      "baslik": "İç ters açılar hangileri?",
+      "neden": "Paralel iki doğru ve kesende iç ters açıları şekil üzerinde tek tek gösteriyor. Video 7. sınıf ama bu bölüm 6. sınıf kazanımı."
+    },
+    {
+      "mk": "Mat03MK0062",
+      "tur": "soru",
+      "video": "Sw6XM84eLxY",
+      "bas": "8:10",
+      "son": "8:52",
+      "baslik": "Z kuralıyla açıyı bulmak",
+      "neden": "Sınav sorusunda Z şeklini bulup iç ters açının eşitliğini kullanıyor."
+    },
+    {
+      "mk": "Mat03MK0064",
+      "tur": "konu",
+      "video": "Gv4mwq91R_I",
+      "bas": "18:56",
+      "son": "19:40",
+      "baslik": "U kuralı: içteki iki açının toplamı 180°",
+      "neden": "Paralel doğrular arasında aynı tarafta kalan iki iç açının bütünler olduğunu U harfiyle anlatıyor."
+    },
+    {
+      "mk": "Mat03MK0064",
+      "tur": "soru",
+      "video": "Sw6XM84eLxY",
+      "bas": "5:20",
+      "son": "6:37",
+      "baslik": "180°'den çıkararak açıyı bulmak",
+      "neden": "Paralel doğrular ve kesende 180 − 125 = 55 hesabı; öğrencinin 115°'yi yanlış yere taşıdığı adımın doğrusu."
+    },
+    {
+      "mk": "Mat03MK0065",
+      "tur": "konu",
+      "video": "Gv4mwq91R_I",
+      "bas": "18:08",
+      "son": "18:56",
+      "baslik": "M kuralı: kırık çizgideki açılar",
+      "neden": "Paralel doğrular arasında kırık çizgide bir yana bakan açıların toplamı öbür yana bakanlarınkine eşit; öğrencinin 3. sorusunun şekli bu."
+    },
+    {
+      "mk": "Mat03MK0065",
+      "tur": "soru",
+      "video": "Sw6XM84eLxY",
+      "bas": "4:54",
+      "son": "7:29",
+      "baslik": "Paralel doğrular arasındaki açıyı bulmak (sınav sorusu)",
+      "neden": "Köşeden paralel bir doğru çizip açıyı iki parçada buluyor; öğrencinin 3. sorusuyla aynı yöntem. Başlangıç ekranda doğrulandı."
+    },
+    {
+      "mk": "Mat03MK0065",
+      "tur": "soru",
+      "video": "Gv4mwq91R_I",
+      "bas": "20:06",
+      "son": "21:41",
+      "baslik": "Doğruyu uzatarak bilinmeyen açıyı bulmak",
+      "neden": "Paralel doğruyu uzatıp yöndeş ve doğru açıyı kullanarak açıyı hesaplıyor."
+    }
+  ]
+}

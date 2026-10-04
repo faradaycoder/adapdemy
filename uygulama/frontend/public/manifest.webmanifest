@@ -1,0 +1,10 @@
+{
+  "name": "EVALORA",
+  "short_name": "EVALORA",
+  "description": "Measure. Diagnose. Remediate. Mikro kazanım temelli ölçme, teşhis ve telafi.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1f3a5f",
+  "lang": "tr"
+}

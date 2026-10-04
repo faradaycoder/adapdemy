@@ -1,0 +1,136 @@
+kod,ana_unite,yanilgi,ilgili_mikro_kazanimlar
+Fiz01YG0001,01,"Fizik yalnızca hareket ve kuvvetle ilgilenir; ısı, ışık ve elektrik başka bilimlerin konusudur.",Fiz01MK0002; Fiz01MK0012
+Fiz01YG0002,01,"Bilimsel buluşlar tek bir dâhinin ani ilhamıyla, emek ve birikim olmadan ortaya çıkar.",Fiz01MK0014
+Fiz02YG0001,02,"Birimi tek harfle gösterilen nicelikler (ör. newton, joule) temel niceliktir.",Fiz02MK0010
+Fiz02YG0002,02,Negatif değer alabilen her nicelik vektöreldir (ör. sıcaklık).,Fiz02MK0013
+Fiz02YG0003,02,"Bir vektörü negatif bir sayıyla çarpmak yalnızca büyüklüğünü küçültür, yönünü değiştirmez.",Fiz02MK0021
+Fiz02YG0004,02,Bileşke vektörün büyüklüğü her zaman vektörlerin büyüklükleri toplamına eşittir.,Fiz02MK0024; Fiz02MK0025; Fiz02MK0027; Fiz02MK0028
+Fiz02YG0005,02,"Kütle çekim kuvveti temel kuvvetlerin en şiddetlisidir, çünkü gezegenleri yörüngede tutar.",Fiz02MK0034
+Fiz02YG0006,02,Yer değiştirme ile alınan yol her zaman birbirine eşittir.,Fiz02MK0040; Fiz02MK0048
+Fiz02YG0007,02,Hız ile sürat aynı kavramdır; hızın yönü yoktur.,Fiz02MK0041; Fiz02MK0048
+Fiz02YG0008,02,"Ortalama sürat, ilk ve son süratlerin ortalamasıdır.",Fiz02MK0043
+Fiz02YG0009,02,Bir cisim aynı anda yalnızca tek tür hareket yapabilir (ör. yuvarlanan top yalnızca öteleme yapar).,Fiz02MK0054
+Fiz02YG0010,02,Konum-zaman grafiği cismin izlediği yolun (yörüngenin) resmidir.,Fiz02MK0056; Fiz02MK0060; Fiz02MK0071; Fiz02MK0079
+Fiz02YG0011,02,"Negatif hız, cismin yavaşladığını gösterir.",Fiz02MK0057; Fiz02MK0062
+Fiz02YG0012,02,Hızı büyük olan cismin ivmesi de büyüktür.,Fiz02MK0066
+Fiz02YG0013,02,Hızın sıfır olduğu anda ivme de sıfırdır.,Fiz02MK0067; Fiz02MK0092
+Fiz02YG0014,02,İvmenin negatif olması her zaman yavaşlama demektir.,Fiz02MK0070
+Fiz02YG0015,02,Hız-zaman grafiğinde doğrunun aşağı doğru inmesi cismin geri gittiğini gösterir.,Fiz02MK0075
+Fiz02YG0016,02,İvme-zaman grafiği altındaki alan yer değiştirmeyi verir.,Fiz02MK0077; Fiz02MK0083
+Fiz02YG0017,02,Hava direnci olmasa da ağır cisimler hafif cisimlerden daha hızlı düşer.,Fiz02MK0086
+Fiz02YG0018,02,Yatay doğrultuda atılan cismin yatay hızı zamanla azalır.,Fiz02MK0097
+Fiz02YG0019,02,"Aynı yükseklikten yatay atılan cisim, serbest bırakılan cisimden daha geç yere düşer.",Fiz02MK0100
+Fiz02YG0020,02,Hareket eden cismin hareketini sürdürmesi için üzerine sürekli kuvvet etki etmelidir.,Fiz02MK0108
+Fiz02YG0021,02,Çarpışmada büyük kütleli cisim küçük kütleliye daha büyük kuvvet uygular.,Fiz02MK0111
+Fiz02YG0022,02,Etki ve tepki kuvvetleri aynı cisme etki ettiği için birbirini dengeler.,Fiz02MK0113
+Fiz02YG0023,02,Masada duran kitabın ağırlığı ile masanın tepki kuvveti bir etki-tepki çiftidir.,Fiz02MK0121; Fiz02MK0117
+Fiz02YG0024,02,Durgun duran her cisme sürtünme kuvveti etki eder.,Fiz02MK0129; Fiz02MK0133
+Fiz02YG0025,02,Sürtünme kuvveti her zaman hareket yönüne zıttır (yürürken ve tekerlekte de).,Fiz02MK0138; Fiz02MK0132
+Fiz02YG0026,02,Sürtünme kuvveti temas yüzeyinin alanı büyüdükçe artar.,Fiz02MK0137
+Fiz02YG0027,02,Paraşüt açıldığında paraşütçü yukarı doğru hareket eder.,Fiz02MK0147
+Fiz02YG0028,02,Düzgün çembersel harekette sürat sabit olduğu için ivme yoktur.,Fiz02MK0151
+Fiz02YG0029,02,Çembersel hareket yapan cisme dışa doğru bir merkezkaç kuvveti etki eder.,Fiz02MK0167; Fiz02MK0169; Fiz02MK0168; Fiz02MK0158; Fiz02MK0170
+Fiz02YG0030,02,Kuvvet ne kadar büyükse tork da o kadar büyüktür; uygulama noktası ve açı önemli değildir.,Fiz02MK0176
+Fiz02YG0031,02,Ağırlık merkezi her zaman cismin üzerinde (içinde) bulunur.,Fiz02MK0182; Fiz02MK0185
+Fiz02YG0032,02,Hava yastığı çarpışmada momentum değişimini azaltarak korur.,Fiz02MK0191
+Fiz02YG0033,02,Esnek olmayan (yapışarak gerçekleşen) çarpışmalarda momentum korunmaz.,Fiz02MK0197
+Fiz02YG0034,02,Eşit kütleli cisimlerin eylemsizlik momentleri her zaman eşittir.,Fiz02MK0200
+Fiz02YG0035,02,Dönen patenci kollarını kapattığında dönmesini hızlandıran bir dış kuvvet oluşur.,Fiz02MK0204; Fiz02MK0205
+Fiz03YG0001,03,Basınç ile basınç kuvveti aynı şeydir.,Fiz03MK0001; Fiz03MK0006; Fiz03MK0007
+Fiz03YG0002,03,Ağır olan cisim her zaman daha fazla basınç uygular.,Fiz03MK0006; Fiz03MK0007
+Fiz03YG0003,03,Sıvı basıncı yalnızca aşağı doğru etki eder.,Fiz03MK0012
+Fiz03YG0004,03,Kapta daha çok sıvı varsa tabandaki sıvı basıncı daha büyüktür.,Fiz03MK0013
+Fiz03YG0005,03,"Hava ağırlıksızdır, bu yüzden basınç uygulamaz; pipetle sıvıyı ağzımızla çekeriz.",Fiz03MK0019; Fiz03MK0026
+Fiz03YG0006,03,Açık hava basıncı yükseldikçe artar.,Fiz03MK0020
+Fiz03YG0007,03,Tamamen batmış cisim derine indikçe kaldırma kuvveti artar.,Fiz03MK0031
+Fiz03YG0008,03,Ağır cisimlere daha büyük kaldırma kuvveti etki eder.,Fiz03MK0033
+Fiz03YG0009,03,Yoğun maddelerden (ör. demir) yapılan cisimler suda yüzemez.,Fiz03MK0042; Fiz03MK0039
+Fiz03YG0010,03,Hızlı akan akışkanın basıncı daha büyüktür.,Fiz03MK0045; Fiz03MK0044
+Fiz03YG0011,03,Uçaklar yalnızca Bernoulli ilkesi sayesinde uçar.,Fiz03MK0045; Fiz03MK0046
+Fiz04YG0001,04,Cisimler ısı depolar; sıcak cismin içinde daha çok ısı vardır.,Fiz04MK0002; Fiz04MK0004
+Fiz04YG0002,04,Isı ile sıcaklık aynı şeydir.,Fiz04MK0004
+Fiz04YG0003,04,Sıcaklığı yüksek olan cismin iç enerjisi her zaman daha büyüktür.,Fiz04MK0007
+Fiz04YG0004,04,Aynı ısıyı alan maddelerin sıcaklıkları eşit miktarda artar.,Fiz04MK0024
+Fiz04YG0005,04,Hâl değişimi sırasında ısı almaya devam eden maddenin sıcaklığı artar.,Fiz04MK0031
+Fiz04YG0006,04,"Isıl dengeye gelirken soğuk, sıcak cisme geçer.",Fiz04MK0037
+Fiz04YG0007,04,Isıl dengede son sıcaklık her zaman ilk sıcaklıkların ortalamasıdır.,Fiz04MK0040; Fiz04MK0041
+Fiz04YG0008,04,Isı boşlukta aktarılamaz.,Fiz04MK0042; Fiz04MK0044
+Fiz04YG0009,04,Konveksiyon (taşıma) katılarda da gerçekleşir.,Fiz04MK0044
+Fiz04YG0010,04,Aynı ortamda bekleyen metal cisim tahtadan daha soğuktur.,Fiz04MK0049
+Fiz04YG0011,04,Kuvvet uygulanan her durumda iş yapılır (ör. duvarı itmek).,Fiz04MK0056
+Fiz04YG0012,04,Harekete dik uygulanan kuvvet de iş yapar (ör. çantayı yatay taşımak).,Fiz04MK0060
+Fiz04YG0013,04,Enerji kullanıldıkça harcanıp yok olur.,Fiz04MK0064; Fiz04MK0085; Fiz04MK0098
+Fiz04YG0014,04,İş ve enerji farklı birimlerle ölçülür.,Fiz04MK0065; Fiz04MK0066
+Fiz04YG0015,04,Güç ile enerji (ya da iş) aynı kavramdır; güçlü makine her zaman daha çok iş yapar.,Fiz04MK0070; Fiz04MK0072; Fiz04MK0069
+Fiz04YG0016,04,Hareketsiz (durgun) bir cismin hiç enerjisi yoktur.,Fiz04MK0082
+Fiz04YG0017,04,Çekim potansiyel enerjisi yalnızca yüksekliğe bağlıdır; kütlenin etkisi yoktur.,Fiz04MK0096; Fiz04MK0092
+Fiz04YG0018,04,Sürtünmesiz ortamda serbest düşen cismin mekanik enerjisi aşağı indikçe azalır.,Fiz04MK0094; Fiz04MK0099
+Fiz04YG0019,04,Hız iki katına çıkınca kinetik enerji de iki katına çıkar.,Fiz04MK0095
+Fiz04YG0020,04,Nükleer enerji yenilenebilen bir enerji kaynağıdır.,Fiz04MK0100; Fiz04MK0101
+Fiz04YG0021,04,Yenilenebilen enerji kaynaklarının çevreye hiçbir olumsuz etkisi yoktur.,Fiz04MK0114; Fiz04MK0110
+Fiz04YG0022,04,Yay sabiti yaya asılan kütle arttıkça artar.,Fiz04MK0120; Fiz04MK0121
+Fiz04YG0023,04,Yay iki kat sıkıştırılırsa depoladığı enerji de iki katına çıkar.,Fiz04MK0124
+Fiz04YG0024,04,Hızı iki katına çıkan aracın durma mesafesi de iki katına çıkar.,Fiz04MK0128
+Fiz04YG0025,04,Basit makineler enerjiden de kazanç sağlar; verimleri %100'ü geçebilir.,Fiz04MK0136
+Fiz05YG0001,05,Üreteç (pil) içinde akım depolanır; pil bitince içindeki akım tükenmiştir.,Fiz05MK0008; Fiz05MK0010; Fiz05MK0016; Fiz05MK0017
+Fiz05YG0002,05,Akım ile potansiyel fark aynı kavramdır; birbirinin yerine kullanılabilir.,Fiz05MK0009; Fiz05MK0012
+Fiz05YG0003,05,"Akımın yönü, metal iletkende elektronların hareket yönüdür.",Fiz05MK0022
+Fiz05YG0004,05,"Ampermetre paralel, voltmetre seri bağlanabilir; ölçüm aletinin bağlanışı sonucu etkilemez.",Fiz05MK0023; Fiz05MK0024
+Fiz05YG0005,05,"Bir iletkenin direnci, uçlarına uygulanan potansiyel fark arttıkça artar (R = V / I ifadesinden).",Fiz05MK0034
+Fiz05YG0006,05,"Bağlanma türü şemadaki görünüşe göre belirlenir (yan yana çizilen = paralel, arka arkaya çizilen = seri).",Fiz05MK0035; Fiz05MK0036; Fiz05MK0037
+Fiz05YG0007,05,Kısa devre edilmiş direnç de eşdeğer dirence katılır.,Fiz05MK0038; Fiz05MK0051
+Fiz05YG0008,05,"Akım dirençlerde ""harcanır""; seri devrede ilk dirençten sonra akım azalır.",Fiz05MK0040; Fiz05MK0043
+Fiz05YG0009,05,Paralel hesapta 1/Reş bulunur ama ters çevrilmeden sonuç olarak yazılır.,Fiz05MK0047; Fiz05MK0051; Fiz05MK0050
+Fiz05YG0010,05,Paralel bağlamada direnç eklendikçe eşdeğer direnç artar.,Fiz05MK0048; Fiz05MK0054
+Fiz05YG0011,05,Ters bağlanan üreteç de toplam potansiyel farka eklenir.,Fiz05MK0060; Fiz05MK0065; Fiz05MK0063
+Fiz05YG0012,05,Paralel bağlanan özdeş üreteçler devreye sağlanan potansiyel farkı artırır.,Fiz05MK0064; Fiz05MK0065; Fiz05MK0066
+Fiz05YG0013,05,"Elektrik çarpmasının tehlikesi yalnızca gerilimin büyüklüğüne bağlıdır; vücut direnci, akımın süresi ve izlediği yol önemsizdir.",Fiz05MK0070; Fiz05MK0071; Fiz05MK0072
+Fiz05YG0014,05,Sigorta insanı elektrik çarpmasına karşı korur.,Fiz05MK0074; Fiz05MK0075
+Fiz05YG0015,05,Topraklama yalnızca yıldırıma karşı yapılır.,Fiz05MK0079; Fiz05MK0084; Fiz05MK0085
+Fiz05YG0016,05,Toprak hattı ile nötr (sıfır) hattı aynı şeydir.,Fiz05MK0080
+Fiz05YG0017,05,Yükler arası uzaklık iki katına çıkınca elektriksel kuvvet yarıya iner.,Fiz05MK0089; Fiz05MK0092
+Fiz05YG0018,05,Büyük yüklü cisim küçük yüklü cisme daha büyük elektriksel kuvvet uygular.,Fiz05MK0091
+Fiz05YG0019,05,Elektriksel alan yalnızca alan çizgilerinin geçtiği noktalarda vardır.,Fiz05MK0093; Fiz05MK0097; Fiz05MK0098
+Fiz05YG0020,05,Yıldırım çarpan arabadaki yolcuları lastik tekerlekler korur.,Fiz05MK0101
+Fiz05YG0021,05,"Bir mıknatıs ikiye bölünürse bir parçada N, diğerinde S kutbu kalır.",Fiz05MK0103
+Fiz05YG0022,05,Manyetik alandaki akım geçen tele her durumda kuvvet etki eder.,Fiz05MK0128
+Fiz05YG0023,05,Mıknatıs bobinin içinde hareketsiz durduğu sürece de indüksiyon akımı oluşur.,Fiz05MK0138; Fiz05MK0141
+Fiz05YG0024,05,Prizden gelen elektrik doğru akımdır; pilden farkı yalnızca gücüdür.,Fiz05MK0144
+Fiz05YG0025,05,Transformatör doğru akımla da çalışır.,Fiz05MK0148; Fiz05MK0149; Fiz05MK0150
+Fiz06YG0001,06,Periyodik hareket yalnızca ileri-geri (salınım) hareketidir; dönme hareketi periyodik değildir.,Fiz06MK0001; Fiz06MK0002
+Fiz06YG0002,06,Dalga ilerlerken ortamın maddesi de dalgayla birlikte ilerler.,Fiz06MK0009
+Fiz06YG0003,06,"Dalga boyu, bir tepe ile hemen yanındaki çukur arasındaki uzaklıktır.",Fiz06MK0016; Fiz06MK0012
+Fiz06YG0004,06,Genliği büyük olan dalga daha hızlı yayılır.,Fiz06MK0020; Fiz06MK0033
+Fiz06YG0005,06,Ses dalgası enine bir dalgadır.,Fiz06MK0023
+Fiz06YG0006,06,Ses boşlukta da yayılabilir.,Fiz06MK0024; Fiz06MK0025
+Fiz06YG0007,06,Ses en hızlı gazlarda yayılır.,Fiz06MK0028
+Fiz06YG0008,06,Dalganın yayılma sürati kaynağın frekansına bağlıdır; frekans artınca sürat artar.,Fiz06MK0032
+Fiz06YG0009,06,Gelme ve yansıma açıları engel yüzeyi ile yapılan açılardır.,Fiz06MK0039
+Fiz06YG0010,06,Kırılmada dalganın frekansı da değişir.,Fiz06MK0043
+Fiz06YG0011,06,Derin sudan sığ suya geçen dalganın dalga boyu artar.,Fiz06MK0044
+Fiz06YG0012,06,Depremin odak noktası ile merkez üssü aynı noktadır.,Fiz06MK0050; Fiz06MK0051
+Fiz06YG0013,06,Depremin büyüklüğü (magnitüd) ile şiddeti aynı kavramdır.,Fiz06MK0055
+Fiz06YG0014,06,"Depremin yeri, zamanı ve büyüklüğü önceden kesin olarak tahmin edilebilir.",Fiz06MK0058
+Fiz06YG0015,06,Deprem hasarı yalnızca depremin büyüklüğüne bağlıdır; zemin ve bina özellikleri önemsizdir.,Fiz06MK0059; Fiz06MK0063
+Fiz06YG0016,06,Yarık genişledikçe kırınım artar.,Fiz06MK0067; Fiz06MK0086
+Fiz06YG0017,06,Yıkıcı girişimde dalgaların enerjisi yok olur.,Fiz06MK0072
+Fiz06YG0018,06,Tüm elektromanyetik dalgalar aynı enerjiyi taşır ve aynı derecede zararlıdır.,Fiz06MK0088
+Fiz06YG0019,06,Radyo dalgaları bir ses dalgasıdır.,Fiz06MK0089
+Fiz06YG0020,06,"Işığın ana renkleri boyalardaki gibi kırmızı, sarı ve mavidir.",Fiz06MK0091
+Fiz06YG0021,06,Ultrason ve sonar elektromanyetik dalga kullanır.,Fiz06MK0096
+Fiz07YG0001,07,Lambaya olan uzaklık iki katına çıkınca aydınlanma yarıya iner.,Fiz07MK0006
+Fiz07YG0002,07,Düzlem aynadan uzaklaştıkça görüntü küçülür.,Fiz07MK0011
+Fiz07YG0003,07,Tümsek ayna ışınları bir noktada toplar.,Fiz07MK0026
+Fiz07YG0004,07,Çukur aynada oluşan görüntüler her zaman terstir.,Fiz07MK0031
+Fiz07YG0005,07,"Işık bir ortamdan diğerine geçerken, dik gelse bile her zaman kırılır.",Fiz07MK0039
+Fiz07YG0006,07,Havuz dışarıdan bakıldığında olduğundan daha derin görünür.,Fiz07MK0047
+Fiz07YG0007,07,Merceğin yalnızca tek bir odak noktası vardır.,Fiz07MK0060; Fiz07MK0057
+Fiz07YG0008,07,Merceğin yarısı kapatılırsa görüntünün de yarısı kaybolur.,Fiz07MK0064; Fiz07MK0066
+Fiz08YG0001,08,Siyah cisim yalnızca siyah renkli cisimdir ve ışıma yapmaz.,Fiz08MK0001; Fiz08MK0002
+Fiz08YG0002,08,Işığın şiddeti artırılırsa eşik frekansının altında da fotoelektron sökülür.,Fiz08MK0008
+Fiz08YG0003,08,Işığın şiddeti artınca sökülen elektronların kinetik enerjisi artar.,Fiz08MK0008
+Fiz08YG0004,08,"Yarı iletken, yarısı iletken yarısı yalıtkan olan malzemedir.",Fiz08MK0015
+Fiz08YG0005,08,Süper iletkenler oda sıcaklığında da sıfır dirençlidir.,Fiz08MK0022; Fiz08MK0027
+Fiz08YG0006,08,Proton ve nötron temel (bölünemez) parçacıktır.,Fiz08MK0028; Fiz08MK0033
+Fiz08YG0007,08,Elektronlar çekirdek etrafında gezegenler gibi belirli yörüngelerde döner.,Fiz08MK0035
+Fiz08YG0008,08,Nükleer santraller atom bombası gibi patlayabilir.,Fiz08MK0040

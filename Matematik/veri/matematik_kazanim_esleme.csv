@@ -1,0 +1,1845 @@
+mikro_kod,tur,sinif,sinif_unite,ogrenme_ciktisi,surec_bileseni
+Mat01MK0001,Beceri,5,Mat05-T1,MAT.5.1.1,a
+Mat01MK0002,Bilgi,5,Mat05-T1,MAT.5.1.1,b
+Mat01MK0003,Bilgi,5,Mat05-T1,MAT.5.1.1,b
+Mat01MK0004,Bilgi,5,Mat05-T1,MAT.5.1.1,"b, c"
+Mat01MK0005,Beceri,5,Mat05-T1,MAT.5.1.1,ç
+Mat01MK0006,Beceri,5,Mat05-T1,MAT.5.1.1,ç
+Mat01MK0007,Bilgi,5,Mat05-T1,MAT.5.1.1,ç
+Mat01MK0008,Bilgi,5,Mat05-T1,MAT.5.1.1,ç
+Mat01MK0009,Beceri,5,Mat05-T1,MAT.5.1.1,ç
+Mat01MK0010,Beceri,5,Mat05-T1,MAT.5.1.1,ç
+Mat01MK0011,Beceri,5,Mat05-T1,MAT.5.1.1,ç
+Mat01MK0012,Beceri,5,Mat05-T1,MAT.5.1.2,"a, b, c, ç"
+Mat01MK0013,Beceri,5,Mat05-T1,MAT.5.1.2,"d, e"
+Mat01MK0014,Beceri,5,Mat05-T1,MAT.5.1.2,"d, e"
+Mat01MK0015,Beceri,5,Mat05-T1,MAT.5.1.2,"d, e"
+Mat01MK0016,Beceri,5,Mat05-T1,MAT.5.1.2,d
+Mat01MK0017,Beceri,5,Mat05-T1,MAT.5.1.2,d
+Mat01MK0018,Beceri,5,Mat05-T1,MAT.5.1.2,"d, e"
+Mat01MK0019,Beceri,5,Mat05-T1,MAT.5.1.2,"d, e"
+Mat01MK0020,Beceri,5,Mat05-T1,MAT.5.1.2,"f, g"
+Mat01MK0021,Beceri,5,Mat05-T1,MAT.5.1.2,"ğ, h"
+Mat01MK0022,Bilgi,5,Mat05-T1,MAT.5.1.3,a
+Mat01MK0023,Bilgi,5,Mat05-T1,MAT.5.1.3,a
+Mat01MK0024,Bilgi,5,Mat05-T1,MAT.5.1.3,a
+Mat01MK0025,Bilgi,5,Mat05-T1,MAT.5.1.3,a
+Mat01MK0026,Beceri,5,Mat05-T1,MAT.5.1.3,"b, c"
+Mat01MK0027,Beceri,5,Mat05-T1,MAT.5.1.3,"b, c"
+Mat01MK0028,Beceri,5,Mat05-T1,MAT.5.1.3,"b, c"
+Mat01MK0029,Beceri,5,Mat05-T1,MAT.5.1.3,"b, c"
+Mat01MK0030,Beceri,5,Mat05-T1,MAT.5.1.3,"b, c, ç"
+Mat01MK0031,Beceri,5,Mat05-T1,MAT.5.1.3,"b, c, ç"
+Mat01MK0032,Beceri,5,Mat05-T1,MAT.5.1.3,"b, c, ç"
+Mat01MK0033,Beceri,5,Mat05-T1,MAT.5.1.3,"b, c, ç"
+Mat01MK0034,Beceri,5,Mat05-T1,MAT.5.1.3,"b, c, ç"
+Mat01MK0035,Beceri,5,Mat05-T1,MAT.5.1.3,"d, e"
+Mat01MK0036,Bilgi,5,Mat05-T1,MAT.5.1.4,"a, b"
+Mat01MK0037,Beceri,5,Mat05-T1,MAT.5.1.4,b
+Mat01MK0038,Beceri,5,Mat05-T1,MAT.5.1.4,b
+Mat01MK0039,Beceri,5,Mat05-T1,MAT.5.1.4,b
+Mat01MK0040,Beceri,5,Mat05-T1,MAT.5.1.4,b
+Mat01MK0041,Beceri,5,Mat05-T1,MAT.5.1.4,b
+Mat01MK0042,Beceri,5,Mat05-T1,MAT.5.1.4,c
+Mat01MK0043,Beceri,5,Mat05-T1,MAT.5.1.4,"ç, d"
+Mat02MK0001,Bilgi,5,Mat05-T2,MAT.5.2.1,"a, b"
+Mat02MK0002,Bilgi,5,Mat05-T2,MAT.5.2.1,"a, b"
+Mat02MK0003,Bilgi,5,Mat05-T2,MAT.5.2.1,"a, b"
+Mat02MK0004,Bilgi,5,Mat05-T2,MAT.5.2.1,"a, b"
+Mat02MK0005,Bilgi,5,Mat05-T2,MAT.5.2.1,"a, b"
+Mat02MK0006,Bilgi,5,Mat05-T2,MAT.5.2.1,"a, b"
+Mat02MK0007,Bilgi,5,Mat05-T2,MAT.5.2.1,"a, b"
+Mat02MK0008,Bilgi,5,Mat05-T2,MAT.5.2.1,b
+Mat02MK0009,Bilgi,5,Mat05-T2,MAT.5.2.1,b
+Mat02MK0010,Bilgi,5,Mat05-T2,MAT.5.2.1,b
+Mat02MK0011,Bilgi,5,Mat05-T2,MAT.5.2.1,b
+Mat02MK0012,Bilgi,5,Mat05-T2,MAT.5.2.1,b
+Mat02MK0013,Bilgi,5,Mat05-T2,MAT.5.2.1,b
+Mat02MK0014,Bilgi,5,Mat05-T2,MAT.5.2.1,b
+Mat02MK0015,Beceri,5,Mat05-T2,MAT.5.2.1,c
+Mat02MK0016,Beceri,5,Mat05-T2,MAT.5.2.1,c
+Mat02MK0017,Beceri,5,Mat05-T2,MAT.5.2.1,c
+Mat02MK0018,Beceri,5,Mat05-T2,MAT.5.2.1,c
+Mat02MK0019,Beceri,5,Mat05-T2,MAT.5.2.1,c
+Mat02MK0020,Beceri,5,Mat05-T2,MAT.5.2.1,c
+Mat02MK0021,Beceri,5,Mat05-T2,MAT.5.2.1,c
+Mat02MK0022,Beceri,5,Mat05-T2,MAT.5.2.1,"ç, d"
+Mat02MK0023,Beceri,5,Mat05-T2,MAT.5.2.1,"ç, d"
+Mat02MK0024,Beceri,5,Mat05-T2,MAT.5.2.1,"ç, d"
+Mat02MK0025,Beceri,5,Mat05-T2,MAT.5.2.1,"ç, d"
+Mat02MK0026,Beceri,5,Mat05-T2,MAT.5.2.1,"ç, d"
+Mat02MK0027,Beceri,5,Mat05-T2,MAT.5.2.1,"ç, d"
+Mat02MK0028,Beceri,5,Mat05-T2,MAT.5.2.1,d
+Mat01MK0044,Beceri,5,Mat05-T2,MAT.5.2.2,"a, b"
+Mat01MK0045,Beceri,5,Mat05-T2,MAT.5.2.2,"a, b"
+Mat02MK0029,Beceri,5,Mat05-T2,MAT.5.2.2,"a, b"
+Mat02MK0030,Beceri,5,Mat05-T2,MAT.5.2.2,"a, b"
+Mat02MK0031,Beceri,5,Mat05-T2,MAT.5.2.2,"a, b"
+Mat02MK0032,Bilgi,5,Mat05-T2,MAT.5.2.2,c
+Mat02MK0033,Beceri,5,Mat05-T2,MAT.5.2.3,a
+Mat02MK0034,Beceri,5,Mat05-T2,MAT.5.2.3,a
+Mat02MK0035,Beceri,5,Mat05-T2,MAT.5.2.3,a
+Mat02MK0036,Bilgi,5,Mat05-T2,MAT.5.2.3,"a, b"
+Mat02MK0037,Bilgi,5,Mat05-T2,MAT.5.2.3,"a, b"
+Mat02MK0038,Beceri,5,Mat05-T2,MAT.5.2.3,c
+Mat02MK0039,Beceri,5,Mat05-T2,MAT.5.2.3,c
+Mat02MK0040,Beceri,5,Mat05-T2,MAT.5.2.3,"ç, d, e, f"
+Mat02MK0041,Beceri,5,Mat05-T2,MAT.5.2.3,"ç, d, e, f"
+Mat02MK0042,Bilgi,5,Mat05-T2,MAT.5.2.4,a
+Mat02MK0043,Bilgi,5,Mat05-T2,MAT.5.2.4,a
+Mat02MK0044,Bilgi,5,Mat05-T2,MAT.5.2.4,a
+Mat02MK0045,Bilgi,5,Mat05-T2,MAT.5.2.4,a
+Mat02MK0046,Beceri,5,Mat05-T2,MAT.5.2.4,"a, b"
+Mat02MK0047,Beceri,5,Mat05-T2,MAT.5.2.4,b
+Mat02MK0048,Bilgi,5,Mat05-T2,MAT.5.2.4,c
+Mat03MK0001,Bilgi,5,Mat05-T3,MAT.5.3.1,"a, b"
+Mat03MK0002,Bilgi,5,Mat05-T3,MAT.5.3.1,"a, b"
+Mat03MK0003,Bilgi,5,Mat05-T3,MAT.5.3.1,"a, b"
+Mat03MK0004,Beceri,5,Mat05-T3,MAT.5.3.1,c
+Mat03MK0005,Beceri,5,Mat05-T3,MAT.5.3.1,c
+Mat03MK0006,Beceri,5,Mat05-T3,MAT.5.3.1,c
+Mat03MK0007,Beceri,5,Mat05-T3,MAT.5.3.1,c
+Mat03MK0008,Beceri,5,Mat05-T3,MAT.5.3.1,c
+Mat03MK0009,Beceri,5,Mat05-T3,MAT.5.3.1,c
+Mat03MK0010,Bilgi,5,Mat05-T3,MAT.5.3.1,c
+Mat03MK0011,Beceri,5,Mat05-T3,MAT.5.3.1,c
+Mat03MK0012,Bilgi,5,Mat05-T3,MAT.5.3.2,"a, b"
+Mat03MK0013,Bilgi,5,Mat05-T3,MAT.5.3.2,"a, b"
+Mat03MK0014,Bilgi,5,Mat05-T3,MAT.5.3.2,"a, b"
+Mat03MK0015,Bilgi,5,Mat05-T3,MAT.5.3.2,b
+Mat03MK0016,Beceri,5,Mat05-T3,MAT.5.3.2,c
+Mat03MK0017,Beceri,5,Mat05-T3,MAT.5.3.2,c
+Mat03MK0018,Beceri,5,Mat05-T3,MAT.5.3.2,c
+Mat03MK0019,Bilgi,5,Mat05-T3,MAT.5.3.3,"a, b"
+Mat03MK0020,Bilgi,5,Mat05-T3,MAT.5.3.3,"a, b"
+Mat03MK0021,Beceri,5,Mat05-T3,MAT.5.3.3,c
+Mat03MK0022,Beceri,5,Mat05-T3,MAT.5.3.3,c
+Mat03MK0023,Bilgi,5,Mat05-T3,MAT.5.3.3,c
+Mat03MK0024,Bilgi,5,Mat05-T3,MAT.5.3.4,a
+Mat03MK0025,Bilgi,5,Mat05-T3,MAT.5.3.4,a
+Mat03MK0026,Bilgi,5,Mat05-T3,MAT.5.3.4,a
+Mat03MK0027,Bilgi,5,Mat05-T3,MAT.5.3.4,a
+Mat03MK0028,Bilgi,5,Mat05-T3,MAT.5.3.4,"a, b"
+Mat03MK0029,Bilgi,5,Mat05-T3,MAT.5.3.4,"a, b"
+Mat03MK0030,Bilgi,5,Mat05-T3,MAT.5.3.4,"a, b"
+Mat03MK0031,Beceri,5,Mat05-T3,MAT.5.3.4,c
+Mat03MK0032,Beceri,5,Mat05-T3,MAT.5.3.4,c
+Mat03MK0033,Beceri,5,Mat05-T3,MAT.5.3.4,c
+Mat03MK0034,Bilgi,5,Mat05-T3,MAT.5.3.4,"ç, d"
+Mat03MK0035,Bilgi,5,Mat05-T3,MAT.5.3.4,"ç, d"
+Mat03MK0036,Beceri,5,Mat05-T3,MAT.5.3.4,ç
+Mat03MK0037,Beceri,5,Mat05-T3,MAT.5.3.4,ç
+Mat03MK0038,Beceri,5,Mat05-T3,MAT.5.3.5,"a, b"
+Mat03MK0039,Bilgi,5,Mat05-T3,MAT.5.3.5,c
+Mat03MK0040,Bilgi,5,Mat05-T3,MAT.5.3.5,c
+Mat03MK0041,Bilgi,5,Mat05-T3,MAT.5.3.5,c
+Mat03MK0042,Bilgi,5,Mat05-T3,MAT.5.3.5,c
+Mat03MK0043,Bilgi,5,Mat05-T3,MAT.5.3.6,"a, b"
+Mat03MK0044,Bilgi,5,Mat05-T3,MAT.5.3.6,b
+Mat03MK0045,Bilgi,5,Mat05-T3,MAT.5.3.6,b
+Mat03MK0046,Bilgi,5,Mat05-T3,MAT.5.3.6,b
+Mat03MK0047,Bilgi,5,Mat05-T3,MAT.5.3.6,b
+Mat03MK0048,Bilgi,5,Mat05-T3,MAT.5.3.6,b
+Mat03MK0049,Bilgi,5,Mat05-T3,MAT.5.3.6,b
+Mat03MK0050,Beceri,5,Mat05-T3,MAT.5.3.6,c
+Mat03MK0051,Bilgi,5,Mat05-T3,MAT.5.3.7,a
+Mat03MK0052,Beceri,5,Mat05-T3,MAT.5.3.7,b
+Mat03MK0053,Beceri,5,Mat05-T3,MAT.5.3.7,b
+Mat03MK0054,Beceri,5,Mat05-T3,MAT.5.3.7,b
+Mat03MK0055,Bilgi,5,Mat05-T3,MAT.5.3.7,"c, ç, d"
+Mat04MK0001,Beceri,5,Mat05-T4,MAT.5.4.1,a
+Mat04MK0002,Beceri,5,Mat05-T4,MAT.5.4.1,a
+Mat04MK0003,Bilgi,5,Mat05-T4,MAT.5.4.1,a
+Mat04MK0004,Beceri,5,Mat05-T4,MAT.5.4.1,"a, b"
+Mat04MK0005,Bilgi,5,Mat05-T4,MAT.5.4.1,c
+Mat04MK0006,Bilgi,5,Mat05-T4,MAT.5.4.2,a
+Mat04MK0007,Bilgi,5,Mat05-T4,MAT.5.4.2,a
+Mat04MK0008,Beceri,5,Mat05-T4,MAT.5.4.2,"a, b"
+Mat04MK0009,Beceri,5,Mat05-T4,MAT.5.4.2,"c, ç"
+Mat04MK0010,Beceri,5,Mat05-T4,MAT.5.4.2,ç
+Mat04MK0011,Beceri,5,Mat05-T4,MAT.5.4.2,ç
+Mat04MK0012,Beceri,5,Mat05-T4,MAT.5.4.3,"a, b"
+Mat04MK0013,Beceri,5,Mat05-T4,MAT.5.4.3,"a, b"
+Mat04MK0014,Beceri,5,Mat05-T4,MAT.5.4.3,"a, b"
+Mat04MK0015,Bilgi,5,Mat05-T4,MAT.5.4.3,c
+Mat04MK0016,Bilgi,5,Mat05-T4,MAT.5.4.3,c
+Mat04MK0017,Beceri,5,Mat05-T4,MAT.5.4.4,"a, b, c, ç"
+Mat04MK0018,Beceri,5,Mat05-T4,MAT.5.4.4,"a, b, c, ç"
+Mat04MK0019,Beceri,5,Mat05-T4,MAT.5.4.4,"d, e"
+Mat04MK0020,Beceri,5,Mat05-T4,MAT.5.4.4,"d, e"
+Mat04MK0021,Beceri,5,Mat05-T4,MAT.5.4.4,"f, g"
+Mat04MK0022,Beceri,5,Mat05-T4,MAT.5.4.4,"f, g"
+Mat04MK0023,Beceri,5,Mat05-T4,MAT.5.4.4,"ğ, h"
+Mat04MK0024,Beceri,5,Mat05-T4,MAT.5.4.4,"ğ, h"
+Mat06MK0001,Bilgi,5,Mat05-T5,MAT.5.5.1,a
+Mat06MK0002,Beceri,5,Mat05-T5,MAT.5.5.1,b
+Mat06MK0003,Beceri,5,Mat05-T5,MAT.5.5.1,b
+Mat06MK0004,Beceri,5,Mat05-T5,MAT.5.5.1,c
+Mat06MK0005,Beceri,5,Mat05-T5,MAT.5.5.1,c
+Mat06MK0006,Beceri,5,Mat05-T5,MAT.5.5.1,ç
+Mat06MK0007,Beceri,5,Mat05-T5,MAT.5.5.1,ç
+Mat06MK0008,Bilgi,5,Mat05-T5,MAT.5.5.1,ç
+Mat06MK0009,Bilgi,5,Mat05-T5,MAT.5.5.1,ç
+Mat06MK0010,Beceri,5,Mat05-T5,MAT.5.5.1,d
+Mat06MK0011,Beceri,5,Mat05-T5,MAT.5.5.1,d
+Mat06MK0012,Beceri,5,Mat05-T5,MAT.5.5.1,"d, e"
+Mat06MK0013,Beceri,5,Mat05-T5,MAT.5.5.1,"d, e"
+Mat06MK0014,Beceri,5,Mat05-T5,MAT.5.5.1,"d, e"
+Mat06MK0015,Beceri,5,Mat05-T5,MAT.5.5.1,"d, e"
+Mat06MK0016,Bilgi,5,Mat05-T5,MAT.5.5.1,e
+Mat06MK0017,Bilgi,5,Mat05-T5,MAT.5.5.1,e
+Mat06MK0018,Beceri,5,Mat05-T5,MAT.5.5.1,f
+Mat06MK0019,Beceri,5,Mat05-T5,MAT.5.5.1,g
+Mat06MK0020,Beceri,5,Mat05-T5,MAT.5.5.1,g
+Mat06MK0021,Beceri,5,Mat05-T5,MAT.5.5.2,b
+Mat06MK0022,Beceri,5,Mat05-T5,MAT.5.5.2,b
+Mat06MK0023,Beceri,5,Mat05-T5,MAT.5.5.2,b
+Mat06MK0024,Beceri,5,Mat05-T5,MAT.5.5.2,b
+Mat06MK0025,Beceri,5,Mat05-T5,MAT.5.5.2,b
+Mat06MK0026,Beceri,5,Mat05-T5,MAT.5.5.2,b
+Mat06MK0027,Beceri,5,Mat05-T5,MAT.5.5.2,c
+Mat07MK0001,Bilgi,5,Mat05-T6,MAT.5.6.1,a
+Mat07MK0002,Bilgi,5,Mat05-T6,MAT.5.6.1,"b, c"
+Mat07MK0003,Bilgi,5,Mat05-T6,MAT.5.6.1,"b, c"
+Mat07MK0004,Beceri,5,Mat05-T6,MAT.5.6.1,c
+Mat07MK0005,Bilgi,5,Mat05-T6,MAT.5.6.2,"a, b"
+Mat01MK0046,Beceri,6,Mat06-T1,MAT.6.1.1,a
+Mat01MK0047,Beceri,6,Mat06-T1,MAT.6.1.1,a
+Mat01MK0048,Bilgi,6,Mat06-T1,MAT.6.1.1,"a, b"
+Mat01MK0049,Bilgi,6,Mat06-T1,MAT.6.1.1,"a, b"
+Mat01MK0050,Beceri,6,Mat06-T1,MAT.6.1.1,c
+Mat01MK0051,Beceri,6,Mat06-T1,MAT.6.1.1,c
+Mat01MK0052,Beceri,6,Mat06-T1,MAT.6.1.1,"ç, d, e, f"
+Mat01MK0053,Beceri,6,Mat06-T1,MAT.6.1.1,"ç, d, e, f"
+Mat01MK0054,Bilgi,6,Mat06-T1,MAT.6.1.2,"a, b"
+Mat01MK0055,Bilgi,6,Mat06-T1,MAT.6.1.2,"a, b"
+Mat01MK0056,Bilgi,6,Mat06-T1,MAT.6.1.2,"a, b"
+Mat01MK0057,Bilgi,6,Mat06-T1,MAT.6.1.2,"a, b"
+Mat01MK0058,Beceri,6,Mat06-T1,MAT.6.1.2,c
+Mat01MK0059,Beceri,6,Mat06-T1,MAT.6.1.2,c
+Mat01MK0060,Beceri,6,Mat06-T1,MAT.6.1.2,c
+Mat01MK0061,Beceri,6,Mat06-T1,MAT.6.1.2,c
+Mat01MK0062,Beceri,6,Mat06-T1,MAT.6.1.2,ç
+Mat01MK0063,Beceri,6,Mat06-T1,MAT.6.1.2,ç
+Mat01MK0064,Beceri,6,Mat06-T1,MAT.6.1.2,ç
+Mat01MK0065,Beceri,6,Mat06-T1,MAT.6.1.2,ç
+Mat01MK0066,Beceri,6,Mat06-T1,MAT.6.1.2,ç
+Mat01MK0067,Beceri,6,Mat06-T1,MAT.6.1.2,ç
+Mat01MK0068,Beceri,6,Mat06-T1,MAT.6.1.2,ç
+Mat01MK0069,Beceri,6,Mat06-T1,MAT.6.1.2,d
+Mat01MK0070,Beceri,6,Mat06-T1,MAT.6.1.2,d
+Mat01MK0071,Beceri,6,Mat06-T1,MAT.6.1.2,d
+Mat01MK0072,Beceri,6,Mat06-T1,MAT.6.1.2,d
+Mat01MK0073,Bilgi,6,Mat06-T1,MAT.6.1.3,a
+Mat01MK0074,Beceri,6,Mat06-T1,MAT.6.1.3,a
+Mat01MK0075,Beceri,6,Mat06-T1,MAT.6.1.3,a
+Mat01MK0076,Bilgi,6,Mat06-T1,MAT.6.1.3,b
+Mat01MK0077,Bilgi,6,Mat06-T1,MAT.6.1.3,b
+Mat01MK0078,Beceri,6,Mat06-T1,MAT.6.1.3,b
+Mat01MK0079,Beceri,6,Mat06-T1,MAT.6.1.4,a
+Mat01MK0080,Beceri,6,Mat06-T1,MAT.6.1.4,a
+Mat01MK0081,Beceri,6,Mat06-T1,MAT.6.1.4,a
+Mat01MK0082,Beceri,6,Mat06-T1,MAT.6.1.4,a
+Mat01MK0083,Beceri,6,Mat06-T1,MAT.6.1.4,b
+Mat01MK0084,Beceri,6,Mat06-T1,MAT.6.1.4,b
+Mat01MK0085,Bilgi,6,Mat06-T1,MAT.6.1.4,c
+Mat01MK0086,Bilgi,6,Mat06-T1,MAT.6.1.4,c
+Mat01MK0087,Bilgi,6,Mat06-T1,MAT.6.1.5,a
+Mat01MK0088,Bilgi,6,Mat06-T1,MAT.6.1.5,a
+Mat01MK0089,Bilgi,6,Mat06-T1,MAT.6.1.5,a
+Mat01MK0090,Beceri,6,Mat06-T1,MAT.6.1.5,"a, b"
+Mat01MK0091,Beceri,6,Mat06-T1,MAT.6.1.5,a
+Mat01MK0092,Bilgi,6,Mat06-T1,MAT.6.1.5,c
+Mat01MK0093,Beceri,6,Mat06-T1,MAT.6.1.6,a
+Mat01MK0094,Beceri,6,Mat06-T1,MAT.6.1.6,a
+Mat01MK0095,Bilgi,6,Mat06-T1,MAT.6.1.6,"b, c"
+Mat01MK0096,Bilgi,6,Mat06-T1,MAT.6.1.6,"b, c"
+Mat01MK0097,Beceri,6,Mat06-T1,MAT.6.1.6,b
+Mat01MK0098,Beceri,6,Mat06-T1,MAT.6.1.6,b
+Mat01MK0099,Beceri,6,Mat06-T1,MAT.6.1.7,"a, b, c, ç"
+Mat01MK0100,Beceri,6,Mat06-T1,MAT.6.1.7,"a, b, c, ç"
+Mat01MK0101,Beceri,6,Mat06-T1,MAT.6.1.7,"a, b, c, ç"
+Mat01MK0102,Beceri,6,Mat06-T1,MAT.6.1.7,"d, e"
+Mat01MK0103,Beceri,6,Mat06-T1,MAT.6.1.7,"d, e"
+Mat01MK0104,Beceri,6,Mat06-T1,MAT.6.1.7,"d, e"
+Mat01MK0105,Beceri,6,Mat06-T1,MAT.6.1.7,"d, e"
+Mat01MK0106,Beceri,6,Mat06-T1,MAT.6.1.7,"d, e"
+Mat01MK0107,Beceri,6,Mat06-T1,MAT.6.1.7,"d, e"
+Mat01MK0108,Beceri,6,Mat06-T1,MAT.6.1.7,"d, e"
+Mat01MK0109,Beceri,6,Mat06-T1,MAT.6.1.7,"d, e"
+Mat01MK0110,Beceri,6,Mat06-T1,MAT.6.1.7,"d, e"
+Mat01MK0111,Beceri,6,Mat06-T1,MAT.6.1.7,"d, e"
+Mat01MK0112,Beceri,6,Mat06-T1,MAT.6.1.7,"d, e"
+Mat01MK0113,Beceri,6,Mat06-T1,MAT.6.1.7,"d, e"
+Mat01MK0114,Beceri,6,Mat06-T1,MAT.6.1.7,"d, e"
+Mat01MK0115,Beceri,6,Mat06-T1,MAT.6.1.7,"f, g"
+Mat01MK0116,Beceri,6,Mat06-T1,MAT.6.1.7,"f, g"
+Mat01MK0117,Beceri,6,Mat06-T1,MAT.6.1.7,"f, g"
+Mat01MK0118,Beceri,6,Mat06-T1,MAT.6.1.7,"ğ, h"
+Mat01MK0119,Beceri,6,Mat06-T1,MAT.6.1.7,"ğ, h"
+Mat01MK0120,Beceri,6,Mat06-T1,MAT.6.1.7,"ğ, h"
+Mat01MK0121,Bilgi,6,Mat06-T1,MAT.6.1.8,a
+Mat01MK0122,Bilgi,6,Mat06-T1,MAT.6.1.8,a
+Mat01MK0123,Beceri,6,Mat06-T1,MAT.6.1.8,b
+Mat01MK0124,Beceri,6,Mat06-T1,MAT.6.1.8,c
+Mat01MK0125,Beceri,6,Mat06-T1,MAT.6.1.8,c
+Mat01MK0126,Beceri,6,Mat06-T1,MAT.6.1.8,c
+Mat01MK0127,Beceri,6,Mat06-T1,MAT.6.1.8,ç
+Mat02MK0049,Beceri,6,Mat06-T2,MAT.6.2.1,"a, b"
+Mat02MK0050,Beceri,6,Mat06-T2,MAT.6.2.1,"c, ç"
+Mat02MK0051,Beceri,6,Mat06-T2,MAT.6.2.1,c
+Mat02MK0052,Bilgi,6,Mat06-T2,MAT.6.2.1,c
+Mat02MK0053,Bilgi,6,Mat06-T2,MAT.6.2.1,c
+Mat02MK0054,Bilgi,6,Mat06-T2,MAT.6.2.1,c
+Mat02MK0055,Bilgi,6,Mat06-T2,MAT.6.2.1,"d, e"
+Mat02MK0056,Bilgi,6,Mat06-T2,MAT.6.2.1,"d, e"
+Mat02MK0057,Beceri,6,Mat06-T2,MAT.6.2.1,"f, g, ğ"
+Mat02MK0058,Beceri,6,Mat06-T2,MAT.6.2.1,"f, g, ğ"
+Mat02MK0059,Bilgi,6,Mat06-T2,MAT.6.2.2,a
+Mat02MK0060,Bilgi,6,Mat06-T2,MAT.6.2.2,a
+Mat02MK0061,Beceri,6,Mat06-T2,MAT.6.2.2,b
+Mat02MK0062,Beceri,6,Mat06-T2,MAT.6.2.2,b
+Mat02MK0063,Beceri,6,Mat06-T2,MAT.6.2.2,b
+Mat02MK0064,Beceri,6,Mat06-T2,MAT.6.2.2,c
+Mat02MK0065,Beceri,6,Mat06-T2,MAT.6.2.2,c
+Mat02MK0066,Beceri,6,Mat06-T2,MAT.6.2.3,"a, b"
+Mat02MK0067,Beceri,6,Mat06-T2,MAT.6.2.3,a
+Mat02MK0068,Bilgi,6,Mat06-T2,MAT.6.2.3,c
+Mat03MK0056,Bilgi,6,Mat06-T3,MAT.6.3.1,a
+Mat03MK0057,Bilgi,6,Mat06-T3,MAT.6.3.1,a
+Mat03MK0058,Bilgi,6,Mat06-T3,MAT.6.3.1,a
+Mat03MK0059,Bilgi,6,Mat06-T3,MAT.6.3.1,a
+Mat03MK0060,Bilgi,6,Mat06-T3,MAT.6.3.1,"b, c, ç"
+Mat03MK0061,Bilgi,6,Mat06-T3,MAT.6.3.1,"b, c"
+Mat03MK0062,Bilgi,6,Mat06-T3,MAT.6.3.1,"b, c"
+Mat03MK0063,Bilgi,6,Mat06-T3,MAT.6.3.1,"b, c"
+Mat03MK0064,Bilgi,6,Mat06-T3,MAT.6.3.1,"b, c"
+Mat03MK0065,Beceri,6,Mat06-T3,MAT.6.3.1,ç
+Mat03MK0066,Bilgi,6,Mat06-T3,MAT.6.3.2,"a, b"
+Mat03MK0067,Beceri,6,Mat06-T3,MAT.6.3.2,c
+Mat03MK0068,Beceri,6,Mat06-T3,MAT.6.3.2,c
+Mat03MK0069,Bilgi,6,Mat06-T3,MAT.6.3.2,ç
+Mat03MK0070,Bilgi,6,Mat06-T3,MAT.6.3.2,ç
+Mat03MK0071,Bilgi,6,Mat06-T3,MAT.6.3.2,ç
+Mat03MK0072,Beceri,6,Mat06-T3,MAT.6.3.2,ç
+Mat03MK0073,Beceri,6,Mat06-T3,MAT.6.3.2,ç
+Mat03MK0074,Bilgi,6,Mat06-T3,MAT.6.3.2,ç
+Mat03MK0075,Bilgi,6,Mat06-T3,MAT.6.3.2,ç
+Mat03MK0076,Bilgi,6,Mat06-T3,MAT.6.3.2,ç
+Mat03MK0077,Bilgi,6,Mat06-T3,MAT.6.3.2,ç
+Mat03MK0078,Bilgi,6,Mat06-T3,MAT.6.3.2,ç
+Mat03MK0079,Bilgi,6,Mat06-T3,MAT.6.3.2,d
+Mat03MK0080,Bilgi,6,Mat06-T3,MAT.6.3.3,a
+Mat03MK0081,Beceri,6,Mat06-T3,MAT.6.3.3,b
+Mat03MK0082,Bilgi,6,Mat06-T3,MAT.6.3.3,"c, ç"
+Mat03MK0083,Bilgi,6,Mat06-T3,MAT.6.3.3,"c, ç"
+Mat03MK0084,Bilgi,6,Mat06-T3,MAT.6.3.3,"c, ç"
+Mat03MK0085,Beceri,6,Mat06-T3,MAT.6.3.3,d
+Mat03MK0086,Bilgi,6,Mat06-T3,MAT.6.3.3,d
+Mat03MK0087,Beceri,6,Mat06-T3,MAT.6.3.4,"a, b, c, ç"
+Mat03MK0088,Beceri,6,Mat06-T3,MAT.6.3.4,"a, b, c, ç"
+Mat03MK0089,Beceri,6,Mat06-T3,MAT.6.3.4,"d, e"
+Mat03MK0090,Beceri,6,Mat06-T3,MAT.6.3.4,"d, e"
+Mat03MK0091,Beceri,6,Mat06-T3,MAT.6.3.4,"f, g"
+Mat03MK0092,Beceri,6,Mat06-T3,MAT.6.3.4,"f, g"
+Mat03MK0093,Beceri,6,Mat06-T3,MAT.6.3.4,"ğ, h"
+Mat03MK0094,Beceri,6,Mat06-T3,MAT.6.3.4,"ğ, h"
+Mat04MK0025,Bilgi,6,Mat06-T4,MAT.6.4.1,a
+Mat04MK0026,Bilgi,6,Mat06-T4,MAT.6.4.1,"a, b, c"
+Mat04MK0027,Beceri,6,Mat06-T4,MAT.6.4.1,c
+Mat04MK0028,Beceri,6,Mat06-T4,MAT.6.4.1,c
+Mat04MK0029,Beceri,6,Mat06-T4,MAT.6.4.1,c
+Mat04MK0030,Bilgi,6,Mat06-T4,MAT.6.4.2,a
+Mat04MK0031,Beceri,6,Mat06-T4,MAT.6.4.2,b
+Mat04MK0032,Beceri,6,Mat06-T4,MAT.6.4.2,b
+Mat04MK0033,Beceri,6,Mat06-T4,MAT.6.4.2,b
+Mat04MK0034,Beceri,6,Mat06-T4,MAT.6.4.2,b
+Mat04MK0035,Beceri,6,Mat06-T4,MAT.6.4.2,c
+Mat04MK0036,Beceri,6,Mat06-T4,MAT.6.4.2,c
+Mat04MK0037,Beceri,6,Mat06-T4,MAT.6.4.2,c
+Mat04MK0038,Beceri,6,Mat06-T4,MAT.6.4.2,c
+Mat04MK0039,Beceri,6,Mat06-T4,MAT.6.4.3,"a, b, c, ç"
+Mat04MK0040,Beceri,6,Mat06-T4,MAT.6.4.3,"a, b, c, ç"
+Mat04MK0041,Beceri,6,Mat06-T4,MAT.6.4.3,"a, b, c, ç"
+Mat04MK0042,Beceri,6,Mat06-T4,MAT.6.4.3,"d, e"
+Mat04MK0043,Beceri,6,Mat06-T4,MAT.6.4.3,"d, e"
+Mat04MK0044,Beceri,6,Mat06-T4,MAT.6.4.3,"d, e"
+Mat04MK0045,Beceri,6,Mat06-T4,MAT.6.4.3,"f, g"
+Mat04MK0046,Beceri,6,Mat06-T4,MAT.6.4.3,"f, g"
+Mat04MK0047,Beceri,6,Mat06-T4,MAT.6.4.3,"f, g"
+Mat04MK0048,Beceri,6,Mat06-T4,MAT.6.4.3,"ğ, h"
+Mat04MK0049,Beceri,6,Mat06-T4,MAT.6.4.3,"ğ, h"
+Mat04MK0050,Beceri,6,Mat06-T4,MAT.6.4.3,"ğ, h"
+Mat04MK0051,Bilgi,6,Mat06-T4,MAT.6.4.4,a
+Mat04MK0052,Bilgi,6,Mat06-T4,MAT.6.4.4,a
+Mat04MK0053,Bilgi,6,Mat06-T4,MAT.6.4.4,a
+Mat04MK0054,Bilgi,6,Mat06-T4,MAT.6.4.4,a
+Mat04MK0055,Beceri,6,Mat06-T4,MAT.6.4.4,"a, b"
+Mat04MK0056,Bilgi,6,Mat06-T4,MAT.6.4.4,"c, ç, d"
+Mat04MK0057,Bilgi,6,Mat06-T4,MAT.6.4.4,ç
+Mat04MK0058,Bilgi,6,Mat06-T4,MAT.6.4.4,ç
+Mat04MK0059,Beceri,6,Mat06-T4,MAT.6.4.5,"a, b, c, ç"
+Mat04MK0060,Beceri,6,Mat06-T4,MAT.6.4.5,"d, e"
+Mat04MK0061,Beceri,6,Mat06-T4,MAT.6.4.5,"d, e"
+Mat04MK0062,Beceri,6,Mat06-T4,MAT.6.4.5,"f, g"
+Mat04MK0063,Beceri,6,Mat06-T4,MAT.6.4.5,"ğ, h"
+Mat04MK0064,Beceri,6,Mat06-T4,MAT.6.4.6,a
+Mat04MK0065,Bilgi,6,Mat06-T4,MAT.6.4.6,"b, c"
+Mat04MK0066,Beceri,6,Mat06-T4,MAT.6.4.6,c
+Mat06MK0001,Bilgi,6,Mat06-T5,MAT.6.5.1,a
+Mat06MK0002,Beceri,6,Mat06-T5,MAT.6.5.1,b
+Mat06MK0003,Beceri,6,Mat06-T5,MAT.6.5.1,b
+Mat06MK0004,Beceri,6,Mat06-T5,MAT.6.5.1,c
+Mat06MK0005,Beceri,6,Mat06-T5,MAT.6.5.1,c
+Mat06MK0006,Beceri,6,Mat06-T5,MAT.6.5.1,ç
+Mat06MK0007,Beceri,6,Mat06-T5,MAT.6.5.1,ç
+Mat06MK0008,Bilgi,6,Mat06-T5,MAT.6.5.1,ç
+Mat06MK0009,Bilgi,6,Mat06-T5,MAT.6.5.1,ç
+Mat06MK0010,Beceri,6,Mat06-T5,MAT.6.5.1,d
+Mat06MK0011,Beceri,6,Mat06-T5,MAT.6.5.1,d
+Mat06MK0018,Beceri,6,Mat06-T5,MAT.6.5.1,f
+Mat06MK0019,Beceri,6,Mat06-T5,MAT.6.5.1,g
+Mat06MK0020,Beceri,6,Mat06-T5,MAT.6.5.1,g
+Mat06MK0028,Beceri,6,Mat06-T5,MAT.6.5.1,"d, e"
+Mat06MK0029,Beceri,6,Mat06-T5,MAT.6.5.1,"d, e"
+Mat06MK0030,Beceri,6,Mat06-T5,MAT.6.5.1,e
+Mat06MK0031,Beceri,6,Mat06-T5,MAT.6.5.1,e
+Mat06MK0032,Beceri,6,Mat06-T5,MAT.6.5.1,e
+Mat06MK0033,Beceri,6,Mat06-T5,MAT.6.5.1,e
+Mat06MK0034,Beceri,6,Mat06-T5,MAT.6.5.1,e
+Mat06MK0035,Beceri,6,Mat06-T5,MAT.6.5.1,e
+Mat06MK0036,Beceri,6,Mat06-T5,MAT.6.5.1,e
+Mat06MK0037,Beceri,6,Mat06-T5,MAT.6.5.1,e
+Mat06MK0021,Beceri,6,Mat06-T5,MAT.6.5.2,b
+Mat06MK0022,Beceri,6,Mat06-T5,MAT.6.5.2,b
+Mat06MK0023,Beceri,6,Mat06-T5,MAT.6.5.2,b
+Mat06MK0024,Beceri,6,Mat06-T5,MAT.6.5.2,b
+Mat06MK0025,Beceri,6,Mat06-T5,MAT.6.5.2,b
+Mat06MK0026,Beceri,6,Mat06-T5,MAT.6.5.2,b
+Mat06MK0027,Beceri,6,Mat06-T5,MAT.6.5.2,c
+Mat06MK0038,Beceri,6,Mat06-T5,MAT.6.5.2,a
+Mat06MK0039,Beceri,6,Mat06-T5,MAT.6.5.2,a
+Mat06MK0040,Beceri,6,Mat06-T5,MAT.6.5.2,a
+Mat06MK0041,Beceri,6,Mat06-T5,MAT.6.5.2,a
+Mat06MK0042,Beceri,6,Mat06-T5,MAT.6.5.2,a
+Mat07MK0006,Beceri,6,Mat06-T6,MAT.6.6.1,a
+Mat07MK0007,Beceri,6,Mat06-T6,MAT.6.6.1,a
+Mat07MK0008,Bilgi,6,Mat06-T6,MAT.6.6.1,b
+Mat07MK0009,Beceri,6,Mat06-T6,MAT.6.6.1,c
+Mat01MK0128,Bilgi,7,Mat07-T1,MAT.7.1.1,a
+Mat01MK0129,Beceri,7,Mat07-T1,MAT.7.1.1,a
+Mat01MK0130,Beceri,7,Mat07-T1,MAT.7.1.1,a
+Mat01MK0131,Bilgi,7,Mat07-T1,MAT.7.1.1,a
+Mat01MK0132,Beceri,7,Mat07-T1,MAT.7.1.1,a
+Mat01MK0133,Beceri,7,Mat07-T1,MAT.7.1.1,a
+Mat01MK0134,Beceri,7,Mat07-T1,MAT.7.1.1,a
+Mat01MK0135,Beceri,7,Mat07-T1,MAT.7.1.1,a
+Mat01MK0136,Beceri,7,Mat07-T1,MAT.7.1.1,b
+Mat01MK0137,Bilgi,7,Mat07-T1,MAT.7.1.1,b
+Mat01MK0138,Bilgi,7,Mat07-T1,MAT.7.1.1,c
+Mat01MK0093,Beceri,7,Mat07-T1,MAT.7.1.2,a
+Mat01MK0094,Beceri,7,Mat07-T1,MAT.7.1.2,a
+Mat01MK0139,Bilgi,7,Mat07-T1,MAT.7.1.2,b
+Mat01MK0140,Bilgi,7,Mat07-T1,MAT.7.1.2,c
+Mat01MK0141,Beceri,7,Mat07-T1,MAT.7.1.3,"a, c"
+Mat01MK0142,Beceri,7,Mat07-T1,MAT.7.1.3,b
+Mat01MK0143,Bilgi,7,Mat07-T1,MAT.7.1.3,c
+Mat01MK0144,Beceri,7,Mat07-T1,MAT.7.1.4,"a, b, c, ç"
+Mat01MK0145,Beceri,7,Mat07-T1,MAT.7.1.4,"d, e"
+Mat01MK0146,Beceri,7,Mat07-T1,MAT.7.1.4,"d, e"
+Mat01MK0147,Beceri,7,Mat07-T1,MAT.7.1.4,"d, e"
+Mat01MK0148,Beceri,7,Mat07-T1,MAT.7.1.4,"d, e"
+Mat01MK0149,Beceri,7,Mat07-T1,MAT.7.1.4,"d, e"
+Mat01MK0150,Beceri,7,Mat07-T1,MAT.7.1.4,"d, e"
+Mat01MK0151,Beceri,7,Mat07-T1,MAT.7.1.4,"f, g"
+Mat01MK0152,Beceri,7,Mat07-T1,MAT.7.1.4,"ğ, h"
+Mat01MK0153,Bilgi,7,Mat07-T1,MAT.7.1.5,a
+Mat01MK0154,Beceri,7,Mat07-T1,MAT.7.1.5,"b, c"
+Mat01MK0155,Beceri,7,Mat07-T1,MAT.7.1.5,"b, c"
+Mat01MK0156,Beceri,7,Mat07-T1,MAT.7.1.5,c
+Mat01MK0157,Bilgi,7,Mat07-T1,MAT.7.1.5,ç
+Mat01MK0158,Bilgi,7,Mat07-T1,MAT.7.1.5,ç
+Mat01MK0159,Bilgi,7,Mat07-T1,MAT.7.1.5,"d, e"
+Mat01MK0160,Bilgi,7,Mat07-T1,MAT.7.1.5,"d, e"
+Mat01MK0161,Beceri,7,Mat07-T1,MAT.7.1.5,f
+Mat01MK0162,Bilgi,7,Mat07-T1,MAT.7.1.5,"g, ğ"
+Mat01MK0163,Bilgi,7,Mat07-T1,MAT.7.1.6,a
+Mat01MK0164,Beceri,7,Mat07-T1,MAT.7.1.6,b
+Mat01MK0165,Beceri,7,Mat07-T1,MAT.7.1.6,b
+Mat01MK0166,Beceri,7,Mat07-T1,MAT.7.1.6,b
+Mat01MK0167,Beceri,7,Mat07-T1,MAT.7.1.6,b
+Mat01MK0168,Bilgi,7,Mat07-T1,MAT.7.1.6,b
+Mat01MK0169,Bilgi,7,Mat07-T1,MAT.7.1.6,b
+Mat01MK0170,Bilgi,7,Mat07-T1,MAT.7.1.6,c
+Mat01MK0171,Beceri,7,Mat07-T1,MAT.7.1.7,"a, b, c, ç"
+Mat01MK0172,Beceri,7,Mat07-T1,MAT.7.1.7,"d, e"
+Mat01MK0173,Beceri,7,Mat07-T1,MAT.7.1.7,"f, g"
+Mat01MK0174,Beceri,7,Mat07-T1,MAT.7.1.7,"ğ, h"
+Mat02MK0050,Beceri,7,Mat07-T2,MAT.7.2.1,a
+Mat02MK0069,Bilgi,7,Mat07-T2,MAT.7.2.1,b
+Mat02MK0070,Beceri,7,Mat07-T2,MAT.7.2.1,b
+Mat02MK0071,Beceri,7,Mat07-T2,MAT.7.2.1,b
+Mat02MK0072,Beceri,7,Mat07-T2,MAT.7.2.1,b
+Mat02MK0073,Bilgi,7,Mat07-T2,MAT.7.2.1,c
+Mat02MK0074,Beceri,7,Mat07-T2,MAT.7.2.2,"a, b, c, ç"
+Mat02MK0075,Beceri,7,Mat07-T2,MAT.7.2.2,"a, b, c, ç"
+Mat02MK0076,Beceri,7,Mat07-T2,MAT.7.2.2,"c, ç"
+Mat02MK0077,Beceri,7,Mat07-T2,MAT.7.2.2,"c, ç"
+Mat02MK0078,Beceri,7,Mat07-T2,MAT.7.2.2,"d, e"
+Mat02MK0079,Beceri,7,Mat07-T2,MAT.7.2.2,"d, e"
+Mat02MK0080,Beceri,7,Mat07-T2,MAT.7.2.2,"d, e"
+Mat02MK0081,Beceri,7,Mat07-T2,MAT.7.2.2,"d, e"
+Mat02MK0082,Beceri,7,Mat07-T2,MAT.7.2.2,"d, e"
+Mat02MK0083,Beceri,7,Mat07-T2,MAT.7.2.2,"f, g"
+Mat02MK0084,Beceri,7,Mat07-T2,MAT.7.2.2,"f, g"
+Mat02MK0085,Beceri,7,Mat07-T2,MAT.7.2.2,"ğ, h"
+Mat02MK0086,Beceri,7,Mat07-T2,MAT.7.2.2,"ğ, h"
+Mat02MK0087,Bilgi,7,Mat07-T2,MAT.7.2.3,"a, b"
+Mat02MK0088,Beceri,7,Mat07-T2,MAT.7.2.3,c
+Mat02MK0089,Beceri,7,Mat07-T2,MAT.7.2.3,"ç, d"
+Mat02MK0090,Beceri,7,Mat07-T2,MAT.7.2.3,e
+Mat02MK0091,Beceri,7,Mat07-T2,MAT.7.2.3,f
+Mat02MK0092,Bilgi,7,Mat07-T2,MAT.7.2.4,a
+Mat02MK0093,Beceri,7,Mat07-T2,MAT.7.2.4,b
+Mat02MK0094,Beceri,7,Mat07-T2,MAT.7.2.4,b
+Mat02MK0095,Beceri,7,Mat07-T2,MAT.7.2.4,b
+Mat05MK0001,Bilgi,7,Mat07-T3,MAT.7.3.1,a
+Mat05MK0002,Beceri,7,Mat07-T3,MAT.7.3.1,b
+Mat05MK0003,Beceri,7,Mat07-T3,MAT.7.3.1,b
+Mat05MK0004,Beceri,7,Mat07-T3,MAT.7.3.1,c
+Mat05MK0005,Bilgi,7,Mat07-T3,MAT.7.3.1,ç
+Mat05MK0006,Bilgi,7,Mat07-T3,MAT.7.3.1,ç
+Mat05MK0007,Bilgi,7,Mat07-T3,MAT.7.3.1,ç
+Mat05MK0008,Beceri,7,Mat07-T3,MAT.7.3.1,d
+Mat05MK0009,Beceri,7,Mat07-T3,MAT.7.3.1,d
+Mat05MK0010,Bilgi,7,Mat07-T3,MAT.7.3.2,"a, b"
+Mat05MK0011,Bilgi,7,Mat07-T3,MAT.7.3.2,"a, b"
+Mat05MK0012,Beceri,7,Mat07-T3,MAT.7.3.2,b
+Mat05MK0013,Beceri,7,Mat07-T3,MAT.7.3.2,b
+Mat05MK0014,Beceri,7,Mat07-T3,MAT.7.3.2,c
+Mat05MK0015,Beceri,7,Mat07-T3,MAT.7.3.2,c
+Mat04MK0067,Beceri,7,Mat07-T4,MAT.7.4.1,a
+Mat04MK0068,Beceri,7,Mat07-T4,MAT.7.4.1,a
+Mat04MK0069,Beceri,7,Mat07-T4,MAT.7.4.1,a
+Mat04MK0070,Beceri,7,Mat07-T4,MAT.7.4.1,a
+Mat04MK0071,Bilgi,7,Mat07-T4,MAT.7.4.1,b
+Mat04MK0072,Beceri,7,Mat07-T4,MAT.7.4.2,a
+Mat04MK0073,Bilgi,7,Mat07-T4,MAT.7.4.2,b
+Mat04MK0074,Beceri,7,Mat07-T4,MAT.7.4.2,c
+Mat04MK0075,Bilgi,7,Mat07-T4,MAT.7.4.3,a
+Mat04MK0076,Beceri,7,Mat07-T4,MAT.7.4.3,"b, c"
+Mat04MK0077,Beceri,7,Mat07-T4,MAT.7.4.4,"a, b"
+Mat04MK0078,Beceri,7,Mat07-T4,MAT.7.4.4,"c, ç"
+Mat04MK0079,Beceri,7,Mat07-T4,MAT.7.4.4,ç
+Mat04MK0080,Beceri,7,Mat07-T4,MAT.7.4.4,ç
+Mat04MK0081,Beceri,7,Mat07-T4,MAT.7.4.4,ç
+Mat04MK0082,Bilgi,7,Mat07-T4,MAT.7.4.5,a
+Mat04MK0083,Bilgi,7,Mat07-T4,MAT.7.4.5,a
+Mat04MK0084,Bilgi,7,Mat07-T4,MAT.7.4.5,a
+Mat04MK0085,Beceri,7,Mat07-T4,MAT.7.4.5,b
+Mat04MK0086,Beceri,7,Mat07-T4,MAT.7.4.5,b
+Mat04MK0087,Beceri,7,Mat07-T4,MAT.7.4.5,c
+Mat04MK0088,Beceri,7,Mat07-T4,MAT.7.4.5,c
+Mat04MK0089,Beceri,7,Mat07-T4,MAT.7.4.5,ç
+Mat04MK0090,Beceri,7,Mat07-T4,MAT.7.4.6,"a, b, c, ç"
+Mat04MK0091,Beceri,7,Mat07-T4,MAT.7.4.6,"a, b, c, ç"
+Mat04MK0092,Beceri,7,Mat07-T4,MAT.7.4.6,"d, e"
+Mat04MK0093,Beceri,7,Mat07-T4,MAT.7.4.6,"d, e"
+Mat04MK0094,Beceri,7,Mat07-T4,MAT.7.4.6,"f, g"
+Mat04MK0095,Beceri,7,Mat07-T4,MAT.7.4.6,"f, g"
+Mat04MK0096,Beceri,7,Mat07-T4,MAT.7.4.6,"ğ, h"
+Mat04MK0097,Beceri,7,Mat07-T4,MAT.7.4.6,"ğ, h"
+Mat04MK0057,Bilgi,7,Mat07-T4,MAT.7.4.7,a
+Mat04MK0058,Bilgi,7,Mat07-T4,MAT.7.4.7,a
+Mat04MK0098,Bilgi,7,Mat07-T4,MAT.7.4.7,b
+Mat04MK0099,Beceri,7,Mat07-T4,MAT.7.4.7,c
+Mat04MK0100,Beceri,7,Mat07-T4,MAT.7.4.7,c
+Mat04MK0101,Bilgi,7,Mat07-T4,MAT.7.4.8,"a, b"
+Mat04MK0102,Bilgi,7,Mat07-T4,MAT.7.4.8,"a, b"
+Mat04MK0103,Beceri,7,Mat07-T4,MAT.7.4.8,c
+Mat04MK0104,Beceri,7,Mat07-T4,MAT.7.4.8,c
+Mat04MK0105,Beceri,7,Mat07-T4,MAT.7.4.8,c
+Mat04MK0106,Bilgi,7,Mat07-T4,MAT.7.4.9,a
+Mat04MK0107,Bilgi,7,Mat07-T4,MAT.7.4.9,a
+Mat04MK0108,Beceri,7,Mat07-T4,MAT.7.4.9,b
+Mat04MK0109,Beceri,7,Mat07-T4,MAT.7.4.9,b
+Mat04MK0110,Beceri,7,Mat07-T4,MAT.7.4.9,"c, ç"
+Mat04MK0111,Beceri,7,Mat07-T4,MAT.7.4.9,"c, ç"
+Mat04MK0112,Beceri,7,Mat07-T4,MAT.7.4.9,ç
+Mat04MK0113,Beceri,7,Mat07-T4,MAT.7.4.9,ç
+Mat04MK0114,Beceri,7,Mat07-T4,MAT.7.4.9,d
+Mat04MK0115,Beceri,7,Mat07-T4,MAT.7.4.9,d
+Mat04MK0116,Beceri,7,Mat07-T4,MAT.7.4.10,"a, b, c, ç"
+Mat04MK0117,Beceri,7,Mat07-T4,MAT.7.4.10,"a, b, c, ç"
+Mat04MK0118,Beceri,7,Mat07-T4,MAT.7.4.10,"a, b, c, ç"
+Mat04MK0119,Beceri,7,Mat07-T4,MAT.7.4.10,"a, b, c, ç"
+Mat04MK0120,Beceri,7,Mat07-T4,MAT.7.4.10,"d, e"
+Mat04MK0121,Beceri,7,Mat07-T4,MAT.7.4.10,"d, e"
+Mat04MK0122,Beceri,7,Mat07-T4,MAT.7.4.10,"d, e"
+Mat04MK0123,Beceri,7,Mat07-T4,MAT.7.4.10,"d, e"
+Mat04MK0124,Beceri,7,Mat07-T4,MAT.7.4.10,"f, g"
+Mat04MK0125,Beceri,7,Mat07-T4,MAT.7.4.10,"f, g"
+Mat04MK0126,Beceri,7,Mat07-T4,MAT.7.4.10,"f, g"
+Mat04MK0127,Beceri,7,Mat07-T4,MAT.7.4.10,"f, g"
+Mat04MK0128,Beceri,7,Mat07-T4,MAT.7.4.10,"ğ, h"
+Mat04MK0129,Beceri,7,Mat07-T4,MAT.7.4.10,"ğ, h"
+Mat04MK0130,Beceri,7,Mat07-T4,MAT.7.4.10,"ğ, h"
+Mat04MK0131,Beceri,7,Mat07-T4,MAT.7.4.10,"ğ, h"
+Mat03MK0095,Bilgi,7,Mat07-T5,MAT.7.5.1,a
+Mat03MK0096,Bilgi,7,Mat07-T5,MAT.7.5.1,a
+Mat03MK0097,Bilgi,7,Mat07-T5,MAT.7.5.1,a
+Mat03MK0098,Bilgi,7,Mat07-T5,MAT.7.5.1,a
+Mat03MK0099,Bilgi,7,Mat07-T5,MAT.7.5.1,a
+Mat03MK0100,Bilgi,7,Mat07-T5,MAT.7.5.1,b
+Mat03MK0101,Bilgi,7,Mat07-T5,MAT.7.5.1,b
+Mat03MK0102,Bilgi,7,Mat07-T5,MAT.7.5.2,"a, b"
+Mat03MK0103,Beceri,7,Mat07-T5,MAT.7.5.2,b
+Mat03MK0104,Beceri,7,Mat07-T5,MAT.7.5.2,c
+Mat06MK0001,Bilgi,7,Mat07-T6,MAT.7.6.1,a
+Mat06MK0002,Beceri,7,Mat07-T6,MAT.7.6.1,b
+Mat06MK0003,Beceri,7,Mat07-T6,MAT.7.6.1,b
+Mat06MK0004,Beceri,7,Mat07-T6,MAT.7.6.1,c
+Mat06MK0005,Beceri,7,Mat07-T6,MAT.7.6.1,c
+Mat06MK0006,Beceri,7,Mat07-T6,MAT.7.6.1,ç
+Mat06MK0007,Beceri,7,Mat07-T6,MAT.7.6.1,ç
+Mat06MK0008,Bilgi,7,Mat07-T6,MAT.7.6.1,d
+Mat06MK0009,Bilgi,7,Mat07-T6,MAT.7.6.1,d
+Mat06MK0010,Beceri,7,Mat07-T6,MAT.7.6.1,d
+Mat06MK0011,Beceri,7,Mat07-T6,MAT.7.6.1,d
+Mat06MK0018,Beceri,7,Mat07-T6,MAT.7.6.1,f
+Mat06MK0019,Beceri,7,Mat07-T6,MAT.7.6.1,g
+Mat06MK0020,Beceri,7,Mat07-T6,MAT.7.6.1,g
+Mat06MK0034,Beceri,7,Mat07-T6,MAT.7.6.1,e
+Mat06MK0035,Beceri,7,Mat07-T6,MAT.7.6.1,e
+Mat06MK0036,Beceri,7,Mat07-T6,MAT.7.6.1,e
+Mat06MK0037,Beceri,7,Mat07-T6,MAT.7.6.1,e
+Mat06MK0043,Beceri,7,Mat07-T6,MAT.7.6.1,e
+Mat06MK0044,Bilgi,7,Mat07-T6,MAT.7.6.1,e
+Mat06MK0021,Beceri,7,Mat07-T6,MAT.7.6.2,b
+Mat06MK0022,Beceri,7,Mat07-T6,MAT.7.6.2,b
+Mat06MK0023,Beceri,7,Mat07-T6,MAT.7.6.2,b
+Mat06MK0024,Beceri,7,Mat07-T6,MAT.7.6.2,b
+Mat06MK0025,Beceri,7,Mat07-T6,MAT.7.6.2,b
+Mat06MK0026,Beceri,7,Mat07-T6,MAT.7.6.2,b
+Mat06MK0027,Beceri,7,Mat07-T6,MAT.7.6.2,c
+Mat06MK0038,Beceri,7,Mat07-T6,MAT.7.6.2,a
+Mat06MK0039,Beceri,7,Mat07-T6,MAT.7.6.2,a
+Mat06MK0040,Beceri,7,Mat07-T6,MAT.7.6.2,a
+Mat06MK0041,Beceri,7,Mat07-T6,MAT.7.6.2,a
+Mat06MK0042,Beceri,7,Mat07-T6,MAT.7.6.2,a
+Mat06MK0045,Beceri,7,Mat07-T6,MAT.7.6.2,b
+Mat07MK0010,Beceri,7,Mat07-T7,MAT.7.7.1,a
+Mat07MK0011,Beceri,7,Mat07-T7,MAT.7.7.1,b
+Mat07MK0012,Bilgi,7,Mat07-T7,MAT.7.7.1,c
+Mat07MK0013,Bilgi,7,Mat07-T7,MAT.7.7.2,"a, b, c, ç"
+Mat07MK0014,Beceri,7,Mat07-T7,MAT.7.7.2,b
+Mat07MK0015,Bilgi,7,Mat07-T7,MAT.7.7.3,a
+Mat07MK0016,Bilgi,7,Mat07-T7,MAT.7.7.3,"a, b, c, ç"
+Mat01MK0175,Beceri,8,Mat08-T1,MAT.8.1.1,a
+Mat01MK0176,Beceri,8,Mat08-T1,MAT.8.1.1,a
+Mat01MK0177,Beceri,8,Mat08-T1,MAT.8.1.1,a
+Mat01MK0178,Beceri,8,Mat08-T1,MAT.8.1.1,a
+Mat01MK0179,Bilgi,8,Mat08-T1,MAT.8.1.1,b
+Mat01MK0180,Bilgi,8,Mat08-T1,MAT.8.1.1,b
+Mat01MK0181,Bilgi,8,Mat08-T1,MAT.8.1.1,b
+Mat01MK0182,Bilgi,8,Mat08-T1,MAT.8.1.1,b
+Mat01MK0183,Bilgi,8,Mat08-T1,MAT.8.1.1,b
+Mat01MK0184,Bilgi,8,Mat08-T1,MAT.8.1.1,b
+Mat01MK0185,Bilgi,8,Mat08-T1,MAT.8.1.1,b
+Mat01MK0186,Beceri,8,Mat08-T1,MAT.8.1.1,c
+Mat01MK0187,Beceri,8,Mat08-T1,MAT.8.1.1,c
+Mat01MK0188,Beceri,8,Mat08-T1,MAT.8.1.1,c
+Mat01MK0189,Beceri,8,Mat08-T1,MAT.8.1.1,c
+Mat01MK0190,Beceri,8,Mat08-T1,MAT.8.1.1,c
+Mat01MK0191,Beceri,8,Mat08-T1,MAT.8.1.1,c
+Mat01MK0192,Beceri,8,Mat08-T1,MAT.8.1.1,c
+Mat01MK0193,Beceri,8,Mat08-T1,MAT.8.1.1,c
+Mat01MK0194,Beceri,8,Mat08-T1,MAT.8.1.1,c
+Mat01MK0195,Bilgi,8,Mat08-T1,MAT.8.1.1,ç
+Mat01MK0196,Bilgi,8,Mat08-T1,MAT.8.1.1,ç
+Mat01MK0197,Bilgi,8,Mat08-T1,MAT.8.1.1,ç
+Mat01MK0198,Bilgi,8,Mat08-T1,MAT.8.1.1,ç
+Mat01MK0199,Bilgi,8,Mat08-T1,MAT.8.1.1,ç
+Mat01MK0200,Bilgi,8,Mat08-T1,MAT.8.1.1,ç
+Mat01MK0201,Bilgi,8,Mat08-T1,MAT.8.1.1,ç
+Mat01MK0202,Bilgi,8,Mat08-T1,MAT.8.1.1,ç
+Mat01MK0203,Bilgi,8,Mat08-T1,MAT.8.1.1,ç
+Mat01MK0204,Beceri,8,Mat08-T1,MAT.8.1.1,ç
+Mat01MK0205,Beceri,8,Mat08-T1,MAT.8.1.1,ç
+Mat01MK0206,Beceri,8,Mat08-T1,MAT.8.1.1,ç
+Mat01MK0207,Beceri,8,Mat08-T1,MAT.8.1.1,ç
+Mat01MK0208,Beceri,8,Mat08-T1,MAT.8.1.1,ç
+Mat01MK0209,Bilgi,8,Mat08-T1,MAT.8.1.1,d
+Mat01MK0210,Beceri,8,Mat08-T1,MAT.8.1.2,a
+Mat01MK0211,Beceri,8,Mat08-T1,MAT.8.1.2,a
+Mat01MK0212,Bilgi,8,Mat08-T1,MAT.8.1.2,b
+Mat01MK0213,Beceri,8,Mat08-T1,MAT.8.1.2,b
+Mat01MK0214,Beceri,8,Mat08-T1,MAT.8.1.2,c
+Mat01MK0215,Bilgi,8,Mat08-T1,MAT.8.1.2,c
+Mat01MK0216,Beceri,8,Mat08-T1,MAT.8.1.2,c
+Mat01MK0217,Bilgi,8,Mat08-T1,MAT.8.1.2,ç
+Mat01MK0093,Beceri,8,Mat08-T1,MAT.8.1.3,b
+Mat01MK0094,Beceri,8,Mat08-T1,MAT.8.1.3,b
+Mat01MK0218,Bilgi,8,Mat08-T1,MAT.8.1.3,a
+Mat01MK0219,Bilgi,8,Mat08-T1,MAT.8.1.3,a
+Mat01MK0220,Beceri,8,Mat08-T1,MAT.8.1.3,b
+Mat01MK0221,Beceri,8,Mat08-T1,MAT.8.1.3,c
+Mat01MK0222,Bilgi,8,Mat08-T1,MAT.8.1.3,ç
+Mat01MK0223,Bilgi,8,Mat08-T1,MAT.8.1.4,a
+Mat01MK0224,Beceri,8,Mat08-T1,MAT.8.1.4,b
+Mat01MK0225,Beceri,8,Mat08-T1,MAT.8.1.4,b
+Mat01MK0226,Bilgi,8,Mat08-T1,MAT.8.1.4,c
+Mat01MK0227,Bilgi,8,Mat08-T1,MAT.8.1.4,c
+Mat01MK0228,Beceri,8,Mat08-T1,MAT.8.1.4,c
+Mat01MK0229,Beceri,8,Mat08-T1,MAT.8.1.4,c
+Mat01MK0230,Beceri,8,Mat08-T1,MAT.8.1.4,c
+Mat01MK0231,Beceri,8,Mat08-T1,MAT.8.1.4,c
+Mat01MK0232,Beceri,8,Mat08-T1,MAT.8.1.4,c
+Mat02MK0096,Bilgi,8,Mat08-T2,MAT.8.2.1,a
+Mat02MK0097,Bilgi,8,Mat08-T2,MAT.8.2.1,a
+Mat02MK0098,Bilgi,8,Mat08-T2,MAT.8.2.1,a
+Mat02MK0099,Bilgi,8,Mat08-T2,MAT.8.2.1,a
+Mat02MK0100,Beceri,8,Mat08-T2,MAT.8.2.1,a
+Mat02MK0101,Beceri,8,Mat08-T2,MAT.8.2.1,b
+Mat02MK0102,Beceri,8,Mat08-T2,MAT.8.2.1,b
+Mat02MK0103,Beceri,8,Mat08-T2,MAT.8.2.1,b
+Mat02MK0104,Beceri,8,Mat08-T2,MAT.8.2.1,b
+Mat02MK0105,Bilgi,8,Mat08-T2,MAT.8.2.1,b
+Mat02MK0106,Bilgi,8,Mat08-T2,MAT.8.2.2,a
+Mat02MK0107,Bilgi,8,Mat08-T2,MAT.8.2.2,a
+Mat02MK0108,Bilgi,8,Mat08-T2,MAT.8.2.2,a
+Mat02MK0109,Bilgi,8,Mat08-T2,MAT.8.2.2,a
+Mat02MK0110,Beceri,8,Mat08-T2,MAT.8.2.2,a
+Mat02MK0111,Bilgi,8,Mat08-T2,MAT.8.2.2,b
+Mat02MK0112,Beceri,8,Mat08-T2,MAT.8.2.2,b
+Mat02MK0113,Beceri,8,Mat08-T2,MAT.8.2.2,c
+Mat02MK0114,Beceri,8,Mat08-T2,MAT.8.2.2,c
+Mat02MK0115,Beceri,8,Mat08-T2,MAT.8.2.2,c
+Mat02MK0116,Beceri,8,Mat08-T2,MAT.8.2.2,c
+Mat02MK0117,Beceri,8,Mat08-T2,MAT.8.2.2,c
+Mat02MK0118,Beceri,8,Mat08-T2,MAT.8.2.2,c
+Mat02MK0119,Beceri,8,Mat08-T2,MAT.8.2.2,c
+Mat02MK0120,Bilgi,8,Mat08-T2,MAT.8.2.2,c
+Mat02MK0121,Bilgi,8,Mat08-T2,MAT.8.2.2,c
+Mat02MK0122,Beceri,8,Mat08-T2,MAT.8.2.2,ç
+Mat02MK0123,Beceri,8,Mat08-T2,MAT.8.2.2,d
+Mat02MK0124,Beceri,8,Mat08-T2,MAT.8.2.2,d
+Mat02MK0125,Beceri,8,Mat08-T2,MAT.8.2.2,e
+Mat02MK0126,Beceri,8,Mat08-T2,MAT.8.2.3,a
+Mat02MK0127,Beceri,8,Mat08-T2,MAT.8.2.3,a
+Mat02MK0128,Beceri,8,Mat08-T2,MAT.8.2.3,a
+Mat02MK0129,Bilgi,8,Mat08-T2,MAT.8.2.3,b
+Mat02MK0130,Bilgi,8,Mat08-T2,MAT.8.2.3,b
+Mat02MK0131,Bilgi,8,Mat08-T2,MAT.8.2.3,b
+Mat02MK0132,Beceri,8,Mat08-T2,MAT.8.2.3,c
+Mat02MK0133,Beceri,8,Mat08-T2,MAT.8.2.3,c
+Mat02MK0134,Beceri,8,Mat08-T2,MAT.8.2.3,c
+Mat02MK0135,Bilgi,8,Mat08-T2,MAT.8.2.3,ç
+Mat02MK0136,Bilgi,8,Mat08-T2,MAT.8.2.3,ç
+Mat02MK0137,Bilgi,8,Mat08-T2,MAT.8.2.3,ç
+Mat02MK0138,Beceri,8,Mat08-T2,MAT.8.2.3,d
+Mat02MK0139,Beceri,8,Mat08-T2,MAT.8.2.3,d
+Mat02MK0140,Beceri,8,Mat08-T2,MAT.8.2.3,d
+Mat02MK0141,Beceri,8,Mat08-T2,MAT.8.2.3,d
+Mat02MK0142,Bilgi,8,Mat08-T2,MAT.8.2.4,a
+Mat02MK0143,Beceri,8,Mat08-T2,MAT.8.2.4,a
+Mat02MK0144,Beceri,8,Mat08-T2,MAT.8.2.4,a
+Mat02MK0145,Beceri,8,Mat08-T2,MAT.8.2.4,a
+Mat02MK0146,Beceri,8,Mat08-T2,MAT.8.2.4,b
+Mat02MK0147,Beceri,8,Mat08-T2,MAT.8.2.4,b
+Mat02MK0148,Beceri,8,Mat08-T2,MAT.8.2.4,b
+Mat03MK0105,Bilgi,8,Mat08-T3,MAT.8.3.1,a
+Mat03MK0106,Bilgi,8,Mat08-T3,MAT.8.3.1,a
+Mat03MK0107,Beceri,8,Mat08-T3,MAT.8.3.1,a
+Mat03MK0108,Beceri,8,Mat08-T3,MAT.8.3.1,b
+Mat03MK0109,Beceri,8,Mat08-T3,MAT.8.3.1,b
+Mat03MK0110,Bilgi,8,Mat08-T3,MAT.8.3.1,c
+Mat03MK0111,Beceri,8,Mat08-T3,MAT.8.3.1,c
+Mat03MK0112,Beceri,8,Mat08-T3,MAT.8.3.1,c
+Mat03MK0113,Beceri,8,Mat08-T3,MAT.8.3.2,a
+Mat03MK0114,Beceri,8,Mat08-T3,MAT.8.3.2,b
+Mat03MK0115,Beceri,8,Mat08-T3,MAT.8.3.2,c
+Mat03MK0116,Bilgi,8,Mat08-T3,MAT.8.3.2,ç
+Mat03MK0117,Bilgi,8,Mat08-T3,MAT.8.3.2,ç
+Mat03MK0118,Beceri,8,Mat08-T3,MAT.8.3.2,ç
+Mat03MK0119,Beceri,8,Mat08-T3,MAT.8.3.2,d
+Mat03MK0120,Beceri,8,Mat08-T3,MAT.8.3.3,a
+Mat03MK0121,Beceri,8,Mat08-T3,MAT.8.3.3,b
+Mat03MK0122,Beceri,8,Mat08-T3,MAT.8.3.3,c
+Mat03MK0123,Bilgi,8,Mat08-T3,MAT.8.3.3,ç
+Mat03MK0124,Bilgi,8,Mat08-T3,MAT.8.3.3,ç
+Mat03MK0125,Bilgi,8,Mat08-T3,MAT.8.3.3,ç
+Mat03MK0126,Beceri,8,Mat08-T3,MAT.8.3.3,ç
+Mat03MK0127,Beceri,8,Mat08-T3,MAT.8.3.3,d
+Mat03MK0128,Beceri,8,Mat08-T3,MAT.8.3.4,a
+Mat03MK0129,Beceri,8,Mat08-T3,MAT.8.3.4,b
+Mat03MK0130,Beceri,8,Mat08-T3,MAT.8.3.4,c
+Mat03MK0131,Bilgi,8,Mat08-T3,MAT.8.3.4,ç
+Mat03MK0132,Bilgi,8,Mat08-T3,MAT.8.3.4,ç
+Mat03MK0133,Bilgi,8,Mat08-T3,MAT.8.3.4,ç
+Mat03MK0134,Bilgi,8,Mat08-T3,MAT.8.3.4,ç
+Mat03MK0135,Bilgi,8,Mat08-T3,MAT.8.3.4,ç
+Mat03MK0136,Bilgi,8,Mat08-T3,MAT.8.3.4,ç
+Mat03MK0137,Beceri,8,Mat08-T3,MAT.8.3.4,d
+Mat03MK0138,Beceri,8,Mat08-T3,MAT.8.3.4,d
+Mat03MK0139,Beceri,8,Mat08-T3,MAT.8.3.4,d
+Mat03MK0140,Beceri,8,Mat08-T3,MAT.8.3.5,a
+Mat03MK0141,Bilgi,8,Mat08-T3,MAT.8.3.5,b
+Mat03MK0142,Beceri,8,Mat08-T3,MAT.8.3.5,b
+Mat03MK0143,Beceri,8,Mat08-T3,MAT.8.3.5,b
+Mat03MK0144,Bilgi,8,Mat08-T3,MAT.8.3.5,c
+Mat03MK0145,Bilgi,8,Mat08-T3,MAT.8.3.5,c
+Mat03MK0146,Bilgi,8,Mat08-T3,MAT.8.3.5,c
+Mat03MK0147,Beceri,8,Mat08-T3,MAT.8.3.6,"a, b, c, ç"
+Mat03MK0148,Beceri,8,Mat08-T3,MAT.8.3.6,"a, b, c, ç"
+Mat03MK0149,Beceri,8,Mat08-T3,MAT.8.3.6,"a, b, c, ç"
+Mat03MK0150,Beceri,8,Mat08-T3,MAT.8.3.6,"d, e"
+Mat03MK0151,Beceri,8,Mat08-T3,MAT.8.3.6,"d, e"
+Mat03MK0152,Beceri,8,Mat08-T3,MAT.8.3.6,"d, e"
+Mat03MK0153,Beceri,8,Mat08-T3,MAT.8.3.6,"f, g"
+Mat03MK0154,Beceri,8,Mat08-T3,MAT.8.3.6,"f, g"
+Mat03MK0155,Beceri,8,Mat08-T3,MAT.8.3.6,"f, g"
+Mat03MK0156,Beceri,8,Mat08-T3,MAT.8.3.6,"ğ, h"
+Mat03MK0157,Beceri,8,Mat08-T3,MAT.8.3.6,"ğ, h"
+Mat03MK0158,Beceri,8,Mat08-T3,MAT.8.3.6,"ğ, h"
+Mat04MK0132,Bilgi,8,Mat08-T4,MAT.8.4.1,a
+Mat04MK0133,Bilgi,8,Mat08-T4,MAT.8.4.1,a
+Mat04MK0134,Bilgi,8,Mat08-T4,MAT.8.4.1,a
+Mat04MK0135,Bilgi,8,Mat08-T4,MAT.8.4.1,a
+Mat04MK0136,Bilgi,8,Mat08-T4,MAT.8.4.1,a
+Mat04MK0137,Bilgi,8,Mat08-T4,MAT.8.4.1,a
+Mat04MK0138,Bilgi,8,Mat08-T4,MAT.8.4.1,a
+Mat04MK0139,Bilgi,8,Mat08-T4,MAT.8.4.1,a
+Mat04MK0140,Beceri,8,Mat08-T4,MAT.8.4.1,a
+Mat04MK0141,Beceri,8,Mat08-T4,MAT.8.4.1,a
+Mat04MK0142,Bilgi,8,Mat08-T4,MAT.8.4.1,b
+Mat04MK0143,Bilgi,8,Mat08-T4,MAT.8.4.1,b
+Mat04MK0144,Bilgi,8,Mat08-T4,MAT.8.4.1,b
+Mat04MK0145,Bilgi,8,Mat08-T4,MAT.8.4.1,b
+Mat04MK0146,Beceri,8,Mat08-T4,MAT.8.4.1,b
+Mat04MK0147,Beceri,8,Mat08-T4,MAT.8.4.2,a
+Mat04MK0148,Bilgi,8,Mat08-T4,MAT.8.4.2,b
+Mat04MK0149,Beceri,8,Mat08-T4,MAT.8.4.2,b
+Mat04MK0150,Beceri,8,Mat08-T4,MAT.8.4.2,c
+Mat04MK0098,Bilgi,8,Mat08-T4,MAT.8.4.3,a
+Mat04MK0151,Bilgi,8,Mat08-T4,MAT.8.4.3,a
+Mat04MK0152,Bilgi,8,Mat08-T4,MAT.8.4.3,b
+Mat04MK0153,Bilgi,8,Mat08-T4,MAT.8.4.3,c
+Mat04MK0154,Beceri,8,Mat08-T4,MAT.8.4.3,c
+Mat04MK0155,Beceri,8,Mat08-T4,MAT.8.4.3,c
+Mat04MK0156,Beceri,8,Mat08-T4,MAT.8.4.3,c
+Mat05MK0016,Beceri,8,Mat08-T5,MAT.8.5.1,a
+Mat05MK0017,Bilgi,8,Mat08-T5,MAT.8.5.1,a
+Mat05MK0018,Bilgi,8,Mat08-T5,MAT.8.5.1,a
+Mat05MK0019,Bilgi,8,Mat08-T5,MAT.8.5.1,b
+Mat05MK0020,Bilgi,8,Mat08-T5,MAT.8.5.1,b
+Mat05MK0021,Bilgi,8,Mat08-T5,MAT.8.5.1,b
+Mat05MK0022,Beceri,8,Mat08-T5,MAT.8.5.1,b
+Mat05MK0023,Beceri,8,Mat08-T5,MAT.8.5.1,b
+Mat05MK0024,Beceri,8,Mat08-T5,MAT.8.5.2,a
+Mat05MK0025,Beceri,8,Mat08-T5,MAT.8.5.2,a
+Mat05MK0026,Beceri,8,Mat08-T5,MAT.8.5.2,b
+Mat05MK0027,Beceri,8,Mat08-T5,MAT.8.5.2,b
+Mat05MK0028,Beceri,8,Mat08-T5,MAT.8.5.2,b
+Mat05MK0029,Beceri,8,Mat08-T5,MAT.8.5.2,c
+Mat05MK0030,Beceri,8,Mat08-T5,MAT.8.5.2,c
+Mat05MK0031,Bilgi,8,Mat08-T5,MAT.8.5.2,ç
+Mat05MK0032,Bilgi,8,Mat08-T5,MAT.8.5.2,ç
+Mat05MK0033,Bilgi,8,Mat08-T5,MAT.8.5.2,ç
+Mat05MK0034,Bilgi,8,Mat08-T5,MAT.8.5.2,ç
+Mat05MK0035,Beceri,8,Mat08-T5,MAT.8.5.2,d
+Mat05MK0036,Beceri,8,Mat08-T5,MAT.8.5.2,d
+Mat05MK0037,Beceri,8,Mat08-T5,MAT.8.5.3,"a, b, c, ç"
+Mat05MK0038,Beceri,8,Mat08-T5,MAT.8.5.3,"a, b, c, ç"
+Mat05MK0039,Beceri,8,Mat08-T5,MAT.8.5.3,"d, e"
+Mat05MK0040,Beceri,8,Mat08-T5,MAT.8.5.3,"d, e"
+Mat05MK0041,Beceri,8,Mat08-T5,MAT.8.5.3,"f, g"
+Mat05MK0042,Beceri,8,Mat08-T5,MAT.8.5.3,"f, g"
+Mat05MK0043,Beceri,8,Mat08-T5,MAT.8.5.3,"ğ, h"
+Mat05MK0044,Beceri,8,Mat08-T5,MAT.8.5.3,"ğ, h"
+Mat06MK0001,Bilgi,8,Mat08-T6,MAT.8.6.1,a
+Mat06MK0002,Beceri,8,Mat08-T6,MAT.8.6.1,b
+Mat06MK0003,Beceri,8,Mat08-T6,MAT.8.6.1,b
+Mat06MK0004,Beceri,8,Mat08-T6,MAT.8.6.1,c
+Mat06MK0005,Beceri,8,Mat08-T6,MAT.8.6.1,c
+Mat06MK0006,Beceri,8,Mat08-T6,MAT.8.6.1,ç
+Mat06MK0007,Beceri,8,Mat08-T6,MAT.8.6.1,ç
+Mat06MK0008,Bilgi,8,Mat08-T6,MAT.8.6.1,ç
+Mat06MK0009,Bilgi,8,Mat08-T6,MAT.8.6.1,ç
+Mat06MK0010,Beceri,8,Mat08-T6,MAT.8.6.1,d
+Mat06MK0011,Beceri,8,Mat08-T6,MAT.8.6.1,d
+Mat06MK0018,Beceri,8,Mat08-T6,MAT.8.6.1,f
+Mat06MK0019,Beceri,8,Mat08-T6,MAT.8.6.1,g
+Mat06MK0020,Beceri,8,Mat08-T6,MAT.8.6.1,g
+Mat06MK0034,Beceri,8,Mat08-T6,MAT.8.6.1,e
+Mat06MK0035,Beceri,8,Mat08-T6,MAT.8.6.1,e
+Mat06MK0036,Beceri,8,Mat08-T6,MAT.8.6.1,e
+Mat06MK0037,Beceri,8,Mat08-T6,MAT.8.6.1,e
+Mat06MK0043,Beceri,8,Mat08-T6,MAT.8.6.1,e
+Mat06MK0044,Bilgi,8,Mat08-T6,MAT.8.6.1,e
+Mat06MK0021,Beceri,8,Mat08-T6,MAT.8.6.2,b
+Mat06MK0022,Beceri,8,Mat08-T6,MAT.8.6.2,b
+Mat06MK0023,Beceri,8,Mat08-T6,MAT.8.6.2,b
+Mat06MK0024,Beceri,8,Mat08-T6,MAT.8.6.2,b
+Mat06MK0025,Beceri,8,Mat08-T6,MAT.8.6.2,b
+Mat06MK0026,Beceri,8,Mat08-T6,MAT.8.6.2,b
+Mat06MK0027,Beceri,8,Mat08-T6,MAT.8.6.2,c
+Mat06MK0038,Beceri,8,Mat08-T6,MAT.8.6.2,a
+Mat06MK0039,Beceri,8,Mat08-T6,MAT.8.6.2,a
+Mat06MK0040,Beceri,8,Mat08-T6,MAT.8.6.2,a
+Mat06MK0041,Beceri,8,Mat08-T6,MAT.8.6.2,a
+Mat06MK0042,Beceri,8,Mat08-T6,MAT.8.6.2,a
+Mat06MK0045,Beceri,8,Mat08-T6,MAT.8.6.2,b
+Mat07MK0017,Beceri,8,Mat08-T7,MAT.8.7.1,a
+Mat07MK0018,Beceri,8,Mat08-T7,MAT.8.7.1,b
+Mat07MK0019,Beceri,8,Mat08-T7,MAT.8.7.1,b
+Mat07MK0020,Bilgi,8,Mat08-T7,MAT.8.7.1,c
+Mat07MK0021,Bilgi,8,Mat08-T7,MAT.8.7.1,c
+Mat07MK0022,Bilgi,8,Mat08-T7,MAT.8.7.1,c
+Mat07MK0023,Bilgi,8,Mat08-T7,MAT.8.7.1,c
+Mat07MK0024,Bilgi,8,Mat08-T7,MAT.8.7.1,c
+Mat07MK0025,Beceri,8,Mat08-T7,MAT.8.7.1,c
+Mat07MK0026,Beceri,8,Mat08-T7,MAT.8.7.1,c
+Mat07MK0027,Beceri,8,Mat08-T7,MAT.8.7.1,c
+Mat07MK0028,Bilgi,8,Mat08-T7,MAT.8.7.1,ç
+Mat07MK0029,Beceri,8,Mat08-T7,MAT.8.7.1,d
+Mat07MK0030,Beceri,8,Mat08-T7,MAT.8.7.1,e
+Mat01MK0233,Bilgi,9,Mat09-T1,MAT.9.1.1,"a, b"
+Mat01MK0234,Bilgi,9,Mat09-T1,MAT.9.1.1,"a, b"
+Mat01MK0235,Beceri,9,Mat09-T1,MAT.9.1.1,c
+Mat01MK0236,Beceri,9,Mat09-T1,MAT.9.1.1,c
+Mat01MK0237,Beceri,9,Mat09-T1,MAT.9.1.1,"ç, d"
+Mat01MK0238,Beceri,9,Mat09-T1,MAT.9.1.1,"ç, d"
+Mat01MK0239,Beceri,9,Mat09-T1,MAT.9.1.1,"ç, d"
+Mat01MK0240,Beceri,9,Mat09-T1,MAT.9.1.1,"ç, d"
+Mat01MK0241,Beceri,9,Mat09-T1,MAT.9.1.1,"ç, d"
+Mat01MK0242,Beceri,9,Mat09-T1,MAT.9.1.1,"ç, d"
+Mat01MK0243,Beceri,9,Mat09-T1,MAT.9.1.1,"ç, d"
+Mat01MK0244,Beceri,9,Mat09-T1,MAT.9.1.1,"ç, d"
+Mat01MK0245,Beceri,9,Mat09-T1,MAT.9.1.1,"ç, d"
+Mat01MK0246,Beceri,9,Mat09-T1,MAT.9.1.1,"ç, d"
+Mat01MK0247,Beceri,9,Mat09-T1,MAT.9.1.1,"ç, d"
+Mat01MK0248,Beceri,9,Mat09-T1,MAT.9.1.1,"e, f"
+Mat01MK0249,Beceri,9,Mat09-T1,MAT.9.1.1,"e, f"
+Mat01MK0250,Bilgi,9,Mat09-T1,MAT.9.1.2,a
+Mat01MK0251,Bilgi,9,Mat09-T1,MAT.9.1.2,a
+Mat01MK0252,Bilgi,9,Mat09-T1,MAT.9.1.2,a
+Mat01MK0253,Bilgi,9,Mat09-T1,MAT.9.1.2,a
+Mat01MK0254,Bilgi,9,Mat09-T1,MAT.9.1.2,a
+Mat01MK0255,Bilgi,9,Mat09-T1,MAT.9.1.2,a
+Mat01MK0256,Bilgi,9,Mat09-T1,MAT.9.1.2,a
+Mat01MK0257,Bilgi,9,Mat09-T1,MAT.9.1.2,a
+Mat01MK0258,Beceri,9,Mat09-T1,MAT.9.1.2,"b, c"
+Mat01MK0259,Beceri,9,Mat09-T1,MAT.9.1.2,"b, c"
+Mat01MK0260,Beceri,9,Mat09-T1,MAT.9.1.2,"b, c"
+Mat01MK0261,Beceri,9,Mat09-T1,MAT.9.1.2,"b, c"
+Mat01MK0262,Beceri,9,Mat09-T1,MAT.9.1.2,"b, c"
+Mat01MK0263,Beceri,9,Mat09-T1,MAT.9.1.2,c
+Mat01MK0264,Beceri,9,Mat09-T1,MAT.9.1.2,c
+Mat01MK0265,Beceri,9,Mat09-T1,MAT.9.1.2,c
+Mat01MK0266,Beceri,9,Mat09-T1,MAT.9.1.2,c
+Mat01MK0267,Beceri,9,Mat09-T1,MAT.9.1.2,c
+Mat01MK0268,Beceri,9,Mat09-T1,MAT.9.1.2,c
+Mat01MK0269,Beceri,9,Mat09-T1,MAT.9.1.2,c
+Mat01MK0270,Beceri,9,Mat09-T1,MAT.9.1.2,c
+Mat01MK0271,Beceri,9,Mat09-T1,MAT.9.1.2,c
+Mat01MK0272,Beceri,9,Mat09-T1,MAT.9.1.2,c
+Mat01MK0273,Beceri,9,Mat09-T1,MAT.9.1.2,c
+Mat01MK0274,Bilgi,9,Mat09-T1,MAT.9.1.3,a
+Mat01MK0275,Bilgi,9,Mat09-T1,MAT.9.1.3,a
+Mat01MK0276,Bilgi,9,Mat09-T1,MAT.9.1.3,a
+Mat01MK0277,Bilgi,9,Mat09-T1,MAT.9.1.3,a
+Mat01MK0278,Bilgi,9,Mat09-T1,MAT.9.1.3,a
+Mat01MK0279,Bilgi,9,Mat09-T1,MAT.9.1.3,a
+Mat01MK0280,Bilgi,9,Mat09-T1,MAT.9.1.3,"a, b"
+Mat01MK0281,Bilgi,9,Mat09-T1,MAT.9.1.3,"a, b"
+Mat01MK0282,Bilgi,9,Mat09-T1,MAT.9.1.3,"a, b"
+Mat01MK0283,Bilgi,9,Mat09-T1,MAT.9.1.3,b
+Mat01MK0284,Beceri,9,Mat09-T1,MAT.9.1.3,"c, ç, d"
+Mat01MK0285,Beceri,9,Mat09-T1,MAT.9.1.3,"c, ç, d"
+Mat01MK0286,Beceri,9,Mat09-T1,MAT.9.1.3,"c, ç, d"
+Mat01MK0287,Beceri,9,Mat09-T1,MAT.9.1.3,d
+Mat01MK0288,Beceri,9,Mat09-T1,MAT.9.1.3,d
+Mat01MK0289,Beceri,9,Mat09-T1,MAT.9.1.3,"e, f"
+Mat01MK0290,Beceri,9,Mat09-T1,MAT.9.1.3,"e, f"
+Mat01MK0291,Beceri,9,Mat09-T1,MAT.9.1.3,"e, f"
+Mat01MK0292,Bilgi,9,Mat09-T1,MAT.9.1.4,"a, b"
+Mat01MK0293,Bilgi,9,Mat09-T1,MAT.9.1.4,"a, b"
+Mat01MK0294,Bilgi,9,Mat09-T1,MAT.9.1.4,"a, b"
+Mat01MK0295,Bilgi,9,Mat09-T1,MAT.9.1.4,b
+Mat01MK0296,Bilgi,9,Mat09-T1,MAT.9.1.4,b
+Mat01MK0297,Bilgi,9,Mat09-T1,MAT.9.1.4,b
+Mat01MK0298,Bilgi,9,Mat09-T1,MAT.9.1.4,b
+Mat01MK0299,Bilgi,9,Mat09-T1,MAT.9.1.4,c
+Mat01MK0300,Bilgi,9,Mat09-T1,MAT.9.1.4,c
+Mat01MK0301,Beceri,9,Mat09-T1,MAT.9.1.4,c
+Mat01MK0302,Beceri,9,Mat09-T1,MAT.9.1.4,c
+Mat01MK0303,Beceri,9,Mat09-T1,MAT.9.1.4,c
+Mat01MK0304,Beceri,9,Mat09-T1,MAT.9.1.4,c
+Mat02MK0149,Bilgi,9,Mat09-T2,MAT.9.2.1,"a, b"
+Mat02MK0150,Bilgi,9,Mat09-T2,MAT.9.2.1,"a, b"
+Mat02MK0151,Bilgi,9,Mat09-T2,MAT.9.2.1,"a, b"
+Mat02MK0152,Bilgi,9,Mat09-T2,MAT.9.2.1,"a, b"
+Mat02MK0153,Bilgi,9,Mat09-T2,MAT.9.2.1,"a, b"
+Mat02MK0154,Bilgi,9,Mat09-T2,MAT.9.2.1,"a, b"
+Mat02MK0155,Beceri,9,Mat09-T2,MAT.9.2.1,"c, ç"
+Mat02MK0156,Beceri,9,Mat09-T2,MAT.9.2.1,"c, ç"
+Mat02MK0157,Beceri,9,Mat09-T2,MAT.9.2.1,"c, ç"
+Mat02MK0158,Beceri,9,Mat09-T2,MAT.9.2.1,"c, ç"
+Mat02MK0159,Bilgi,9,Mat09-T2,MAT.9.2.1,"d, e"
+Mat02MK0160,Bilgi,9,Mat09-T2,MAT.9.2.1,"d, e"
+Mat02MK0161,Bilgi,9,Mat09-T2,MAT.9.2.1,"d, e"
+Mat02MK0162,Beceri,9,Mat09-T2,MAT.9.2.1,"f, g, ğ"
+Mat02MK0163,Beceri,9,Mat09-T2,MAT.9.2.1,"f, g, ğ"
+Mat02MK0164,Beceri,9,Mat09-T2,MAT.9.2.1,"f, g, ğ"
+Mat02MK0165,Beceri,9,Mat09-T2,MAT.9.2.1,"h, ı"
+Mat02MK0166,Beceri,9,Mat09-T2,MAT.9.2.1,"h, ı"
+Mat02MK0167,Beceri,9,Mat09-T2,MAT.9.2.1,"h, ı"
+Mat02MK0168,Bilgi,9,Mat09-T2,MAT.9.2.2,a
+Mat02MK0169,Bilgi,9,Mat09-T2,MAT.9.2.2,b
+Mat02MK0170,Bilgi,9,Mat09-T2,MAT.9.2.2,b
+Mat02MK0171,Bilgi,9,Mat09-T2,MAT.9.2.2,b
+Mat02MK0172,Beceri,9,Mat09-T2,MAT.9.2.2,c
+Mat02MK0173,Beceri,9,Mat09-T2,MAT.9.2.2,c
+Mat02MK0174,Beceri,9,Mat09-T2,MAT.9.2.3,"a, b, c, ç"
+Mat02MK0175,Beceri,9,Mat09-T2,MAT.9.2.3,"a, b, c, ç"
+Mat02MK0176,Beceri,9,Mat09-T2,MAT.9.2.3,"d, e"
+Mat02MK0177,Beceri,9,Mat09-T2,MAT.9.2.3,"d, e"
+Mat02MK0178,Beceri,9,Mat09-T2,MAT.9.2.3,"d, e"
+Mat02MK0179,Beceri,9,Mat09-T2,MAT.9.2.3,"d, e"
+Mat02MK0180,Beceri,9,Mat09-T2,MAT.9.2.3,"d, e"
+Mat02MK0181,Beceri,9,Mat09-T2,MAT.9.2.3,"d, e"
+Mat02MK0182,Beceri,9,Mat09-T2,MAT.9.2.3,"d, e"
+Mat02MK0183,Beceri,9,Mat09-T2,MAT.9.2.3,"d, e"
+Mat02MK0184,Beceri,9,Mat09-T2,MAT.9.2.3,"d, e"
+Mat02MK0185,Beceri,9,Mat09-T2,MAT.9.2.3,"f, g"
+Mat02MK0186,Beceri,9,Mat09-T2,MAT.9.2.3,"f, g"
+Mat02MK0187,Beceri,9,Mat09-T2,MAT.9.2.3,"ğ, h"
+Mat02MK0188,Beceri,9,Mat09-T2,MAT.9.2.3,"ğ, h"
+Mat03MK0159,Beceri,9,Mat09-T3,MAT.9.3.1,a
+Mat03MK0160,Beceri,9,Mat09-T3,MAT.9.3.1,a
+Mat03MK0161,Beceri,9,Mat09-T3,MAT.9.3.1,a
+Mat03MK0162,Beceri,9,Mat09-T3,MAT.9.3.1,a
+Mat03MK0163,Beceri,9,Mat09-T3,MAT.9.3.1,b
+Mat03MK0164,Beceri,9,Mat09-T3,MAT.9.3.1,b
+Mat03MK0165,Beceri,9,Mat09-T3,MAT.9.3.1,b
+Mat05MK0045,Bilgi,9,Mat09-T4,MAT.9.4.1,"a, b"
+Mat05MK0046,Bilgi,9,Mat09-T4,MAT.9.4.1,"a, b"
+Mat05MK0047,Bilgi,9,Mat09-T4,MAT.9.4.1,"a, b"
+Mat05MK0048,Beceri,9,Mat09-T4,MAT.9.4.1,c
+Mat05MK0049,Beceri,9,Mat09-T4,MAT.9.4.1,c
+Mat05MK0050,Beceri,9,Mat09-T4,MAT.9.4.1,c
+Mat05MK0051,Beceri,9,Mat09-T4,MAT.9.4.1,c
+Mat05MK0052,Beceri,9,Mat09-T4,MAT.9.4.1,c
+Mat05MK0053,Beceri,9,Mat09-T4,MAT.9.4.1,c
+Mat05MK0054,Bilgi,9,Mat09-T4,MAT.9.4.1,ç
+Mat05MK0055,Beceri,9,Mat09-T4,MAT.9.4.1,d
+Mat03MK0123,Bilgi,9,Mat09-T4,MAT.9.4.2,ç
+Mat03MK0124,Bilgi,9,Mat09-T4,MAT.9.4.2,ç
+Mat03MK0125,Bilgi,9,Mat09-T4,MAT.9.4.2,ç
+Mat03MK0133,Bilgi,9,Mat09-T4,MAT.9.4.2,ç
+Mat03MK0134,Bilgi,9,Mat09-T4,MAT.9.4.2,ç
+Mat03MK0135,Bilgi,9,Mat09-T4,MAT.9.4.2,ç
+Mat08MK0001,Bilgi,9,Mat09-T4,MAT.9.4.2,"a, b, c"
+Mat08MK0002,Bilgi,9,Mat09-T4,MAT.9.4.2,"a, b, c"
+Mat08MK0003,Beceri,9,Mat09-T4,MAT.9.4.2,d
+Mat08MK0004,Beceri,9,Mat09-T4,MAT.9.4.2,d
+Mat08MK0005,Bilgi,9,Mat09-T4,MAT.9.4.3,"a, b"
+Mat08MK0006,Beceri,9,Mat09-T4,MAT.9.4.3,c
+Mat08MK0007,Beceri,9,Mat09-T4,MAT.9.4.4,a
+Mat08MK0008,Beceri,9,Mat09-T4,MAT.9.4.4,a
+Mat08MK0009,Beceri,9,Mat09-T4,MAT.9.4.4,a
+Mat08MK0010,Beceri,9,Mat09-T4,MAT.9.4.4,a
+Mat08MK0011,Beceri,9,Mat09-T4,MAT.9.4.4,b
+Mat08MK0012,Beceri,9,Mat09-T4,MAT.9.4.4,b
+Mat08MK0013,Beceri,9,Mat09-T4,MAT.9.4.4,b
+Mat08MK0014,Beceri,9,Mat09-T4,MAT.9.4.4,b
+Mat03MK0143,Beceri,9,Mat09-T4,MAT.9.4.4,b
+Mat03MK0140,Beceri,9,Mat09-T4,MAT.9.4.4,b
+Mat08MK0015,Beceri,9,Mat09-T4,MAT.9.4.5,"a, b, c, ç"
+Mat08MK0016,Beceri,9,Mat09-T4,MAT.9.4.5,"a, b, c, ç"
+Mat08MK0017,Beceri,9,Mat09-T4,MAT.9.4.5,"d, e"
+Mat08MK0018,Beceri,9,Mat09-T4,MAT.9.4.5,"d, e"
+Mat08MK0019,Beceri,9,Mat09-T4,MAT.9.4.5,"f, g"
+Mat08MK0020,Beceri,9,Mat09-T4,MAT.9.4.5,"f, g"
+Mat08MK0021,Beceri,9,Mat09-T4,MAT.9.4.5,"ğ, h"
+Mat08MK0022,Beceri,9,Mat09-T4,MAT.9.4.5,"ğ, h"
+Mat09MK0001,Beceri,9,Mat09-T5,MAT.9.5.1,"a, b, c, ç"
+Mat09MK0002,Beceri,9,Mat09-T5,MAT.9.5.1,"d, e"
+Mat09MK0003,Beceri,9,Mat09-T5,MAT.9.5.1,"f, g"
+Mat09MK0004,Beceri,9,Mat09-T5,MAT.9.5.1,"ğ, h"
+Mat09MK0005,Bilgi,9,Mat09-T5,MAT.9.5.2,a
+Mat09MK0006,Bilgi,9,Mat09-T5,MAT.9.5.2,a
+Mat09MK0007,Bilgi,9,Mat09-T5,MAT.9.5.2,a
+Mat09MK0008,Bilgi,9,Mat09-T5,MAT.9.5.2,a
+Mat09MK0009,Beceri,9,Mat09-T5,MAT.9.5.2,a
+Mat09MK0010,Beceri,9,Mat09-T5,MAT.9.5.2,a
+Mat09MK0011,Beceri,9,Mat09-T5,MAT.9.5.2,a
+Mat09MK0012,Beceri,9,Mat09-T5,MAT.9.5.2,a
+Mat09MK0013,Beceri,9,Mat09-T5,MAT.9.5.2,a
+Mat09MK0014,Beceri,9,Mat09-T5,MAT.9.5.2,a
+Mat09MK0015,Bilgi,9,Mat09-T5,MAT.9.5.2,b
+Mat09MK0016,Bilgi,9,Mat09-T5,MAT.9.5.2,b
+Mat09MK0017,Bilgi,9,Mat09-T5,MAT.9.5.3,"a, b"
+Mat09MK0018,Beceri,9,Mat09-T5,MAT.9.5.3,c
+Mat06MK0001,Bilgi,9,Mat09-T6,MAT.9.6.1,a
+Mat06MK0002,Beceri,9,Mat09-T6,MAT.9.6.1,b
+Mat06MK0003,Beceri,9,Mat09-T6,MAT.9.6.1,b
+Mat06MK0004,Beceri,9,Mat09-T6,MAT.9.6.1,c
+Mat06MK0005,Beceri,9,Mat09-T6,MAT.9.6.1,c
+Mat06MK0006,Beceri,9,Mat09-T6,MAT.9.6.1,ç
+Mat06MK0007,Beceri,9,Mat09-T6,MAT.9.6.1,ç
+Mat06MK0010,Beceri,9,Mat09-T6,MAT.9.6.1,d
+Mat06MK0011,Beceri,9,Mat09-T6,MAT.9.6.1,d
+Mat06MK0019,Beceri,9,Mat09-T6,MAT.9.6.1,g
+Mat06MK0020,Beceri,9,Mat09-T6,MAT.9.6.1,g
+Mat06MK0034,Beceri,9,Mat09-T6,MAT.9.6.1,d
+Mat06MK0035,Beceri,9,Mat09-T6,MAT.9.6.1,e
+Mat06MK0036,Beceri,9,Mat09-T6,MAT.9.6.1,e
+Mat06MK0037,Beceri,9,Mat09-T6,MAT.9.6.1,e
+Mat06MK0043,Beceri,9,Mat09-T6,MAT.9.6.1,d
+Mat06MK0046,Beceri,9,Mat09-T6,MAT.9.6.1,d
+Mat06MK0047,Beceri,9,Mat09-T6,MAT.9.6.1,"d, e"
+Mat06MK0048,Beceri,9,Mat09-T6,MAT.9.6.1,"d, e"
+Mat06MK0049,Beceri,9,Mat09-T6,MAT.9.6.1,d
+Mat06MK0050,Bilgi,9,Mat09-T6,MAT.9.6.1,f
+Mat06MK0051,Bilgi,9,Mat09-T6,MAT.9.6.1,f
+Mat06MK0052,Bilgi,9,Mat09-T6,MAT.9.6.1,f
+Mat06MK0021,Beceri,9,Mat09-T6,MAT.9.6.2,b
+Mat06MK0022,Beceri,9,Mat09-T6,MAT.9.6.2,b
+Mat06MK0023,Beceri,9,Mat09-T6,MAT.9.6.2,b
+Mat06MK0024,Beceri,9,Mat09-T6,MAT.9.6.2,b
+Mat06MK0025,Beceri,9,Mat09-T6,MAT.9.6.2,b
+Mat06MK0026,Beceri,9,Mat09-T6,MAT.9.6.2,b
+Mat06MK0027,Beceri,9,Mat09-T6,MAT.9.6.2,c
+Mat06MK0038,Beceri,9,Mat09-T6,MAT.9.6.2,a
+Mat06MK0039,Beceri,9,Mat09-T6,MAT.9.6.2,a
+Mat06MK0040,Beceri,9,Mat09-T6,MAT.9.6.2,a
+Mat06MK0041,Beceri,9,Mat09-T6,MAT.9.6.2,a
+Mat06MK0042,Beceri,9,Mat09-T6,MAT.9.6.2,a
+Mat06MK0045,Beceri,9,Mat09-T6,MAT.9.6.2,b
+Mat07MK0006,Beceri,9,Mat09-T7,MAT.9.7.1,a
+Mat07MK0008,Bilgi,9,Mat09-T7,MAT.9.7.1,b
+Mat07MK0009,Beceri,9,Mat09-T7,MAT.9.7.1,c
+Mat07MK0028,Bilgi,9,Mat09-T7,MAT.9.7.2,c
+Mat07MK0031,Beceri,9,Mat09-T7,MAT.9.7.2,a
+Mat07MK0032,Beceri,9,Mat09-T7,MAT.9.7.2,a
+Mat07MK0033,Beceri,9,Mat09-T7,MAT.9.7.2,a
+Mat07MK0034,Beceri,9,Mat09-T7,MAT.9.7.2,b
+Mat07MK0035,Beceri,9,Mat09-T7,MAT.9.7.2,b
+Mat03MK0166,Bilgi,10,Mat10-T1,MAT.10.1.1,a
+Mat03MK0167,Bilgi,10,Mat10-T1,MAT.10.1.1,a
+Mat03MK0168,Bilgi,10,Mat10-T1,MAT.10.1.1,a
+Mat03MK0169,Bilgi,10,Mat10-T1,MAT.10.1.1,a
+Mat03MK0170,Bilgi,10,Mat10-T1,MAT.10.1.1,"a, b"
+Mat03MK0171,Bilgi,10,Mat10-T1,MAT.10.1.1,"a, b"
+Mat03MK0172,Beceri,10,Mat10-T1,MAT.10.1.1,"c, ç"
+Mat03MK0173,Beceri,10,Mat10-T1,MAT.10.1.1,"c, ç"
+Mat03MK0174,Beceri,10,Mat10-T1,MAT.10.1.1,d
+Mat03MK0175,Beceri,10,Mat10-T1,MAT.10.1.1,d
+Mat03MK0176,Beceri,10,Mat10-T1,MAT.10.1.1,d
+Mat03MK0177,Beceri,10,Mat10-T1,MAT.10.1.1,d
+Mat03MK0178,Beceri,10,Mat10-T1,MAT.10.1.1,d
+Mat03MK0179,Beceri,10,Mat10-T1,MAT.10.1.1,d
+Mat03MK0180,Beceri,10,Mat10-T1,MAT.10.1.1,d
+Mat03MK0181,Bilgi,10,Mat10-T1,MAT.10.1.2,"a, b"
+Mat03MK0182,Bilgi,10,Mat10-T1,MAT.10.1.2,"a, b"
+Mat03MK0183,Bilgi,10,Mat10-T1,MAT.10.1.2,"a, b"
+Mat03MK0184,Bilgi,10,Mat10-T1,MAT.10.1.2,"a, b"
+Mat03MK0185,Bilgi,10,Mat10-T1,MAT.10.1.2,"a, b"
+Mat03MK0186,Beceri,10,Mat10-T1,MAT.10.1.2,"c, ç"
+Mat03MK0187,Beceri,10,Mat10-T1,MAT.10.1.2,"c, ç"
+Mat03MK0188,Beceri,10,Mat10-T1,MAT.10.1.2,"c, ç"
+Mat03MK0189,Beceri,10,Mat10-T1,MAT.10.1.2,"c, ç"
+Mat03MK0190,Beceri,10,Mat10-T1,MAT.10.1.2,"c, ç"
+Mat03MK0191,Bilgi,10,Mat10-T1,MAT.10.1.2,ç
+Mat03MK0192,Bilgi,10,Mat10-T1,MAT.10.1.2,ç
+Mat03MK0193,Beceri,10,Mat10-T1,MAT.10.1.2,d
+Mat03MK0194,Beceri,10,Mat10-T1,MAT.10.1.2,d
+Mat03MK0195,Beceri,10,Mat10-T1,MAT.10.1.2,d
+Mat03MK0196,Beceri,10,Mat10-T1,MAT.10.1.2,d
+Mat03MK0197,Beceri,10,Mat10-T1,MAT.10.1.2,d
+Mat03MK0198,Beceri,10,Mat10-T1,MAT.10.1.2,d
+Mat03MK0199,Beceri,10,Mat10-T1,MAT.10.1.2,d
+Mat03MK0200,Beceri,10,Mat10-T1,MAT.10.1.2,d
+Mat03MK0201,Bilgi,10,Mat10-T1,MAT.10.1.3,"a, b"
+Mat03MK0202,Bilgi,10,Mat10-T1,MAT.10.1.3,"a, b"
+Mat03MK0203,Beceri,10,Mat10-T1,MAT.10.1.3,"c, ç"
+Mat03MK0204,Beceri,10,Mat10-T1,MAT.10.1.3,"c, ç"
+Mat03MK0205,Beceri,10,Mat10-T1,MAT.10.1.3,d
+Mat03MK0206,Beceri,10,Mat10-T1,MAT.10.1.3,d
+Mat03MK0207,Beceri,10,Mat10-T1,MAT.10.1.3,d
+Mat03MK0208,Beceri,10,Mat10-T1,MAT.10.1.3,d
+Mat03MK0209,Beceri,10,Mat10-T1,MAT.10.1.4,a
+Mat03MK0210,Beceri,10,Mat10-T1,MAT.10.1.4,a
+Mat03MK0211,Beceri,10,Mat10-T1,MAT.10.1.4,a
+Mat03MK0212,Beceri,10,Mat10-T1,MAT.10.1.4,a
+Mat03MK0213,Beceri,10,Mat10-T1,MAT.10.1.4,b
+Mat03MK0214,Beceri,10,Mat10-T1,MAT.10.1.4,b
+Mat06MK0001,Bilgi,10,Mat10-T2,MAT.10.2.1,a
+Mat06MK0002,Beceri,10,Mat10-T2,MAT.10.2.1,b
+Mat06MK0003,Beceri,10,Mat10-T2,MAT.10.2.1,b
+Mat06MK0004,Beceri,10,Mat10-T2,MAT.10.2.1,c
+Mat06MK0005,Beceri,10,Mat10-T2,MAT.10.2.1,c
+Mat06MK0006,Beceri,10,Mat10-T2,MAT.10.2.1,ç
+Mat06MK0007,Beceri,10,Mat10-T2,MAT.10.2.1,ç
+Mat06MK0019,Beceri,10,Mat10-T2,MAT.10.2.1,g
+Mat06MK0020,Beceri,10,Mat10-T2,MAT.10.2.1,g
+Mat06MK0053,Beceri,10,Mat10-T2,MAT.10.2.1,"d, e"
+Mat06MK0054,Beceri,10,Mat10-T2,MAT.10.2.1,"d, e"
+Mat06MK0055,Beceri,10,Mat10-T2,MAT.10.2.1,"d, e"
+Mat06MK0056,Beceri,10,Mat10-T2,MAT.10.2.1,d
+Mat06MK0057,Bilgi,10,Mat10-T2,MAT.10.2.1,f
+Mat06MK0021,Beceri,10,Mat10-T2,MAT.10.2.2,b
+Mat06MK0022,Beceri,10,Mat10-T2,MAT.10.2.2,b
+Mat06MK0023,Beceri,10,Mat10-T2,MAT.10.2.2,b
+Mat06MK0024,Beceri,10,Mat10-T2,MAT.10.2.2,b
+Mat06MK0025,Beceri,10,Mat10-T2,MAT.10.2.2,b
+Mat06MK0026,Beceri,10,Mat10-T2,MAT.10.2.2,b
+Mat06MK0027,Beceri,10,Mat10-T2,MAT.10.2.2,c
+Mat06MK0038,Beceri,10,Mat10-T2,MAT.10.2.2,a
+Mat06MK0039,Beceri,10,Mat10-T2,MAT.10.2.2,a
+Mat06MK0040,Beceri,10,Mat10-T2,MAT.10.2.2,a
+Mat01MK0305,Bilgi,10,Mat10-T3,MAT.10.3.1,"a, b"
+Mat01MK0306,Beceri,10,Mat10-T3,MAT.10.3.1,"c, ç"
+Mat01MK0307,Beceri,10,Mat10-T3,MAT.10.3.1,ç
+Mat01MK0308,Beceri,10,Mat10-T3,MAT.10.3.1,ç
+Mat01MK0309,Beceri,10,Mat10-T3,MAT.10.3.1,d
+Mat01MK0310,Bilgi,10,Mat10-T3,MAT.10.3.2,"a, b"
+Mat01MK0311,Bilgi,10,Mat10-T3,MAT.10.3.2,"a, b"
+Mat01MK0312,Beceri,10,Mat10-T3,MAT.10.3.2,"c, ç"
+Mat01MK0313,Beceri,10,Mat10-T3,MAT.10.3.2,"c, ç"
+Mat01MK0314,Beceri,10,Mat10-T3,MAT.10.3.2,ç
+Mat01MK0315,Beceri,10,Mat10-T3,MAT.10.3.2,ç
+Mat01MK0316,Beceri,10,Mat10-T3,MAT.10.3.2,ç
+Mat01MK0317,Bilgi,10,Mat10-T3,MAT.10.3.2,ç
+Mat01MK0318,Beceri,10,Mat10-T3,MAT.10.3.2,d
+Mat01MK0319,Beceri,10,Mat10-T3,MAT.10.3.2,d
+Mat01MK0320,Beceri,10,Mat10-T3,MAT.10.3.2,"e, f"
+Mat01MK0321,Beceri,10,Mat10-T3,MAT.10.3.2,"e, f"
+Mat01MK0322,Bilgi,10,Mat10-T3,MAT.10.3.3,"a, b"
+Mat01MK0323,Bilgi,10,Mat10-T3,MAT.10.3.3,"a, b"
+Mat01MK0324,Bilgi,10,Mat10-T3,MAT.10.3.3,"a, b"
+Mat01MK0325,Beceri,10,Mat10-T3,MAT.10.3.3,"c, ç"
+Mat01MK0326,Beceri,10,Mat10-T3,MAT.10.3.3,"c, ç"
+Mat01MK0327,Beceri,10,Mat10-T3,MAT.10.3.3,"c, ç"
+Mat01MK0328,Beceri,10,Mat10-T3,MAT.10.3.3,d
+Mat01MK0329,Beceri,10,Mat10-T3,MAT.10.3.3,d
+Mat01MK0330,Beceri,10,Mat10-T3,MAT.10.3.3,d
+Mat01MK0331,Beceri,10,Mat10-T3,MAT.10.3.3,d
+Mat01MK0332,Beceri,10,Mat10-T3,MAT.10.3.3,d
+Mat01MK0333,Beceri,10,Mat10-T3,MAT.10.3.3,d
+Mat01MK0334,Beceri,10,Mat10-T3,MAT.10.3.3,"e, f"
+Mat01MK0335,Beceri,10,Mat10-T3,MAT.10.3.3,"e, f"
+Mat01MK0336,Beceri,10,Mat10-T3,MAT.10.3.3,"e, f"
+Mat02MK0189,Bilgi,10,Mat10-T4,MAT.10.4.1,a
+Mat02MK0190,Bilgi,10,Mat10-T4,MAT.10.4.1,a
+Mat02MK0191,Bilgi,10,Mat10-T4,MAT.10.4.1,a
+Mat02MK0192,Bilgi,10,Mat10-T4,MAT.10.4.1,a
+Mat02MK0193,Bilgi,10,Mat10-T4,MAT.10.4.1,a
+Mat02MK0194,Bilgi,10,Mat10-T4,MAT.10.4.1,a
+Mat02MK0195,Bilgi,10,Mat10-T4,MAT.10.4.1,a
+Mat02MK0196,Beceri,10,Mat10-T4,MAT.10.4.1,a
+Mat02MK0197,Beceri,10,Mat10-T4,MAT.10.4.1,b
+Mat02MK0198,Beceri,10,Mat10-T4,MAT.10.4.1,b
+Mat02MK0199,Beceri,10,Mat10-T4,MAT.10.4.1,b
+Mat02MK0200,Bilgi,10,Mat10-T4,MAT.10.4.1,b
+Mat02MK0201,Bilgi,10,Mat10-T4,MAT.10.4.1,b
+Mat02MK0202,Beceri,10,Mat10-T4,MAT.10.4.1,c
+Mat02MK0203,Bilgi,10,Mat10-T4,MAT.10.4.2,"a, b"
+Mat02MK0204,Bilgi,10,Mat10-T4,MAT.10.4.2,"a, b"
+Mat02MK0205,Bilgi,10,Mat10-T4,MAT.10.4.2,"a, b"
+Mat02MK0206,Bilgi,10,Mat10-T4,MAT.10.4.2,"a, b"
+Mat02MK0207,Bilgi,10,Mat10-T4,MAT.10.4.2,"a, b"
+Mat02MK0208,Bilgi,10,Mat10-T4,MAT.10.4.2,"a, b"
+Mat02MK0209,Bilgi,10,Mat10-T4,MAT.10.4.2,"a, b"
+Mat02MK0210,Bilgi,10,Mat10-T4,MAT.10.4.2,"a, b"
+Mat02MK0211,Bilgi,10,Mat10-T4,MAT.10.4.2,"a, b"
+Mat02MK0212,Beceri,10,Mat10-T4,MAT.10.4.2,"c, ç"
+Mat02MK0213,Beceri,10,Mat10-T4,MAT.10.4.2,"c, ç"
+Mat02MK0214,Beceri,10,Mat10-T4,MAT.10.4.2,"c, ç"
+Mat02MK0215,Beceri,10,Mat10-T4,MAT.10.4.2,"c, ç"
+Mat02MK0216,Beceri,10,Mat10-T4,MAT.10.4.2,c
+Mat02MK0217,Beceri,10,Mat10-T4,MAT.10.4.2,c
+Mat02MK0218,Beceri,10,Mat10-T4,MAT.10.4.2,c
+Mat02MK0219,Bilgi,10,Mat10-T4,MAT.10.4.2,"d, e"
+Mat02MK0220,Bilgi,10,Mat10-T4,MAT.10.4.2,"d, e"
+Mat02MK0221,Bilgi,10,Mat10-T4,MAT.10.4.2,"d, e"
+Mat02MK0222,Beceri,10,Mat10-T4,MAT.10.4.2,"f, g, ğ"
+Mat02MK0223,Beceri,10,Mat10-T4,MAT.10.4.2,"f, g, ğ"
+Mat02MK0224,Beceri,10,Mat10-T4,MAT.10.4.2,"f, g, ğ"
+Mat02MK0225,Beceri,10,Mat10-T4,MAT.10.4.2,"h, ı"
+Mat02MK0226,Beceri,10,Mat10-T4,MAT.10.4.2,"h, ı"
+Mat02MK0227,Beceri,10,Mat10-T4,MAT.10.4.2,"h, ı"
+Mat02MK0228,Bilgi,10,Mat10-T4,MAT.10.4.3,"a, b"
+Mat02MK0229,Bilgi,10,Mat10-T4,MAT.10.4.3,"a, b"
+Mat02MK0230,Bilgi,10,Mat10-T4,MAT.10.4.3,"a, b"
+Mat02MK0231,Bilgi,10,Mat10-T4,MAT.10.4.3,"a, b"
+Mat02MK0232,Bilgi,10,Mat10-T4,MAT.10.4.3,"a, b"
+Mat02MK0233,Bilgi,10,Mat10-T4,MAT.10.4.3,"a, b"
+Mat02MK0234,Bilgi,10,Mat10-T4,MAT.10.4.3,"a, b"
+Mat02MK0235,Bilgi,10,Mat10-T4,MAT.10.4.3,"a, b"
+Mat02MK0236,Bilgi,10,Mat10-T4,MAT.10.4.3,"a, b"
+Mat02MK0237,Beceri,10,Mat10-T4,MAT.10.4.3,"c, ç"
+Mat02MK0238,Beceri,10,Mat10-T4,MAT.10.4.3,"c, ç"
+Mat02MK0239,Beceri,10,Mat10-T4,MAT.10.4.3,"c, ç"
+Mat02MK0240,Beceri,10,Mat10-T4,MAT.10.4.3,"c, ç"
+Mat02MK0241,Beceri,10,Mat10-T4,MAT.10.4.3,c
+Mat02MK0242,Bilgi,10,Mat10-T4,MAT.10.4.3,"d, e"
+Mat02MK0243,Bilgi,10,Mat10-T4,MAT.10.4.3,"d, e"
+Mat02MK0244,Bilgi,10,Mat10-T4,MAT.10.4.3,"d, e"
+Mat02MK0245,Beceri,10,Mat10-T4,MAT.10.4.3,"f, g, ğ"
+Mat02MK0246,Beceri,10,Mat10-T4,MAT.10.4.3,"f, g, ğ"
+Mat02MK0247,Beceri,10,Mat10-T4,MAT.10.4.3,"f, g, ğ"
+Mat02MK0248,Beceri,10,Mat10-T4,MAT.10.4.3,"h, ı"
+Mat02MK0249,Beceri,10,Mat10-T4,MAT.10.4.3,"h, ı"
+Mat02MK0250,Beceri,10,Mat10-T4,MAT.10.4.3,"h, ı"
+Mat02MK0251,Bilgi,10,Mat10-T4,MAT.10.4.4,"a, b"
+Mat02MK0252,Bilgi,10,Mat10-T4,MAT.10.4.4,"a, b"
+Mat02MK0253,Bilgi,10,Mat10-T4,MAT.10.4.4,"a, b"
+Mat02MK0254,Bilgi,10,Mat10-T4,MAT.10.4.4,"a, b"
+Mat02MK0255,Bilgi,10,Mat10-T4,MAT.10.4.4,"a, b"
+Mat02MK0256,Bilgi,10,Mat10-T4,MAT.10.4.4,"a, b"
+Mat02MK0257,Bilgi,10,Mat10-T4,MAT.10.4.4,"a, b"
+Mat02MK0258,Bilgi,10,Mat10-T4,MAT.10.4.4,"a, b"
+Mat02MK0259,Bilgi,10,Mat10-T4,MAT.10.4.4,"a, b"
+Mat02MK0260,Beceri,10,Mat10-T4,MAT.10.4.4,"c, ç"
+Mat02MK0261,Beceri,10,Mat10-T4,MAT.10.4.4,"c, ç"
+Mat02MK0262,Beceri,10,Mat10-T4,MAT.10.4.4,"c, ç"
+Mat02MK0263,Beceri,10,Mat10-T4,MAT.10.4.4,"c, ç"
+Mat02MK0264,Bilgi,10,Mat10-T4,MAT.10.4.4,c
+Mat02MK0265,Bilgi,10,Mat10-T4,MAT.10.4.4,c
+Mat02MK0266,Beceri,10,Mat10-T4,MAT.10.4.4,c
+Mat02MK0267,Bilgi,10,Mat10-T4,MAT.10.4.4,"d, e"
+Mat02MK0268,Bilgi,10,Mat10-T4,MAT.10.4.4,"d, e"
+Mat02MK0269,Bilgi,10,Mat10-T4,MAT.10.4.4,"d, e"
+Mat02MK0270,Beceri,10,Mat10-T4,MAT.10.4.4,"f, g, ğ"
+Mat02MK0271,Beceri,10,Mat10-T4,MAT.10.4.4,"f, g, ğ"
+Mat02MK0272,Beceri,10,Mat10-T4,MAT.10.4.4,"f, g, ğ"
+Mat02MK0273,Beceri,10,Mat10-T4,MAT.10.4.4,"h, ı"
+Mat02MK0274,Beceri,10,Mat10-T4,MAT.10.4.4,"h, ı"
+Mat02MK0275,Beceri,10,Mat10-T4,MAT.10.4.4,"h, ı"
+Mat02MK0276,Bilgi,10,Mat10-T4,MAT.10.4.5,"a, b"
+Mat02MK0277,Beceri,10,Mat10-T4,MAT.10.4.5,"c, ç"
+Mat02MK0278,Beceri,10,Mat10-T4,MAT.10.4.5,"c, ç"
+Mat02MK0279,Beceri,10,Mat10-T4,MAT.10.4.5,d
+Mat02MK0280,Beceri,10,Mat10-T4,MAT.10.4.6,"a, b, c, ç"
+Mat02MK0281,Beceri,10,Mat10-T4,MAT.10.4.6,"a, b, c, ç"
+Mat02MK0282,Beceri,10,Mat10-T4,MAT.10.4.6,"d, e"
+Mat02MK0283,Beceri,10,Mat10-T4,MAT.10.4.6,"d, e"
+Mat02MK0284,Beceri,10,Mat10-T4,MAT.10.4.6,"d, e"
+Mat02MK0285,Beceri,10,Mat10-T4,MAT.10.4.6,"d, e"
+Mat02MK0286,Beceri,10,Mat10-T4,MAT.10.4.6,"d, e"
+Mat02MK0287,Beceri,10,Mat10-T4,MAT.10.4.6,"d, e"
+Mat02MK0288,Beceri,10,Mat10-T4,MAT.10.4.6,"d, e"
+Mat02MK0289,Beceri,10,Mat10-T4,MAT.10.4.6,"f, g"
+Mat02MK0290,Beceri,10,Mat10-T4,MAT.10.4.6,"f, g"
+Mat02MK0291,Beceri,10,Mat10-T4,MAT.10.4.6,"ğ, h"
+Mat02MK0292,Beceri,10,Mat10-T4,MAT.10.4.6,"ğ, h"
+Mat09MK0019,Beceri,10,Mat10-T5,MAT.10.5.1,"a, b, c, ç"
+Mat09MK0020,Beceri,10,Mat10-T5,MAT.10.5.1,c
+Mat09MK0021,Beceri,10,Mat10-T5,MAT.10.5.1,c
+Mat09MK0022,Beceri,10,Mat10-T5,MAT.10.5.1,ç
+Mat09MK0023,Beceri,10,Mat10-T5,MAT.10.5.1,"d, e"
+Mat09MK0024,Beceri,10,Mat10-T5,MAT.10.5.1,"d, e"
+Mat09MK0025,Beceri,10,Mat10-T5,MAT.10.5.1,"d, e"
+Mat09MK0026,Beceri,10,Mat10-T5,MAT.10.5.1,"f, g"
+Mat09MK0027,Beceri,10,Mat10-T5,MAT.10.5.1,"ğ, h"
+Mat09MK0028,Beceri,10,Mat10-T5,MAT.10.5.2,"a, b"
+Mat09MK0029,Beceri,10,Mat10-T5,MAT.10.5.2,"a, b"
+Mat10MK0001,Bilgi,10,Mat10-T6,MAT.10.6.1,"a, b"
+Mat10MK0002,Bilgi,10,Mat10-T6,MAT.10.6.1,"a, b"
+Mat10MK0003,Beceri,10,Mat10-T6,MAT.10.6.1,"c, ç"
+Mat10MK0004,Beceri,10,Mat10-T6,MAT.10.6.1,"c, ç"
+Mat10MK0005,Beceri,10,Mat10-T6,MAT.10.6.1,ç
+Mat10MK0006,Beceri,10,Mat10-T6,MAT.10.6.1,ç
+Mat10MK0007,Beceri,10,Mat10-T6,MAT.10.6.1,ç
+Mat10MK0008,Beceri,10,Mat10-T6,MAT.10.6.1,d
+Mat10MK0009,Beceri,10,Mat10-T6,MAT.10.6.1,d
+Mat10MK0010,Bilgi,10,Mat10-T6,MAT.10.6.2,a
+Mat10MK0011,Bilgi,10,Mat10-T6,MAT.10.6.2,a
+Mat10MK0012,Beceri,10,Mat10-T6,MAT.10.6.2,"b, c"
+Mat10MK0013,Beceri,10,Mat10-T6,MAT.10.6.2,"b, c"
+Mat10MK0014,Beceri,10,Mat10-T6,MAT.10.6.2,c
+Mat10MK0015,Beceri,10,Mat10-T6,MAT.10.6.2,c
+Mat10MK0016,Beceri,10,Mat10-T6,MAT.10.6.2,c
+Mat10MK0017,Beceri,10,Mat10-T6,MAT.10.6.2,c
+Mat07MK0036,Bilgi,10,Mat10-T7,MAT.10.7.1,"a, b"
+Mat07MK0037,Beceri,10,Mat10-T7,MAT.10.7.1,"c, ç"
+Mat07MK0038,Beceri,10,Mat10-T7,MAT.10.7.1,c
+Mat07MK0039,Beceri,10,Mat10-T7,MAT.10.7.1,"ç, d"
+Mat07MK0040,Beceri,10,Mat10-T7,MAT.10.7.1,d
+Mat07MK0041,Bilgi,10,Mat10-T7,MAT.10.7.1,d
+Mat07MK0042,Beceri,10,Mat10-T7,MAT.10.7.2,"a, b"
+Mat07MK0043,Beceri,10,Mat10-T7,MAT.10.7.2,c
+Mat06MK0001,Bilgi,11,Mat11-T1,MAT.11.1.1,a
+Mat06MK0002,Beceri,11,Mat11-T1,MAT.11.1.1,b
+Mat06MK0003,Beceri,11,Mat11-T1,MAT.11.1.1,b
+Mat06MK0004,Beceri,11,Mat11-T1,MAT.11.1.1,c
+Mat06MK0005,Beceri,11,Mat11-T1,MAT.11.1.1,c
+Mat06MK0006,Beceri,11,Mat11-T1,MAT.11.1.1,ç
+Mat06MK0007,Beceri,11,Mat11-T1,MAT.11.1.1,ç
+Mat06MK0019,Beceri,11,Mat11-T1,MAT.11.1.1,g
+Mat06MK0020,Beceri,11,Mat11-T1,MAT.11.1.1,g
+Mat06MK0058,Beceri,11,Mat11-T1,MAT.11.1.1,"d, e"
+Mat06MK0059,Beceri,11,Mat11-T1,MAT.11.1.1,"d, e"
+Mat06MK0060,Bilgi,11,Mat11-T1,MAT.11.1.1,f
+Mat06MK0061,Bilgi,11,Mat11-T1,MAT.11.1.1,f
+Mat06MK0062,Beceri,11,Mat11-T1,MAT.11.1.1,f
+Mat06MK0063,Beceri,11,Mat11-T1,MAT.11.1.1,f
+Mat06MK0021,Beceri,11,Mat11-T1,MAT.11.1.2,b
+Mat06MK0022,Beceri,11,Mat11-T1,MAT.11.1.2,b
+Mat06MK0023,Beceri,11,Mat11-T1,MAT.11.1.2,b
+Mat06MK0024,Beceri,11,Mat11-T1,MAT.11.1.2,b
+Mat06MK0025,Beceri,11,Mat11-T1,MAT.11.1.2,b
+Mat06MK0026,Beceri,11,Mat11-T1,MAT.11.1.2,b
+Mat06MK0027,Beceri,11,Mat11-T1,MAT.11.1.2,c
+Mat06MK0038,Beceri,11,Mat11-T1,MAT.11.1.2,a
+Mat06MK0039,Beceri,11,Mat11-T1,MAT.11.1.2,a
+Mat06MK0040,Beceri,11,Mat11-T1,MAT.11.1.2,a
+Mat03MK0215,Bilgi,11,Mat11-T2,MAT.11.2.1,"a, b"
+Mat03MK0216,Bilgi,11,Mat11-T2,MAT.11.2.1,"a, b"
+Mat03MK0217,Bilgi,11,Mat11-T2,MAT.11.2.1,"a, b"
+Mat03MK0218,Bilgi,11,Mat11-T2,MAT.11.2.1,"a, b"
+Mat03MK0219,Bilgi,11,Mat11-T2,MAT.11.2.1,"a, b"
+Mat03MK0220,Beceri,11,Mat11-T2,MAT.11.2.1,"c, ç"
+Mat03MK0221,Beceri,11,Mat11-T2,MAT.11.2.1,"c, ç"
+Mat03MK0222,Beceri,11,Mat11-T2,MAT.11.2.1,"c, ç"
+Mat03MK0223,Beceri,11,Mat11-T2,MAT.11.2.1,"c, ç"
+Mat03MK0224,Beceri,11,Mat11-T2,MAT.11.2.1,"c, ç"
+Mat03MK0225,Beceri,11,Mat11-T2,MAT.11.2.1,d
+Mat03MK0226,Beceri,11,Mat11-T2,MAT.11.2.1,d
+Mat03MK0227,Beceri,11,Mat11-T2,MAT.11.2.1,d
+Mat03MK0228,Beceri,11,Mat11-T2,MAT.11.2.1,d
+Mat03MK0229,Beceri,11,Mat11-T2,MAT.11.2.1,d
+Mat03MK0230,Beceri,11,Mat11-T2,MAT.11.2.1,d
+Mat03MK0231,Beceri,11,Mat11-T2,MAT.11.2.1,d
+Mat03MK0232,Beceri,11,Mat11-T2,MAT.11.2.1,d
+Mat03MK0233,Beceri,11,Mat11-T2,MAT.11.2.1,d
+Mat03MK0234,Beceri,11,Mat11-T2,MAT.11.2.1,d
+Mat03MK0235,Beceri,11,Mat11-T2,MAT.11.2.1,d
+Mat03MK0236,Beceri,11,Mat11-T2,MAT.11.2.1,d
+Mat03MK0237,Beceri,11,Mat11-T2,MAT.11.2.1,d
+Mat03MK0238,Beceri,11,Mat11-T2,MAT.11.2.1,"e, f"
+Mat03MK0239,Beceri,11,Mat11-T2,MAT.11.2.1,"e, f"
+Mat03MK0240,Beceri,11,Mat11-T2,MAT.11.2.1,"e, f"
+Mat03MK0241,Beceri,11,Mat11-T2,MAT.11.2.1,"e, f"
+Mat03MK0242,Beceri,11,Mat11-T2,MAT.11.2.1,"e, f"
+Mat03MK0243,Bilgi,11,Mat11-T2,MAT.11.2.2,"a, b"
+Mat03MK0244,Bilgi,11,Mat11-T2,MAT.11.2.3,"a, b, c, ç"
+Mat03MK0245,Bilgi,11,Mat11-T2,MAT.11.2.4,"a, b"
+Mat03MK0246,Bilgi,11,Mat11-T2,MAT.11.2.4,"a, b"
+Mat03MK0247,Bilgi,11,Mat11-T2,MAT.11.2.4,"a, b"
+Mat03MK0248,Bilgi,11,Mat11-T2,MAT.11.2.4,"a, b"
+Mat03MK0249,Bilgi,11,Mat11-T2,MAT.11.2.4,"a, b"
+Mat03MK0250,Beceri,11,Mat11-T2,MAT.11.2.4,"c, ç"
+Mat03MK0251,Beceri,11,Mat11-T2,MAT.11.2.4,"c, ç"
+Mat03MK0252,Beceri,11,Mat11-T2,MAT.11.2.4,"c, ç"
+Mat03MK0253,Beceri,11,Mat11-T2,MAT.11.2.4,"c, ç"
+Mat03MK0254,Beceri,11,Mat11-T2,MAT.11.2.4,"c, ç"
+Mat03MK0255,Beceri,11,Mat11-T2,MAT.11.2.4,ç
+Mat03MK0256,Beceri,11,Mat11-T2,MAT.11.2.4,ç
+Mat03MK0257,Beceri,11,Mat11-T2,MAT.11.2.4,ç
+Mat03MK0258,Beceri,11,Mat11-T2,MAT.11.2.4,ç
+Mat03MK0259,Beceri,11,Mat11-T2,MAT.11.2.4,ç
+Mat03MK0260,Beceri,11,Mat11-T2,MAT.11.2.4,ç
+Mat03MK0261,Beceri,11,Mat11-T2,MAT.11.2.4,d
+Mat03MK0262,Beceri,11,Mat11-T2,MAT.11.2.4,d
+Mat03MK0263,Beceri,11,Mat11-T2,MAT.11.2.4,d
+Mat03MK0264,Beceri,11,Mat11-T2,MAT.11.2.4,d
+Mat03MK0265,Beceri,11,Mat11-T2,MAT.11.2.4,d
+Mat03MK0266,Beceri,11,Mat11-T2,MAT.11.2.5,"a, b, c, ç"
+Mat03MK0267,Beceri,11,Mat11-T2,MAT.11.2.5,"a, b, c, ç"
+Mat03MK0268,Beceri,11,Mat11-T2,MAT.11.2.5,"a, b, c, ç"
+Mat03MK0269,Beceri,11,Mat11-T2,MAT.11.2.5,"a, b, c, ç"
+Mat03MK0270,Beceri,11,Mat11-T2,MAT.11.2.5,"d, e"
+Mat03MK0271,Beceri,11,Mat11-T2,MAT.11.2.5,"d, e"
+Mat03MK0272,Beceri,11,Mat11-T2,MAT.11.2.5,"d, e"
+Mat03MK0273,Beceri,11,Mat11-T2,MAT.11.2.5,"d, e"
+Mat03MK0274,Beceri,11,Mat11-T2,MAT.11.2.5,"f, g"
+Mat03MK0275,Beceri,11,Mat11-T2,MAT.11.2.5,"f, g"
+Mat03MK0276,Beceri,11,Mat11-T2,MAT.11.2.5,"f, g"
+Mat03MK0277,Beceri,11,Mat11-T2,MAT.11.2.5,"f, g"
+Mat03MK0278,Beceri,11,Mat11-T2,MAT.11.2.5,"ğ, h"
+Mat03MK0279,Beceri,11,Mat11-T2,MAT.11.2.5,"ğ, h"
+Mat03MK0280,Beceri,11,Mat11-T2,MAT.11.2.5,"ğ, h"
+Mat03MK0281,Beceri,11,Mat11-T2,MAT.11.2.5,"ğ, h"
+Mat02MK0293,Beceri,11,Mat11-T3,MAT.11.3.1,a
+Mat02MK0294,Beceri,11,Mat11-T3,MAT.11.3.1,a
+Mat02MK0295,Bilgi,11,Mat11-T3,MAT.11.3.1,a
+Mat02MK0296,Bilgi,11,Mat11-T3,MAT.11.3.1,a
+Mat02MK0297,Beceri,11,Mat11-T3,MAT.11.3.1,a
+Mat02MK0298,Beceri,11,Mat11-T3,MAT.11.3.1,a
+Mat02MK0299,Bilgi,11,Mat11-T3,MAT.11.3.1,"a, b"
+Mat02MK0300,Bilgi,11,Mat11-T3,MAT.11.3.1,"a, b"
+Mat02MK0301,Bilgi,11,Mat11-T3,MAT.11.3.1,"a, b"
+Mat02MK0302,Bilgi,11,Mat11-T3,MAT.11.3.1,"a, b"
+Mat02MK0303,Bilgi,11,Mat11-T3,MAT.11.3.1,"a, b"
+Mat02MK0304,Bilgi,11,Mat11-T3,MAT.11.3.1,"a, b"
+Mat02MK0305,Bilgi,11,Mat11-T3,MAT.11.3.1,"a, b"
+Mat02MK0306,Bilgi,11,Mat11-T3,MAT.11.3.1,"a, b"
+Mat02MK0307,Bilgi,11,Mat11-T3,MAT.11.3.1,"a, b"
+Mat02MK0308,Beceri,11,Mat11-T3,MAT.11.3.1,"c, ç"
+Mat02MK0309,Beceri,11,Mat11-T3,MAT.11.3.1,"c, ç"
+Mat02MK0310,Beceri,11,Mat11-T3,MAT.11.3.1,"c, ç"
+Mat02MK0311,Beceri,11,Mat11-T3,MAT.11.3.1,"c, ç"
+Mat02MK0312,Beceri,11,Mat11-T3,MAT.11.3.1,c
+Mat02MK0313,Bilgi,11,Mat11-T3,MAT.11.3.1,"d, e"
+Mat02MK0314,Bilgi,11,Mat11-T3,MAT.11.3.1,"d, e"
+Mat02MK0315,Bilgi,11,Mat11-T3,MAT.11.3.1,"d, e"
+Mat02MK0316,Beceri,11,Mat11-T3,MAT.11.3.1,"f, g, ğ"
+Mat02MK0317,Beceri,11,Mat11-T3,MAT.11.3.1,"f, g, ğ"
+Mat02MK0318,Beceri,11,Mat11-T3,MAT.11.3.1,"f, g, ğ"
+Mat02MK0319,Beceri,11,Mat11-T3,MAT.11.3.1,"h, ı"
+Mat02MK0320,Beceri,11,Mat11-T3,MAT.11.3.1,"h, ı"
+Mat02MK0321,Beceri,11,Mat11-T3,MAT.11.3.1,"h, ı"
+Mat02MK0322,Beceri,11,Mat11-T3,MAT.11.3.2,"a, b, c, ç"
+Mat02MK0323,Beceri,11,Mat11-T3,MAT.11.3.2,"d, e"
+Mat02MK0324,Beceri,11,Mat11-T3,MAT.11.3.2,"d, e"
+Mat02MK0325,Beceri,11,Mat11-T3,MAT.11.3.2,e
+Mat02MK0326,Beceri,11,Mat11-T3,MAT.11.3.2,"f, g"
+Mat02MK0327,Beceri,11,Mat11-T3,MAT.11.3.2,"ğ, h"
+Mat02MK0328,Bilgi,11,Mat11-T3,MAT.11.3.3,"a, b"
+Mat02MK0329,Bilgi,11,Mat11-T3,MAT.11.3.3,"a, b"
+Mat02MK0330,Bilgi,11,Mat11-T3,MAT.11.3.3,"a, b"
+Mat02MK0331,Bilgi,11,Mat11-T3,MAT.11.3.3,"a, b"
+Mat02MK0332,Bilgi,11,Mat11-T3,MAT.11.3.3,"a, b"
+Mat02MK0333,Bilgi,11,Mat11-T3,MAT.11.3.3,"a, b"
+Mat02MK0334,Bilgi,11,Mat11-T3,MAT.11.3.3,"a, b"
+Mat02MK0335,Bilgi,11,Mat11-T3,MAT.11.3.3,"a, b"
+Mat02MK0336,Bilgi,11,Mat11-T3,MAT.11.3.3,"a, b"
+Mat02MK0337,Beceri,11,Mat11-T3,MAT.11.3.3,"c, ç"
+Mat02MK0338,Beceri,11,Mat11-T3,MAT.11.3.3,"c, ç"
+Mat02MK0339,Beceri,11,Mat11-T3,MAT.11.3.3,"c, ç"
+Mat02MK0340,Beceri,11,Mat11-T3,MAT.11.3.3,"c, ç"
+Mat02MK0341,Bilgi,11,Mat11-T3,MAT.11.3.3,"d, e"
+Mat02MK0342,Bilgi,11,Mat11-T3,MAT.11.3.3,"d, e"
+Mat02MK0343,Bilgi,11,Mat11-T3,MAT.11.3.3,"d, e"
+Mat02MK0344,Beceri,11,Mat11-T3,MAT.11.3.3,"f, g, ğ"
+Mat02MK0345,Beceri,11,Mat11-T3,MAT.11.3.3,"f, g, ğ"
+Mat02MK0346,Beceri,11,Mat11-T3,MAT.11.3.3,"f, g, ğ"
+Mat02MK0347,Beceri,11,Mat11-T3,MAT.11.3.3,ğ
+Mat02MK0348,Beceri,11,Mat11-T3,MAT.11.3.3,ğ
+Mat02MK0349,Bilgi,11,Mat11-T3,MAT.11.3.3,ğ
+Mat02MK0350,Bilgi,11,Mat11-T3,MAT.11.3.3,ğ
+Mat02MK0351,Bilgi,11,Mat11-T3,MAT.11.3.4,"a, b, c, ç"
+Mat02MK0352,Beceri,11,Mat11-T3,MAT.11.3.4,d
+Mat02MK0353,Bilgi,11,Mat11-T3,MAT.11.3.5,"a, b"
+Mat02MK0354,Bilgi,11,Mat11-T3,MAT.11.3.5,"a, b"
+Mat02MK0355,Bilgi,11,Mat11-T3,MAT.11.3.5,"a, b"
+Mat02MK0356,Bilgi,11,Mat11-T3,MAT.11.3.5,"a, b"
+Mat02MK0357,Bilgi,11,Mat11-T3,MAT.11.3.5,"a, b"
+Mat02MK0358,Bilgi,11,Mat11-T3,MAT.11.3.5,"a, b"
+Mat02MK0359,Bilgi,11,Mat11-T3,MAT.11.3.5,"a, b"
+Mat02MK0360,Bilgi,11,Mat11-T3,MAT.11.3.5,"a, b"
+Mat02MK0361,Bilgi,11,Mat11-T3,MAT.11.3.5,"a, b"
+Mat02MK0362,Beceri,11,Mat11-T3,MAT.11.3.5,"c, ç"
+Mat02MK0363,Beceri,11,Mat11-T3,MAT.11.3.5,"c, ç"
+Mat02MK0364,Beceri,11,Mat11-T3,MAT.11.3.5,"c, ç"
+Mat02MK0365,Beceri,11,Mat11-T3,MAT.11.3.5,"c, ç"
+Mat02MK0366,Beceri,11,Mat11-T3,MAT.11.3.5,ç
+Mat02MK0367,Beceri,11,Mat11-T3,MAT.11.3.5,ç
+Mat02MK0368,Beceri,11,Mat11-T3,MAT.11.3.5,ç
+Mat02MK0369,Beceri,11,Mat11-T3,MAT.11.3.5,ç
+Mat02MK0370,Beceri,11,Mat11-T3,MAT.11.3.5,ç
+Mat02MK0371,Beceri,11,Mat11-T3,MAT.11.3.5,ç
+Mat02MK0372,Bilgi,11,Mat11-T3,MAT.11.3.5,"d, e"
+Mat02MK0373,Bilgi,11,Mat11-T3,MAT.11.3.5,"d, e"
+Mat02MK0374,Bilgi,11,Mat11-T3,MAT.11.3.5,"d, e"
+Mat02MK0375,Beceri,11,Mat11-T3,MAT.11.3.5,"f, g, ğ"
+Mat02MK0376,Beceri,11,Mat11-T3,MAT.11.3.5,"f, g, ğ"
+Mat02MK0377,Beceri,11,Mat11-T3,MAT.11.3.5,"f, g, ğ"
+Mat02MK0378,Beceri,11,Mat11-T3,MAT.11.3.5,"h, ı"
+Mat02MK0379,Beceri,11,Mat11-T3,MAT.11.3.5,"h, ı"
+Mat02MK0380,Beceri,11,Mat11-T3,MAT.11.3.5,"h, ı"
+Mat02MK0381,Beceri,11,Mat11-T3,MAT.11.3.6,"a, b, c, ç"
+Mat02MK0382,Beceri,11,Mat11-T3,MAT.11.3.6,"a, b, c, ç"
+Mat02MK0383,Beceri,11,Mat11-T3,MAT.11.3.6,"a, b, c, ç"
+Mat02MK0384,Beceri,11,Mat11-T3,MAT.11.3.6,"a, b, c, ç"
+Mat02MK0385,Beceri,11,Mat11-T3,MAT.11.3.6,"d, e"
+Mat02MK0386,Beceri,11,Mat11-T3,MAT.11.3.6,"d, e"
+Mat02MK0387,Beceri,11,Mat11-T3,MAT.11.3.6,"d, e"
+Mat02MK0388,Beceri,11,Mat11-T3,MAT.11.3.6,"d, e"
+Mat02MK0389,Beceri,11,Mat11-T3,MAT.11.3.6,"d, e"
+Mat02MK0390,Beceri,11,Mat11-T3,MAT.11.3.6,"d, e"
+Mat02MK0391,Beceri,11,Mat11-T3,MAT.11.3.6,"d, e"
+Mat02MK0392,Beceri,11,Mat11-T3,MAT.11.3.6,"d, e"
+Mat02MK0393,Beceri,11,Mat11-T3,MAT.11.3.6,"f, g"
+Mat02MK0394,Beceri,11,Mat11-T3,MAT.11.3.6,"f, g"
+Mat02MK0395,Beceri,11,Mat11-T3,MAT.11.3.6,"f, g"
+Mat02MK0396,Beceri,11,Mat11-T3,MAT.11.3.6,"f, g"
+Mat02MK0397,Beceri,11,Mat11-T3,MAT.11.3.6,"ğ, h"
+Mat02MK0398,Beceri,11,Mat11-T3,MAT.11.3.6,"ğ, h"
+Mat02MK0399,Beceri,11,Mat11-T3,MAT.11.3.6,"ğ, h"
+Mat02MK0400,Beceri,11,Mat11-T3,MAT.11.3.6,"ğ, h"
+Mat02MK0401,Beceri,11,Mat11-T3,MAT.11.3.7,"a, b, c, ç"
+Mat02MK0402,Beceri,11,Mat11-T3,MAT.11.3.7,"a, b, c, ç"
+Mat02MK0403,Beceri,11,Mat11-T3,MAT.11.3.7,c
+Mat02MK0404,Beceri,11,Mat11-T3,MAT.11.3.7,c
+Mat02MK0405,Beceri,11,Mat11-T3,MAT.11.3.7,ç
+Mat02MK0406,Bilgi,11,Mat11-T3,MAT.11.3.7,"d, e"
+Mat02MK0407,Beceri,11,Mat11-T3,MAT.11.3.7,"f, g, ğ, h, ı"
+Mat02MK0408,Beceri,11,Mat11-T3,MAT.11.3.7,"f, g, ğ, h, ı"
+Mat02MK0409,Beceri,11,Mat11-T3,MAT.11.3.8,"a, b"
+Mat02MK0410,Beceri,11,Mat11-T3,MAT.11.3.8,"a, b"
+Mat02MK0411,Beceri,11,Mat11-T3,MAT.11.3.8,"a, b"
+Mat02MK0412,Beceri,11,Mat11-T3,MAT.11.3.8,"a, b"
+Mat02MK0413,Beceri,11,Mat11-T3,MAT.11.3.8,"a, b"
+Mat02MK0414,Beceri,11,Mat11-T3,MAT.11.3.8,a
+Mat02MK0415,Bilgi,11,Mat11-T3,MAT.11.3.8,c
+Mat02MK0416,Beceri,12,Mat12-T1,MAT.12.1.1,"a, b, c, ç"
+Mat02MK0417,Beceri,12,Mat12-T1,MAT.12.1.1,"a, b, c, ç"
+Mat02MK0418,Beceri,12,Mat12-T1,MAT.12.1.1,"a, b, c, ç"
+Mat02MK0419,Beceri,12,Mat12-T1,MAT.12.1.1,"a, b, c, ç"
+Mat02MK0420,Bilgi,12,Mat12-T1,MAT.12.1.1,"d, e, f, g"
+Mat02MK0421,Bilgi,12,Mat12-T1,MAT.12.1.1,"d, e, f, g"
+Mat02MK0422,Beceri,12,Mat12-T1,MAT.12.1.1,g
+Mat02MK0423,Beceri,12,Mat12-T1,MAT.12.1.1,g
+Mat02MK0424,Beceri,12,Mat12-T1,MAT.12.1.1,ğ
+Mat02MK0425,Beceri,12,Mat12-T1,MAT.12.1.1,"h, ı"
+Mat02MK0426,Beceri,12,Mat12-T1,MAT.12.1.1,"h, ı"
+Mat02MK0427,Beceri,12,Mat12-T1,MAT.12.1.1,"h, ı"
+Mat02MK0428,Beceri,12,Mat12-T1,MAT.12.1.1,"h, ı"
+Mat02MK0429,Bilgi,12,Mat12-T1,MAT.12.1.2,"a, b, c"
+Mat02MK0430,Bilgi,12,Mat12-T1,MAT.12.1.2,"a, b, c"
+Mat02MK0431,Bilgi,12,Mat12-T1,MAT.12.1.3,"a, b, c"
+Mat02MK0432,Bilgi,12,Mat12-T1,MAT.12.1.4,a
+Mat02MK0433,Bilgi,12,Mat12-T1,MAT.12.1.4,a
+Mat02MK0434,Bilgi,12,Mat12-T1,MAT.12.1.4,a
+Mat02MK0435,Bilgi,12,Mat12-T1,MAT.12.1.4,a
+Mat02MK0436,Bilgi,12,Mat12-T1,MAT.12.1.4,"a, b"
+Mat02MK0437,Bilgi,12,Mat12-T1,MAT.12.1.4,"a, b"
+Mat02MK0438,Bilgi,12,Mat12-T1,MAT.12.1.4,"a, b"
+Mat02MK0439,Bilgi,12,Mat12-T1,MAT.12.1.4,"a, b"
+Mat02MK0440,Beceri,12,Mat12-T1,MAT.12.1.4,b
+Mat02MK0441,Beceri,12,Mat12-T1,MAT.12.1.4,b
+Mat02MK0442,Beceri,12,Mat12-T1,MAT.12.1.4,b
+Mat02MK0443,Beceri,12,Mat12-T1,MAT.12.1.4,b
+Mat02MK0444,Beceri,12,Mat12-T1,MAT.12.1.4,b
+Mat02MK0445,Beceri,12,Mat12-T1,MAT.12.1.4,b
+Mat02MK0446,Beceri,12,Mat12-T1,MAT.12.1.4,b
+Mat02MK0447,Beceri,12,Mat12-T1,MAT.12.1.4,"c, ç"
+Mat02MK0448,Beceri,12,Mat12-T1,MAT.12.1.4,"c, ç"
+Mat02MK0449,Beceri,12,Mat12-T1,MAT.12.1.4,"c, ç"
+Mat02MK0450,Beceri,12,Mat12-T1,MAT.12.1.4,"c, ç"
+Mat02MK0451,Bilgi,12,Mat12-T1,MAT.12.1.4,ç
+Mat02MK0452,Bilgi,12,Mat12-T1,MAT.12.1.4,ç
+Mat02MK0453,Beceri,12,Mat12-T1,MAT.12.1.4,d
+Mat02MK0454,Beceri,12,Mat12-T1,MAT.12.1.4,d
+Mat02MK0455,Beceri,12,Mat12-T1,MAT.12.1.4,d
+Mat02MK0456,Beceri,12,Mat12-T1,MAT.12.1.4,d
+Mat02MK0457,Beceri,12,Mat12-T1,MAT.12.1.5,"a, b"
+Mat02MK0458,Beceri,12,Mat12-T1,MAT.12.1.5,"a, b"
+Mat02MK0459,Beceri,12,Mat12-T1,MAT.12.1.5,"a, b"
+Mat02MK0460,Beceri,12,Mat12-T1,MAT.12.1.5,"a, b"
+Mat02MK0461,Beceri,12,Mat12-T1,MAT.12.1.5,"a, b, c, ç"
+Mat02MK0462,Beceri,12,Mat12-T1,MAT.12.1.5,"a, b, c, ç"
+Mat02MK0463,Beceri,12,Mat12-T1,MAT.12.1.5,"a, b, c, ç"
+Mat02MK0464,Beceri,12,Mat12-T1,MAT.12.1.5,"a, b, c, ç"
+Mat02MK0465,Beceri,12,Mat12-T1,MAT.12.1.5,"d, e"
+Mat02MK0466,Beceri,12,Mat12-T1,MAT.12.1.5,"d, e"
+Mat02MK0467,Beceri,12,Mat12-T1,MAT.12.1.5,"d, e"
+Mat02MK0468,Beceri,12,Mat12-T1,MAT.12.1.5,"d, e"
+Mat02MK0469,Beceri,12,Mat12-T1,MAT.12.1.5,"f, g"
+Mat02MK0470,Beceri,12,Mat12-T1,MAT.12.1.5,"f, g"
+Mat02MK0471,Beceri,12,Mat12-T1,MAT.12.1.5,"f, g"
+Mat02MK0472,Beceri,12,Mat12-T1,MAT.12.1.5,"f, g"
+Mat02MK0473,Beceri,12,Mat12-T1,MAT.12.1.5,"ğ, h"
+Mat02MK0474,Beceri,12,Mat12-T1,MAT.12.1.5,"ğ, h"
+Mat02MK0475,Beceri,12,Mat12-T1,MAT.12.1.5,"ğ, h"
+Mat02MK0476,Beceri,12,Mat12-T1,MAT.12.1.5,"ğ, h"
+Mat03MK0282,Bilgi,12,Mat12-T2,MAT.12.2.1,a
+Mat03MK0283,Bilgi,12,Mat12-T2,MAT.12.2.1,a
+Mat03MK0284,Bilgi,12,Mat12-T2,MAT.12.2.1,a
+Mat03MK0285,Bilgi,12,Mat12-T2,MAT.12.2.1,a
+Mat03MK0286,Bilgi,12,Mat12-T2,MAT.12.2.1,a
+Mat03MK0287,Bilgi,12,Mat12-T2,MAT.12.2.1,b
+Mat03MK0288,Bilgi,12,Mat12-T2,MAT.12.2.1,b
+Mat03MK0289,Bilgi,12,Mat12-T2,MAT.12.2.2,"a, b"
+Mat03MK0290,Bilgi,12,Mat12-T2,MAT.12.2.2,"a, b"
+Mat03MK0291,Bilgi,12,Mat12-T2,MAT.12.2.2,"a, b"
+Mat03MK0292,Bilgi,12,Mat12-T2,MAT.12.2.2,"a, b"
+Mat03MK0293,Bilgi,12,Mat12-T2,MAT.12.2.2,"a, b"
+Mat03MK0294,Beceri,12,Mat12-T2,MAT.12.2.2,"c, ç"
+Mat03MK0295,Beceri,12,Mat12-T2,MAT.12.2.2,"c, ç"
+Mat03MK0296,Beceri,12,Mat12-T2,MAT.12.2.2,"c, ç"
+Mat03MK0297,Beceri,12,Mat12-T2,MAT.12.2.2,"c, ç"
+Mat03MK0298,Beceri,12,Mat12-T2,MAT.12.2.2,"c, ç"
+Mat03MK0299,Bilgi,12,Mat12-T2,MAT.12.2.2,ç
+Mat03MK0300,Bilgi,12,Mat12-T2,MAT.12.2.2,ç
+Mat03MK0301,Bilgi,12,Mat12-T2,MAT.12.2.2,ç
+Mat03MK0302,Bilgi,12,Mat12-T2,MAT.12.2.2,ç
+Mat03MK0303,Bilgi,12,Mat12-T2,MAT.12.2.2,ç
+Mat03MK0304,Beceri,12,Mat12-T2,MAT.12.2.2,ç
+Mat03MK0305,Beceri,12,Mat12-T2,MAT.12.2.2,d
+Mat03MK0306,Beceri,12,Mat12-T2,MAT.12.2.2,d
+Mat03MK0307,Beceri,12,Mat12-T2,MAT.12.2.2,d
+Mat03MK0308,Beceri,12,Mat12-T2,MAT.12.2.2,d
+Mat03MK0309,Beceri,12,Mat12-T2,MAT.12.2.2,d
+Mat03MK0310,Beceri,12,Mat12-T2,MAT.12.2.2,d
+Mat03MK0311,Beceri,12,Mat12-T2,MAT.12.2.2,d
+Mat03MK0312,Beceri,12,Mat12-T2,MAT.12.2.3,"a, b, c, ç"
+Mat03MK0313,Beceri,12,Mat12-T2,MAT.12.2.3,"a, b, c, ç"
+Mat03MK0314,Beceri,12,Mat12-T2,MAT.12.2.3,"a, b, c, ç"
+Mat03MK0315,Beceri,12,Mat12-T2,MAT.12.2.3,"a, b, c, ç"
+Mat03MK0316,Beceri,12,Mat12-T2,MAT.12.2.3,"d, e"
+Mat03MK0317,Beceri,12,Mat12-T2,MAT.12.2.3,"d, e"
+Mat03MK0318,Beceri,12,Mat12-T2,MAT.12.2.3,"d, e"
+Mat03MK0319,Beceri,12,Mat12-T2,MAT.12.2.3,"d, e"
+Mat03MK0320,Beceri,12,Mat12-T2,MAT.12.2.3,"d, e"
+Mat03MK0321,Beceri,12,Mat12-T2,MAT.12.2.3,"d, e"
+Mat03MK0322,Beceri,12,Mat12-T2,MAT.12.2.3,"f, g"
+Mat03MK0323,Beceri,12,Mat12-T2,MAT.12.2.3,"f, g"
+Mat03MK0324,Beceri,12,Mat12-T2,MAT.12.2.3,"f, g"
+Mat03MK0325,Beceri,12,Mat12-T2,MAT.12.2.3,"f, g"
+Mat03MK0326,Beceri,12,Mat12-T2,MAT.12.2.3,"ğ, h"
+Mat03MK0327,Beceri,12,Mat12-T2,MAT.12.2.3,"ğ, h"
+Mat03MK0328,Beceri,12,Mat12-T2,MAT.12.2.3,"ğ, h"
+Mat03MK0329,Beceri,12,Mat12-T2,MAT.12.2.3,"ğ, h"
+Mat04MK0157,Bilgi,12,Mat12-T3,MAT.12.3.1,a
+Mat04MK0158,Bilgi,12,Mat12-T3,MAT.12.3.1,a
+Mat04MK0159,Bilgi,12,Mat12-T3,MAT.12.3.1,b
+Mat04MK0160,Beceri,12,Mat12-T3,MAT.12.3.1,b
+Mat04MK0161,Beceri,12,Mat12-T3,MAT.12.3.2,"a, b, c"
+Mat04MK0162,Beceri,12,Mat12-T3,MAT.12.3.2,c
+Mat04MK0163,Beceri,12,Mat12-T3,MAT.12.3.2,c
+Mat04MK0164,Beceri,12,Mat12-T3,MAT.12.3.2,c
+Mat04MK0165,Beceri,12,Mat12-T3,MAT.12.3.2,c
+Mat04MK0166,Beceri,12,Mat12-T3,MAT.12.3.2,c
+Mat04MK0167,Beceri,12,Mat12-T3,MAT.12.3.2,c
+Mat04MK0168,Beceri,12,Mat12-T3,MAT.12.3.2,c
+Mat04MK0169,Beceri,12,Mat12-T3,MAT.12.3.2,c
+Mat04MK0170,Beceri,12,Mat12-T3,MAT.12.3.2,c
+Mat04MK0171,Beceri,12,Mat12-T3,MAT.12.3.2,c
+Mat04MK0172,Beceri,12,Mat12-T3,MAT.12.3.2,c
+Mat04MK0173,Beceri,12,Mat12-T3,MAT.12.3.2,c
+Mat04MK0174,Beceri,12,Mat12-T3,MAT.12.3.2,c
+Mat04MK0175,Beceri,12,Mat12-T3,MAT.12.3.2,c
+Mat04MK0176,Beceri,12,Mat12-T3,MAT.12.3.3,"a, b, c, ç"
+Mat04MK0177,Beceri,12,Mat12-T3,MAT.12.3.3,"a, b, c, ç"
+Mat04MK0178,Beceri,12,Mat12-T3,MAT.12.3.3,"d, e"
+Mat04MK0179,Beceri,12,Mat12-T3,MAT.12.3.3,"d, e"
+Mat04MK0180,Beceri,12,Mat12-T3,MAT.12.3.3,"f, g"
+Mat04MK0181,Beceri,12,Mat12-T3,MAT.12.3.3,"f, g"
+Mat04MK0182,Beceri,12,Mat12-T3,MAT.12.3.3,"ğ, h"
+Mat04MK0183,Beceri,12,Mat12-T3,MAT.12.3.3,"ğ, h"
+Mat11MK0001,Bilgi,12,Mat12-T4,MAT.12.4.1,"a, b"
+Mat11MK0002,Bilgi,12,Mat12-T4,MAT.12.4.1,"a, b"
+Mat11MK0003,Bilgi,12,Mat12-T4,MAT.12.4.1,c
+Mat11MK0004,Bilgi,12,Mat12-T4,MAT.12.4.1,c
+Mat11MK0005,Bilgi,12,Mat12-T4,MAT.12.4.1,c
+Mat11MK0006,Beceri,12,Mat12-T4,MAT.12.4.1,c
+Mat11MK0007,Beceri,12,Mat12-T4,MAT.12.4.1,c
+Mat11MK0008,Beceri,12,Mat12-T4,MAT.12.4.2,"a, b, c, ç"
+Mat11MK0009,Beceri,12,Mat12-T4,MAT.12.4.2,"a, b, c, ç"
+Mat11MK0010,Beceri,12,Mat12-T4,MAT.12.4.2,"a, b, c, ç"
+Mat11MK0011,Bilgi,12,Mat12-T4,MAT.12.4.2,"a, b"
+Mat11MK0012,Bilgi,12,Mat12-T4,MAT.12.4.2,"a, b"
+Mat11MK0013,Bilgi,12,Mat12-T4,MAT.12.4.2,"a, b"
+Mat11MK0014,Bilgi,12,Mat12-T4,MAT.12.4.2,"a, b"
+Mat11MK0015,Beceri,12,Mat12-T4,MAT.12.4.2,"c, ç"
+Mat11MK0016,Beceri,12,Mat12-T4,MAT.12.4.2,"c, ç"
+Mat11MK0017,Beceri,12,Mat12-T4,MAT.12.4.2,"c, ç"
+Mat11MK0018,Beceri,12,Mat12-T4,MAT.12.4.2,"c, ç"
+Mat11MK0019,Beceri,12,Mat12-T4,MAT.12.4.2,d
+Mat11MK0020,Beceri,12,Mat12-T4,MAT.12.4.2,d
+Mat11MK0021,Beceri,12,Mat12-T4,MAT.12.4.2,d
+Mat11MK0022,Beceri,12,Mat12-T4,MAT.12.4.2,d
+Mat11MK0023,Beceri,12,Mat12-T4,MAT.12.4.2,ğ
+Mat11MK0024,Beceri,12,Mat12-T4,MAT.12.4.2,ğ
+Mat11MK0025,Beceri,12,Mat12-T4,MAT.12.4.2,ğ
+Mat11MK0026,Beceri,12,Mat12-T4,MAT.12.4.2,ğ
+Mat11MK0027,Beceri,12,Mat12-T4,MAT.12.4.2,ğ
+Mat11MK0028,Bilgi,12,Mat12-T4,MAT.12.4.3,a
+Mat11MK0029,Beceri,12,Mat12-T4,MAT.12.4.3,"b, c"
+Mat11MK0030,Bilgi,12,Mat12-T4,MAT.12.4.4,"a, b, c"
+Mat11MK0031,Bilgi,12,Mat12-T4,MAT.12.4.4,"a, b, c"
+Mat11MK0032,Beceri,12,Mat12-T4,MAT.12.4.4,c
+Mat11MK0033,Beceri,12,Mat12-T4,MAT.12.4.5,"a, b, c, ç"
+Mat11MK0034,Bilgi,12,Mat12-T4,MAT.12.4.5,"a, b"
+Mat11MK0035,Bilgi,12,Mat12-T4,MAT.12.4.5,"a, b"
+Mat11MK0036,Bilgi,12,Mat12-T4,MAT.12.4.5,"a, b"
+Mat11MK0037,Bilgi,12,Mat12-T4,MAT.12.4.5,"a, b"
+Mat11MK0038,Bilgi,12,Mat12-T4,MAT.12.4.5,c
+Mat11MK0039,Bilgi,12,Mat12-T4,MAT.12.4.5,c
+Mat11MK0040,Beceri,12,Mat12-T4,MAT.12.4.5,"c, ç"
+Mat11MK0041,Beceri,12,Mat12-T4,MAT.12.4.5,"c, ç"
+Mat11MK0042,Beceri,12,Mat12-T4,MAT.12.4.5,"c, ç"
+Mat11MK0043,Beceri,12,Mat12-T4,MAT.12.4.5,"c, ç"
+Mat11MK0044,Beceri,12,Mat12-T4,MAT.12.4.5,d
+Mat11MK0045,Beceri,12,Mat12-T4,MAT.12.4.5,d
+Mat11MK0046,Beceri,12,Mat12-T4,MAT.12.4.5,d
+Mat11MK0047,Beceri,12,Mat12-T4,MAT.12.4.5,d
+Mat11MK0048,Beceri,12,Mat12-T4,MAT.12.4.5,"e, f"
+Mat11MK0049,Beceri,12,Mat12-T4,MAT.12.4.5,"e, f"
+Mat11MK0050,Beceri,12,Mat12-T4,MAT.12.4.5,"e, f"
+Mat11MK0051,Beceri,12,Mat12-T4,MAT.12.4.5,"e, f"
+Mat11MK0052,Beceri,12,Mat12-T4,MAT.12.4.5,e
+Mat11MK0053,Beceri,12,Mat12-T4,MAT.12.4.5,e
+Mat11MK0054,Beceri,12,Mat12-T4,MAT.12.4.5,e
+Mat11MK0055,Beceri,12,Mat12-T4,MAT.12.4.5,e
+Mat11MK0056,Beceri,12,Mat12-T4,MAT.12.4.5,ğ
+Mat11MK0057,Bilgi,12,Mat12-T4,MAT.12.4.6,"a, b"
+Mat11MK0058,Bilgi,12,Mat12-T4,MAT.12.4.6,"a, b"
+Mat11MK0059,Bilgi,12,Mat12-T4,MAT.12.4.6,"a, b"
+Mat11MK0060,Beceri,12,Mat12-T4,MAT.12.4.6,"c, ç"
+Mat11MK0061,Beceri,12,Mat12-T4,MAT.12.4.6,"c, ç"
+Mat11MK0062,Beceri,12,Mat12-T4,MAT.12.4.6,"c, ç"
+Mat11MK0063,Beceri,12,Mat12-T4,MAT.12.4.6,d
+Mat11MK0064,Beceri,12,Mat12-T4,MAT.12.4.6,d
+Mat11MK0065,Beceri,12,Mat12-T4,MAT.12.4.6,d
+Mat11MK0066,Bilgi,12,Mat12-T4,MAT.12.4.7,"a, b"
+Mat11MK0067,Bilgi,12,Mat12-T4,MAT.12.4.7,"a, b"
+Mat11MK0068,Bilgi,12,Mat12-T4,MAT.12.4.7,"a, b"
+Mat11MK0069,Bilgi,12,Mat12-T4,MAT.12.4.7,"a, b"
+Mat11MK0070,Bilgi,12,Mat12-T4,MAT.12.4.7,"a, b"
+Mat11MK0071,Beceri,12,Mat12-T4,MAT.12.4.7,"c, ç"
+Mat11MK0072,Beceri,12,Mat12-T4,MAT.12.4.7,"c, ç"
+Mat11MK0073,Beceri,12,Mat12-T4,MAT.12.4.7,"c, ç"
+Mat11MK0074,Beceri,12,Mat12-T4,MAT.12.4.7,"c, ç"
+Mat11MK0075,Beceri,12,Mat12-T4,MAT.12.4.7,"c, ç"
+Mat11MK0076,Beceri,12,Mat12-T4,MAT.12.4.7,d
+Mat11MK0077,Beceri,12,Mat12-T4,MAT.12.4.7,d
+Mat11MK0078,Beceri,12,Mat12-T4,MAT.12.4.7,d
+Mat11MK0079,Beceri,12,Mat12-T4,MAT.12.4.7,d
+Mat11MK0080,Beceri,12,Mat12-T4,MAT.12.4.7,d
+Mat11MK0081,Beceri,12,Mat12-T4,MAT.12.4.7,d
+Mat11MK0082,Beceri,12,Mat12-T4,MAT.12.4.7,d
+Mat11MK0083,Beceri,12,Mat12-T4,MAT.12.4.7,d
+Mat11MK0084,Beceri,12,Mat12-T4,MAT.12.4.7,d
+Mat11MK0085,Beceri,12,Mat12-T4,MAT.12.4.7,d
+Mat11MK0086,Beceri,12,Mat12-T4,MAT.12.4.7,"e, f"
+Mat11MK0087,Beceri,12,Mat12-T4,MAT.12.4.7,"e, f"
+Mat11MK0088,Beceri,12,Mat12-T4,MAT.12.4.7,"e, f"
+Mat11MK0089,Beceri,12,Mat12-T4,MAT.12.4.7,"e, f"
+Mat11MK0090,Beceri,12,Mat12-T4,MAT.12.4.7,"e, f"
+Mat11MK0091,Bilgi,12,Mat12-T4,MAT.12.4.8,"a, b"
+Mat11MK0092,Bilgi,12,Mat12-T4,MAT.12.4.8,"a, b"
+Mat11MK0093,Beceri,12,Mat12-T4,MAT.12.4.8,"c, ç"
+Mat11MK0094,Beceri,12,Mat12-T4,MAT.12.4.8,"c, ç"
+Mat11MK0095,Beceri,12,Mat12-T4,MAT.12.4.8,d
+Mat11MK0096,Beceri,12,Mat12-T4,MAT.12.4.8,d
+Mat11MK0097,Beceri,12,Mat12-T4,MAT.12.4.8,d
+Mat11MK0098,Beceri,12,Mat12-T4,MAT.12.4.8,d
+Mat11MK0099,Beceri,12,Mat12-T4,MAT.12.4.8,d
+Mat11MK0100,Beceri,12,Mat12-T4,MAT.12.4.9,"a, b, c, ç"
+Mat11MK0101,Beceri,12,Mat12-T4,MAT.12.4.9,"a, b, c, ç"
+Mat11MK0102,Beceri,12,Mat12-T4,MAT.12.4.9,"d, e"
+Mat11MK0103,Beceri,12,Mat12-T4,MAT.12.4.9,"d, e"
+Mat11MK0104,Beceri,12,Mat12-T4,MAT.12.4.9,"f, g"
+Mat11MK0105,Beceri,12,Mat12-T4,MAT.12.4.9,"f, g"
+Mat11MK0106,Beceri,12,Mat12-T4,MAT.12.4.9,"ğ, h"
+Mat11MK0107,Beceri,12,Mat12-T4,MAT.12.4.9,"ğ, h"
+Mat06MK0001,Bilgi,12,Mat12-T5,MAT.12.5.1,a
+Mat06MK0002,Beceri,12,Mat12-T5,MAT.12.5.1,b
+Mat06MK0003,Beceri,12,Mat12-T5,MAT.12.5.1,b
+Mat06MK0004,Beceri,12,Mat12-T5,MAT.12.5.1,c
+Mat06MK0005,Beceri,12,Mat12-T5,MAT.12.5.1,c
+Mat06MK0006,Beceri,12,Mat12-T5,MAT.12.5.1,ç
+Mat06MK0007,Beceri,12,Mat12-T5,MAT.12.5.1,ç
+Mat06MK0019,Beceri,12,Mat12-T5,MAT.12.5.1,g
+Mat06MK0020,Beceri,12,Mat12-T5,MAT.12.5.1,g
+Mat06MK0064,Beceri,12,Mat12-T5,MAT.12.5.1,"d, e, f, g"
+Mat06MK0065,Beceri,12,Mat12-T5,MAT.12.5.1,"d, e, f, g"
+Mat06MK0066,Bilgi,12,Mat12-T5,MAT.12.5.1,e
+Mat06MK0067,Bilgi,12,Mat12-T5,MAT.12.5.1,f

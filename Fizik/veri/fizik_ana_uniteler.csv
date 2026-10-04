@@ -1,0 +1,9 @@
+kod,kisaltma,ad,siniflar,sinif_uniteleri,ornek_mikro_kod
+01,FBK,Fizik Bilimi ve Kariyer,9,Fiz09-U1,Fiz01MK0001
+02,MEK,Kuvvet ve Hareket,9; 10; 11; 12,Fiz09-U2; Fiz10-U1; Fiz11-U1; Fiz12-U1,Fiz02MK0039
+03,AKS,Akışkanlar,9,Fiz09-U3,Fiz03MK0001
+04,ENJ,Enerji,9; 10; 12,Fiz09-U4; Fiz10-U2; Fiz12-U2,Fiz04MK0056
+05,ELK,Elektrik ve Manyetizma,10; 11,Fiz10-U3; Fiz11-U2,Fiz05MK0035
+06,DLG,Dalgalar,10; 12,Fiz10-U4; Fiz12-U3,Fiz06MK0001
+07,OPT,Optik,11,Fiz11-U3,Fiz07MK0001
+08,MDD,Madde ve Doğası,12,Fiz12-U4,Fiz08MK0001

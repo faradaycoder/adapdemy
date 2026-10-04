@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "evalora-backend",
+      "runtimeExecutable": "/bin/sh",
+      "runtimeArgs": ["-c", "cd /Users/murat/Desktop/EVALORA/uygulama/backend && .venv/bin/uvicorn app.main:app --port 8000"],
+      "port": 8000
+    },
+    {
+      "name": "evalora-frontend",
+      "runtimeExecutable": "/bin/sh",
+      "runtimeArgs": ["-c", "cd /Users/murat/Desktop/EVALORA/uygulama/frontend && npm run dev -- --host 127.0.0.1"],
+      "port": 5173
+    }
+  ]
+}

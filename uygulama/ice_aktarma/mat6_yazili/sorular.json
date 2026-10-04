@@ -1,0 +1,90 @@
+{
+  "kaynak": "6. sınıf matematik, 2. dönem 1. yazılı (Murat'ın gönderdiği PDF, 2026-10-04)",
+  "not": "Sorular Claude tarafından okunup çözüldü, rubrik adımları MK'lere eşlendi. 2. soru a ve b şıklarıyla tek soru olarak tutulur (aynı soru kökü); şıklar rubrik adımlarında ayrılır.",
+  "ders": "Matematik",
+  "sinif_duzeyi": 6,
+  "sinav": {
+    "ad": "6. sınıf matematik 2. dönem 1. yazılı",
+    "sure_dk": 40,
+    "aciklama": "Soruları kâğıtta çözüp fotoğrafını yükleyebilir ya da cevabını yazabilirsin."
+  },
+  "sorular": [
+    {
+      "no": 1,
+      "gorsel": "soru1.png",
+      "cevap_bicimi": "yazili",
+      "metin": "Bir sürücü 400 km'lik yolun 3/5'ini gittikten sonra mola vermiştir. Buna göre moladan sonra bu sürücünün gitmesi gereken kaç km yolu kalmıştır?",
+      "dogru_cevap": "160 km",
+      "cozum": "Gidilen yol 400 × 3/5 = 240 km. Kalan yol 400 − 240 = 160 km. (Ya da kalan kesir 1 − 3/5 = 2/5, 400 × 2/5 = 160 km.)",
+      "birincil": "Mat01MK0112",
+      "adimlar": [
+        [
+          "Gidilen yolu kesirle çarpmayla bulur: 400 × 3/5 = 240 km.",
+          "Mat01MK0106"
+        ],
+        [
+          "Kalan yolu çıkarmayla bulur: 400 − 240 = 160 km.",
+          "Mat01MK0014"
+        ],
+        [
+          "Problemi temsil edip uygun stratejiyle (gidilen kısmı bul, bütünden çıkar) çözer.",
+          "Mat01MK0112"
+        ]
+      ]
+    },
+    {
+      "no": 2,
+      "gorsel": "soru2.png",
+      "cevap_bicimi": "yazili",
+      "metin": "Işıl ve Ege bir madeni parayı on defa havaya atıyor ve sonuçları tabloya yazıyor (Işıl: Yazı, Yazı, Tura, Tura, Tura, Yazı, Tura, Tura, Yazı, Tura; Ege: Tura, Tura, Yazı, Tura, Tura, Yazı, Yazı, Tura, Tura, Tura). a) Işıl'ın rastgele yaptığı para atışı deneyinde yazı gelme olasılığının deneysel olarak kesir gösterimini yazınız. b) Ege'nin rastgele yaptığı para atışı deneyinde yazı gelme olasılığının deneysel olarak yüzde olarak gösterimini yazınız.",
+      "dogru_cevap": "a) 4/10 (= 2/5)  b) %30",
+      "cozum": "a) Işıl'ın 10 atışında 4 kez yazı gelmiştir (1., 2., 6., 9. atışlar): 4/10 = 2/5. b) Ege'nin 10 atışında 3 kez yazı gelmiştir (3., 6., 7. atışlar): 3/10 = 30/100 = %30.",
+      "birincil": "Mat07MK0002",
+      "adimlar": [
+        [
+          "a) Tablodan Işıl'ın yazı sayısını belirler: 10 atışta 4 yazı.",
+          "Mat07MK0006"
+        ],
+        [
+          "a) Deneysel olasılığı kesirle yazar: 4/10.",
+          "Mat07MK0007"
+        ],
+        [
+          "b) Tablodan Ege'nin yazı sayısını belirler ve deneysel olasılığı 3/10 olarak bulur.",
+          "Mat07MK0007"
+        ],
+        [
+          "b) Olasılığı yüzdeyle ifade eder: 3/10 = 30/100 = %30.",
+          "Mat07MK0002"
+        ]
+      ]
+    },
+    {
+      "no": 3,
+      "gorsel": "soru3.png",
+      "cevap_bicimi": "yazili",
+      "metin": "Şekilde [AB] ∥ [CD]; E noktası FG doğrusu üzerindedir. m(ECD) = 115°, m(AEC) = 30°. Buna göre “?” ile gösterilen BAE açısının ölçüsü kaç derecedir?",
+      "dogru_cevap": "95°",
+      "cozum": "E'den geçen FG doğrusu AB ve CD'ye paraleldir. CD ∥ EG olduğundan ECD ile CEG karşı durumlu açılardır ve bütünlerdir: m(CEG) = 180° − 115° = 65°. m(AEG) = 65° + 30° = 95°. AB ∥ FG olduğundan BAE ile AEG iç ters açılardır ve eştir: ? = 95°.",
+      "birincil": "Mat03MK0065",
+      "adimlar": [
+        [
+          "Karşı durumlu açıların bütünler olmasından m(CEG) = 180° − 115° = 65° bulur.",
+          "Mat03MK0064"
+        ],
+        [
+          "Komşu açıları toplayarak m(AEG) = 65° + 30° = 95° bulur.",
+          "Mat03MK0024"
+        ],
+        [
+          "İç ters açıların eşliğinden m(BAE) = m(AEG) = 95° sonucuna varır.",
+          "Mat03MK0062"
+        ],
+        [
+          "Paralel doğrular ve kesenle oluşan açılardan bilinmeyen açıyı hesaplama sürecini tamamlar.",
+          "Mat03MK0065"
+        ]
+      ]
+    }
+  ]
+}
