@@ -4,8 +4,9 @@ EVALORA-Baslat.command, GitHub'dan yeni içerik çektikçe bunu çalıştırır;
 yazmadan uygulamaya girer. Her klasör bir kez aktarılır (backend/veri/aktarilanlar.txt). Sorularından biri bankada zaten
 olan klasör daha önce elle aktarılmış sayılır ve atlanır; öğretmenin sildiği sorular ve sınavlar geri gelmez.
 Aktarılmış bir set sonradan düzeltilirse bankadaki yazılar güncellenir (metin_guncelle.py; öğretmenin düzelttiği korunur).
-ice_aktarma/degerlendirmeler/ altındaki "soru_seti"li değerlendirmeler de (bulutta okunan öğrenci kâğıtları) bir kez,
-'sistem önerisi' olarak aktarılır; teslim henüz yoksa ya da hata varsa bir sonraki çalışmada yeniden denenir.
+ice_aktarma/degerlendirmeler/ altındaki değerlendirmeler de (bulutta okunan öğrenci kâğıtları) 'sistem önerisi' olarak
+aktarılır; dosya düzeltilince yeniden (öğretmenin kararı ve açıklaması korunur). Teslim henüz yoksa ya da hata varsa
+sonraki çalışmalarda sessizce yeniden denenir.
 ice_aktarma/videolar/ altındaki MK video parçaları, dosya her değiştiğinde yeniden aktarılır (aktarma güncelleyerek yapar).
 Komut satırından çalışınca Claude'un istediği video altyazılarını da indirip gönderir (transkript_al.py).
 
@@ -66,13 +67,15 @@ def calistir(klasor: Path = KLASOR) -> list[str]:
         _isaretle(d.name)
         _isaretle(yazi)
     for j in sorted((klasor / "degerlendirmeler").glob("*.json")):
-        ad = f"degerlendirmeler/{j.name}"
-        if ad in yapilan or "soru_seti" not in json.loads(j.read_text(encoding="utf-8")):
+        ad = f"degerlendirmeler/{j.name}:{hashlib.sha256(j.read_bytes()).hexdigest()[:12]}"
+        if ad in yapilan:
             continue
         try:
             rapor = degerlendirme_aktar.aktar(str(j))
-        except (SystemExit, Exception) as h:  # teslim henüz yok ya da veri hatalı: sonra yeniden denenir
-            mesajlar.append(f"{j.stem}: değerlendirme aktarılamadı ({h}).")
+        except (SystemExit, Exception) as h:  # teslim henüz yok ya da veri hatalı: sonra sessizce yeniden denenir
+            if f"hata/{ad}" not in yapilan:
+                mesajlar.append(f"{j.stem}: değerlendirme aktarılamadı ({h}).")
+                _isaretle(f"hata/{ad}")
             continue
         mesajlar.append(f"{j.stem}: değerlendirme önerisi aktarıldı ({'; '.join(rapor)}). Onay öğretmende.")
         _isaretle(ad)

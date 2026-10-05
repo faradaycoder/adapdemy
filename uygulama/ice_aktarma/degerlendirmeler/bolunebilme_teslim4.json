@@ -29,7 +29,7 @@
         "1": ["biliyor", "Son iki basamağın 4'ün katı olduğunu gerekçe olarak verdi (64)."],
         "2": ["biliyor", "Rakamlar toplamının 9'un katı olduğunu gerekçe olarak verdi (18)."]
       },
-      "aciklama": "Doğru ve gerekçeli. Sayıları da yazsaydın daha güçlü olurdu: 64 = 4 × 16, 1 + 7 + 6 + 4 = 18."
+      "aciklama": "Doğru ve gerekçeli. Sayıları da yazsaydın daha güçlü olurdu: $64 = 4 \\times 16$, $1 + 7 + 6 + 4 = 18$."
     },
     "9": {
       "okunan": "4★0 → ★: 2, 8;  8 + 2 = 10",

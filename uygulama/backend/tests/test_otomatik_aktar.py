@@ -86,6 +86,7 @@ def test_bulutta_okunan_kagit_degerlendirmesi_aktarilir(istemci, tmp_path, monke
     (tmp_path / "degerlendirmeler" / "oto3b.json").write_text(json.dumps({"soru_seti": "mat6_bolunebilme", "sorular": {}}),
                                                                encoding="utf-8")
     assert "0 teslim var" in otomatik_aktar.calistir(tmp_path)[0]  # bekleyen kalmadı: teslim_id ister
+    assert otomatik_aktar.calistir(tmp_path) == []  # aynı hata bir kez söylenir
 
 
 

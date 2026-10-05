@@ -13,7 +13,7 @@
       "no": 1,
       "gorsel": "soru1.png",
       "cevap_bicimi": "yazili",
-      "metin": "Bir sürücü 400 km'lik yolun 3/5'ini gittikten sonra mola vermiştir. Buna göre moladan sonra bu sürücünün gitmesi gereken kaç km yolu kalmıştır?",
+      "metin": "Bir sürücü 400 km'lik yolun $\\dfrac{3}{5}$'ini gittikten sonra mola vermiştir. Buna göre moladan sonra bu sürücünün gitmesi gereken kaç km yolu kalmıştır?",
       "dogru_cevap": "160 km",
       "cozum": "Gidilen yol $400 \\times \\dfrac{3}{5} = 240\\,\\text{km}$. Kalan yol $400 - 240 = 160\\,\\text{km}$. (Ya da kalan kesir $1 - \\dfrac{3}{5} = \\dfrac{2}{5}$, $400 \\times \\dfrac{2}{5} = 160\\,\\text{km}$.)",
       "birincil": "Mat01MK0112",

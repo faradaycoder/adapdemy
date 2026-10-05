@@ -7,11 +7,11 @@
       "kararlar": {
         "43": [
           "bilmiyor",
-          "400'ün 3/5'i yerine yalnız 1/5'ini buldu (400/5 = 80); payla (3) çarpmadı. Kesrin bir çokluğa uygulanmasında birim kesirde kalmış."
+          "400'ün $\\dfrac{3}{5}$'i yerine yalnız $\\dfrac{1}{5}$'ini buldu ($400 \\div 5 = 80$); payla (3) çarpmadı. Kesrin bir çokluğa uygulanmasında birim kesirde kalmış."
         ],
         "44": [
           "biliyor",
-          "Çıkarma işlemini doğru yaptı (400 − 80 = 320); girdi önceki adımdan yanlış geldi."
+          "Çıkarma işlemini doğru yaptı ($400 - 80 = 320$); girdi önceki adımdan yanlış geldi."
         ],
         "45": [
           "biliyor",
@@ -19,7 +19,7 @@
         ]
       },
       "kirpik": "soru14.png",
-      "aciklama": "400 km'nin 3/5'ini bulman gerekiyordu. 400'ü 5'e bölünce yolun yalnız 1/5'ini buldun (80 km); 3/5 için bunu 3 ile de çarpmalıydın: 80 × 3 = 240 km. Kalan yolu bulmak için çıkarma yapman doğruydu, ama 400 − 240 = 160 km olmalıydı."
+      "aciklama": "400 km'nin $\\dfrac{3}{5}$'ini bulman gerekiyordu. 400'ü 5'e bölünce yolun yalnız $\\dfrac{1}{5}$'ini buldun (80 km); $\\dfrac{3}{5}$ için bunu 3 ile de çarpmalıydın: $80 \\times 3 = 240\\,\\text{km}$. Kalan yolu bulmak için çıkarma yapman doğruydu, ama $400 - 240 = 160\\,\\text{km}$ olmalıydı."
     },
     "15": {
       "okunan": "a) 2/10   b) 9/10",
@@ -30,11 +30,11 @@
         ],
         "55": [
           "biliyor",
-          "Deneysel olasılığı 'yazı sayısı / atış sayısı' biçiminde kesirle yazdı (x/10); biçim doğru, sayı yanlış."
+          "Deneysel olasılığı $\\dfrac{\\text{yazı sayısı}}{\\text{atış sayısı}}$ biçiminde kesirle yazdı ($\\dfrac{x}{10}$); biçim doğru, sayı yanlış."
         ],
         "56": [
           "bilmiyor",
-          "Ege için 9/10 yazdı; Ege'nin 3 yazısı var (3/10). 9 sayısının nereden geldiği belli değil."
+          "Ege için $\\dfrac{9}{10}$ yazdı; Ege'nin 3 yazısı var ($\\dfrac{3}{10}$). 9 sayısının nereden geldiği belli değil."
         ],
         "57": [
           "bilmiyor",
@@ -42,14 +42,14 @@
         ]
       },
       "kirpik": "soru15.png",
-      "aciklama": "Olasılığı \"yazı sayısı / atış sayısı\" diye kesirle yazman doğru. Ama yazıları yanlış saydın. a) Işıl'ın tablosunda 4 yazı var (1., 2., 6. ve 9. atışlar), yani 4/10. b) Ege'nin tablosunda 3 yazı var, yani 3/10. Soru yüzde istediği için 3/10 = 30/100 = %30 yazmalıydın."
+      "aciklama": "Olasılığı $\\dfrac{\\text{yazı sayısı}}{\\text{atış sayısı}}$ diye kesirle yazman doğru. Ama yazıları yanlış saydın. a) Işıl'ın tablosunda 4 yazı var (1., 2., 6. ve 9. atışlar), yani $\\dfrac{4}{10}$. b) Ege'nin tablosunda 3 yazı var, yani $\\dfrac{3}{10}$. Soru yüzde istediği için ${\\dfrac{3}{10} = \\dfrac{30}{100} = \\%30}$ yazmalıydın."
     },
     "17": {
       "okunan": "CD uzatılıp AE ile kesiştiği yere 115° yazılmış; ? = 180 − 115 = 65",
       "kararlar": {
         "50": [
           "bilmiyor",
-          "180 − 115 = 65 bütünler ilişkisini kullandı ama yanlış açı çiftine uyguladı; CEG açısını bulmadı."
+          "$180 - 115 = 65$ bütünler ilişkisini kullandı ama yanlış açı çiftine uyguladı; CEG açısını bulmadı."
         ],
         "51": [
           "olculemedi",
@@ -65,8 +65,8 @@
         ]
       },
       "kirpik": "soru17.png",
-      "aciklama": "115° açısını yanlış köşeye taşıdın. CD ile FG paralel olduğu için 115° ile CEG açısı bütünlerdir: 180° − 115° = 65°. Sonra 30°'yi ekleyince AEG = 95° olur; AB ile FG paralel olduğundan ? de 95° çıkar. İpucu: sorudaki 30° açısını hiç kullanmamıştın, verilen her açı bir işe yarar."
+      "aciklama": "115° açısını yanlış köşeye taşıdın. CD ile FG paralel olduğu için 115° ile CEG açısı bütünlerdir: $180^\\circ - 115^\\circ = 65^\\circ$. Sonra 30°'yi ekleyince $m(\\widehat{AEG}) = 95^\\circ$ olur; AB ile FG paralel olduğundan ? de 95° çıkar. İpucu: sorudaki 30° açısını hiç kullanmamıştın, verilen her açı bir işe yarar."
     }
   },
-  "genel": "Olasılığı kesirle yazma biçimini biliyorsun, bu güzel. İki şeye dikkat et: bir çokluğun kesrini bulurken (3/5'i gibi) önce paydaya böl, sonra payla çarp; tablolardan sayarken de dikkatli say. Soru yüzde isterse kesri yüzdeye çevirmeyi unutma. Açı sorularında verilen her açıyı kullanmaya çalış."
+  "genel": "Olasılığı kesirle yazma biçimini biliyorsun, bu güzel. İki şeye dikkat et: bir çokluğun kesrini bulurken ($\\dfrac{3}{5}$'i gibi) önce paydaya böl, sonra payla çarp; tablolardan sayarken de dikkatli say. Soru yüzde isterse kesri yüzdeye çevirmeyi unutma. Açı sorularında verilen her açıyı kullanmaya çalış."
 }

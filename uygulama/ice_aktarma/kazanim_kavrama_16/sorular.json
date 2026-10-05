@@ -6,7 +6,7 @@
   "sorular": [
     {
       "no": 1, "gorsel": "soru01.png", "cevap_bicimi": "coktan_secmeli",
-      "metin": "Hava sürtünmesinin önemsiz olduğu ortamda bir cisim yukarı doğru 50 m/s hız ile atılıyor. Cismin atıldıktan 3 saniye sonra potansiyel enerjisi E₁, 7 saniye sonraki potansiyel enerjisi E₂ olduğuna göre E₁/E₂ oranı kaçtır? (g = 10 m/s²)",
+      "metin": "Hava sürtünmesinin önemsiz olduğu ortamda bir cisim yukarı doğru 50 m/s hız ile atılıyor. Cismin atıldıktan 3 saniye sonra potansiyel enerjisi $E_1$, 7 saniye sonraki potansiyel enerjisi $E_2$ olduğuna göre $\\dfrac{E_1}{E_2}$ oranı kaçtır? ($g = 10\\,\\text{m/s}^2$)",
       "secenekler": [["A", "$\\frac{2}{7}$", false], ["B", "$\\frac{4}{9}$", false], ["C", "$\\frac{2}{3}$", false], ["D", "1", true], ["E", "$\\frac{9}{4}$", false]],
       "dogru_cevap": "D",
       "cozum": "$h = v_0 t - \\tfrac{1}{2} g t^2$. $t = 3\\,\\text{s}$: $h = 150 - 45 = 105\\,\\text{m}$. $t = 7\\,\\text{s}$: $h = 350 - 245 = 105\\,\\text{m}$. $E_p = mgh$ ve yükseklikler eşit olduğundan $\\dfrac{E_1}{E_2} = 1$.",
@@ -18,7 +18,7 @@
     },
     {
       "no": 2, "gorsel": "soru02.png", "cevap_bicimi": "coktan_secmeli",
-      "metin": "Bir X cismi hava sürtünmesinin önemsiz olduğu ortamda şekildeki K noktasından serbest bırakılıyor. Noktalar arası uzaklıklar eşit ve h kadardır. Cismin L noktasındaki hızı v_L, M noktasındaki hızı v_M olduğuna göre v_L/v_M oranı kaçtır? (g = 10 m/s²)",
+      "metin": "Bir X cismi hava sürtünmesinin önemsiz olduğu ortamda şekildeki K noktasından serbest bırakılıyor. Noktalar arası uzaklıklar eşit ve h kadardır. Cismin L noktasındaki hızı $v_L$, M noktasındaki hızı $v_M$ olduğuna göre $\\dfrac{v_L}{v_M}$ oranı kaçtır? ($g = 10\\,\\text{m/s}^2$)",
       "secenekler": [["A", "$\\frac{1}{\\sqrt{2}}$", true], ["B", "$\\frac{1}{2}$", false], ["C", "$\\sqrt{2}$", false], ["D", "$\\frac{3}{2}$", false], ["E", "2", false]],
       "dogru_cevap": "A",
       "cozum": "Mekanik enerji korunur: L'ye kadar $mgh = \\tfrac{1}{2} m v_L^2$, M'ye kadar $mg \\cdot 2h = \\tfrac{1}{2} m v_M^2$. $\\dfrac{v_L^2}{v_M^2} = \\dfrac{1}{2}$, $\\dfrac{v_L}{v_M} = \\dfrac{1}{\\sqrt{2}}$.",
@@ -30,7 +30,7 @@
     },
     {
       "no": 3, "gorsel": "soru03.png", "cevap_bicimi": "coktan_secmeli",
-      "metin": "Sürtünmesiz ortamdaki sistemde X (3 kg, yerden 2 m yüksekte) ile Y (2 kg, yerden 1 m yüksekte) cisimleri makara üzerinden iple bağlıdır. Sistem bu şekilde serbest bırakıldıktan kaç saniye sonra X cismi yere çarpar? (g = 10 m/s²)",
+      "metin": "Sürtünmesiz ortamdaki sistemde X (3 kg, yerden 2 m yüksekte) ile Y (2 kg, yerden 1 m yüksekte) cisimleri makara üzerinden iple bağlıdır. Sistem bu şekilde serbest bırakıldıktan kaç saniye sonra X cismi yere çarpar? ($g = 10\\,\\text{m/s}^2$)",
       "secenekler": [["A", "$\\frac{1}{\\sqrt{2}}$", false], ["B", "$\\frac{1}{2}$", false], ["C", "$\\sqrt{2}$", true], ["D", "$\\frac{3}{2}$", false], ["E", "2", false]],
       "dogru_cevap": "C",
       "cozum": "Sistemin ivmesi $a = \\dfrac{(3 - 2) \\cdot 10}{3 + 2} = 2\\,\\text{m/s}^2$. X, ilk hızsız 2 m alır: $2 = \\tfrac{1}{2} \\cdot 2 \\cdot t^2$, $t = \\sqrt{2}\\,\\text{s}$.",
@@ -42,7 +42,7 @@
     },
     {
       "no": 4, "gorsel": "soru04.png", "cevap_bicimi": "coktan_secmeli",
-      "metin": "Özdeş X cismi F₁ kuvvetiyle h, F₂ kuvvetiyle de 2h kadar sabit hızla yukarı çekilmektedir. Sistemler sürtünmesiz olduğuna göre F₁ kuvvetinin yaptığı iş W₁'in, F₂ kuvvetinin yaptığı iş W₂'ye oranı W₁/W₂ kaçtır?",
+      "metin": "Özdeş X cismi $F_1$ kuvvetiyle h, $F_2$ kuvvetiyle de 2h kadar sabit hızla yukarı çekilmektedir. Sistemler sürtünmesiz olduğuna göre $F_1$ kuvvetinin yaptığı iş $W_1$'in, $F_2$ kuvvetinin yaptığı iş $W_2$'ye oranı $\\dfrac{W_1}{W_2}$ kaçtır?",
       "secenekler": [["A", "$\\frac{1}{4}$", false], ["B", "$\\frac{1}{2}$", true], ["C", "1", false], ["D", "2", false], ["E", "4", false]],
       "dogru_cevap": "B",
       "cozum": "Sürtünmesiz sistemde sabit hızla yapılan iş, cismin potansiyel enerjisindeki artışa eşittir; makara türü sonucu değiştirmez. $W_1 = mgh$, $W_2 = mg \\cdot 2h$, $\\dfrac{W_1}{W_2} = \\dfrac{1}{2}$.",
@@ -54,7 +54,7 @@
     },
     {
       "no": 5, "gorsel": "soru05.png", "cevap_bicimi": "coktan_secmeli",
-      "metin": "X cismine F kuvveti LN yolu boyunca etki etmektedir. Sadece LM aralığı sürtünmeli olup sürtünme katsayısı k = 0,2'dir. Noktalar arası uzaklıklar eşit olduğuna göre, F kuvvetinin LM aralığında yaptığı iş W₁'in, MN aralığında yaptığı iş W₂'ye oranı W₁/W₂ kaçtır?",
+      "metin": "X cismine F kuvveti LN yolu boyunca etki etmektedir. Sadece LM aralığı sürtünmeli olup sürtünme katsayısı $k = 0{,}2$'dir. Noktalar arası uzaklıklar eşit olduğuna göre, F kuvvetinin LM aralığında yaptığı iş $W_1$'in, MN aralığında yaptığı iş $W_2$'ye oranı $\\dfrac{W_1}{W_2}$ kaçtır?",
       "secenekler": [["A", "$\\frac{1}{5}$", false], ["B", "$\\frac{4}{5}$", false], ["C", "1", true], ["D", "2", false], ["E", "5", false]],
       "dogru_cevap": "C",
       "cozum": "F kuvvetinin yaptığı iş $W = F \\cdot \\Delta x$'tir; sürtünme F'nin işini değiştirmez. $|LM| = |MN|$ olduğundan $\\dfrac{W_1}{W_2} = 1$.",
@@ -65,7 +65,7 @@
     },
     {
       "no": 6, "gorsel": "soru06.png", "cevap_bicimi": "coktan_secmeli",
-      "metin": "Şekildeki sistemlerde X cismi F₁ kuvveti ile eğik düzlem üzerinden 2h yüksekliğine, F₂ kuvveti uygulanarak makara sistemi ile h yüksekliğine sabit hız ile çıkarılmaktadır. Her iki sistem de sürtünmesiz olduğuna göre, F₁ kuvvetinin yaptığı iş W₁'in, F₂ kuvvetinin yaptığı iş W₂'ye oranı W₁/W₂ kaçtır?",
+      "metin": "Şekildeki sistemlerde X cismi $F_1$ kuvveti ile eğik düzlem üzerinden 2h yüksekliğine, $F_2$ kuvveti uygulanarak makara sistemi ile h yüksekliğine sabit hız ile çıkarılmaktadır. Her iki sistem de sürtünmesiz olduğuna göre, $F_1$ kuvvetinin yaptığı iş $W_1$'in, $F_2$ kuvvetinin yaptığı iş $W_2$'ye oranı $\\dfrac{W_1}{W_2}$ kaçtır?",
       "secenekler": [["A", "$\\frac{1}{4}$", false], ["B", "$\\frac{1}{2}$", false], ["C", "1", false], ["D", "2", true], ["E", "4", false]],
       "dogru_cevap": "D",
       "cozum": "Sürtünmesiz sistemlerde yapılan iş, potansiyel enerji artışına eşittir; eğik düzlem ve makara işten kazanç sağlamaz. $W_1 = mg \\cdot 2h$, $W_2 = mgh$, $\\dfrac{W_1}{W_2} = 2$.",
@@ -91,7 +91,7 @@
     },
     {
       "no": 8, "gorsel": "soru08.png", "cevap_bicimi": "coktan_secmeli",
-      "metin": "Bir asansör 60 kJ elektrik enerjisi harcayarak 400 kg yükü, bir binanın 12 m yüksekliğindeki 4. katına çıkarmaktadır. Buna göre, asansörün verimi en az yüzde kaçtır? (g = 10 m/s²)",
+      "metin": "Bir asansör 60 kJ elektrik enerjisi harcayarak 400 kg yükü, bir binanın 12 m yüksekliğindeki 4. katına çıkarmaktadır. Buna göre, asansörün verimi en az yüzde kaçtır? ($g = 10\\,\\text{m/s}^2$)",
       "secenekler": [["A", "48", false], ["B", "50", false], ["C", "60", false], ["D", "80", true], ["E", "90", false]],
       "dogru_cevap": "D",
       "cozum": "Faydalı enerji $= mgh = 400 \\cdot 10 \\cdot 12 = 48\\,\\text{kJ}$. Verim $= \\dfrac{48}{60} = \\%80$.",
@@ -103,7 +103,7 @@
     },
     {
       "no": 9, "gorsel": "soru09.png", "cevap_bicimi": "coktan_secmeli",
-      "metin": "Verimi %80 olan bir su pompası 40 kJ enerji harcayarak 20 m derinliğindeki su kuyusundan en fazla kaç kg su yukarı çıkarabilir? (g = 10 m/s²)",
+      "metin": "Verimi %80 olan bir su pompası 40 kJ enerji harcayarak 20 m derinliğindeki su kuyusundan en fazla kaç kg su yukarı çıkarabilir? ($g = 10\\,\\text{m/s}^2$)",
       "secenekler": [["A", "320", false], ["B", "160", true], ["C", "32", false], ["D", "20", false], ["E", "16", false]],
       "dogru_cevap": "B",
       "cozum": "Faydalı enerji $= 0{,}8 \\cdot 40\\,\\text{kJ} = 32\\,\\text{kJ} = m \\cdot 10 \\cdot 20 \\Rightarrow m = 160\\,\\text{kg}$.",
@@ -115,7 +115,7 @@
     },
     {
       "no": 10, "gorsel": "soru10.png", "cevap_bicimi": "coktan_secmeli",
-      "metin": "Sürtünmesiz ortamda kütlesi 2 kg olan X cismi yerden düşey yukarı doğru v = 50 m/s hız ile atılıyor. Cisim K noktasından yukarı doğru 20 m/s hız ile geçtiğine göre, K noktası yerden kaç metre yüksektedir? (g = 10 m/s²)",
+      "metin": "Sürtünmesiz ortamda kütlesi 2 kg olan X cismi yerden düşey yukarı doğru $v = 50\\,\\text{m/s}$ hız ile atılıyor. Cisim K noktasından yukarı doğru 20 m/s hız ile geçtiğine göre, K noktası yerden kaç metre yüksektedir? ($g = 10\\,\\text{m/s}^2$)",
       "secenekler": [["A", "25", false], ["B", "45", false], ["C", "50", false], ["D", "80", false], ["E", "105", true]],
       "dogru_cevap": "E",
       "cozum": "$\\tfrac{1}{2} m v_0^2 = \\tfrac{1}{2} m v^2 + mgh \\Rightarrow 1250 = 200 + 10h \\Rightarrow h = 105\\,\\text{m}$.",
@@ -141,7 +141,7 @@
     },
     {
       "no": 12, "gorsel": "soru12.png", "cevap_bicimi": "coktan_secmeli",
-      "metin": "Kütlesi 5 kg olan X cismi eğik düzlemin en üst noktasındayken mekanik enerjisi E'dir. Cisim serbest bırakıldığında eğik düzlemin en alt noktasında kinetik enerjisi 2E/3 oluyor. Eğik düzlemin yüksekliği 6 m, eğim açısı 37°'dir. Buna göre, eğik düzlem üzerinde cisme etki eden sürtünme kuvveti kaç N'dur? (g = 10 m/s²; sin37° = 0,6)",
+      "metin": "Kütlesi 5 kg olan X cismi eğik düzlemin en üst noktasındayken mekanik enerjisi E'dir. Cisim serbest bırakıldığında eğik düzlemin en alt noktasında kinetik enerjisi $\\dfrac{2E}{3}$ oluyor. Eğik düzlemin yüksekliği 6 m, eğim açısı $37^\\circ$'dir. Buna göre, eğik düzlem üzerinde cisme etki eden sürtünme kuvveti kaç N'dur? ($g = 10\\,\\text{m/s}^2$; $\\sin 37^\\circ = 0{,}6$)",
       "secenekler": [["A", "5", false], ["B", "7,5", false], ["C", "10", true], ["D", "20", false], ["E", "25", false]],
       "dogru_cevap": "C",
       "cozum": "$E = mgh = 5 \\cdot 10 \\cdot 6 = 300\\,\\text{J}$. Altta kinetik enerji $200\\,\\text{J}$, sürtünmeyle ısıya giden $100\\,\\text{J}$. Eğik düzlemin uzunluğu $\\dfrac{6}{0{,}6} = 10\\,\\text{m}$. $F_s \\cdot 10 = 100 \\Rightarrow F_s = 10\\,\\text{N}$.",
