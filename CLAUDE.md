@@ -18,6 +18,8 @@ o durumda da öneri uygulanır, karar ona bırakılır.
    Formüller LaTeX'le yazılır: satır içi `$...$` (kesir `\dfrac{a}{b}`, birim `20\,\text{N}`, ondalık `0{,}4`),
    uygulama KaTeX'le çizer (`frontend/src/Mat.tsx`). Çözüm, doğru cevap, rubrik adımları, şıklar ve öğrenci açıklamaları için
    geçerli. Aktarılmış bir seti düzeltmek serbest: değişen yazılar bankaya kendiliğinden geçer (`metin_guncelle.py`).
+   MK ve yanılgı ifadeleri (`<Ders>/veri/*.csv`) LaTeX'e çevrilmez, düz yazı kalır: Excel ve MK haritası da onları kullanır
+   (Murat, 2026-10-05).
 2. **Öğrenci kâğıdı gelir**: oku, her rubrik adımına biliyor / bilmiyor / olculemedi kararı ve gerekçe, soru başına öğrenciye
    açıklama, sonda genel geri bildirim yaz; `uygulama/ice_aktarma/degerlendirmeler/<set>_<ad>.json` (biçim:
    `degerlendirme_aktar.py`, `soru_seti` + soru `no` + adım sırası). `teslim_id` bilinmiyorsa yazılmaz; bekleyen tek teslim
