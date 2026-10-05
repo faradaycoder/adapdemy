@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Mat } from "../Mat";
 import { Link } from "react-router-dom";
 import MKAkordeon from "../MKAkordeon";
 import { RubrikAkordeon } from "../Rubrik";
@@ -66,7 +67,7 @@ export default function SoruBankasi() {
             <Link to={`/sorular/${s.id}`} className="kart soru-kart">
               {s.gorsel && (s.gorsel.endsWith(".pdf") ? <span className="pdf-rozet">PDF</span> : <img src={`/api/gorsel/${s.gorsel}`} alt="" />)}
               <div>
-                <p className="soru-metin">{s.metin}</p>
+                <p className="soru-metin"><Mat metin={s.metin} /></p>
                 <div className="etiketler">
                   <span className={`durum ${s.durum}`}>{s.durum === "onayli" ? "Onaylı" : "Taslak"}</span>
                   <span>{s.ders} · {s.sinif_duzeyi}. sınıf</span>

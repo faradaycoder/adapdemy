@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Mat } from "../Mat";
 import { Link, useParams, useSearchParams } from "react-router-dom";
 import { api, type Yazdir } from "../api";
 import Qr from "../Qr";
@@ -53,9 +54,9 @@ export default function SinavYazdir() {
               </div>
               {q.gorsel && !q.gorsel.endsWith(".pdf")
                 ? <img src={`/api/gorsel/${q.gorsel}`} alt={`Soru ${q.sira}`} />
-                : <p>{q.metin}</p>}
+                : <p><Mat metin={q.metin} /></p>}
               {q.secenekler.length > 0 && !q.gorsel && (
-                <div className="y-secenekler">{q.secenekler.map((s) => <span key={s.harf}>{s.harf}) {s.metin}</span>)}</div>
+                <div className="y-secenekler">{q.secenekler.map((s) => <span key={s.harf}>{s.harf}) <Mat metin={s.metin} /></span>)}</div>
               )}
               {q.cevap_bicimi === "coktan_secmeli"
                 ? <div className="y-isaret">Cevap: {q.secenekler.map((s) => <span key={s.harf} className="daire">{s.harf}</span>)}</div>

@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { Mat } from "../Mat";
 import { Link, useParams } from "react-router-dom";
 import { api, type CevapT, type OturumT, type SinavSorusu } from "../api";
 
@@ -34,13 +35,13 @@ function SoruKutusu({ q, c, kilitli, kaydet, dosyaEkle, dosyaSil }: {
   return (
     <article className="kart o-soru">
       <h3>Soru {q.sira}</h3>
-      {q.gorsel && !q.gorsel.endsWith(".pdf") ? <img src={`/api/gorsel/${q.gorsel}`} alt={`Soru ${q.sira}`} className="onizleme" /> : <p>{q.metin}</p>}
+      {q.gorsel && !q.gorsel.endsWith(".pdf") ? <img src={`/api/gorsel/${q.gorsel}`} alt={`Soru ${q.sira}`} className="onizleme" /> : <p><Mat metin={q.metin} /></p>}
       {q.cevap_bicimi === "coktan_secmeli" ? (
         <div className="o-siklar">
           {q.secenekler.map((s) => (
             <label key={s.harf} className={`o-sik ${c?.secilen === s.harf ? "secili" : ""}`}>
               <input type="radio" name={`s${q.soru_id}`} disabled={kilitli} checked={c?.secilen === s.harf} onChange={() => kaydet({ secilen: s.harf })} />
-              <strong>{s.harf})</strong> {s.metin}
+              <strong>{s.harf})</strong> <Mat metin={s.metin} />
             </label>
           ))}
         </div>

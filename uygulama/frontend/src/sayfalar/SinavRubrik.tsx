@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Mat } from "../Mat";
 import { Link, useParams } from "react-router-dom";
 import { api, type Soru } from "../api";
 import { RubrikTablo } from "../Rubrik";
@@ -35,7 +36,7 @@ export default function SinavRubrik() {
       {sorular.map((s, i) => (
         <section key={s.id} className="kart rubrik-soru">
           <h2>{i + 1}. soru <small className="soluk">({(s.eslesme.zorluk ?? s.zorluk ?? 0).toFixed(2)} puan)</small></h2>
-          {s.gorsel && !s.gorsel.endsWith(".pdf") ? <img src={`/api/gorsel/${s.gorsel}`} alt={`Soru ${i + 1}`} className="onizleme" /> : <p className="t-metin">{s.metin}</p>}
+          {s.gorsel && !s.gorsel.endsWith(".pdf") ? <img src={`/api/gorsel/${s.gorsel}`} alt={`Soru ${i + 1}`} className="onizleme" /> : <p className="t-metin"><Mat metin={s.metin} /></p>}
           <RubrikTablo s={s} />
         </section>
       ))}

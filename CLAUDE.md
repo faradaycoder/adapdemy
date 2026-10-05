@@ -15,6 +15,9 @@ o durumda da öneri uygulanır, karar ona bırakılır.
    her adımı MK'ye eşle (ders + sınıf düzeyine uygun MK'ler: `<Ders>/veri/*_kazanim_esleme.csv`), `uygulama/ice_aktarma/<set>/`
    altına `sorular.json` + soru görselleri olarak koy (biçim: `ice_aktar.py`, örnek `mat6_bolunebilme/`). Sınav bilgisi
    (`"sinav"`) her zaman eklenir. Geçici veritabanıyla `python -m app.ice_aktar` deneyip uyarı olmadığını gör.
+   Formüller LaTeX'le yazılır: satır içi `$...$` (kesir `\dfrac{a}{b}`, birim `20\,\text{N}`, ondalık `0{,}4`),
+   uygulama KaTeX'le çizer (`frontend/src/Mat.tsx`). Çözüm, doğru cevap, rubrik adımları, şıklar ve öğrenci açıklamaları için
+   geçerli. Aktarılmış bir seti düzeltmek serbest: değişen yazılar bankaya kendiliğinden geçer (`metin_guncelle.py`).
 2. **Öğrenci kâğıdı gelir**: oku, her rubrik adımına biliyor / bilmiyor / olculemedi kararı ve gerekçe, soru başına öğrenciye
    açıklama, sonda genel geri bildirim yaz; `uygulama/ice_aktarma/degerlendirmeler/<set>_<ad>.json` (biçim:
    `degerlendirme_aktar.py`, `soru_seti` + soru `no` + adım sırası). `teslim_id` bilinmiyorsa yazılmaz; bekleyen tek teslim

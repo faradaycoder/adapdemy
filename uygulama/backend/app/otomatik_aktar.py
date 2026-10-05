@@ -3,6 +3,7 @@
 EVALORA-Baslat.command, GitHub'dan yeni içerik çektikçe bunu çalıştırır; böylece bulutta hazırlanan sınavlar elle komut
 yazmadan uygulamaya girer. Her klasör bir kez aktarılır (backend/veri/aktarilanlar.txt). Sorularından biri bankada zaten
 olan klasör daha önce elle aktarılmış sayılır ve atlanır; öğretmenin sildiği sorular ve sınavlar geri gelmez.
+Aktarılmış bir set sonradan düzeltilirse bankadaki yazılar güncellenir (metin_guncelle.py; öğretmenin düzelttiği korunur).
 ice_aktarma/degerlendirmeler/ altındaki "soru_seti"li değerlendirmeler de (bulutta okunan öğrenci kâğıtları) bir kez,
 'sistem önerisi' olarak aktarılır; teslim henüz yoksa ya da hata varsa bir sonraki çalışmada yeniden denenir.
 ice_aktarma/videolar/ altındaki MK video parçaları, dosya her değiştiğinde yeniden aktarılır (aktarma güncelleyerek yapar).
@@ -20,7 +21,7 @@ from pathlib import Path
 from sqlalchemy import select
 
 from .ayarlar import BACKEND, VERI
-from . import degerlendirme_aktar, video_aktar
+from . import degerlendirme_aktar, metin_guncelle, video_aktar
 from .ice_aktar import aktar
 from .modeller import Kullanici, Soru
 from .vt import Oturum, Taban, motor
@@ -46,7 +47,12 @@ def calistir(klasor: Path = KLASOR) -> list[str]:
     yapilan = set(KAYIT.read_text(encoding="utf-8").split("\n")) if KAYIT.exists() else set()
     mesajlar = []
     for d in sorted(p for p in klasor.iterdir() if (p / "sorular.json").is_file()):
+        yazi = f"yazi/{d.name}:{hashlib.sha256((d / 'sorular.json').read_bytes()).hexdigest()[:12]}"
         if d.name in yapilan:
+            if yazi not in yapilan:  # set sonradan düzeltildi (ör. LaTeX): bankadaki yazıları güncelle
+                if n := metin_guncelle.guncelle(d, k.id):
+                    mesajlar.append(f"{d.name}: {n} yazı güncellendi (çözüm, cevap, rubrik).")
+                _isaretle(yazi)
             continue
         metinler = [s["metin"] for s in json.loads((d / "sorular.json").read_text(encoding="utf-8"))["sorular"]]
         with Oturum() as vt:
@@ -55,7 +61,10 @@ def calistir(klasor: Path = KLASOR) -> list[str]:
             sonuc = aktar(d, k.eposta)
             sinav = next((f" ve sınav #{sid}" for no, sid, _, _ in sonuc if no == "sınav"), "")
             mesajlar.append(f"{d.name}: {sum(1 for no, *_ in sonuc if no != 'sınav')} soru{sinav} aktarıldı (taslak).")
+        else:
+            metin_guncelle.guncelle(d, k.id)
         _isaretle(d.name)
+        _isaretle(yazi)
     for j in sorted((klasor / "degerlendirmeler").glob("*.json")):
         ad = f"degerlendirmeler/{j.name}"
         if ad in yapilan or "soru_seti" not in json.loads(j.read_text(encoding="utf-8")):

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Mat } from "./Mat";
 import { ADIM_DURUMU, type AdimSonuc, type DegerlendirmeT, type SoruSonuc } from "./api";
 
 // Değerlendirme sonucunun ortak görünümü: öğretmen ekranında düzenlenebilir, öğrenci ekranında salt okunur.
@@ -51,11 +52,11 @@ export function CevapGorunumu({ s }: { s: SoruSonuc }) {
 export function DogruCevap({ s }: { s: SoruSonuc }) {
   return (
     <div>
-      {s.gorsel && !s.gorsel.endsWith(".pdf") ? <img src={`/api/gorsel/${s.gorsel}`} alt={`Soru ${s.sira}`} className="onizleme" /> : <p>{s.metin}</p>}
+      {s.gorsel && !s.gorsel.endsWith(".pdf") ? <img src={`/api/gorsel/${s.gorsel}`} alt={`Soru ${s.sira}`} className="onizleme" /> : <p><Mat metin={s.metin} /></p>}
       <div className="dogru-kutu">
         <span className="soluk">Doğru cevap</span>
-        <p className="dogru-cevap">{s.dogru_cevap}</p>
-        {s.cozum && <><span className="soluk">Çözüm</span><p>{s.cozum}</p></>}
+        <p className="dogru-cevap"><Mat metin={s.dogru_cevap} /></p>
+        {s.cozum && <><span className="soluk">Çözüm</span><p><Mat metin={s.cozum} /></p></>}
       </div>
     </div>
   );
@@ -65,7 +66,7 @@ export function AdimSatiri({ a, duzenle }: { a: AdimSonuc; duzenle?: (durum: str
   return (
     <tr>
       <td>{a.sira}</td>
-      <td>{a.aciklama}<div><Link to={`/mk/${a.mk_kod}`}><code>{a.mk_kod}</code></Link> <small className="soluk">{a.mk_ifade}{a.soru_mk_mi ? "" : " (ön koşul)"}</small></div>
+      <td><Mat metin={a.aciklama} /><div><Link to={`/mk/${a.mk_kod}`}><code>{a.mk_kod}</code></Link> <small className="soluk">{a.mk_ifade}{a.soru_mk_mi ? "" : " (ön koşul)"}</small></div>
         {a.gerekce && <small className={a.kaynak === "sistem" ? "oneri" : "soluk"}>{a.kaynak === "otomatik" ? "Otomatik: " : a.kaynak === "sistem" ? "Sistem önerisi: " : ""}{a.gerekce}</small>}</td>
       <td>{duzenle ? (
         <div className="adim-secim">

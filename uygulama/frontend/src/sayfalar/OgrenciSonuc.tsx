@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Mat, matDisindaBol } from "../Mat";
 import { Link, useParams } from "react-router-dom";
 import { api, type OgrenciSonucT, type KonuKartiT, type OgrenciSoruT, type VideoT } from "../api";
 
@@ -70,7 +71,7 @@ function KonuKart({ k, acikId, ac }: { k: KonuKartiT; acikId: number | null; ac:
 
 // Çözüm metnini adımlara böler: cümle sonları ve "b)" gibi alt şık başları.
 function adimlar(metin: string): string[] {
-  return metin.split(/(?<=\.)\s+(?=[A-ZÇĞİÖŞÜ(]|[a-zçğıöşü]\()|\s+(?=[a-h]\)\s)/).map((x) => x.trim()).filter(Boolean);
+  return matDisindaBol(metin, /(?<=\.)\s+(?=[A-ZÇĞİÖŞÜ(]|[a-zçğıöşü]\()|\s+(?=[a-h]\)\s)/);
 }
 
 function Cozum({ metin }: { metin: string }) {
@@ -78,7 +79,7 @@ function Cozum({ metin }: { metin: string }) {
   return (
     <div className="cozum-kutu">
       <h3>✅ Doğru çözüm, adım adım</h3>
-      {a.length > 1 ? <ol>{a.map((x, i) => <li key={i}>{x}</li>)}</ol> : <p className="t-metin">{metin}</p>}
+      {a.length > 1 ? <ol>{a.map((x, i) => <li key={i}><Mat metin={x} /></li>)}</ol> : <p className="t-metin"><Mat metin={metin} /></p>}
     </div>
   );
 }
@@ -112,7 +113,7 @@ export default function OgrenciSonuc() {
         <span className="buyuk">{d.puan.toFixed(2)} <small className="soluk">/ {d.en_yuksek.toFixed(2)}</small></span>
       </div>
       {konuSayisi > 0 && <p className="video-ozet">🎬 Eksik kaldığın {konuSayisi} konu için kısa videolar hazır. Her sorunun altında, istersen konu anlatımını dinle, istersen benzer bir sorunun çözümünü izle.</p>}
-      {d.genel_geri_bildirim && <section className="kart geri-bildirim"><h2>Öğretmeninden</h2><p className="t-metin">{d.genel_geri_bildirim}</p></section>}
+      {d.genel_geri_bildirim && <section className="kart geri-bildirim"><h2>Öğretmeninden</h2><p className="t-metin"><Mat metin={d.genel_geri_bildirim} /></p></section>}
 
       {d.sorular.map((s) => (
         <section key={s.sira} className="kart">
@@ -120,14 +121,14 @@ export default function OgrenciSonuc() {
             <h2><span className={`sonuc-isaret ${s.durum}`}>{DURUM[s.durum].isaret}</span> Soru {s.sira} <small className="soluk">{DURUM[s.durum].ad}</small></h2>
             <span><b>{s.puan.toFixed(2)}</b> / {s.en_yuksek.toFixed(2)}</span>
           </div>
-          {s.gorsel && !s.gorsel.endsWith(".pdf") ? <img src={`/api/gorsel/${s.gorsel}`} alt={`Soru ${s.sira}`} className="onizleme" /> : <p>{s.metin}</p>}
+          {s.gorsel && !s.gorsel.endsWith(".pdf") ? <img src={`/api/gorsel/${s.gorsel}`} alt={`Soru ${s.sira}`} className="onizleme" /> : <p><Mat metin={s.metin} /></p>}
           <div className="yan-yana">
             <div className={`cevap-kutu ${s.durum === "dogru" ? "dogru" : "senin"}`}><h3>Senin cevabın</h3><SeninCevabin s={s} /></div>
             <div className="cevap-kutu dogru"><h3>Doğru cevap</h3>
-              <p className="dogru-cevap">{s.dogru_sik ? `${s.dogru_sik}) ${s.secenekler.find((x) => x.harf === s.dogru_sik)?.metin ?? ""}` : s.dogru_cevap}</p></div>
+              <p className="dogru-cevap">{s.dogru_sik ? `${s.dogru_sik}) ${s.secenekler.find((x) => x.harf === s.dogru_sik)?.metin ?? ""}` : <Mat metin={s.dogru_cevap} />}</p></div>
           </div>
           {s.cozum && <Cozum metin={s.cozum} />}
-          {s.aciklama && <div className="hata-aciklama"><h3>{s.durum === "dogru" ? "Öğretmeninin notu" : "Nerede hata yaptın?"}</h3><p className="t-metin">{s.aciklama}</p></div>}
+          {s.aciklama && <div className="hata-aciklama"><h3>{s.durum === "dogru" ? "Öğretmeninin notu" : "Nerede hata yaptın?"}</h3><p className="t-metin"><Mat metin={s.aciklama} /></p></div>}
           {s.konular.length > 0 && (
             <div className="izle">
               <h3>Eksiğini kapat <small className="soluk">· istersen konuyu dinle, istersen benzer bir sorunun çözümünü izle</small></h3>

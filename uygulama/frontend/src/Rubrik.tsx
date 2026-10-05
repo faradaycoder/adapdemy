@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Mat } from "./Mat";
 import { Link } from "react-router-dom";
 import { api, type Soru } from "./api";
 
@@ -7,15 +8,15 @@ export function RubrikTablo({ s }: { s: Soru }) {
   const z = s.eslesme.zorluk ?? s.zorluk ?? 0;
   return (
     <div className="rubrik-detay">
-      <p><b>Doğru cevap:</b> {s.cevap_bicimi === "coktan_secmeli" ? s.secenekler.find((x) => x.dogru)?.harf : s.dogru_cevap}</p>
-      {s.cozum && <div className="cozum-kutu"><h3>Çözüm</h3><p className="t-metin">{s.cozum}</p></div>}
+      <p><b>Doğru cevap:</b> {s.cevap_bicimi === "coktan_secmeli" ? s.secenekler.find((x) => x.dogru)?.harf : <Mat metin={s.dogru_cevap} />}</p>
+      {s.cozum && <div className="cozum-kutu"><h3>Çözüm</h3><p className="t-metin"><Mat metin={s.cozum} /></p></div>}
       <table className="rubrik">
         <thead><tr><th>#</th><th>Rubrik adımı (öğrenci ne yapmalı)</th><th>MK</th><th>Puan</th></tr></thead>
         <tbody>
           {s.eslesme.adimlar.map((a, i) => (
             <tr key={i}>
               <td>{i + 1}</td>
-              <td>{a.aciklama}</td>
+              <td><Mat metin={a.aciklama} /></td>
               <td><Link to={`/mk/${a.mk_kod}`} onClick={(e) => e.stopPropagation()}><code>{a.mk_kod}</code></Link>
                 {a.mk && <small className="soluk"> {a.mk.ifade}{a.soru_mk_mi ? "" : " (ön koşul)"}</small>}</td>
               <td className="sayi">{(a.pay * z).toFixed(2)}</td>

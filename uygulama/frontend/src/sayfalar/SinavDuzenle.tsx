@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Mat } from "../Mat";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import MKAkordeon from "../MKAkordeon";
 import { RubrikAkordeon } from "../Rubrik";
@@ -137,7 +138,7 @@ export default function SinavDuzenle() {
           <div className="mk-liste banka">
             {banka.map((q) => (
               <button key={q.id} className="banka-soru" disabled={secilen.some((x) => x.id === q.id)} onClick={() => ekle(q)}>
-                <span className="soru-metin">#{q.id} {q.metin}</span>
+                <span className="soru-metin">#{q.id} <Mat metin={q.metin} /></span>
                 <span className="etiketler"><span>{q.sinif_duzeyi}. sınıf</span>{q.durum !== "onayli" && <span className="durum taslak">Taslak</span>}<span className="seviye">Zorluk {q.zorluk?.toFixed(2)}</span>{q.mk_detay.map((m) => <code key={m.kod} title={m.ifade}>{m.kod}</code>)}</span>
               </button>
             ))}
@@ -158,7 +159,7 @@ export default function SinavDuzenle() {
           <ol className="secilen">
             {secilen.map((q, i) => (
               <li key={q.id}>
-                <span className="soru-metin">{q.metin}</span>
+                <span className="soru-metin"><Mat metin={q.metin} /></span>
                 <span className="etiketler"><span className="seviye">{q.zorluk?.toFixed(2)}</span>{q.durum !== "onayli" && <Link to={`/sorular/${q.id}`} className="durum taslak">Taslak</Link>}</span>
                 <MKAkordeon q={q} />
                 <RubrikAkordeon soruId={q.id} />

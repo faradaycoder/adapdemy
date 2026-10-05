@@ -15,7 +15,7 @@
       "cevap_bicimi": "yazili",
       "metin": "Dolu bir kamyon ile küçük bir otomobil düz bir yolda kafa kafaya çarpışıyor. Ali, \"Kamyon çok daha ağır olduğu için otomobile, otomobilin kamyona uyguladığından daha büyük kuvvet uygular.\" diyor.\na) Ali'nin görüşü doğru mudur? Çarpışma sırasında araçların birbirine uyguladığı kuvvetleri büyüklük ve yön bakımından karşılaştırarak açıklayınız.\nb) Bu iki kuvvet birbirini dengeler mi? Gerekçesiyle açıklayınız.\nc) Çarpışma sırasında hangi araç daha büyük ivme kazanır? Nedenini açıklayınız.",
       "dogru_cevap": "a) Hayır; kuvvetler eşit büyüklükte ve zıt yönlüdür. b) Dengelemez; farklı cisimlere etki ederler. c) Otomobil; kütlesi küçük olduğu için aynı kuvvetle daha büyük ivme kazanır.",
-      "cozum": "a) Kamyonun otomobile uyguladığı kuvvet ile otomobilin kamyona uyguladığı kuvvet etki-tepki çiftidir. Newton'un üçüncü yasasına göre bu kuvvetler kütleden bağımsız olarak eşit büyüklüktedir; Ali'nin görüşü yanlıştır. Kuvvetler zıt yönlüdür. b) Etki-tepki kuvvetleri farklı cisimlere (biri otomobile, biri kamyona) etki ettiği için birbirini dengelemez. c) a = F / m; kuvvetler eşit, otomobilin kütlesi küçük olduğundan otomobilin ivmesi daha büyüktür, sürücüsü daha çok sarsılır.",
+      "cozum": "a) Kamyonun otomobile uyguladığı kuvvet ile otomobilin kamyona uyguladığı kuvvet etki-tepki çiftidir. Newton'un üçüncü yasasına göre bu kuvvetler kütleden bağımsız olarak eşit büyüklüktedir; Ali'nin görüşü yanlıştır. Kuvvetler zıt yönlüdür. b) Etki-tepki kuvvetleri farklı cisimlere (biri otomobile, biri kamyona) etki ettiği için birbirini dengelemez. c) $a = \\dfrac{F}{m}$; kuvvetler eşit, otomobilin kütlesi küçük olduğundan otomobilin ivmesi daha büyüktür, sürücüsü daha çok sarsılır.",
       "birincil": "Fiz02MK0110",
       "adimlar": [
         [
@@ -31,7 +31,7 @@
           "Fiz02MK0113"
         ],
         [
-          "c) Eşit kuvvet altında kütlesi küçük olan otomobilin ivmesinin daha büyük olduğunu (a = F / m) açıklar.",
+          "c) Eşit kuvvet altında kütlesi küçük olan otomobilin ivmesinin daha büyük olduğunu ($a = \\dfrac{F}{m}$) açıklar.",
           "Fiz02MK0110"
         ]
       ]
@@ -41,8 +41,8 @@
       "gorsel": "soru2.png",
       "cevap_bicimi": "yazili",
       "metin": "Kütlesi 2 kg olan bir kutu, sürtünme katsayısı k = 0,4 olan yatay zeminde 20 N büyüklüğündeki yatay F kuvvetiyle şekildeki gibi çekiliyor. (g = 10 m/s²)\na) Kutuya etki eden bütün kuvvetleri serbest cisim diyagramı üzerinde gösteriniz.\nb) Kutuya etki eden sürtünme kuvvetinin büyüklüğünü hesaplayınız.\nc) Kutunun ivmesini hesaplayınız.",
-      "dogru_cevap": "b) Fs = 8 N  c) a = 6 m/s² (F yönünde)",
-      "cozum": "a) Kutuya dört kuvvet etki eder: aşağı yönde ağırlık G = 20 N, yukarı yönde zeminin tepki kuvveti N, sağa F = 20 N ve F'ye zıt yönde (sola) sürtünme kuvveti Fs. b) Düşeyde denge vardır: N = G = m·g = 20 N. Fs = k·N = 0,4 · 20 = 8 N. c) Fnet = F − Fs = 20 − 8 = 12 N. a = Fnet / m = 12 / 2 = 6 m/s², F yönünde.",
+      "dogru_cevap": "b) $F_s = 8\\,\\text{N}$  c) $a = 6\\,\\text{m/s}^2$ (F yönünde)",
+      "cozum": "a) Kutuya dört kuvvet etki eder: aşağı yönde ağırlık $G = 20\\,\\text{N}$, yukarı yönde zeminin tepki kuvveti $N$, sağa $F = 20\\,\\text{N}$ ve F'ye zıt yönde (sola) sürtünme kuvveti $F_s$. b) Düşeyde denge vardır: $N = G = m g = 20\\,\\text{N}$. $F_s = k \\cdot N = 0{,}4 \\cdot 20 = 8\\,\\text{N}$. c) $F_{net} = F - F_s = 20 - 8 = 12\\,\\text{N}$. $a = \\dfrac{F_{net}}{m} = \\dfrac{12}{2} = 6\\,\\text{m/s}^2$, F yönünde.",
       "birincil": "Fiz02MK0140",
       "adimlar": [
         [
@@ -54,15 +54,15 @@
           "Fiz02MK0119"
         ],
         [
-          "b) N = m·g = 20 N bulup Fs = k·N = 0,4 · 20 = 8 N hesaplar.",
+          "b) $N = m g = 20\\,\\text{N}$ bulup $F_s = k \\cdot N = 0{,}4 \\cdot 20 = 8\\,\\text{N}$ hesaplar.",
           "Fiz02MK0139"
         ],
         [
-          "c) Net kuvveti Fnet = 20 − 8 = 12 N bulur.",
+          "c) Net kuvveti $F_{net} = 20 - 8 = 12\\,\\text{N}$ bulur.",
           "Fiz02MK0125"
         ],
         [
-          "c) İvmeyi a = Fnet / m = 12 / 2 = 6 m/s² hesaplar.",
+          "c) İvmeyi $a = \\dfrac{F_{net}}{m} = \\dfrac{12}{2} = 6\\,\\text{m/s}^2$ hesaplar.",
           "Fiz02MK0140"
         ]
       ]
@@ -72,8 +72,8 @@
       "gorsel": "soru3.png",
       "cevap_bicimi": "yazili",
       "metin": "Yatay masa üzerinde duran 5 kg kütleli bir bloğa yatay bir F kuvveti uygulanıyor ve F sıfırdan başlayarak yavaşça artırılıyor. Blok, F = 15 N olduğu anda harekete başlıyor. Blok kayarken ölçülen sürtünme kuvveti 10 N'dur. (g = 10 m/s²)\na) F = 8 N iken blok hareket etmiyor. Bu anda bloğa etki eden sürtünme kuvvetinin türü ve büyüklüğü nedir? Yönünü belirtiniz.\nb) Statik sürtünme kuvvetinin en büyük değeri ile kinetik sürtünme kuvvetini büyüklük bakımından karşılaştırınız.\nc) F, 0'dan 20 N'a kadar artırılırken sürtünme kuvveti–uygulanan kuvvet grafiğini çiziniz ve statik sürtünmenin en büyük değerini grafik üzerinde işaretleyiniz.\nd) Statik ve kinetik sürtünme katsayılarını hesaplayınız.",
-      "dogru_cevap": "a) Statik sürtünme, 8 N, F'ye zıt yönde  b) Statik en büyük (15 N) > kinetik (10 N)  d) ks = 0,3, kk = 0,2",
-      "cozum": "a) Blok durgun olduğundan sürtünme statiktir ve uygulanan kuvveti dengeler: Fs = 8 N, F'ye zıt yönde. b) Statik sürtünmenin en büyük değeri 15 N, kinetik sürtünme 10 N'dur; statik sürtünmenin en büyük değeri kinetik sürtünmeden büyüktür. c) Grafik: F = 0'dan 15 N'a kadar Fs = F (orijinden geçen eğimli doğru), F = 15 N'da tepe (statik sürtünmenin en büyük değeri, 15 N), harekete geçtikten sonra Fs = 10 N sabit (yatay doğru). d) N = m·g = 50 N. ks = 15 / 50 = 0,3; kk = 10 / 50 = 0,2.",
+      "dogru_cevap": "a) Statik sürtünme, $8\\,\\text{N}$, F'ye zıt yönde  b) Statik en büyük ($15\\,\\text{N}$) > kinetik ($10\\,\\text{N}$)  d) $k_s = 0{,}3$, $k_k = 0{,}2$",
+      "cozum": "a) Blok durgun olduğundan sürtünme statiktir ve uygulanan kuvveti dengeler: $F_s = 8\\,\\text{N}$, F'ye zıt yönde. b) Statik sürtünmenin en büyük değeri $15\\,\\text{N}$, kinetik sürtünme $10\\,\\text{N}$'dur; statik sürtünmenin en büyük değeri kinetik sürtünmeden büyüktür. c) Grafik: $F = 0$'dan $15\\,\\text{N}$'a kadar $F_s = F$ (orijinden geçen eğimli doğru), $F = 15\\,\\text{N}$'da tepe (statik sürtünmenin en büyük değeri), harekete geçtikten sonra $F_s = 10\\,\\text{N}$ sabit (yatay doğru). d) $N = m g = 50\\,\\text{N}$. $k_s = \\dfrac{15}{50} = 0{,}3$; $k_k = \\dfrac{10}{50} = 0{,}2$.",
       "birincil": "Fiz02MK0139",
       "adimlar": [
         [
@@ -85,7 +85,7 @@
           "Fiz02MK0131"
         ],
         [
-          "c) Grafiği çizer: 0–15 N arasında Fs = F, sonra 10 N'da sabit.",
+          "c) Grafiği çizer: $0$–$15\\,\\text{N}$ arasında $F_s = F$, sonra $10\\,\\text{N}$'da sabit.",
           "Fiz02MK0135"
         ],
         [
@@ -93,7 +93,7 @@
           "Fiz02MK0136"
         ],
         [
-          "d) N = 50 N alarak ks = 15 / 50 = 0,3 ve kk = 10 / 50 = 0,2 hesaplar.",
+          "d) $N = 50\\,\\text{N}$ alarak $k_s = \\dfrac{15}{50} = 0{,}3$ ve $k_k = \\dfrac{10}{50} = 0{,}2$ hesaplar.",
           "Fiz02MK0139"
         ]
       ]
@@ -103,8 +103,8 @@
       "gorsel": "soru4.png",
       "cevap_bicimi": "yazili",
       "metin": "Şekildeki sistemde 3 kg kütleli A bloğu sürtünmesiz yatay masa üzerindedir ve kütlesi önemsiz bir makaradan geçen hafif bir iple 2 kg kütleli B bloğuna bağlıdır. Sistem serbest bırakılıyor. (g = 10 m/s²)\na) A ve B bloklarına etki eden kuvvetleri ayrı ayrı serbest cisim diyagramlarında gösteriniz.\nb) Sistemi hareket ettiren net kuvveti bulunuz.\nc) Sistemin ivmesini hesaplayınız.\nd) İpteki gerilme kuvvetini hesaplayınız.",
-      "dogru_cevap": "b) 20 N  c) a = 4 m/s²  d) T = 12 N",
-      "cozum": "a) A: aşağı ağırlık (30 N), yukarı tepki kuvveti (30 N), makaraya doğru ip gerilmesi T. B: aşağı ağırlık (20 N), yukarı ip gerilmesi T. b) A'nın ağırlığı tepki kuvvetiyle dengelenir; sistemi hareket ettiren net kuvvet B'nin ağırlığıdır: Fnet = mB·g = 20 N. c) a = Fnet / (mA + mB) = 20 / 5 = 4 m/s². d) A için: T = mA·a = 3 · 4 = 12 N. (Kontrol, B için: mB·g − T = mB·a ⇒ 20 − T = 8 ⇒ T = 12 N.)",
+      "dogru_cevap": "b) $20\\,\\text{N}$  c) $a = 4\\,\\text{m/s}^2$  d) $T = 12\\,\\text{N}$",
+      "cozum": "a) A: aşağı ağırlık ($30\\,\\text{N}$), yukarı tepki kuvveti ($30\\,\\text{N}$), makaraya doğru ip gerilmesi $T$. B: aşağı ağırlık ($20\\,\\text{N}$), yukarı ip gerilmesi $T$. b) A'nın ağırlığı tepki kuvvetiyle dengelenir; sistemi hareket ettiren net kuvvet B'nin ağırlığıdır: $F_{net} = m_B g = 20\\,\\text{N}$. c) $a = \\dfrac{F_{net}}{m_A + m_B} = \\dfrac{20}{5} = 4\\,\\text{m/s}^2$. d) A için: $T = m_A a = 3 \\cdot 4 = 12\\,\\text{N}$. (Kontrol, B için: $m_B g - T = m_B a \\Rightarrow 20 - T = 8 \\Rightarrow T = 12\\,\\text{N}$.)",
       "birincil": "Fiz02MK0128",
       "adimlar": [
         [
@@ -116,15 +116,15 @@
           "Fiz02MK0118"
         ],
         [
-          "b) Sistemi hareket ettiren net kuvveti Fnet = mB·g = 20 N bulur.",
+          "b) Sistemi hareket ettiren net kuvveti $F_{net} = m_B g = 20\\,\\text{N}$ bulur.",
           "Fiz02MK0125"
         ],
         [
-          "c) Ortak ivmeyi a = 20 / (3 + 2) = 4 m/s² hesaplar.",
+          "c) Ortak ivmeyi $a = \\dfrac{20}{3 + 2} = 4\\,\\text{m/s}^2$ hesaplar.",
           "Fiz02MK0127"
         ],
         [
-          "d) İp gerilmesini T = mA·a = 12 N hesaplar (ya da B için 20 − T = 2 · 4).",
+          "d) İp gerilmesini $T = m_A a = 12\\,\\text{N}$ hesaplar (ya da B için $20 - T = 2 \\cdot 4$).",
           "Fiz02MK0128"
         ]
       ]

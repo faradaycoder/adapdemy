@@ -104,3 +104,36 @@ def test_video_dosyasi_degisince_yeniden_aktarilir(istemci, tmp_path, monkeypatc
     veri["parcalar"][0]["son"] = "1:10"
     dosya.write_text(json.dumps(veri), encoding="utf-8")
     assert otomatik_aktar.calistir(tmp_path)[0].startswith("v: ")
+
+
+def test_set_duzeltilince_yazilar_guncellenir_ogretmeninki_korunur(istemci, tmp_path, monkeypatch):
+    b = kayit_ol(istemci, "oto5@ornek.com", "ogretmen")
+    monkeypatch.setenv("EVALORA_OGRETMEN_EPOSTA", "oto5@ornek.com")
+    monkeypatch.setattr(otomatik_aktar, "KAYIT", tmp_path / "aktarilanlar.txt")
+    d = tmp_path / "set5"
+    d.mkdir()
+    veri = {"ders": "Matematik", "sinif_duzeyi": 6, "sorular": [
+        {"no": 1, "cevap_bicimi": "yazili", "metin": "Oto5: 400'ün 3/5'i?", "cozum": "400 × 3/5 = 240",
+         "adimlar": [["400 × 3/5 = 240 bulur.", "Mat01MK0106"]]},
+        {"no": 2, "cevap_bicimi": "yazili", "metin": "Oto5: 1/2 + 1/4?", "cozum": "1/2 + 1/4 = 3/4",
+         "adimlar": [["1/2 + 1/4 = 3/4 bulur.", "Mat01MK0102"]]}]}
+    (d / "sorular.json").write_text(json.dumps(veri), encoding="utf-8")
+    otomatik_aktar.calistir(tmp_path)
+    s2 = next(q for q in istemci.get("/api/sorular", headers=b).json() if q["metin"].startswith("Oto5: 1/2"))
+    tam = istemci.get(f"/api/sorular/{s2['id']}", headers=b).json()
+    g = {k: tam[k] for k in ("ders", "sinif_duzeyi", "metin", "gorsel", "cevap_bicimi", "dogru_cevap", "birincil")}
+    g |= {"cozum": "Öğretmenin çözümü", "secenekler": [], "adimlar": [{"aciklama": "1/2 + 1/4 = 3/4 bulur.", "mk_kod": "Mat01MK0102"}]}
+    assert istemci.put(f"/api/sorular/{s2['id']}", json=g, headers=b).status_code == 200  # öğretmen çözümü düzeltti
+
+    monkeypatch.setattr(otomatik_aktar.metin_guncelle, "_surumler", lambda dosya: [json.loads(dosya.read_text(encoding="utf-8")), veri])
+    yeni = json.loads(json.dumps(veri))
+    yeni["sorular"][0]["cozum"] = r"$400 \times \frac{3}{5} = 240$"
+    yeni["sorular"][0]["adimlar"][0][0] = r"$400 \times \frac{3}{5} = 240$ bulur."
+    yeni["sorular"][1]["cozum"] = r"$\frac{1}{2} + \frac{1}{4} = \frac{3}{4}$"
+    (d / "sorular.json").write_text(json.dumps(yeni), encoding="utf-8")
+    assert otomatik_aktar.calistir(tmp_path) == ["set5: 2 yazı güncellendi (çözüm, cevap, rubrik)."]
+    sorular = {q["metin"][:9]: istemci.get(f"/api/sorular/{q['id']}", headers=b).json() for q in istemci.get("/api/sorular", headers=b).json()
+               if q["metin"].startswith("Oto5")}
+    assert sorular["Oto5: 400"]["cozum"].startswith("$400") and sorular["Oto5: 400"]["eslesme"]["adimlar"][0]["aciklama"].startswith("$400")
+    assert sorular["Oto5: 1/2"]["cozum"] == "Öğretmenin çözümü"  # elle düzeltilen korunur
+    assert otomatik_aktar.calistir(tmp_path) == []
