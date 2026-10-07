@@ -1,5 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="8 2 56 52"><defs><linearGradient id="c" gradientUnits="userSpaceOnUse" x1="14" y1="20" x2="48" y2="48"><stop offset="0" stop-color="#2dd4bf"/><stop offset=".5" stop-color="#a78bfa"/><stop offset="1" stop-color="#fbbf24"/></linearGradient></defs>
-<path d="M16.5 34 H43.5 A13.5 13.5 0 1 0 41.06 41.74" fill="none" stroke="url(#c)" stroke-width="6.5" stroke-linecap="round" opacity=".55"/>
-<path d="M49 8 C49.784 13.04 50.96 14.216 56 15 C50.96 15.784 49.784 16.96 49 22 C48.216 16.96 47.04 15.784 42 15 C47.04 14.216 48.216 13.04 49 8Z" fill="#fff" opacity=".8"/>
-<path d="M55.5 22.2 C55.8136 24.216 56.284 24.6864 58.3 25 C56.284 25.3136 55.8136 25.784 55.5 27.8 C55.1864 25.784 54.716 25.3136 52.7 25 C54.716 24.6864 55.1864 24.216 55.5 22.2Z" fill="#fff" opacity=".6"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="8 2 56 52"><g opacity=".6">
+<path d="M22.69 44.64 A13.5 13.5 0 0 0 42.19 41.55" fill="none" stroke="#24398a" stroke-width="9.7" stroke-linecap="round"/><path d="M22.69 44.64 A13.5 13.5 0 0 0 42.19 41.55" fill="none" stroke="#fbbf24" stroke-width="6.5" stroke-linecap="round"/>
+<path d="M24.25 22.31 A13.5 13.5 0 0 0 24.25 45.69" fill="none" stroke="#24398a" stroke-width="9.7" stroke-linecap="round"/><path d="M24.25 22.31 A13.5 13.5 0 0 0 24.25 45.69" fill="none" stroke="#a78bfa" stroke-width="6.5" stroke-linecap="round"/>
+<path d="M44.50 34.00 A13.5 13.5 0 0 0 22.69 23.36" fill="none" stroke="#24398a" stroke-width="9.7" stroke-linecap="round"/><path d="M44.50 34.00 A13.5 13.5 0 0 0 22.69 23.36" fill="none" stroke="#2dd4bf" stroke-width="6.5" stroke-linecap="round"/>
+<path d="M18.5 34 H44.5" stroke="#2dd4bf" stroke-width="6.5" stroke-linecap="round"/></g>
+<path d="M50 6.5 C50.728 11.18 51.82 12.272 56.5 13 C51.82 13.728 50.728 14.82 50 19.5 C49.272 14.82 48.18 13.728 43.5 13 C48.18 12.272 49.272 11.18 50 6.5Z" fill="#fff" opacity=".8"/>
+<path d="M56 19.9 C56.2912 21.772 56.728 22.2088 58.6 22.5 C56.728 22.7912 56.2912 23.228 56 25.1 C55.7088 23.228 55.272 22.7912 53.4 22.5 C55.272 22.2088 55.7088 21.772 56 19.9Z" fill="#fff" opacity=".6"/>
 </svg>

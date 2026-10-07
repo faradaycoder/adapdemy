@@ -1,22 +1,22 @@
 import { useId } from "react";
 
-// EVALORA logosu: renk geçişli "e" (turkuaz Ölç → mor Teşhis et → amber Telafi et); sağ üstteki parıltılar yapay zekâ
-// desteğini gösterir.
+// EVALORA logosu: birbirinin içinden geçen üç parçalı "e" döngüsü (turkuaz Ölç → mor Teşhis et → amber Telafi et);
+// sağ üstteki parıltılar yapay zekâ desteğini gösterir.
 export function LogoIsaret({ boyut = 36 }: { boyut?: number }) {
   const id = useId().replace(/:/g, "");
+  // Üç parça (turkuaz Ölç, mor Teşhis et, amber Telafi et) birbirinin içinden geçer: dönen döngü.
+  const parca = (d: string, renk: string) => <><path d={d} fill="none" stroke="#fff" strokeWidth="9.7" strokeLinecap="round" /><path d={d} fill="none" stroke={renk} strokeWidth="6.5" strokeLinecap="round" /></>;
   return (
     <svg width={boyut} height={boyut} viewBox="0 0 64 64" aria-hidden="true">
-      <defs>
-        <linearGradient id={`${id}z`} x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#ffffff" /><stop offset="1" stopColor="#eef2ff" /></linearGradient>
-        <linearGradient id={`${id}c`} gradientUnits="userSpaceOnUse" x1="14" y1="20" x2="48" y2="48">
-          <stop offset="0" stopColor="#14b8a6" /><stop offset=".5" stopColor="#7c3aed" /><stop offset="1" stopColor="#f59e0b" />
-        </linearGradient>
-      </defs>
+      <defs><linearGradient id={`${id}z`} x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#ffffff" /><stop offset="1" stopColor="#eef2ff" /></linearGradient></defs>
       <rect width="64" height="64" rx="16" fill={`url(#${id}z)`} />
       <rect x=".5" y=".5" width="63" height="63" rx="15.5" fill="none" stroke="#c7d2fe" />
-      <path d="M16.5 34 H43.5 A13.5 13.5 0 1 0 41.06 41.74" fill="none" stroke={`url(#${id}c)`} strokeWidth="6.5" strokeLinecap="round" />
-      <path d="M49 8 C49.784 13.04 50.96 14.216 56 15 C50.96 15.784 49.784 16.96 49 22 C48.216 16.96 47.04 15.784 42 15 C47.04 14.216 48.216 13.04 49 8Z" fill="#7c3aed" />
-      <path d="M55.5 22.2 C55.8136 24.216 56.284 24.6864 58.3 25 C56.284 25.3136 55.8136 25.784 55.5 27.8 C55.1864 25.784 54.716 25.3136 52.7 25 C54.716 24.6864 55.1864 24.216 55.5 22.2Z" fill="#14b8a6" />
+      {parca("M22.69 44.64 A13.5 13.5 0 0 0 42.19 41.55", "#f59e0b")}
+      {parca("M24.25 22.31 A13.5 13.5 0 0 0 24.25 45.69", "#7c3aed")}
+      {parca("M44.50 34.00 A13.5 13.5 0 0 0 22.69 23.36", "#14b8a6")}
+      <path d="M18.5 34 H44.5" stroke="#14b8a6" strokeWidth="6.5" strokeLinecap="round" />
+      <path d="M50 6.5 C50.728 11.18 51.82 12.272 56.5 13 C51.82 13.728 50.728 14.82 50 19.5 C49.272 14.82 48.18 13.728 43.5 13 C48.18 12.272 49.272 11.18 50 6.5Z" fill="#7c3aed" />
+      <path d="M56 19.9 C56.2912 21.772 56.728 22.2088 58.6 22.5 C56.728 22.7912 56.2912 23.228 56 25.1 C55.7088 23.228 55.272 22.7912 53.4 22.5 C55.272 22.2088 55.7088 21.772 56 19.9Z" fill="#14b8a6" />
     </svg>
   );
 }
