@@ -30,7 +30,7 @@ function Ust() {
   const bas = (kullanici?.ad ?? "").split(/\s+/).filter(Boolean).slice(0, 2).map((x) => x[0]).join("").toLocaleUpperCase("tr-TR");
   return (
     <header className="ust">
-      <Link to="/" className="logo" title="Micro-skill based assessment, diagnosis and remediation · Mikro kazanım temelli ölçme, teşhis ve telafi"><Logo boyut={34} /></Link>
+      <Link to="/" className="logo" title="Micro-skill based assessment, diagnosis and remediation · Mikro kazanım temelli ölçme, teşhis ve telafi"><Logo boyut={40} /></Link>
       {kullanici && (
         <nav>
           <div className="ust-linkler">

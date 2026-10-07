@@ -1,8 +1,8 @@
 :root {
-  /* EVALORA renkleri (logodan): lacivert ana renk; turkuaz Ölç, mor Teşhis, amber Telafi */
+  /* EVALORA renkleri (logodan): lacivert ana renk; mavi Ölç, turkuaz Teşhis, mor Telafi */
   --zemin: #f4f6fb; --kart: #fff; --yazi: #101828; --soluk: #667085; --cizgi: #e4e7ec;
-  --ana: #2f4fc4; --ana-koyu: #1e3a8a; --ana-acik: #eef2ff; --hata: #b42318;
-  --olc: #0ea5a4; --teshis: #7c3aed; --telafi: #f59e0b;
+  --ana: #2f4fc4; --ana-koyu: #13306a; --ana-acik: #eef2ff; --hata: #b42318;
+  --olc: #2563eb; --teshis: #14b8a6; --telafi: #8b5cf6;
   --golge: 0 1px 2px rgba(16, 24, 40, .05), 0 1px 3px rgba(16, 24, 40, .06);
   --golge-buyuk: 0 12px 28px rgba(16, 24, 40, .10);
   font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--yazi); background: var(--zemin);
@@ -352,7 +352,11 @@ h1 { letter-spacing: -.01em; }
 .logo { display: inline-flex; text-decoration: none; }
 .logo-tam { display: inline-flex; align-items: center; gap: 10px; }
 .logo-yazi { display: flex; flex-direction: column; line-height: 1.1; }
-.logo-ad { font-weight: 800; letter-spacing: .1em; color: var(--ana-koyu); font-size: 1.15rem; }
+.logo-ad { font-weight: 800; letter-spacing: .08em; color: var(--ana-koyu); font-size: 1.2rem; }
+.logo-a { position: relative; display: inline-block; }
+.logo-a::after { content: ""; position: absolute; left: 50%; bottom: .06em; width: .34em; height: .34em; transform: translateX(-50%);
+  background: #14b8a6; clip-path: polygon(50% 0, 100% 100%, 0 100%); }
+.logo-acilim { font-size: .72rem; color: #c7d2fe; line-height: 1.4; margin-top: -8px; }
 .logo-slogan { font-size: .7rem; color: var(--soluk); letter-spacing: .02em; }
 .ust-linkler { display: flex; gap: 4px; margin-right: 8px; }
 .ust-linkler a { text-decoration: none; color: var(--soluk); font-weight: 500; padding: 6px 12px; border-radius: 8px; }
@@ -453,8 +457,6 @@ a.dongu-adim:hover { box-shadow: var(--golge); background: var(--kart); }
 @media (max-width: 1000px) { .ust nav .kim { display: none; } }
 .giris-form > p.soluk:first-of-type { margin: -6px 0 6px; }
 .logo-ad { display: inline-flex; align-items: center; gap: 6px; }
-.ai-rozet { font-size: .6rem; font-weight: 800; letter-spacing: .04em; color: #fff; padding: 2px 6px; border-radius: 6px;
-  background: linear-gradient(90deg, #2dd4bf, #8b5cf6, #f59e0b); }
 
 /* Sınav düzenleme (2026-10-07): tam genişlik, görselli sorular, sürükle-bırak, alttan soru ekleme paneli */
 .sinav-duzen .sinav-baslik { display: flex; flex-direction: column; gap: 10px; }
