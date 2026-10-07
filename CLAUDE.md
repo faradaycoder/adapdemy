@@ -1,7 +1,8 @@
 # EVALORA: Claude için çalışma talimatı
 
 Murat (öğretmen, proje sahibi) Türkçe yazar; cevaplar Türkçe, kısa ve sade olur. Kodlama kuralları `KODLAMA.md`, ölçme
-modeli `ALGORITMA.md`, uygulama planı `PLAN_UYGULAMA.md`, uygulamanın kendisi `uygulama/README.md`.
+modeli `ALGORITMA.md`, uygulama planı `PLAN_UYGULAMA.md`, uygulamanın kendisi `uygulama/README.md`, uyarlamalı
+test `UYARLAMALI_TEST.md` (+ çizimli akış `UYARLAMALI_TEST_AKIS.html`).
 
 ## Sormadan yürü (Murat, 2026-10-04)
 

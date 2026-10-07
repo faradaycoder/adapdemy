@@ -1,0 +1,220 @@
+<title>EVALORA Uyarlamalı Test</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;700&family=Nunito+Sans:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Düzen: tek sütun belge; akış şeması üstte, adımlar ve örnek iz altta. EVALORA renkleri: mavi ölç, turkuaz teşhis, mor telafi. */
+:root {
+  --bg: #f6f7fb; --kart: #ffffff; --yazi: #1f2a44; --soluk: #5b6780; --cizgi: #dfe3ee;
+  --lacivert: #13306a; --olc: #2563eb; --teshis: #0f9488; --telafi: #7c3aed; --uyari: #b45309; --kirmizi: #b42318;
+  --olc-acik: #e8f0ff; --teshis-acik: #ddf7f3; --telafi-acik: #f1ebff; --kirmizi-acik: #fde8e6;
+  --f-baslik: 'Rubik', 'Trebuchet MS', sans-serif; --f-metin: 'Nunito Sans', 'Segoe UI', Arial, sans-serif; --f-kod: 'JetBrains Mono', 'Courier New', monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0e1424; --kart: #161e33; --yazi: #e6e9f2; --soluk: #a3adc4; --cizgi: #2a3552;
+  --lacivert: #c7d2fe; --olc: #7fb0ff; --teshis: #5eead4; --telafi: #c4b5fd; --uyari: #fbbf24; --kirmizi: #f97066;
+  --olc-acik: #1b2a4d; --teshis-acik: #12302d; --telafi-acik: #261d45; --kirmizi-acik: #3a1a1a; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #0e1424; --kart: #161e33; --yazi: #e6e9f2; --soluk: #a3adc4; --cizgi: #2a3552;
+  --lacivert: #c7d2fe; --olc: #7fb0ff; --teshis: #5eead4; --telafi: #c4b5fd; --uyari: #fbbf24; --kirmizi: #f97066;
+  --olc-acik: #1b2a4d; --teshis-acik: #12302d; --telafi-acik: #261d45; --kirmizi-acik: #3a1a1a; color-scheme: dark }
+body { background: var(--bg); color: var(--yazi); font-family: var(--f-metin); font-size: 17px; line-height: 1.6; }
+.sayfa { max-width: 980px; margin: 0 auto; padding-inline: 20px; padding-block: 40px 64px; display: flex; flex-direction: column; gap: 36px; }
+h1, h2, h3 { font-family: var(--f-baslik); color: var(--lacivert); text-wrap: balance; margin: 0; line-height: 1.2; }
+h1 { font-size: 2.2rem; } h2 { font-size: 1.45rem; } h3 { font-size: 1.1rem; }
+p { margin: 0; max-width: 68ch; }
+.etiket { font-size: .78rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--olc); }
+.ust { display: flex; flex-direction: column; gap: 10px; }
+.ust p { color: var(--soluk); font-size: 1.05rem; }
+section { display: flex; flex-direction: column; gap: 14px; }
+.sema { background: var(--kart); border: 1px solid var(--cizgi); border-radius: 16px; padding: 16px; overflow-x: auto; }
+.sema svg { display: block; margin: 0 auto; min-width: 640px; }
+.adimlar { display: flex; flex-direction: column; gap: 0; counter-reset: a; }
+.adim { display: grid; grid-template-columns: 44px 1fr; gap: 14px; padding: 16px 0; border-top: 1px solid var(--cizgi); }
+.adim:first-child { border-top: 0; }
+.adim::before { counter-increment: a; content: counter(a); width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center;
+  font-family: var(--f-baslik); font-weight: 700; color: var(--olc); background: var(--olc-acik); }
+.adim > div { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.harfli .adim::before { content: attr(data-h); counter-increment: none; color: var(--bg); background: var(--lacivert); }
+.adim ul { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 4px; }
+.formul { font-family: var(--f-kod); font-size: .9rem; background: var(--bg); border: 1px solid var(--cizgi); border-radius: 10px; padding: 10px 14px; overflow-x: auto; white-space: pre; }
+.kutular { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+.kutu { background: var(--kart); border: 1px solid var(--cizgi); border-radius: 14px; padding: 16px 18px; display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.kutu b { font-family: var(--f-baslik); color: var(--lacivert); }
+.tablo { overflow-x: auto; background: var(--kart); border: 1px solid var(--cizgi); border-radius: 14px; }
+table { border-collapse: collapse; width: 100%; font-size: .93rem; min-width: 720px; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--cizgi); vertical-align: top; }
+th { font-size: .78rem; letter-spacing: .06em; text-transform: uppercase; color: var(--soluk); }
+td.sayi { font-variant-numeric: tabular-nums; white-space: nowrap; }
+code { font-family: var(--f-kod); font-size: .88em; }
+.d { display: inline-block; padding: 1px 9px; border-radius: 999px; font-size: .82rem; font-weight: 700; white-space: nowrap; }
+.d.b { background: var(--teshis-acik); color: var(--teshis); } .d.y { background: var(--kirmizi-acik); color: var(--kirmizi); } .d.s { background: var(--olc-acik); color: var(--olc); }
+.not { border-left: 4px solid var(--uyari); padding: 4px 0 4px 16px; color: var(--yazi); }
+.karar { background: var(--telafi-acik); border-radius: 14px; padding: 16px 20px; display: flex; flex-direction: column; gap: 8px; }
+.karar ol { margin: 0; padding-left: 20px; }
+</style>
+
+<div class="sayfa">
+  <header class="ust">
+    <span class="etiket">EVALORA · Algoritma taslağı</span>
+    <h1>Uyarlamalı test: eksiğin kökünü bulana kadar haritada ilerle</h1>
+    <p>Test, öğrencinin her mikro kazanım (MK) için “biliyor” olasılığını tutar. Her cevaptan sonra bu olasılığı günceller, en belirsiz MK'ye yeni soru sorar; yanlışta ön koşula iner, doğruda yukarı çıkar. Kaynak: ALGORITMA.md bölüm 6 ve bu konuşmadaki “suç paylaştırma” önerisi. Uygulamada henüz yok; onayından sonra yazılacak.</p>
+  </header>
+
+  <section>
+    <h2>Akış</h2>
+    <div class="sema">
+      <svg viewBox="0 0 760 900" width="760" height="900" role="img" aria-label="Uyarlamalı test akış şeması">
+        <defs>
+          <marker id="ok" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" style="fill:var(--soluk)"/></marker>
+        </defs>
+        <g font-family="Nunito Sans, Segoe UI, Arial, sans-serif" font-size="14" style="fill:var(--yazi)">
+          <!-- 1 Başlat -->
+          <rect x="230" y="10" width="300" height="64" rx="32" stroke-width="2" style="fill:var(--olc-acik);stroke:var(--olc)"/>
+          <text x="380" y="37" text-anchor="middle" font-weight="700" style="fill:var(--olc)">Başlat</text>
+          <text x="380" y="57" text-anchor="middle">Hedef kazanım → MK'ler + ön koşulları</text>
+          <line x1="380" y1="74" x2="380" y2="106" stroke-width="2" marker-end="url(#ok)" style="stroke:var(--soluk)"/>
+          <!-- 2 Önceki kanıt -->
+          <rect x="200" y="108" width="360" height="64" rx="12" stroke-width="2" style="fill:var(--kart);stroke:var(--cizgi)"/>
+          <text x="380" y="135" text-anchor="middle" font-weight="700">Başlangıç olasılıkları</text>
+          <text x="380" y="155" text-anchor="middle">Önceki sınavlardan; kanıt yoksa her MK %50</text>
+          <line x1="380" y1="172" x2="380" y2="204" stroke-width="2" marker-end="url(#ok)" style="stroke:var(--soluk)"/>
+          <!-- 3 Soru seç -->
+          <rect x="180" y="206" width="400" height="84" rx="12" stroke-width="2" style="fill:var(--kart);stroke:var(--olc)"/>
+          <text x="380" y="233" text-anchor="middle" font-weight="700" style="fill:var(--olc)">Hedef MK'yi seç</text>
+          <text x="380" y="253" text-anchor="middle">Belirsiz MK'ler arasından: %50'ye en yakın × etkisi büyük</text>
+          <text x="380" y="273" text-anchor="middle">O MK'yi tek başına ölçen, daha sorulmamış soru</text>
+          <line x1="380" y1="290" x2="380" y2="322" stroke-width="2" marker-end="url(#ok)" style="stroke:var(--soluk)"/>
+          <!-- 4 Cevap -->
+          <rect x="260" y="324" width="240" height="48" rx="12" stroke-width="2" style="fill:var(--kart);stroke:var(--cizgi)"/>
+          <text x="380" y="353" text-anchor="middle" font-weight="700">Öğrenci cevaplar</text>
+          <line x1="380" y1="372" x2="380" y2="404" stroke-width="2" marker-end="url(#ok)" style="stroke:var(--soluk)"/>
+          <!-- 5 karar elmas -->
+          <polygon points="380,406 470,456 380,506 290,456" stroke-width="2" style="fill:var(--teshis-acik);stroke:var(--teshis)"/>
+          <text x="380" y="461" text-anchor="middle" font-weight="700" style="fill:var(--teshis)">Doğru mu?</text>
+          <!-- Doğru kolu -->
+          <line x1="470" y1="456" x2="554" y2="456" stroke-width="2" marker-end="url(#ok)" style="stroke:var(--soluk)"/>
+          <text x="512" y="446" text-anchor="middle" font-weight="700" style="fill:var(--teshis)">Doğru</text>
+          <rect x="556" y="416" width="174" height="84" rx="12" stroke-width="2" style="fill:var(--kart);stroke:var(--teshis)"/>
+          <text x="643" y="441" text-anchor="middle" font-weight="700">Bütün MK'ler ↑</text>
+          <text x="643" y="461" text-anchor="middle">Ön koşullar da ↑</text>
+          <text x="643" y="481" text-anchor="middle">Sonra: yukarı / yana</text>
+          <!-- Yanlış kolu -->
+          <line x1="290" y1="456" x2="200" y2="456" stroke-width="2" marker-end="url(#ok)" style="stroke:var(--soluk)"/>
+          <text x="248" y="446" text-anchor="middle" font-weight="700" style="fill:var(--kirmizi)">Yanlış</text>
+          <rect x="8" y="396" width="190" height="124" rx="12" stroke-width="2" style="fill:var(--kart);stroke:var(--kirmizi)"/>
+          <text x="103" y="421" text-anchor="middle" font-weight="700">Suç kimde?</text>
+          <text x="103" y="443" text-anchor="middle">Şık bir MK'ye bağlı:</text>
+          <text x="103" y="461" text-anchor="middle">yalnız o MK ↓</text>
+          <text x="103" y="483" text-anchor="middle">Değilse: birlikte olasılıkla</text>
+          <text x="103" y="501" text-anchor="middle">paylaştır (DINA) ↓</text>
+          <!-- birleşme -->
+          <path d="M103 520 V560 H380" fill="none" stroke-width="2" style="stroke:var(--soluk)"/>
+          <path d="M643 500 V560 H380" fill="none" stroke-width="2" style="stroke:var(--soluk)"/>
+          <line x1="380" y1="560" x2="380" y2="586" stroke-width="2" marker-end="url(#ok)" style="stroke:var(--soluk)"/>
+          <!-- 6 Durumları güncelle -->
+          <rect x="190" y="588" width="380" height="64" rx="12" stroke-width="2" style="fill:var(--kart);stroke:var(--cizgi)"/>
+          <text x="380" y="615" text-anchor="middle" font-weight="700">MK durumları</text>
+          <text x="380" y="635" text-anchor="middle">≥ %95 biliyor · ≤ %5 bilmiyor · arası belirsiz</text>
+          <line x1="380" y1="652" x2="380" y2="684" stroke-width="2" marker-end="url(#ok)" style="stroke:var(--soluk)"/>
+          <!-- 7 Dur mu -->
+          <polygon points="380,686 520,736 380,786 240,736" stroke-width="2" style="fill:var(--olc-acik);stroke:var(--olc)"/>
+          <text x="380" y="741" text-anchor="middle" font-weight="700" style="fill:var(--olc)">Dur mu?</text>
+                    <circle cx="276" cy="420" r="13" style="fill:var(--lacivert)"/><text x="276" y="425" text-anchor="middle" font-weight="700" style="fill:var(--bg)">A</text><circle cx="30" cy="396" r="13" style="fill:var(--lacivert)"/><text x="30" y="401" text-anchor="middle" font-weight="700" style="fill:var(--bg)">C</text><circle cx="578" cy="416" r="13" style="fill:var(--lacivert)"/><text x="578" y="421" text-anchor="middle" font-weight="700" style="fill:var(--bg)">B</text><circle cx="204" cy="588" r="13" style="fill:var(--lacivert)"/><text x="204" y="593" text-anchor="middle" font-weight="700" style="fill:var(--bg)">D</text><circle cx="252" cy="700" r="13" style="fill:var(--lacivert)"/><text x="252" y="705" text-anchor="middle" font-weight="700" style="fill:var(--bg)">E</text>
+          <!-- Hayır: geri döngü -->
+          <path d="M520 736 H748 V248 H582" fill="none" stroke-width="2" marker-end="url(#ok)" style="stroke:var(--soluk)"/>
+          <text x="540" y="726" font-weight="700" style="fill:var(--soluk)">Hayır</text>
+          <!-- Evet -->
+          <line x1="380" y1="786" x2="380" y2="818" stroke-width="2" marker-end="url(#ok)" style="stroke:var(--soluk)"/>
+          <text x="392" y="806" font-weight="700" style="fill:var(--soluk)">Evet</text>
+          <rect x="170" y="820" width="420" height="68" rx="34" stroke-width="2" style="fill:var(--telafi-acik);stroke:var(--telafi)"/>
+          <text x="380" y="848" text-anchor="middle" font-weight="700" style="fill:var(--telafi)">Eksiğin kökü → telafi</text>
+          <text x="380" y="868" text-anchor="middle">Bilinmeyen ama ön koşulları bilinen en alttaki MK'nin videoları</text>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <section>
+    <h2>Şemayı okumak: cevaptan sonra ne olur</h2>
+    <p>Şemadaki harfler aşağıdaki açıklamalara karşılık gelir.</p>
+    <div class="adimlar harfli">
+      <div class="adim" data-h="A"><div><h3>Doğru mu?</h3><p>Cevap kontrol edilir ve iki yoldan birine gidilir: doğruysa sağdaki kutuya, yanlışsa soldaki kutuya.</p></div></div>
+      <div class="adim" data-h="B"><div><h3>Doğru: bütün MK'ler yükselir</h3><p>Doğru cevap için sorunun bütün MK'leri gerekiyordu; hepsinin “biliyor” olasılığı yükselir. Ön koşulları da biraz yükselir: 6 ile bölünebilmeyi yapan öğrenci 2 ve 3 ile bölünebilmeyi de büyük olasılıkla biliyordur, bunlara ayrıca soru sormak gerekmeyebilir. Sonraki soru haritada yukarıya (daha ileri bir MK) ya da yana (aynı düzeyde başka bir MK) gider.</p></div></div>
+      <div class="adim" data-h="C"><div><h3>Yanlış: suç kimde?</h3><p>Sorunun tek MK'si varsa suç onundur, o MK düşer. Birden çok MK varsa hangisinin bilinmediğini bulmak gerekir:</p>
+        <ul>
+          <li><b>Seçilen şık belli bir hataya bağlıysa</b> suç yalnız o MK'ye gider. Örnek: 3 ile bölünebilmeyi son basamağa bakarak deneyen öğrencinin bulacağı sayı bir şıksa ve öğrenci onu seçtiyse, düşen yalnız “3 ile bölünebilme” MK'sidir.</li>
+          <li><b>Şık bir hataya bağlı değilse</b> suç, MK'lerin birlikte olasılığıyla paylaştırılır (DINA modeli). Öğrencinin zaten bildiği MK neredeyse pay almaz; belirsiz ve zor olanlar çok alır. Zor MK (Z'si büyük) biraz daha düşük olasılıkla başladığı için yanlışta suçun büyük kısmını o alır.</li>
+        </ul>
+        <p>Sonraki soru haritada aşağıya, ön koşullara iner ve eksiğin nerede başladığını arar.</p></div></div>
+      <div class="adim" data-h="D"><div><h3>MK durumları</h3><p>İki yol burada birleşir. Güncellenen olasılıklara göre her MK'nin durumu belirlenir:</p>
+        <ul>
+          <li><span class="d b">%95 ve üstü</span> biliyor: bu MK'ye artık soru sorulmaz.</li>
+          <li><span class="d y">%5 ve altı</span> bilmiyor (iki yanlış): eksiğin kökü aranırken ön koşullarına inilir.</li>
+          <li><span class="d s">Arası</span> belirsiz: bu MK'ye bir soru daha gerekir.</li>
+        </ul></div></div>
+      <div class="adim" data-h="E"><div><h3>Dur mu?</h3><p>Test iki durumdan birinde biter: belirsiz MK kalmadıysa (hepsi “biliyor” ya da “bilmiyor” kararına ulaştıysa) ya da soru sınırı dolduysa (ör. bir MK'ye 4, toplam 15 soru). <b>Hayır</b> ise sağdaki çizgiyle yukarı dönülür ve sıradaki MK için yeni soru seçilir. <b>Evet</b> ise test biter, eksiğin kökü raporlanır ve telafi videoları gelir.</p></div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Adım adım</h2>
+    <div class="adimlar">
+      <div class="adim"><div><h3>Başlat</h3><p>Öğretmen bir kazanım (ya da ünite) seçer. Test kapsamı: kazanımın MK'leri ve haritadaki ön koşul zincirleri. Alt sınıflara inilip inilmeyeceği öğretmenin kararı.</p></div></div>
+      <div class="adim"><div><h3>Başlangıç olasılıkları</h3><p>Öğrencinin önceki sınavlardan kanıtı varsa her MK onunla başlar; yoksa P = %50. Sınıf sınavında “ölçülemedi” ya da “belirsiz” kalan MK'ler testin ilk hedefleridir.</p></div></div>
+      <div class="adim"><div><h3>Hedef MK ve soru seçimi</h3><p>Kararı verilmemiş MK'ler arasından, olasılığı %50'ye en yakın ve etkisi (ona dayanan MK sayısı) en büyük olan seçilir. Bu, haritada ortadan başlayıp ikiye bölerek aramaya benzer. O MK'yi tek başına ölçen, öğrenciye daha sorulmamış soru gelir.</p></div></div>
+      <div class="adim"><div><h3>Cevap: doğru</h3><p>Doğru cevap için sorunun bütün MK'leri gerekir; her biri tam olumlu kanıt alır. Ön koşulları da yükselir (bilen, temelini de büyük olasılıkla bilir). Test bir üst MK'ye ya da yana geçer.</p>
+        <div class="formul">P ← P·(1−s) / [ P·(1−s) + (1−P)·g ]        s = 0,10   g = 1 / şık sayısı (4 şıkta 0,25)</div></div></div>
+      <div class="adim"><div><h3>Cevap: yanlış, suç paylaştırma</h3><p>Seçilen şık belirli bir MK hatasına bağlıysa (teşhis edici çeldirici) yalnız o MK düşer. Değilse “doğru cevap için bütün MK'ler gerekir” varsayımıyla (DINA modeli) her MK'nin olasılığı, MK'lerin birlikte olasılığından Bayes kuralıyla hesaplanır. Zaten bilinen MK neredeyse hiç pay almaz. Z, zor MK'nin başlangıç olasılığını biraz düşürerek devreye girer. Bilinmeyen bir ön koşul, üstündeki MK'leri de aşağı çeker; test ön koşula iner.</p>
+        <div class="formul">P(MKₖ biliyor | yanlış) = P(MKₖ biliyor ve yanlış) / P(yanlış)
+P(doğru | hepsi biliniyor) = 1 − s     P(doğru | en az biri bilinmiyor) = g
+Örnek: üç MK de %50 iken bir yanlış, her birini %44'e indirir (karar yok).</div></div></div>
+      <div class="adim"><div><h3>Durum ve durma</h3><p>%95 ve üstü biliyor, %5 ve altı bilmiyor, arası belirsiz (iki yönde de %95 güven; standart değer). Hedef MK'lerin hepsi karara ulaşınca, bir MK'ye 4 soru sorulunca ya da toplam soru sınırı dolunca test biter. Belirsiz kalan MK öğretmene “belirsiz” olarak raporlanır.</p></div></div>
+      <div class="adim"><div><h3>Eksiğin kökü ve telafi</h3><p>Kök: öğrencinin bilmediği, ama ön koşullarını bildiği en alttaki MK. Telafi videoları bu MK için gelir; üstteki belirtiler için değil. Kök düzeldikçe üsttekiler sonraki sınavda yeniden ölçülür.</p></div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Bir MK için kaç soru</h2>
+    <div class="kutular">
+      <div class="kutu"><b>Test, hep doğru (4 şık)</b><p><span class="d b">3 doğru</span><br>%50 → %78 → %93 → %98</p></div>
+      <div class="kutu"><b>Yazılı, rubrik adımı doğru</b><p><span class="d b">1 doğru adım</span><br>%50 → %95 (tahminle doğru yapmak zor)</p></div>
+      <div class="kutu"><b>Yanlış, tek MK'li soru</b><p><span class="d y">2 yanlış</span><br>%50 → %12 (belirsiz) → %2, bilmiyor</p></div>
+      <div class="kutu"><b>Karışık cevaplar</b><p><span class="d s">4 ve üstü soru</span><br>D, Y: %78 → %32; karar için soru devam eder</p></div>
+    </div>
+    <p class="not">Yazılıda rubrik zaten her adımı bir MK'ye bağladığı için paylaştırma yok: hangi adım yanlışsa o MK. Paylaştırma yalnız test sorularında ve çeldirici bir MK'ye bağlı değilken devreye girer.</p>
+  </section>
+
+  <section>
+    <h2>Örnek: 6. sınıf, 6 ile bölünebilme</h2>
+    <p>Hedef <code>Mat01MK0068</code> (6 ile bölünebilmeyi 2 ve 3 ile bölünebilmenin birlikte sağlanmasıyla belirler). Ön koşulları <code>0062</code> (2 ile) ve <code>0065</code> (3 ile, rakamlar toplamı); <code>0065</code>'in ön koşulu <code>0059</code> (3 ve 9 ile bölünebilmeyi örneklerle sınar). Öğrenci örnektir; test soruları 4 şıklı, tek MK'li.</p>
+    <div class="tablo">
+      <table>
+        <tr><th style="width:5%">#</th><th style="width:15%">Sorulan MK</th><th style="width:12%">Cevap</th><th style="width:30%">Güncelleme</th><th style="width:38%">Neden sıradaki</th></tr>
+        <tr><td class="sayi">1–2</td><td><code>0068</code></td><td><span class="d y">Yanlış ×2</span></td><td class="sayi">0068: %50 → %12 → %2 bilmiyor</td><td>Tek yanlış karar için yetmez; ikinci yanlışla bilmiyor. Kökü bulmak için ön koşullara in.</td></tr>
+        <tr><td class="sayi">3–5</td><td><code>0062</code></td><td><span class="d b">Doğru ×3</span></td><td class="sayi">0062: %50 → %78 → %93 → %98 biliyor</td><td>2 ile bölünebilme tamam; diğer ön koşul.</td></tr>
+        <tr><td class="sayi">6–7</td><td><code>0065</code></td><td><span class="d y">Yanlış ×2</span></td><td class="sayi">0065: %50 → %12 → %2 bilmiyor</td><td>Seçtiği şık “son basamağa bakmak” yanılgısına bağlı (<code>Mat01YG0009</code>). Kökü aramak için 0059'a in.</td></tr>
+        <tr><td class="sayi">8–10</td><td><code>0059</code></td><td><span class="d b">Doğru ×3</span></td><td class="sayi">0059: %50 → %98 biliyor</td><td>Dur: kök bulundu.</td></tr>
+      </table>
+    </div>
+    <p><b>Sonuç:</b> 10 soruda kök eksik <code>Mat01MK0065</code> (3 ile bölünebilme kuralını rakamlar toplamıyla kullanır). Öğrenci kuralı örneklerle sınayabiliyor ama uygularken son basamağa bakıyor. Telafi: 0065'in konu anlatımı ve benzer soru çözümü videoları. 6 ile bölünebilme, 3 ile bölünebilme düzelince yeniden ölçülür.</p>
+  </section>
+
+  <section>
+    <h2>Gerekenler</h2>
+    <div class="kutular">
+      <div class="kutu"><b>Var</b><p>Ön koşul haritası, MK zorluğu (Z) ve etkisi, Bayesçi bilgi izleme, soru–MK ve rubrik–MK eşlemesi, çeldirici–yanılgı bağı, telafi videoları.</p></div>
+      <div class="kutu"><b>Eksik</b><p>Her MK için 2–3 kısa, tek MK'li soru. Pilot için bölünebilme ünitesi: yaklaşık 20 MK, 50–60 soru; ben üretirim, öğretmen onaylar.</p></div>
+      <div class="kutu"><b>Sonra</b><p>Cevaplar biriktikçe s, g ve Z değerleri veriyle düzeltilir (Elo, sonra Rasch).</p></div>
+    </div>
+  </section>
+
+  <section class="karar">
+    <h2>Senin kararını bekleyenler</h2>
+    <p>Karara bağlananlar (Murat, 7 Ekim 2026): “bilmiyor” eşiği %5 (iki yanlış), ön koşul çıkarımı iki yönde kalır.</p>
+    <ol>
+      <li>Yanlış test cevabında suç DINA modeliyle (MK'lerin birlikte olasılığı) paylaştırılsın mı; Z, zor MK'nin başlangıç olasılığını düşürsün mü?</li>
+      <li>Bir MK'ye en fazla kaç soru (öneri 4), testte toplam kaç soru (öneri 15)?</li>
+      <li>Ön koşul ararken alt sınıflara inilsin mi?</li>
+      <li>Kullanım: sınıf sınavından sonra “eksiğini bul” testi mi (öneri), yoksa sınavın yerine mi?</li>
+    </ol>
+  </section>
+</div>
