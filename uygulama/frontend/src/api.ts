@@ -163,7 +163,7 @@ export const gorselMi = (g: string | null | undefined) => !!g && !g.endsWith(".p
 
 // ---------- Uyarlamalı test ----------
 export type UyKazanimT = { kod: string; ifade: string; ders: string; sinif_duzeyi: number; mk_sayisi: number; soru_sayisi: number };
-export type UyMKT = { kod: string; ifade: string; p: number; durum: string; cikarim: boolean; onkosulu_eksik: boolean; soru_sayisi: number; havuz: number; on_kosullar: string[] };
+export type UyMKT = { kod: string; ifade: string; p: number; durum: string; cikarim: boolean; soru_sayisi: number; havuz: number; on_kosullar: string[] };
 export type UyGecmisT = { sira: number; mk: string; metin: string; secilen: string; dogru_sik: string | null; dogru: boolean; cozum: string };
 export type UyOturumT = {
   id: number; kazanim: string; kazanim_ifade: string; durum: "devam" | "bitti"; deneme: boolean; sira: number; en_cok: number;
