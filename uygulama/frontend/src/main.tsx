@@ -10,6 +10,8 @@ import OgrenciAna from "./sayfalar/OgrenciAna";
 import SinifSayfasi from "./sayfalar/SinifSayfasi";
 import MKGezgini from "./sayfalar/MKGezgini";
 import MKHarita from "./sayfalar/MKHarita";
+import Uyarlamali from "./sayfalar/Uyarlamali";
+import UyarlamaliTest from "./sayfalar/UyarlamaliTest";
 import SoruBankasi from "./sayfalar/SoruBankasi";
 import SoruYukle from "./sayfalar/SoruYukle";
 import SoruDuzenle from "./sayfalar/SoruDuzenle";
@@ -37,8 +39,8 @@ function Ust() {
           <div className="ust-linkler">
             <NavLink to="/" end>Ana sayfa</NavLink>
             {kullanici.rol === "ogretmen"
-              ? <><NavLink to="/sorular">Soru bankası</NavLink><NavLink to="/sinavlar">Sınavlar</NavLink><NavLink to="/mk">MK haritası</NavLink></>
-              : <NavLink to="/rapor">Konu raporum</NavLink>}
+              ? <><NavLink to="/sorular">Soru bankası</NavLink><NavLink to="/sinavlar">Sınavlar</NavLink><NavLink to="/uyarlamali">Uyarlamalı test</NavLink><NavLink to="/mk">MK haritası</NavLink></>
+              : <><NavLink to="/rapor">Konu raporum</NavLink><NavLink to="/uyarlamali">Eksiğini bul</NavLink></>}
           </div>
           <Zil />
           <span className="avatar" title={kullanici.ad}>{bas}</span>
@@ -90,6 +92,8 @@ function Uygulama() {
           <Route path="/atama/:atamaId/teslimler" element={<Korumali><Teslimler /></Korumali>} />
           <Route path="/atama/:atamaId/teslimler/:teslimId" element={<Korumali><Degerlendir /></Korumali>} />
           <Route path="/sonuc/:atamaId" element={<Korumali><OgrenciSonuc /></Korumali>} />
+          <Route path="/uyarlamali" element={<Korumali><Uyarlamali /></Korumali>} />
+          <Route path="/uyarlamali/:id" element={<Korumali><UyarlamaliTest /></Korumali>} />
           <Route path="/mk" element={<Korumali><MKHarita /></Korumali>} />
           <Route path="/mk/liste" element={<Korumali><MKGezgini /></Korumali>} />
           <Route path="/mk/liste/:kod" element={<Korumali><MKGezgini /></Korumali>} />

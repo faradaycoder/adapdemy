@@ -1,0 +1,2821 @@
+{
+ "kaynak": "Uyarlamalı test havuzu (Claude yazdı, 2026-10-07)",
+ "not": "6. sınıf bölünebilme (MAT.6.1.2) ve ön koşulu Mat01MK0047: her MK için 4 tek MK'li, 4 şıklı soru. Sınav değil, uyarlamalı testin soru havuzu.",
+ "ders": "Matematik",
+ "sinif_duzeyi": 6,
+ "sorular": [
+  {
+   "no": 1,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "Aşağıdakilerden hangisi 7'nin katıdır?",
+   "secenekler": [
+    [
+     "A",
+     "47",
+     false
+    ],
+    [
+     "B",
+     "27",
+     false
+    ],
+    [
+     "C",
+     "17",
+     false
+    ],
+    [
+     "D",
+     "42",
+     true
+    ]
+   ],
+   "cozum": "7 × 6 = 42. Diğerleri 7'ye tam bölünmez.",
+   "birincil": "Mat01MK0047",
+   "adimlar": [
+    [
+     "Bir doğal sayının katlarını belirler.",
+     "Mat01MK0047"
+    ]
+   ]
+  },
+  {
+   "no": 2,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "6'nın katları küçükten büyüğe yazılıyor: 6, 12, 18, ... Dördüncü kat hangisidir?",
+   "secenekler": [
+    [
+     "A",
+     "22",
+     false
+    ],
+    [
+     "B",
+     "20",
+     false
+    ],
+    [
+     "C",
+     "24",
+     true
+    ],
+    [
+     "D",
+     "26",
+     false
+    ]
+   ],
+   "cozum": "6 × 4 = 24.",
+   "birincil": "Mat01MK0047",
+   "adimlar": [
+    [
+     "Bir doğal sayının katlarını belirler.",
+     "Mat01MK0047"
+    ]
+   ]
+  },
+  {
+   "no": 3,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "Aşağıdakilerden hangisi 9'un katı değildir?",
+   "secenekler": [
+    [
+     "A",
+     "36",
+     false
+    ],
+    [
+     "B",
+     "64",
+     true
+    ],
+    [
+     "C",
+     "54",
+     false
+    ],
+    [
+     "D",
+     "72",
+     false
+    ]
+   ],
+   "cozum": "36 = 9 × 4, 54 = 9 × 6, 72 = 9 × 8; 64 ise 9'un katı değildir.",
+   "birincil": "Mat01MK0047",
+   "adimlar": [
+    [
+     "Bir doğal sayının katlarını belirler.",
+     "Mat01MK0047"
+    ]
+   ]
+  },
+  {
+   "no": 4,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "12'nin katlarından 50 ile 70 arasında olan hangisidir?",
+   "secenekler": [
+    [
+     "A",
+     "60",
+     true
+    ],
+    [
+     "B",
+     "56",
+     false
+    ],
+    [
+     "C",
+     "64",
+     false
+    ],
+    [
+     "D",
+     "68",
+     false
+    ]
+   ],
+   "cozum": "12 × 4 = 48, 12 × 5 = 60, 12 × 6 = 72. 50 ile 70 arasındaki tek kat 60'tır.",
+   "birincil": "Mat01MK0047",
+   "adimlar": [
+    [
+     "Bir doğal sayının katlarını belirler.",
+     "Mat01MK0047"
+    ]
+   ]
+  },
+  {
+   "no": 5,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "Bir sayının 2 ile tam bölünüp bölünmediğini anlamak için neden yalnız birler basamağına bakmak yeterlidir?",
+   "secenekler": [
+    [
+     "A",
+     "Birler basamağı sayının en büyük basamağıdır.",
+     false
+    ],
+    [
+     "B",
+     "Çift sayıların bütün rakamları çifttir.",
+     false
+    ],
+    [
+     "C",
+     "2 küçük bir sayı olduğu için.",
+     false
+    ],
+    [
+     "D",
+     "Onlar, yüzler, binler basamağındaki değerler 10'un katıdır ve 10, 2'ye tam bölünür.",
+     true
+    ]
+   ],
+   "cozum": "Bir sayı, onluk kısmı (10'un katı) ile birler basamağının toplamıdır. 10 çift olduğu için onluk kısım her zaman 2'ye bölünür; geriye birler basamağı kalır.",
+   "birincil": "Mat01MK0054",
+   "adimlar": [
+    [
+     "2, 5 ve 10 ile bölünebilme kurallarının neden son basamağa dayandığını açıklar.",
+     "Mat01MK0054"
+    ]
+   ]
+  },
+  {
+   "no": 6,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "5 ile bölünebilme kuralı hangisidir?",
+   "secenekler": [
+    [
+     "A",
+     "Rakamları toplamı 5'in katı olan sayılar 5'e tam bölünür.",
+     false
+    ],
+    [
+     "B",
+     "Yalnız birler basamağı 5 olan sayılar 5'e tam bölünür.",
+     false
+    ],
+    [
+     "C",
+     "Birler basamağı 0 ya da 5 olan sayılar 5'e tam bölünür.",
+     true
+    ],
+    [
+     "D",
+     "Son iki basamağı 5'in katı olan sayılar 5'e tam bölünür.",
+     false
+    ]
+   ],
+   "cozum": "10, 5'e tam bölündüğü için yalnız birler basamağına bakılır; 0 ve 5, 5'e tam bölünen rakamlardır.",
+   "birincil": "Mat01MK0054",
+   "adimlar": [
+    [
+     "2, 5 ve 10 ile bölünebilme kurallarının neden son basamağa dayandığını açıklar.",
+     "Mat01MK0054"
+    ]
+   ]
+  },
+  {
+   "no": 7,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "10 ile tam bölünen bir sayının birler basamağı için hangisi kesinlikle doğrudur?",
+   "secenekler": [
+    [
+     "A",
+     "0 ya da 5'tir.",
+     false
+    ],
+    [
+     "B",
+     "0'dır.",
+     true
+    ],
+    [
+     "C",
+     "Çift bir rakamdır.",
+     false
+    ],
+    [
+     "D",
+     "1'dir.",
+     false
+    ]
+   ],
+   "cozum": "10'un katlarının birler basamağı her zaman 0'dır (10, 20, 30, ...).",
+   "birincil": "Mat01MK0054",
+   "adimlar": [
+    [
+     "2, 5 ve 10 ile bölünebilme kurallarının neden son basamağa dayandığını açıklar.",
+     "Mat01MK0054"
+    ]
+   ]
+  },
+  {
+   "no": 8,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "Birler basamağı 0 olan bir sayı aşağıdaki sayıların hangisinin hepsine kesinlikle tam bölünür?",
+   "secenekler": [
+    [
+     "A",
+     "2, 5 ve 10",
+     true
+    ],
+    [
+     "B",
+     "Yalnız 10",
+     false
+    ],
+    [
+     "C",
+     "2 ve 10",
+     false
+    ],
+    [
+     "D",
+     "3, 5 ve 10",
+     false
+    ]
+   ],
+   "cozum": "Birler basamağı 0 olan sayı 10'un katıdır; 10 = 2 × 5 olduğu için 2'ye ve 5'e de tam bölünür.",
+   "birincil": "Mat01MK0054",
+   "adimlar": [
+    [
+     "2, 5 ve 10 ile bölünebilme kurallarının neden son basamağa dayandığını açıklar.",
+     "Mat01MK0054"
+    ]
+   ]
+  },
+  {
+   "no": 9,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "3 ile bölünebilme kuralında neden rakamların toplamına bakılır?",
+   "secenekler": [
+    [
+     "A",
+     "Son basamağı 3'ün katı olan sayı 3'e bölündüğü için.",
+     false
+    ],
+    [
+     "B",
+     "3 tek sayı olduğu için.",
+     false
+    ],
+    [
+     "C",
+     "Rakamların çarpımı 3'ün katı olması gerektiği için.",
+     false
+    ],
+    [
+     "D",
+     "10, 100, 1 000 gibi basamak değerleri 3'e bölündüğünde hep 1 kalır; bu yüzden sayının kalanı rakamlar toplamının kalanıyla aynıdır.",
+     true
+    ]
+   ],
+   "cozum": "10 = 9 + 1, 100 = 99 + 1 ... 9, 99, 999 sayıları 3'e bölünür. Bu yüzden her basamaktan geriye yalnız rakamın kendisi kalır ve kalanlar toplanır.",
+   "birincil": "Mat01MK0055",
+   "adimlar": [
+    [
+     "3 ve 9 ile bölünebilme kurallarının neden rakamlar toplamına dayandığını açıklar.",
+     "Mat01MK0055"
+    ]
+   ]
+  },
+  {
+   "no": 10,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "9 ile bölünebilme kuralı hangisidir?",
+   "secenekler": [
+    [
+     "A",
+     "Son basamağı 9 olan sayılar 9'a tam bölünür.",
+     false
+    ],
+    [
+     "B",
+     "Son iki basamağı 9'un katı olan sayılar 9'a tam bölünür.",
+     false
+    ],
+    [
+     "C",
+     "Rakamları toplamı 9'un katı olan sayılar 9'a tam bölünür.",
+     true
+    ],
+    [
+     "D",
+     "Rakamları toplamı 3'ün katı olan sayılar 9'a tam bölünür.",
+     false
+    ]
+   ],
+   "cozum": "10, 100, 1 000 ... 9'a bölündüğünde 1 kalır; bu yüzden rakamlar toplamına bakılır ve toplam 9'un katı olmalıdır.",
+   "birincil": "Mat01MK0055",
+   "adimlar": [
+    [
+     "3 ve 9 ile bölünebilme kurallarının neden rakamlar toplamına dayandığını açıklar.",
+     "Mat01MK0055"
+    ]
+   ]
+  },
+  {
+   "no": 11,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "Rakamları toplamı 9'un katı olan bir sayı için hangisi doğrudur?",
+   "secenekler": [
+    [
+     "A",
+     "9'a tam bölünür ama 3'e bölünmeyebilir.",
+     false
+    ],
+    [
+     "B",
+     "Hem 3'e hem 9'a tam bölünür.",
+     true
+    ],
+    [
+     "C",
+     "Yalnız 3'e tam bölünür.",
+     false
+    ],
+    [
+     "D",
+     "Tek bir sayıdır.",
+     false
+    ]
+   ],
+   "cozum": "9'un katı olan bir toplam, 3'ün de katıdır. Bu yüzden sayı hem 9'a hem 3'e tam bölünür.",
+   "birincil": "Mat01MK0055",
+   "adimlar": [
+    [
+     "3 ve 9 ile bölünebilme kurallarının neden rakamlar toplamına dayandığını açıklar.",
+     "Mat01MK0055"
+    ]
+   ]
+  },
+  {
+   "no": 12,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "Rakamları toplamı 12 olan bir sayı için hangisi kesinlikle doğrudur?",
+   "secenekler": [
+    [
+     "A",
+     "3'e tam bölünür, 9'a tam bölünmez.",
+     true
+    ],
+    [
+     "B",
+     "9'a tam bölünür.",
+     false
+    ],
+    [
+     "C",
+     "3'e tam bölünmez.",
+     false
+    ],
+    [
+     "D",
+     "2'ye tam bölünür.",
+     false
+    ]
+   ],
+   "cozum": "12, 3'ün katıdır ama 9'un katı değildir. Bu yüzden sayı 3'e tam bölünür, 9'a bölünmez.",
+   "birincil": "Mat01MK0055",
+   "adimlar": [
+    [
+     "3 ve 9 ile bölünebilme kurallarının neden rakamlar toplamına dayandığını açıklar.",
+     "Mat01MK0055"
+    ]
+   ]
+  },
+  {
+   "no": 13,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "4 ile bölünebilme kuralında neden son iki basamağa bakılır?",
+   "secenekler": [
+    [
+     "A",
+     "Birler basamağı 4'e bölünmediği için.",
+     false
+    ],
+    [
+     "B",
+     "4 iki basamaklı bir sayı olduğu için.",
+     false
+    ],
+    [
+     "C",
+     "Son iki basamağın rakamları toplamı 4'ün katı olmalı.",
+     false
+    ],
+    [
+     "D",
+     "100 ve 1 000, 10 000 gibi değerler 4'e tam bölünür; geriye son iki basamağın oluşturduğu sayı kalır.",
+     true
+    ]
+   ],
+   "cozum": "100 = 4 × 25 olduğu için yüzler ve daha büyük basamaklar her zaman 4'e bölünür. Bölünüp bölünmeyeceğini son iki basamak belirler.",
+   "birincil": "Mat01MK0056",
+   "adimlar": [
+    [
+     "4 ile bölünebilme kuralının neden son iki basamağa dayandığını açıklar.",
+     "Mat01MK0056"
+    ]
+   ]
+  },
+  {
+   "no": 14,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "4 ile bölünebilme kuralı hangisidir?",
+   "secenekler": [
+    [
+     "A",
+     "Birler basamağı 4 olan sayılar 4'e tam bölünür.",
+     false
+    ],
+    [
+     "B",
+     "Son iki basamağının rakamları toplamı 4'ün katı olan sayılar 4'e tam bölünür.",
+     false
+    ],
+    [
+     "C",
+     "Son iki basamağının oluşturduğu sayı 4'ün katı ya da 00 olan sayılar 4'e tam bölünür.",
+     true
+    ],
+    [
+     "D",
+     "Rakamları toplamı 4'ün katı olan sayılar 4'e tam bölünür.",
+     false
+    ]
+   ],
+   "cozum": "Yüzler ve üstü 4'e bölündüğü için son iki basamağın oluşturduğu sayıya bakılır.",
+   "birincil": "Mat01MK0056",
+   "adimlar": [
+    [
+     "4 ile bölünebilme kuralının neden son iki basamağa dayandığını açıklar.",
+     "Mat01MK0056"
+    ]
+   ]
+  },
+  {
+   "no": 15,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "Son iki basamağı 00 olan bir sayı için hangisi doğrudur?",
+   "secenekler": [
+    [
+     "A",
+     "4'e tam bölünmez.",
+     false
+    ],
+    [
+     "B",
+     "4'e tam bölünür.",
+     true
+    ],
+    [
+     "C",
+     "9'a tam bölünür.",
+     false
+    ],
+    [
+     "D",
+     "Yalnız 10'a tam bölünür.",
+     false
+    ]
+   ],
+   "cozum": "Son iki basamağı 00 olan sayı 100'ün katıdır; 100 = 4 × 25 olduğu için 4'e tam bölünür.",
+   "birincil": "Mat01MK0056",
+   "adimlar": [
+    [
+     "4 ile bölünebilme kuralının neden son iki basamağa dayandığını açıklar.",
+     "Mat01MK0056"
+    ]
+   ]
+  },
+  {
+   "no": 16,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "5 368 sayısının 4'e bölünüp bölünmediğini anlamak için hangi sayıya bakmak yeterlidir?",
+   "secenekler": [
+    [
+     "A",
+     "68",
+     true
+    ],
+    [
+     "B",
+     "8",
+     false
+    ],
+    [
+     "C",
+     "368",
+     false
+    ],
+    [
+     "D",
+     "22",
+     false
+    ]
+   ],
+   "cozum": "Son iki basamağın oluşturduğu sayı 68'e bakılır. (22, rakamlar toplamıdır; 4 kuralında kullanılmaz.)",
+   "birincil": "Mat01MK0056",
+   "adimlar": [
+    [
+     "4 ile bölünebilme kuralının neden son iki basamağa dayandığını açıklar.",
+     "Mat01MK0056"
+    ]
+   ]
+  },
+  {
+   "no": 17,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "6 ile bölünebilme kuralı hangisidir?",
+   "secenekler": [
+    [
+     "A",
+     "3 ile tam bölünen sayılar 6'ya tam bölünür.",
+     false,
+     "Mat01YG0010"
+    ],
+    [
+     "B",
+     "Birler basamağı 6 olan sayılar 6'ya tam bölünür.",
+     false
+    ],
+    [
+     "C",
+     "Rakamları toplamı 6'nın katı olan sayılar 6'ya tam bölünür.",
+     false
+    ],
+    [
+     "D",
+     "Hem 2 ile hem 3 ile tam bölünen sayılar 6'ya tam bölünür.",
+     true
+    ]
+   ],
+   "cozum": "6 = 2 × 3. Bir sayının 6'ya bölünmesi için hem 2'ye hem 3'e bölünmesi gerekir.",
+   "birincil": "Mat01MK0057",
+   "adimlar": [
+    [
+     "6 ile bölünebilmenin 2 ve 3 ile bölünebilmeye dayandığını açıklar.",
+     "Mat01MK0057"
+    ]
+   ]
+  },
+  {
+   "no": 18,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "6 ile bölünebilmek için neden hem 2 ile hem 3 ile bölünebilmek gerekir?",
+   "secenekler": [
+    [
+     "A",
+     "6 çift olduğu için yalnız 2'ye bakmak yeter.",
+     false
+    ],
+    [
+     "B",
+     "6, 3'ün iki katı olduğu için yalnız 3'e bakmak yeter.",
+     false,
+     "Mat01YG0010"
+    ],
+    [
+     "C",
+     "6 = 2 × 3'tür ve 2 ile 3'ün 1'den başka ortak böleni yoktur.",
+     true
+    ],
+    [
+     "D",
+     "2 + 3 = 5 olduğu için.",
+     false
+    ]
+   ],
+   "cozum": "2 ve 3 aralarında asal olduğu için ikisine birden bölünen sayı çarpımlarına, yani 6'ya bölünür.",
+   "birincil": "Mat01MK0057",
+   "adimlar": [
+    [
+     "6 ile bölünebilmenin 2 ve 3 ile bölünebilmeye dayandığını açıklar.",
+     "Mat01MK0057"
+    ]
+   ]
+  },
+  {
+   "no": 19,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "Bir sayı 6'ya tam bölünüyorsa hangisi kesinlikle doğrudur?",
+   "secenekler": [
+    [
+     "A",
+     "Birler basamağı 6'dır.",
+     false
+    ],
+    [
+     "B",
+     "Çift sayıdır ve rakamları toplamı 3'ün katıdır.",
+     true
+    ],
+    [
+     "C",
+     "Rakamları toplamı 6'dır.",
+     false
+    ],
+    [
+     "D",
+     "9'a da tam bölünür.",
+     false
+    ]
+   ],
+   "cozum": "6'ya bölünen sayı 2'ye (çift) ve 3'e (rakamlar toplamı 3'ün katı) bölünür.",
+   "birincil": "Mat01MK0057",
+   "adimlar": [
+    [
+     "6 ile bölünebilmenin 2 ve 3 ile bölünebilmeye dayandığını açıklar.",
+     "Mat01MK0057"
+    ]
+   ]
+  },
+  {
+   "no": 20,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "3'e tam bölünen ama 6'ya tam bölünmeyen bir sayının özelliği hangisidir?",
+   "secenekler": [
+    [
+     "A",
+     "Tek sayıdır.",
+     true
+    ],
+    [
+     "B",
+     "Birler basamağı 0'dır.",
+     false
+    ],
+    [
+     "C",
+     "Rakamları toplamı 9'dur.",
+     false
+    ],
+    [
+     "D",
+     "2'ye tam bölünür.",
+     false
+    ]
+   ],
+   "cozum": "3'e bölünüp 6'ya bölünmüyorsa 2'ye bölünmüyordur, yani tek sayıdır (ör. 15).",
+   "birincil": "Mat01MK0057",
+   "adimlar": [
+    [
+     "6 ile bölünebilmenin 2 ve 3 ile bölünebilmeye dayandığını açıklar.",
+     "Mat01MK0057"
+    ]
+   ]
+  },
+  {
+   "no": 21,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "Ece: \"Birler basamağı 5 olan her sayı 5'e tam bölünür.\" Bu iddiayı hangi örnek grubu destekler?",
+   "secenekler": [
+    [
+     "A",
+     "15, 52 ve 505",
+     false
+    ],
+    [
+     "B",
+     "25, 50 ve 51",
+     false
+    ],
+    [
+     "C",
+     "55, 56 ve 57",
+     false
+    ],
+    [
+     "D",
+     "15, 135 ve 2 005",
+     true
+    ]
+   ],
+   "cozum": "15 ÷ 5 = 3, 135 ÷ 5 = 27, 2 005 ÷ 5 = 401. Üçünün de birler basamağı 5'tir ve 5'e tam bölünür.",
+   "birincil": "Mat01MK0058",
+   "adimlar": [
+    [
+     "2, 5 ve 10 ile bölünebilme genellemesini örneklerle sınar.",
+     "Mat01MK0058"
+    ]
+   ]
+  },
+  {
+   "no": 22,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "Ali: \"Rakamlarından biri 0 olan her sayı 10'a tam bölünür.\" Bu iddianın yanlış olduğunu gösteren örnek hangisidir?",
+   "secenekler": [
+    [
+     "A",
+     "100",
+     false
+    ],
+    [
+     "B",
+     "230",
+     false
+    ],
+    [
+     "C",
+     "105",
+     true
+    ],
+    [
+     "D",
+     "1 000",
+     false
+    ]
+   ],
+   "cozum": "105'in rakamlarında 0 vardır ama birler basamağı 0 olmadığı için 10'a tam bölünmez.",
+   "birincil": "Mat01MK0058",
+   "adimlar": [
+    [
+     "2, 5 ve 10 ile bölünebilme genellemesini örneklerle sınar.",
+     "Mat01MK0058"
+    ]
+   ]
+  },
+  {
+   "no": 23,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "Zeynep 2 ile bölünebilme kuralını 34, 58, 70 ve 96 sayılarıyla deniyor. Hangisi doğrudur?",
+   "secenekler": [
+    [
+     "A",
+     "70'in birler basamağı 0 olduğu için 2'ye bölünmez; örnek kuralı çürütür.",
+     false
+    ],
+    [
+     "B",
+     "Dördünün de birler basamağı çift ve dördü de 2'ye tam bölünüyor; örnekler kuralı destekler.",
+     true
+    ],
+    [
+     "C",
+     "58'in birler basamağı 8 olduğu için 2'ye bölünmez.",
+     false
+    ],
+    [
+     "D",
+     "Yalnız 70 ve 96 2'ye tam bölünür.",
+     false
+    ]
+   ],
+   "cozum": "34 ÷ 2 = 17, 58 ÷ 2 = 29, 70 ÷ 2 = 35, 96 ÷ 2 = 48. 0 da çift bir rakamdır.",
+   "birincil": "Mat01MK0058",
+   "adimlar": [
+    [
+     "2, 5 ve 10 ile bölünebilme genellemesini örneklerle sınar.",
+     "Mat01MK0058"
+    ]
+   ]
+  },
+  {
+   "no": 24,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "\"5'e tam bölünen her sayı 10'a da tam bölünür.\" Bu iddianın yanlış olduğunu gösteren örnek hangisidir?",
+   "secenekler": [
+    [
+     "A",
+     "35",
+     true
+    ],
+    [
+     "B",
+     "40",
+     false
+    ],
+    [
+     "C",
+     "100",
+     false
+    ],
+    [
+     "D",
+     "70",
+     false
+    ]
+   ],
+   "cozum": "35, 5'e tam bölünür (35 ÷ 5 = 7) ama birler basamağı 0 olmadığı için 10'a bölünmez.",
+   "birincil": "Mat01MK0058",
+   "adimlar": [
+    [
+     "2, 5 ve 10 ile bölünebilme genellemesini örneklerle sınar.",
+     "Mat01MK0058"
+    ]
+   ]
+  },
+  {
+   "no": 25,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "Can \"Rakamları toplamı 3'ün katı olan sayı 3'e tam bölünür.\" kuralını 111 sayısıyla sınıyor. Hangisi doğrudur?",
+   "secenekler": [
+    [
+     "A",
+     "111'in birler basamağı 1 olduğu için 3'e bölünmez; örnek kuralı çürütür.",
+     false
+    ],
+    [
+     "B",
+     "1 + 1 + 1 = 3 ama 111 ÷ 3 kalanlıdır; örnek kuralı çürütür.",
+     false
+    ],
+    [
+     "C",
+     "111 tek sayı olduğu için bu kural sınanamaz.",
+     false
+    ],
+    [
+     "D",
+     "1 + 1 + 1 = 3 ve 111 ÷ 3 = 37 kalansızdır; örnek kuralı destekler.",
+     true
+    ]
+   ],
+   "cozum": "3 × 37 = 111. Rakamlar toplamı 3 olan 111, 3'e tam bölünür.",
+   "birincil": "Mat01MK0059",
+   "adimlar": [
+    [
+     "3 ve 9 ile bölünebilme genellemesini örneklerle sınar.",
+     "Mat01MK0059"
+    ]
+   ]
+  },
+  {
+   "no": 26,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "\"3'e tam bölünen her sayı 9'a da tam bölünür.\" Bu iddianın yanlış olduğunu gösteren örnek hangisidir?",
+   "secenekler": [
+    [
+     "A",
+     "18",
+     false
+    ],
+    [
+     "B",
+     "27",
+     false
+    ],
+    [
+     "C",
+     "12",
+     true
+    ],
+    [
+     "D",
+     "81",
+     false
+    ]
+   ],
+   "cozum": "12, 3'e tam bölünür (rakamlar toplamı 3) ama 9'a bölünmez.",
+   "birincil": "Mat01MK0059",
+   "adimlar": [
+    [
+     "3 ve 9 ile bölünebilme genellemesini örneklerle sınar.",
+     "Mat01MK0059"
+    ]
+   ]
+  },
+  {
+   "no": 27,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "\"Birler basamağı 3 olan sayı 3'e tam bölünür.\" Bu iddianın yanlış olduğunu gösteren örnek hangisidir?",
+   "secenekler": [
+    [
+     "A",
+     "33",
+     false
+    ],
+    [
+     "B",
+     "13",
+     true
+    ],
+    [
+     "C",
+     "63",
+     false
+    ],
+    [
+     "D",
+     "123",
+     false
+    ]
+   ],
+   "cozum": "13'ün birler basamağı 3'tür ama rakamlar toplamı 4 olduğu için 3'e bölünmez.",
+   "birincil": "Mat01MK0059",
+   "adimlar": [
+    [
+     "3 ve 9 ile bölünebilme genellemesini örneklerle sınar.",
+     "Mat01MK0059"
+    ]
+   ]
+  },
+  {
+   "no": 28,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "9 ile bölünebilme kuralı sınanırken hangi örnekte rakamlar toplamı ve bölme sonucu birlikte doğru verilmiştir?",
+   "secenekler": [
+    [
+     "A",
+     "738: 7 + 3 + 8 = 18 ve 738 ÷ 9 = 82",
+     true
+    ],
+    [
+     "B",
+     "738: 7 + 3 + 8 = 17 ve 738 ÷ 9 kalanlıdır",
+     false
+    ],
+    [
+     "C",
+     "456: 4 + 5 + 6 = 15 ve 456 ÷ 9 = 50",
+     false
+    ],
+    [
+     "D",
+     "333: 3 + 3 + 3 = 9 ve 333 ÷ 9 = 33",
+     false
+    ]
+   ],
+   "cozum": "9 × 82 = 738 ve 7 + 3 + 8 = 18. (456 ÷ 9 kalanlıdır, 333 ÷ 9 = 37'dir.)",
+   "birincil": "Mat01MK0059",
+   "adimlar": [
+    [
+     "3 ve 9 ile bölünebilme genellemesini örneklerle sınar.",
+     "Mat01MK0059"
+    ]
+   ]
+  },
+  {
+   "no": 29,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "\"Birler basamağı 4 olan her sayı 4'e tam bölünür.\" Bu iddianın yanlış olduğunu gösteren örnek hangisidir?",
+   "secenekler": [
+    [
+     "A",
+     "24",
+     false
+    ],
+    [
+     "B",
+     "44",
+     false
+    ],
+    [
+     "C",
+     "104",
+     false
+    ],
+    [
+     "D",
+     "14",
+     true
+    ]
+   ],
+   "cozum": "14'ün birler basamağı 4'tür ama 14, 4'e tam bölünmez. 4 kuralında son iki basamağa bakılır.",
+   "birincil": "Mat01MK0060",
+   "adimlar": [
+    [
+     "4 ile bölünebilme genellemesini örneklerle sınar.",
+     "Mat01MK0060"
+    ]
+   ]
+  },
+  {
+   "no": 30,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "Mert 4 ile bölünebilme kuralını 1 316 sayısıyla sınıyor. Hangisi doğrudur?",
+   "secenekler": [
+    [
+     "A",
+     "Birler basamağı 6 olduğu için 4'e bölünmez.",
+     false
+    ],
+    [
+     "B",
+     "1 + 3 + 1 + 6 = 11 olduğu için 4'e bölünmez.",
+     false
+    ],
+    [
+     "C",
+     "16, 4'ün katıdır ve 1 316 ÷ 4 = 329 kalansızdır; örnek kuralı destekler.",
+     true
+    ],
+    [
+     "D",
+     "16 ÷ 4 = 4 ama 1 316 ÷ 4 kalanlıdır.",
+     false
+    ]
+   ],
+   "cozum": "4 × 329 = 1 316. Son iki basamak 16, 4'ün katıdır.",
+   "birincil": "Mat01MK0060",
+   "adimlar": [
+    [
+     "4 ile bölünebilme genellemesini örneklerle sınar.",
+     "Mat01MK0060"
+    ]
+   ]
+  },
+  {
+   "no": 31,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "\"Çift olan her sayı 4'e tam bölünür.\" Bu iddianın yanlış olduğunu gösteren örnek hangisidir?",
+   "secenekler": [
+    [
+     "A",
+     "16",
+     false
+    ],
+    [
+     "B",
+     "18",
+     true
+    ],
+    [
+     "C",
+     "32",
+     false
+    ],
+    [
+     "D",
+     "100",
+     false
+    ]
+   ],
+   "cozum": "18 çifttir ama 4'e tam bölünmez (18 ÷ 4 = 4, kalan 2).",
+   "birincil": "Mat01MK0060",
+   "adimlar": [
+    [
+     "4 ile bölünebilme genellemesini örneklerle sınar.",
+     "Mat01MK0060"
+    ]
+   ]
+  },
+  {
+   "no": 32,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "Ayşe: \"Son iki basamağı 00 olan sayılar 4'e tam bölünür.\" Bu iddiayı hangi örnek grubu destekler?",
+   "secenekler": [
+    [
+     "A",
+     "100, 700 ve 1 900",
+     true
+    ],
+    [
+     "B",
+     "100, 110 ve 120",
+     false
+    ],
+    [
+     "C",
+     "104, 108 ve 112",
+     false
+    ],
+    [
+     "D",
+     "10, 20 ve 30",
+     false
+    ]
+   ],
+   "cozum": "100 ÷ 4 = 25, 700 ÷ 4 = 175, 1 900 ÷ 4 = 475; üçünün de son iki basamağı 00'dır.",
+   "birincil": "Mat01MK0060",
+   "adimlar": [
+    [
+     "4 ile bölünebilme genellemesini örneklerle sınar.",
+     "Mat01MK0060"
+    ]
+   ]
+  },
+  {
+   "no": 33,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "\"3'e tam bölünen her sayı 6'ya da tam bölünür.\" Bu iddianın yanlış olduğunu gösteren örnek hangisidir?",
+   "secenekler": [
+    [
+     "A",
+     "12",
+     false
+    ],
+    [
+     "B",
+     "24",
+     false
+    ],
+    [
+     "C",
+     "36",
+     false
+    ],
+    [
+     "D",
+     "15",
+     true
+    ]
+   ],
+   "cozum": "15, 3'e tam bölünür ama tek sayı olduğu için 6'ya bölünmez.",
+   "birincil": "Mat01MK0061",
+   "adimlar": [
+    [
+     "6 ile bölünebilme genellemesini örneklerle sınar.",
+     "Mat01MK0061"
+    ]
+   ]
+  },
+  {
+   "no": 34,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "\"Çift olan her sayı 6'ya tam bölünür.\" Bu iddianın yanlış olduğunu gösteren örnek hangisidir?",
+   "secenekler": [
+    [
+     "A",
+     "12",
+     false
+    ],
+    [
+     "B",
+     "18",
+     false
+    ],
+    [
+     "C",
+     "14",
+     true
+    ],
+    [
+     "D",
+     "30",
+     false
+    ]
+   ],
+   "cozum": "14 çifttir ama rakamları toplamı 5 olduğu için 3'e, dolayısıyla 6'ya bölünmez.",
+   "birincil": "Mat01MK0061",
+   "adimlar": [
+    [
+     "6 ile bölünebilme genellemesini örneklerle sınar.",
+     "Mat01MK0061"
+    ]
+   ]
+  },
+  {
+   "no": 35,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "Elif 6 ile bölünebilme kuralını 2 034 sayısıyla sınıyor. Hangisi doğrudur?",
+   "secenekler": [
+    [
+     "A",
+     "Birler basamağı 4 olduğu için 6'ya bölünmez.",
+     false
+    ],
+    [
+     "B",
+     "Çifttir, 2 + 0 + 3 + 4 = 9 olduğu için 3'e de bölünür ve 2 034 ÷ 6 = 339 kalansızdır; örnek kuralı destekler.",
+     true
+    ],
+    [
+     "C",
+     "2 + 0 + 3 + 4 = 9 olduğu için 9'a bölünür, 6'ya bölünmez.",
+     false
+    ],
+    [
+     "D",
+     "Çift olduğu için 6'ya bölünür; 3'e bakmaya gerek yoktur.",
+     false
+    ]
+   ],
+   "cozum": "6 × 339 = 2 034. Sayı hem çift hem de rakamları toplamı 3'ün katı.",
+   "birincil": "Mat01MK0061",
+   "adimlar": [
+    [
+     "6 ile bölünebilme genellemesini örneklerle sınar.",
+     "Mat01MK0061"
+    ]
+   ]
+  },
+  {
+   "no": 36,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "\"6'ya tam bölünen sayılar hem çifttir hem de rakamları toplamı 3'ün katıdır.\" Bu genellemeyi hangi örnek grubu destekler?",
+   "secenekler": [
+    [
+     "A",
+     "24, 54 ve 108",
+     true
+    ],
+    [
+     "B",
+     "24, 27 ve 108",
+     false
+    ],
+    [
+     "C",
+     "16, 26 ve 36",
+     false
+    ],
+    [
+     "D",
+     "30, 35 ve 40",
+     false
+    ]
+   ],
+   "cozum": "24 ÷ 6 = 4, 54 ÷ 6 = 9, 108 ÷ 6 = 18. Üçü de çift, rakamları toplamları 6, 9 ve 9.",
+   "birincil": "Mat01MK0061",
+   "adimlar": [
+    [
+     "6 ile bölünebilme genellemesini örneklerle sınar.",
+     "Mat01MK0061"
+    ]
+   ]
+  },
+  {
+   "no": 37,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "Aşağıdaki sayılardan hangisi 2 ile tam bölünür?",
+   "secenekler": [
+    [
+     "A",
+     "4 237",
+     false
+    ],
+    [
+     "B",
+     "6 841",
+     false
+    ],
+    [
+     "C",
+     "8 005",
+     false
+    ],
+    [
+     "D",
+     "3 458",
+     true
+    ]
+   ],
+   "cozum": "Birler basamağı çift (8) olan 3 458, 2'ye tam bölünür.",
+   "birincil": "Mat01MK0062",
+   "adimlar": [
+    [
+     "Birler basamağına bakarak 2 ile bölünebilmeyi belirler.",
+     "Mat01MK0062"
+    ]
+   ]
+  },
+  {
+   "no": 38,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "Aşağıdaki sayılardan hangisi 2 ile tam bölünmez?",
+   "secenekler": [
+    [
+     "A",
+     "1 350",
+     false
+    ],
+    [
+     "B",
+     "9 772",
+     false
+    ],
+    [
+     "C",
+     "2 465",
+     true
+    ],
+    [
+     "D",
+     "4 008",
+     false
+    ]
+   ],
+   "cozum": "2 465'in birler basamağı 5 (tek) olduğu için 2'ye bölünmez.",
+   "birincil": "Mat01MK0062",
+   "adimlar": [
+    [
+     "Birler basamağına bakarak 2 ile bölünebilmeyi belirler.",
+     "Mat01MK0062"
+    ]
+   ]
+  },
+  {
+   "no": 39,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "38★ üç basamaklı sayısı 2 ile tam bölünüyor. ★ yerine hangisi yazılabilir?",
+   "secenekler": [
+    [
+     "A",
+     "3",
+     false
+    ],
+    [
+     "B",
+     "6",
+     true
+    ],
+    [
+     "C",
+     "5",
+     false
+    ],
+    [
+     "D",
+     "9",
+     false
+    ]
+   ],
+   "cozum": "2'ye bölünmesi için birler basamağı çift olmalı: 6.",
+   "birincil": "Mat01MK0062",
+   "adimlar": [
+    [
+     "Birler basamağına bakarak 2 ile bölünebilmeyi belirler.",
+     "Mat01MK0062"
+    ]
+   ]
+  },
+  {
+   "no": 40,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "14, 27, 30, 45, 58, 63 sayılarından kaç tanesi 2 ile tam bölünür?",
+   "secenekler": [
+    [
+     "A",
+     "3",
+     true
+    ],
+    [
+     "B",
+     "2",
+     false
+    ],
+    [
+     "C",
+     "4",
+     false
+    ],
+    [
+     "D",
+     "6",
+     false
+    ]
+   ],
+   "cozum": "Birler basamağı çift olanlar: 14, 30, 58. Toplam 3 sayı.",
+   "birincil": "Mat01MK0062",
+   "adimlar": [
+    [
+     "Birler basamağına bakarak 2 ile bölünebilmeyi belirler.",
+     "Mat01MK0062"
+    ]
+   ]
+  },
+  {
+   "no": 41,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "Aşağıdaki sayılardan hangisi 5 ile tam bölünür?",
+   "secenekler": [
+    [
+     "A",
+     "5 432",
+     false
+    ],
+    [
+     "B",
+     "5 551",
+     false
+    ],
+    [
+     "C",
+     "2 058",
+     false
+    ],
+    [
+     "D",
+     "4 315",
+     true
+    ]
+   ],
+   "cozum": "Birler basamağı 5 olan 4 315, 5'e tam bölünür. Binler basamağının 5 olması önemli değildir.",
+   "birincil": "Mat01MK0063",
+   "adimlar": [
+    [
+     "Birler basamağına bakarak 5 ile bölünebilmeyi belirler.",
+     "Mat01MK0063"
+    ]
+   ]
+  },
+  {
+   "no": 42,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "72★ üç basamaklı sayısı 5 ile tam bölünüyor. ★ yerine yazılabilecek rakamlar hangileridir?",
+   "secenekler": [
+    [
+     "A",
+     "Yalnız 5",
+     false
+    ],
+    [
+     "B",
+     "Yalnız 0",
+     false
+    ],
+    [
+     "C",
+     "0 ya da 5",
+     true
+    ],
+    [
+     "D",
+     "1 ya da 5",
+     false
+    ]
+   ],
+   "cozum": "5'e bölünmesi için birler basamağı 0 ya da 5 olmalıdır.",
+   "birincil": "Mat01MK0063",
+   "adimlar": [
+    [
+     "Birler basamağına bakarak 5 ile bölünebilmeyi belirler.",
+     "Mat01MK0063"
+    ]
+   ]
+  },
+  {
+   "no": 43,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "Aşağıdaki sayılardan hangisi 5 ile tam bölünmez?",
+   "secenekler": [
+    [
+     "A",
+     "1 205",
+     false
+    ],
+    [
+     "B",
+     "5 052",
+     true
+    ],
+    [
+     "C",
+     "9 990",
+     false
+    ],
+    [
+     "D",
+     "3 335",
+     false
+    ]
+   ],
+   "cozum": "5 052'nin birler basamağı 2'dir; 5'e bölünmez.",
+   "birincil": "Mat01MK0063",
+   "adimlar": [
+    [
+     "Birler basamağına bakarak 5 ile bölünebilmeyi belirler.",
+     "Mat01MK0063"
+    ]
+   ]
+  },
+  {
+   "no": 44,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "1 245 kalem beşerli paketlere ayrılıyor. Hangisi doğrudur?",
+   "secenekler": [
+    [
+     "A",
+     "Artan kalem olmaz, çünkü birler basamağı 5'tir.",
+     true
+    ],
+    [
+     "B",
+     "1 kalem artar.",
+     false
+    ],
+    [
+     "C",
+     "4 kalem artar.",
+     false
+    ],
+    [
+     "D",
+     "5 kalem artar.",
+     false
+    ]
+   ],
+   "cozum": "1 245'in birler basamağı 5 olduğu için 5'e tam bölünür: 1 245 ÷ 5 = 249.",
+   "birincil": "Mat01MK0063",
+   "adimlar": [
+    [
+     "Birler basamağına bakarak 5 ile bölünebilmeyi belirler.",
+     "Mat01MK0063"
+    ]
+   ]
+  },
+  {
+   "no": 45,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "Aşağıdaki sayılardan hangisi 10 ile tam bölünür?",
+   "secenekler": [
+    [
+     "A",
+     "1 005",
+     false
+    ],
+    [
+     "B",
+     "10 001",
+     false
+    ],
+    [
+     "C",
+     "2 105",
+     false
+    ],
+    [
+     "D",
+     "6 340",
+     true
+    ]
+   ],
+   "cozum": "Birler basamağı 0 olan 6 340, 10'a tam bölünür.",
+   "birincil": "Mat01MK0064",
+   "adimlar": [
+    [
+     "Birler basamağına bakarak 10 ile bölünebilmeyi belirler.",
+     "Mat01MK0064"
+    ]
+   ]
+  },
+  {
+   "no": 46,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "Aşağıdaki sayılardan hangisi 10 ile tam bölünmez?",
+   "secenekler": [
+    [
+     "A",
+     "3 000",
+     false
+    ],
+    [
+     "B",
+     "1 110",
+     false
+    ],
+    [
+     "C",
+     "2 505",
+     true
+    ],
+    [
+     "D",
+     "7 890",
+     false
+    ]
+   ],
+   "cozum": "2 505'in birler basamağı 5'tir; 10'a bölünmez.",
+   "birincil": "Mat01MK0064",
+   "adimlar": [
+    [
+     "Birler basamağına bakarak 10 ile bölünebilmeyi belirler.",
+     "Mat01MK0064"
+    ]
+   ]
+  },
+  {
+   "no": 47,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "5★ iki basamaklı sayısı 10 ile tam bölünüyor. ★ kaçtır?",
+   "secenekler": [
+    [
+     "A",
+     "5",
+     false
+    ],
+    [
+     "B",
+     "0",
+     true
+    ],
+    [
+     "C",
+     "1",
+     false
+    ],
+    [
+     "D",
+     "0 ya da 5",
+     false
+    ]
+   ],
+   "cozum": "10'a bölünmesi için birler basamağı 0 olmalıdır.",
+   "birincil": "Mat01MK0064",
+   "adimlar": [
+    [
+     "Birler basamağına bakarak 10 ile bölünebilmeyi belirler.",
+     "Mat01MK0064"
+    ]
+   ]
+  },
+  {
+   "no": 48,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "2 470 öğrenci 10 kişilik gruplara ayrılıyor. Hangisi doğrudur?",
+   "secenekler": [
+    [
+     "A",
+     "Hiç öğrenci artmaz.",
+     true
+    ],
+    [
+     "B",
+     "7 öğrenci artar.",
+     false
+    ],
+    [
+     "C",
+     "70 öğrenci artar.",
+     false
+    ],
+    [
+     "D",
+     "4 öğrenci artar.",
+     false
+    ]
+   ],
+   "cozum": "Birler basamağı 0 olduğu için 2 470, 10'a tam bölünür: 247 grup.",
+   "birincil": "Mat01MK0064",
+   "adimlar": [
+    [
+     "Birler basamağına bakarak 10 ile bölünebilmeyi belirler.",
+     "Mat01MK0064"
+    ]
+   ]
+  },
+  {
+   "no": 49,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "Aşağıdaki sayılardan hangisi 3 ile tam bölünür?",
+   "secenekler": [
+    [
+     "A",
+     "2 513",
+     false,
+     "Mat01YG0009"
+    ],
+    [
+     "B",
+     "4 106",
+     false,
+     "Mat01YG0009"
+    ],
+    [
+     "C",
+     "7 009",
+     false,
+     "Mat01YG0009"
+    ],
+    [
+     "D",
+     "1 254",
+     true
+    ]
+   ],
+   "cozum": "1 + 2 + 5 + 4 = 12, 3'ün katıdır. Diğerlerinin rakamları toplamı 11, 11 ve 16'dır. Birler basamağına bakılmaz.",
+   "birincil": "Mat01MK0065",
+   "adimlar": [
+    [
+     "Rakamlar toplamını kullanarak 3 ile bölünebilmeyi belirler.",
+     "Mat01MK0065"
+    ]
+   ]
+  },
+  {
+   "no": 50,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "5★2 üç basamaklı sayısı 3 ile tam bölünüyor. ★ yerine yazılabilecek en küçük rakam kaçtır?",
+   "secenekler": [
+    [
+     "A",
+     "0",
+     false
+    ],
+    [
+     "B",
+     "3",
+     false
+    ],
+    [
+     "C",
+     "2",
+     true
+    ],
+    [
+     "D",
+     "1",
+     false
+    ]
+   ],
+   "cozum": "5 + 2 = 7. 7 + ★ toplamı 3'ün katı olmalı: ★ = 2 (toplam 9).",
+   "birincil": "Mat01MK0065",
+   "adimlar": [
+    [
+     "Rakamlar toplamını kullanarak 3 ile bölünebilmeyi belirler.",
+     "Mat01MK0065"
+    ]
+   ]
+  },
+  {
+   "no": 51,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "Aşağıdaki sayılardan hangisi 3 ile tam bölünmez?",
+   "secenekler": [
+    [
+     "A",
+     "2 412",
+     false,
+     "Mat01YG0009"
+    ],
+    [
+     "B",
+     "1 003",
+     true
+    ],
+    [
+     "C",
+     "5 001",
+     false,
+     "Mat01YG0009"
+    ],
+    [
+     "D",
+     "7 110",
+     false
+    ]
+   ],
+   "cozum": "1 + 0 + 0 + 3 = 4, 3'ün katı değildir. Birler basamağının 3 olması yetmez.",
+   "birincil": "Mat01MK0065",
+   "adimlar": [
+    [
+     "Rakamlar toplamını kullanarak 3 ile bölünebilmeyi belirler.",
+     "Mat01MK0065"
+    ]
+   ]
+  },
+  {
+   "no": 52,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "4 572 sayısının 3 ile tam bölünüp bölünmediği için hangisi doğrudur?",
+   "secenekler": [
+    [
+     "A",
+     "4 + 5 + 7 + 2 = 18 ve 18, 3'ün katı olduğu için tam bölünür.",
+     true
+    ],
+    [
+     "B",
+     "Birler basamağı 2 olduğu için tam bölünmez.",
+     false,
+     "Mat01YG0009"
+    ],
+    [
+     "C",
+     "4 + 5 + 7 + 2 = 17 olduğu için tam bölünmez.",
+     false
+    ],
+    [
+     "D",
+     "Son iki basamağı 72 olduğu için tam bölünür.",
+     false
+    ]
+   ],
+   "cozum": "Rakamlar toplamı 18'dir; 4 572 ÷ 3 = 1 524.",
+   "birincil": "Mat01MK0065",
+   "adimlar": [
+    [
+     "Rakamlar toplamını kullanarak 3 ile bölünebilmeyi belirler.",
+     "Mat01MK0065"
+    ]
+   ]
+  },
+  {
+   "no": 53,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "Aşağıdaki sayılardan hangisi 9 ile tam bölünür?",
+   "secenekler": [
+    [
+     "A",
+     "1 239",
+     false
+    ],
+    [
+     "B",
+     "7 019",
+     false
+    ],
+    [
+     "C",
+     "4 512",
+     false
+    ],
+    [
+     "D",
+     "3 456",
+     true
+    ]
+   ],
+   "cozum": "3 + 4 + 5 + 6 = 18, 9'un katıdır. 1 239 ve 4 512'nin rakamları toplamı 15 ve 12; bunlar yalnız 3'e bölünür.",
+   "birincil": "Mat01MK0066",
+   "adimlar": [
+    [
+     "Rakamlar toplamını kullanarak 9 ile bölünebilmeyi belirler.",
+     "Mat01MK0066"
+    ]
+   ]
+  },
+  {
+   "no": 54,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "4★7 üç basamaklı sayısı 9 ile tam bölünüyor. ★ kaçtır?",
+   "secenekler": [
+    [
+     "A",
+     "1",
+     false
+    ],
+    [
+     "B",
+     "4",
+     false
+    ],
+    [
+     "C",
+     "7",
+     true
+    ],
+    [
+     "D",
+     "9",
+     false
+    ]
+   ],
+   "cozum": "4 + 7 = 11. 11 + ★ toplamı 9'un katı olmalı: ★ = 7 (toplam 18).",
+   "birincil": "Mat01MK0066",
+   "adimlar": [
+    [
+     "Rakamlar toplamını kullanarak 9 ile bölünebilmeyi belirler.",
+     "Mat01MK0066"
+    ]
+   ]
+  },
+  {
+   "no": 55,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "Aşağıdaki sayılardan hangisi 9 ile tam bölünmez?",
+   "secenekler": [
+    [
+     "A",
+     "3 645",
+     false
+    ],
+    [
+     "B",
+     "1 236",
+     true
+    ],
+    [
+     "C",
+     "8 109",
+     false
+    ],
+    [
+     "D",
+     "9 990",
+     false
+    ]
+   ],
+   "cozum": "1 + 2 + 3 + 6 = 12, 9'un katı değildir. Diğerlerinin toplamı 18, 18 ve 27'dir.",
+   "birincil": "Mat01MK0066",
+   "adimlar": [
+    [
+     "Rakamlar toplamını kullanarak 9 ile bölünebilmeyi belirler.",
+     "Mat01MK0066"
+    ]
+   ]
+  },
+  {
+   "no": 56,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "6 237 sayısının 9 ile tam bölünüp bölünmediği için hangisi doğrudur?",
+   "secenekler": [
+    [
+     "A",
+     "6 + 2 + 3 + 7 = 18 olduğu için tam bölünür.",
+     true
+    ],
+    [
+     "B",
+     "Birler basamağı 7 olduğu için tam bölünmez.",
+     false
+    ],
+    [
+     "C",
+     "6 + 2 + 3 + 7 = 18 olduğu için yalnız 3'e bölünür, 9'a bölünmez.",
+     false
+    ],
+    [
+     "D",
+     "Son iki basamağı 37 olduğu için tam bölünmez.",
+     false
+    ]
+   ],
+   "cozum": "18, 9'un katıdır: 6 237 ÷ 9 = 693.",
+   "birincil": "Mat01MK0066",
+   "adimlar": [
+    [
+     "Rakamlar toplamını kullanarak 9 ile bölünebilmeyi belirler.",
+     "Mat01MK0066"
+    ]
+   ]
+  },
+  {
+   "no": 57,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "Aşağıdaki sayılardan hangisi 4 ile tam bölünür?",
+   "secenekler": [
+    [
+     "A",
+     "2 514",
+     false
+    ],
+    [
+     "B",
+     "1 342",
+     false
+    ],
+    [
+     "C",
+     "7 254",
+     false
+    ],
+    [
+     "D",
+     "3 516",
+     true
+    ]
+   ],
+   "cozum": "Son iki basamak 16, 4'ün katıdır. 14, 42 ve 54 ise 4'ün katı değildir.",
+   "birincil": "Mat01MK0067",
+   "adimlar": [
+    [
+     "Son iki basamağa bakarak 4 ile bölünebilmeyi belirler.",
+     "Mat01MK0067"
+    ]
+   ]
+  },
+  {
+   "no": 58,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "73★6 dört basamaklı sayısı 4 ile tam bölünüyor. ★ yerine hangisi yazılabilir?",
+   "secenekler": [
+    [
+     "A",
+     "2",
+     false
+    ],
+    [
+     "B",
+     "4",
+     false
+    ],
+    [
+     "C",
+     "1",
+     true
+    ],
+    [
+     "D",
+     "8",
+     false
+    ]
+   ],
+   "cozum": "Son iki basamak ★6 olmalı ve 4'ün katı olmalı: 16 (★ = 1). 26, 46 ve 86 4'ün katı değildir.",
+   "birincil": "Mat01MK0067",
+   "adimlar": [
+    [
+     "Son iki basamağa bakarak 4 ile bölünebilmeyi belirler.",
+     "Mat01MK0067"
+    ]
+   ]
+  },
+  {
+   "no": 59,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "Aşağıdaki sayılardan hangisi 4 ile tam bölünmez?",
+   "secenekler": [
+    [
+     "A",
+     "2 100",
+     false
+    ],
+    [
+     "B",
+     "1 030",
+     true
+    ],
+    [
+     "C",
+     "5 328",
+     false
+    ],
+    [
+     "D",
+     "9 012",
+     false
+    ]
+   ],
+   "cozum": "Son iki basamak 30, 4'ün katı değildir. 00, 28 ve 12 ise 4'ün katıdır.",
+   "birincil": "Mat01MK0067",
+   "adimlar": [
+    [
+     "Son iki basamağa bakarak 4 ile bölünebilmeyi belirler.",
+     "Mat01MK0067"
+    ]
+   ]
+  },
+  {
+   "no": 60,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "2 548 kâğıt 4'erli destelere ayrılıyor. Hangisi doğrudur?",
+   "secenekler": [
+    [
+     "A",
+     "Artan kâğıt olmaz, çünkü 48, 4'ün katıdır.",
+     true
+    ],
+    [
+     "B",
+     "2 kâğıt artar, çünkü birler basamağı 8'dir.",
+     false
+    ],
+    [
+     "C",
+     "Artan kâğıt olur, çünkü 2 + 5 + 4 + 8 = 19'dur.",
+     false
+    ],
+    [
+     "D",
+     "3 kâğıt artar.",
+     false
+    ]
+   ],
+   "cozum": "Son iki basamak 48 = 4 × 12. 2 548 ÷ 4 = 637.",
+   "birincil": "Mat01MK0067",
+   "adimlar": [
+    [
+     "Son iki basamağa bakarak 4 ile bölünebilmeyi belirler.",
+     "Mat01MK0067"
+    ]
+   ]
+  },
+  {
+   "no": 61,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "Aşağıdaki sayılardan hangisi 6 ile tam bölünür?",
+   "secenekler": [
+    [
+     "A",
+     "2 415",
+     false,
+     "Mat01YG0010"
+    ],
+    [
+     "B",
+     "3 016",
+     false
+    ],
+    [
+     "C",
+     "1 113",
+     false,
+     "Mat01YG0010"
+    ],
+    [
+     "D",
+     "2 418",
+     true
+    ]
+   ],
+   "cozum": "2 418 çifttir ve 2 + 4 + 1 + 8 = 15, 3'ün katıdır. 2 415 ve 1 113 3'e bölünür ama tek oldukları için 6'ya bölünmez.",
+   "birincil": "Mat01MK0068",
+   "adimlar": [
+    [
+     "2 ve 3 ile bölünebilmeyi birlikte kullanarak 6 ile bölünebilmeyi belirler.",
+     "Mat01MK0068"
+    ]
+   ]
+  },
+  {
+   "no": 62,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "4★2 üç basamaklı sayısı 6 ile tam bölünüyor. ★ yerine hangisi yazılabilir?",
+   "secenekler": [
+    [
+     "A",
+     "2",
+     false
+    ],
+    [
+     "B",
+     "4",
+     false
+    ],
+    [
+     "C",
+     "3",
+     true
+    ],
+    [
+     "D",
+     "5",
+     false
+    ]
+   ],
+   "cozum": "Sayı zaten çift. 4 + 2 + ★ toplamı 3'ün katı olmalı: ★ = 3 (toplam 9).",
+   "birincil": "Mat01MK0068",
+   "adimlar": [
+    [
+     "2 ve 3 ile bölünebilmeyi birlikte kullanarak 6 ile bölünebilmeyi belirler.",
+     "Mat01MK0068"
+    ]
+   ]
+  },
+  {
+   "no": 63,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "Aşağıdaki sayılardan hangisi 6 ile tam bölünmez?",
+   "secenekler": [
+    [
+     "A",
+     "1 254",
+     false
+    ],
+    [
+     "B",
+     "1 251",
+     true
+    ],
+    [
+     "C",
+     "3 300",
+     false
+    ],
+    [
+     "D",
+     "5 412",
+     false
+    ]
+   ],
+   "cozum": "1 251'in rakamları toplamı 9'dur, 3'e bölünür; ama tek olduğu için 6'ya bölünmez.",
+   "birincil": "Mat01MK0068",
+   "adimlar": [
+    [
+     "2 ve 3 ile bölünebilmeyi birlikte kullanarak 6 ile bölünebilmeyi belirler.",
+     "Mat01MK0068"
+    ]
+   ]
+  },
+  {
+   "no": 64,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "Bir sayı 3'e tam bölünüyor. Bu sayının 6'ya da tam bölündüğünü göstermek için ne yapılmalıdır?",
+   "secenekler": [
+    [
+     "A",
+     "Sayının çift olduğu gösterilmelidir.",
+     true
+    ],
+    [
+     "B",
+     "Başka bir şeye gerek yoktur; 3'e bölünen sayı 6'ya da bölünür.",
+     false,
+     "Mat01YG0010"
+    ],
+    [
+     "C",
+     "Rakamları toplamının 6 olduğu gösterilmelidir.",
+     false
+    ],
+    [
+     "D",
+     "Birler basamağının 6 olduğu gösterilmelidir.",
+     false
+    ]
+   ],
+   "cozum": "6'ya bölünmek için hem 3'e hem 2'ye bölünmek gerekir; geriye sayının çift olduğunu göstermek kalır.",
+   "birincil": "Mat01MK0068",
+   "adimlar": [
+    [
+     "2 ve 3 ile bölünebilmeyi birlikte kullanarak 6 ile bölünebilmeyi belirler.",
+     "Mat01MK0068"
+    ]
+   ]
+  },
+  {
+   "no": 65,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "Bir sayının hem 2'ye hem 5'e tam bölünüp bölünmediğini tek bakışta anlamak için neye bakmak yeterlidir?",
+   "secenekler": [
+    [
+     "A",
+     "Birler basamağının 5 olup olmadığına",
+     false
+    ],
+    [
+     "B",
+     "Rakamları toplamına",
+     false
+    ],
+    [
+     "C",
+     "Onlar basamağına",
+     false
+    ],
+    [
+     "D",
+     "Birler basamağının 0 olup olmadığına",
+     true
+    ]
+   ],
+   "cozum": "Hem 2'ye hem 5'e bölünen sayı 10'a bölünür; birler basamağı 0 olmalıdır.",
+   "birincil": "Mat01MK0069",
+   "adimlar": [
+    [
+     "2, 5 ve 10 ile bölünebilme kurallarından durumuna uygun olanı seçip kullanır.",
+     "Mat01MK0069"
+    ]
+   ]
+  },
+  {
+   "no": 66,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "2, 5 ve 10'un üçüne birden tam bölünen bir sayının birler basamağı kaçtır?",
+   "secenekler": [
+    [
+     "A",
+     "5",
+     false
+    ],
+    [
+     "B",
+     "0 ya da 5",
+     false
+    ],
+    [
+     "C",
+     "0",
+     true
+    ],
+    [
+     "D",
+     "Herhangi bir çift rakam",
+     false
+    ]
+   ],
+   "cozum": "10'a bölünen sayı 2'ye ve 5'e de bölünür; birler basamağı 0'dır.",
+   "birincil": "Mat01MK0069",
+   "adimlar": [
+    [
+     "2, 5 ve 10 ile bölünebilme kurallarından durumuna uygun olanı seçip kullanır.",
+     "Mat01MK0069"
+    ]
+   ]
+  },
+  {
+   "no": 67,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "Bir sayının 5 ile bölümünden kalanı bulmanın en kısa yolu hangisidir?",
+   "secenekler": [
+    [
+     "A",
+     "Rakamları toplamının 5 ile bölümünden kalana bakmak",
+     false
+    ],
+    [
+     "B",
+     "Birler basamağının 5 ile bölümünden kalana bakmak",
+     true
+    ],
+    [
+     "C",
+     "Mutlaka uzun bölme yapmak",
+     false
+    ],
+    [
+     "D",
+     "Son iki basamağın toplamına bakmak",
+     false
+    ]
+   ],
+   "cozum": "Onluk kısım 10'un katı olduğu için 5'e bölünür; kalanı yalnız birler basamağı belirler (ör. 3 457 → 7 ÷ 5, kalan 2).",
+   "birincil": "Mat01MK0069",
+   "adimlar": [
+    [
+     "2, 5 ve 10 ile bölünebilme kurallarından durumuna uygun olanı seçip kullanır.",
+     "Mat01MK0069"
+    ]
+   ]
+  },
+  {
+   "no": 68,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "Defne, 2 ile bölünebilme kuralının 3 ile bölünebilme kuralından daha hızlı uygulandığını söylüyor. Bunun nedeni hangisidir?",
+   "secenekler": [
+    [
+     "A",
+     "2 için yalnız birler basamağına bakılır; 3 için bütün rakamlar toplanır.",
+     true
+    ],
+    [
+     "B",
+     "2, 3'ten küçük olduğu için.",
+     false
+    ],
+    [
+     "C",
+     "3 ile bölünebilme kuralı yoktur.",
+     false
+    ],
+    [
+     "D",
+     "İkisi de aynı hızda uygulanır.",
+     false
+    ]
+   ],
+   "cozum": "2 kuralı tek basamağa, 3 kuralı bütün basamaklara bakar.",
+   "birincil": "Mat01MK0069",
+   "adimlar": [
+    [
+     "2, 5 ve 10 ile bölünebilme kurallarından durumuna uygun olanı seçip kullanır.",
+     "Mat01MK0069"
+    ]
+   ]
+  },
+  {
+   "no": 69,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "Rakamları toplamı 27 olan bir sayı için hangisi doğrudur?",
+   "secenekler": [
+    [
+     "A",
+     "Yalnız 3'e tam bölünür.",
+     false
+    ],
+    [
+     "B",
+     "Yalnız 9'a tam bölünür.",
+     false
+    ],
+    [
+     "C",
+     "3'e de 9'a da bölünmez.",
+     false
+    ],
+    [
+     "D",
+     "Hem 3'e hem 9'a tam bölünür.",
+     true
+    ]
+   ],
+   "cozum": "27, hem 3'ün hem 9'un katıdır.",
+   "birincil": "Mat01MK0070",
+   "adimlar": [
+    [
+     "3 ve 9 ile bölünebilme kurallarından durumuna uygun olanı seçip kullanır.",
+     "Mat01MK0070"
+    ]
+   ]
+  },
+  {
+   "no": 70,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "Bir sayının 3'e ve 9'a bölünüp bölünmediğini anlamanın en kısa yolu hangisidir?",
+   "secenekler": [
+    [
+     "A",
+     "Önce birler basamağına, sonra son iki basamağa bakmak",
+     false
+    ],
+    [
+     "B",
+     "Sayıyı 3'e ve 9'a ayrı ayrı uzun bölmeyle bölmek",
+     false
+    ],
+    [
+     "C",
+     "Rakamları toplamını bir kez bulup bu toplamın 3'e ve 9'a bölünüp bölünmediğine bakmak",
+     true
+    ],
+    [
+     "D",
+     "Yalnız birler basamağına bakmak",
+     false
+    ]
+   ],
+   "cozum": "İki kural da rakamlar toplamına dayanır; toplam bir kez bulunur, iki soru birden cevaplanır.",
+   "birincil": "Mat01MK0070",
+   "adimlar": [
+    [
+     "3 ve 9 ile bölünebilme kurallarından durumuna uygun olanı seçip kullanır.",
+     "Mat01MK0070"
+    ]
+   ]
+  },
+  {
+   "no": 71,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "987 654 321 sayısının 9 ile tam bölünüp bölünmediğini hızlıca anlamak için hangisi doğrudur?",
+   "secenekler": [
+    [
+     "A",
+     "Birler basamağı 1 olduğu için tam bölünmez.",
+     false
+    ],
+    [
+     "B",
+     "Rakamları toplanır: 45, 9'un katı olduğu için tam bölünür.",
+     true
+    ],
+    [
+     "C",
+     "Son iki basamağı 21 olduğu için tam bölünmez.",
+     false
+    ],
+    [
+     "D",
+     "Rakamları toplanır: 45 tek olduğu için tam bölünmez.",
+     false
+    ]
+   ],
+   "cozum": "9 + 8 + 7 + 6 + 5 + 4 + 3 + 2 + 1 = 45 = 9 × 5.",
+   "birincil": "Mat01MK0070",
+   "adimlar": [
+    [
+     "3 ve 9 ile bölünebilme kurallarından durumuna uygun olanı seçip kullanır.",
+     "Mat01MK0070"
+    ]
+   ]
+  },
+  {
+   "no": 72,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "Rakamları toplamı 15 olan bir sayıdan en az kaç çıkarılırsa 9'a tam bölünen bir sayı elde edilir?",
+   "secenekler": [
+    [
+     "A",
+     "6",
+     true
+    ],
+    [
+     "B",
+     "3",
+     false
+    ],
+    [
+     "C",
+     "1",
+     false
+    ],
+    [
+     "D",
+     "15",
+     false
+    ]
+   ],
+   "cozum": "Sayının 9 ile bölümünden kalan, rakamlar toplamının (15) 9 ile bölümünden kalana eşittir: 6. 6 çıkarılırsa 9'a tam bölünür.",
+   "birincil": "Mat01MK0070",
+   "adimlar": [
+    [
+     "3 ve 9 ile bölünebilme kurallarından durumuna uygun olanı seçip kullanır.",
+     "Mat01MK0070"
+    ]
+   ]
+  },
+  {
+   "no": 73,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "Çok basamaklı bir sayının 4'e bölünüp bölünmediğini anlamak için sayının tamamını bölmek yerine neye bakmak yeterlidir?",
+   "secenekler": [
+    [
+     "A",
+     "Birler basamağına",
+     false
+    ],
+    [
+     "B",
+     "Rakamları toplamına",
+     false
+    ],
+    [
+     "C",
+     "İlk iki basamağa",
+     false
+    ],
+    [
+     "D",
+     "Son iki basamağın oluşturduğu sayıya",
+     true
+    ]
+   ],
+   "cozum": "Yüzler ve üstü 4'e bölündüğü için son iki basamak yeterlidir.",
+   "birincil": "Mat01MK0071",
+   "adimlar": [
+    [
+     "4 ile bölünebilme kuralının kısalttığı işlemi seçip kullanır.",
+     "Mat01MK0071"
+    ]
+   ]
+  },
+  {
+   "no": 74,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "7 254 316 sayısının 4 ile bölümünden kalanı en kısa yoldan bulmak için hangi bölme yapılır?",
+   "secenekler": [
+    [
+     "A",
+     "6 ÷ 4",
+     false
+    ],
+    [
+     "B",
+     "28 ÷ 4",
+     false
+    ],
+    [
+     "C",
+     "16 ÷ 4",
+     true
+    ],
+    [
+     "D",
+     "7 ÷ 4",
+     false
+    ]
+   ],
+   "cozum": "Kalanı son iki basamak (16) belirler. 28, rakamlar toplamıdır; 4 kuralında kullanılmaz.",
+   "birincil": "Mat01MK0071",
+   "adimlar": [
+    [
+     "4 ile bölünebilme kuralının kısalttığı işlemi seçip kullanır.",
+     "Mat01MK0071"
+    ]
+   ]
+  },
+  {
+   "no": 75,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "Hangi sayının 4'e tam bölünmediğini anlamak için yalnız birler basamağına bakmak yeterlidir?",
+   "secenekler": [
+    [
+     "A",
+     "3 516",
+     false
+    ],
+    [
+     "B",
+     "3 517",
+     true
+    ],
+    [
+     "C",
+     "3 514",
+     false
+    ],
+    [
+     "D",
+     "3 522",
+     false
+    ]
+   ],
+   "cozum": "3 517 tek sayıdır; 2'ye bölünmeyen sayı 4'e de bölünmez. Diğerleri çift olduğu için son iki basamağa bakmak gerekir.",
+   "birincil": "Mat01MK0071",
+   "adimlar": [
+    [
+     "4 ile bölünebilme kuralının kısalttığı işlemi seçip kullanır.",
+     "Mat01MK0071"
+    ]
+   ]
+  },
+  {
+   "no": 76,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "Takvimde 4'e tam bölünen yıllar artık yıldır (2024, 2028 gibi; 100'ün katları dışında). Hangisi artık yıldır?",
+   "secenekler": [
+    [
+     "A",
+     "2036",
+     true
+    ],
+    [
+     "B",
+     "2026",
+     false
+    ],
+    [
+     "C",
+     "2030",
+     false
+    ],
+    [
+     "D",
+     "2034",
+     false
+    ]
+   ],
+   "cozum": "Son iki basamak 36 = 4 × 9. 26, 30 ve 34 4'ün katı değildir.",
+   "birincil": "Mat01MK0071",
+   "adimlar": [
+    [
+     "4 ile bölünebilme kuralının kısalttığı işlemi seçip kullanır.",
+     "Mat01MK0071"
+    ]
+   ]
+  },
+  {
+   "no": 77,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "Bir sayının 6'ya tam bölünmediğini en hızlı hangi durumda anlarız?",
+   "secenekler": [
+    [
+     "A",
+     "Rakamları toplamı çift ise",
+     false
+    ],
+    [
+     "B",
+     "Birler basamağı 6 ise",
+     false
+    ],
+    [
+     "C",
+     "Sayı 3'e tam bölünüyorsa",
+     false
+    ],
+    [
+     "D",
+     "Sayı tek ise",
+     true
+    ]
+   ],
+   "cozum": "6'ya bölünen sayı çift olmalıdır; tek sayı 6'ya bölünmez, başka bir şeye bakmaya gerek kalmaz.",
+   "birincil": "Mat01MK0072",
+   "adimlar": [
+    [
+     "6 ile bölünebilme kuralını durumuna uygun biçimde seçip kullanır.",
+     "Mat01MK0072"
+    ]
+   ]
+  },
+  {
+   "no": 78,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "6 ile bölünebilme kuralının doğru uygulandığı örnek hangisidir?",
+   "secenekler": [
+    [
+     "A",
+     "3 135: 3 + 1 + 3 + 5 = 12, 3'ün katı; 6'ya tam bölünür.",
+     false,
+     "Mat01YG0010"
+    ],
+    [
+     "B",
+     "3 134: çift olduğu için 6'ya tam bölünür.",
+     false
+    ],
+    [
+     "C",
+     "3 132: çift; 3 + 1 + 3 + 2 = 9, 3'ün katı; 6'ya tam bölünür.",
+     true
+    ],
+    [
+     "D",
+     "3 136: birler basamağı 6 olduğu için 6'ya tam bölünür.",
+     false
+    ]
+   ],
+   "cozum": "3 132 ÷ 6 = 522. 3 135 tek, 3 134 ve 3 136 ise 3'e bölünmez.",
+   "birincil": "Mat01MK0072",
+   "adimlar": [
+    [
+     "6 ile bölünebilme kuralını durumuna uygun biçimde seçip kullanır.",
+     "Mat01MK0072"
+    ]
+   ]
+  },
+  {
+   "no": 79,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "84 öğrenci 6'şarlı gruplara ayrılacak. Artan öğrenci olup olmadığını en hızlı nasıl anlarız?",
+   "secenekler": [
+    [
+     "A",
+     "84'ün birler basamağı 4 olduğu için artan olur.",
+     false
+    ],
+    [
+     "B",
+     "84 çift ve 8 + 4 = 12, 3'ün katı; artan olmaz.",
+     true
+    ],
+    [
+     "C",
+     "Uzun bölme yapmadan anlaşılamaz.",
+     false
+    ],
+    [
+     "D",
+     "84 ÷ 6 = 13, kalan 6; artan olur.",
+     false
+    ]
+   ],
+   "cozum": "84 hem 2'ye hem 3'e bölünür, dolayısıyla 6'ya bölünür: 84 ÷ 6 = 14.",
+   "birincil": "Mat01MK0072",
+   "adimlar": [
+    [
+     "6 ile bölünebilme kuralını durumuna uygun biçimde seçip kullanır.",
+     "Mat01MK0072"
+    ]
+   ]
+  },
+  {
+   "no": 80,
+   "cevap_bicimi": "coktan_secmeli",
+   "metin": "Bir sayının 6'ya tam bölündüğünü göstermek için aşağıdakilerden hangisi tek başına yeterlidir?",
+   "secenekler": [
+    [
+     "A",
+     "Hiçbiri; 2 ve 3 ile bölünebilme birlikte gösterilmelidir.",
+     true
+    ],
+    [
+     "B",
+     "Yalnız 3 ile bölünebilmesi",
+     false,
+     "Mat01YG0010"
+    ],
+    [
+     "C",
+     "Yalnız 2 ile bölünebilmesi",
+     false
+    ],
+    [
+     "D",
+     "Birler basamağının 6 olması",
+     false
+    ]
+   ],
+   "cozum": "2 kuralı da 3 kuralı da tek başına yetmez (ör. 14 çift ama 6'ya bölünmez; 15, 3'e bölünür ama 6'ya bölünmez).",
+   "birincil": "Mat01MK0072",
+   "adimlar": [
+    [
+     "6 ile bölünebilme kuralını durumuna uygun biçimde seçip kullanır.",
+     "Mat01MK0072"
+    ]
+   ]
+  }
+ ]
+}

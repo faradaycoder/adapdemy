@@ -332,3 +332,35 @@ class VideoIzleme(Taban):
     parca_id: Mapped[int] = mapped_column(ForeignKey("video_parca.id"), index=True)
     teslim_id: Mapped[int | None] = mapped_column(ForeignKey("teslim.id"), nullable=True)
     zaman: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_simdi)
+
+
+# ---------- Uyarlamalı test (ALGORITMA.md 6.2–6.3) ----------
+
+class UyarlamaliOturum(Taban):
+    """Bir kazanım için uyarlamalı test: sorular cevaplara göre tek tek seçilir (app/uyarlamali.py).
+    Öğretmen de deneme amaçlı çözebilir (kullanıcı öğretmense oturum denemedir)."""
+    __tablename__ = "uyarlamali_oturum"
+    id: Mapped[int] = mapped_column(primary_key=True)
+    kullanici_id: Mapped[int] = mapped_column(ForeignKey("kullanici.id"), index=True)
+    kazanim: Mapped[str] = mapped_column(String(24))  # öğrenme çıktısı kodu, ör. MAT.6.1.2
+    ders: Mapped[str] = mapped_column(String(16))
+    sinif_duzeyi: Mapped[int] = mapped_column(Integer)
+    durum: Mapped[str] = mapped_column(String(8), default="devam")  # devam / bitti
+    baslama: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_simdi)
+    bitis: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    kullanici: Mapped[Kullanici] = relationship()
+    cevaplar: Mapped[list["UyarlamaliCevap"]] = relationship(cascade="all, delete-orphan", order_by="UyarlamaliCevap.sira")
+
+
+class UyarlamaliCevap(Taban):
+    """Sorulan bir soru; secilen boşsa soru şu an öğrencinin önünde."""
+    __tablename__ = "uyarlamali_cevap"
+    id: Mapped[int] = mapped_column(primary_key=True)
+    oturum_id: Mapped[int] = mapped_column(ForeignKey("uyarlamali_oturum.id"), index=True)
+    sira: Mapped[int] = mapped_column(Integer)
+    soru_id: Mapped[int] = mapped_column(ForeignKey("soru.id"))
+    mk_kod: Mapped[str] = mapped_column(ForeignKey("mk.kod"))  # bu soruyla hedeflenen MK
+    secilen: Mapped[str | None] = mapped_column(String(2))
+    dogru: Mapped[bool | None] = mapped_column(Boolean)
+    zaman: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    soru: Mapped[Soru] = relationship()

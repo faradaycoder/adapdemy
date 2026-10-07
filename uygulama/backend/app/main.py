@@ -9,7 +9,7 @@ from sqlalchemy import func, inspect, select, text
 from . import modeller  # noqa: F401  (tabloları kaydeder)
 from .ayarlar import IZINLI_KOKENLER
 from .mk_aktar import aktar
-from .routers import bildirimler, degerlendir, harita, hesap, mk, mufredat, ozet, raporlar, siniflar, sinavlar, sorular, teslim
+from .routers import bildirimler, degerlendir, harita, hesap, mk, mufredat, ozet, raporlar, siniflar, sinavlar, sorular, teslim, uyarlamali
 from .vt import Oturum, Taban, motor
 
 
@@ -63,6 +63,7 @@ app.include_router(raporlar.router)
 app.include_router(ozet.router)
 app.include_router(mufredat.router)
 app.include_router(harita.router)
+app.include_router(uyarlamali.router)
 
 
 @app.get("/api/saglik")

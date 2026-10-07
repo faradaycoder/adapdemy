@@ -36,7 +36,8 @@ def aktar(klasor: Path, eposta: str) -> list[tuple[int, int | None, float | None
             g = SoruG(
                 ders=s.get("ders", veri["ders"]), sinif_duzeyi=s.get("sinif_duzeyi", veri["sinif_duzeyi"]), metin=s["metin"],
                 gorsel=gorsel, cevap_bicimi=s["cevap_bicimi"],
-                secenekler=[SecenekG(harf=h, metin=m, dogru=d) for h, m, d in s.get("secenekler", [])],
+                secenekler=[SecenekG(harf=x[0], metin=x[1], dogru=x[2], yanilgi_kod=x[3] if len(x) > 3 else None)
+                            for x in s.get("secenekler", [])],  # [harf, metin, doğru mu, (yanılgı kodu)]
                 dogru_cevap=s.get("dogru_cevap", ""), cozum=s.get("cozum", ""), birincil=s.get("birincil"),
                 adimlar=[AdimG(aciklama=a, mk_kod=m) for a, m in s["adimlar"]],
             )
