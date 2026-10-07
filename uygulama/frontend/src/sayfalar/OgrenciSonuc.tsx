@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Mat, matDisindaBol } from "../Mat";
+import { CozumMetni, Mat } from "../Mat";
 import { Link, useParams } from "react-router-dom";
 import { api, type OgrenciSonucT, type KonuKartiT, type OgrenciSoruT, type VideoT } from "../api";
 
@@ -31,55 +31,48 @@ function SeninCevabin({ s }: { s: OgrenciSoruT }) {
 const zaman = (s: number) => `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`;
 const dakika = (s: number) => Math.max(1, Math.round(s / 60));
 
-// Eksik bir konu için kart: öğrenci "Konuyu dinle" (anlatım) ya da "Benzer soruyu gör" (soru çözümü) seçer.
-// Video yalnız ilgili kısmı (başlangıç–bitiş) oynatır. Sayfada aynı anda tek video açık olur; başkası açılınca önceki kapanır.
+// Eksik bir konu için kart: iki küçük kutu, mor "Konu anlatımı" ve turuncu "Benzer soru çözümü". Tıklanan video kutuların
+// altında yalnız ilgili kısmı (başlangıç–bitiş) oynatır. Sayfada aynı anda tek video açık olur; başkası açılınca önceki kapanır.
 export function KonuKart({ k, acikId, ac }: { k: KonuKartiT; acikId: number | null; ac: (v: VideoT | null) => void }) {
   const acik = [k.anlatim, k.soru].find((v) => v && v.id === acikId) ?? null;
   const kutucuk = (v: VideoT | null, tur: "anlatim" | "soru") => v && (
-    <button className={`video-kutu ${tur}`} onClick={() => ac(v)} aria-label={`${v.baslik} videosunu oynat`}>
+    <button className={`video-kutu ${tur}`} aria-pressed={acik === v} onClick={() => ac(acik === v ? null : v)}
+      aria-label={`${tur === "anlatim" ? "Konu anlatımı" : "Benzer soru çözümü"}: ${v.baslik}`}>
       <span className="kapak">
         <img src={`https://i.ytimg.com/vi/${v.video_id}/${v.kapak}.jpg`} alt="" loading="lazy" />
-        <span className="etiket">{tur === "anlatim" ? "📘 Konuyu dinle" : "✏️ Benzer soruyu gör"}</span>
-        <span className="oynat">▶</span>
+        <span className="oynat">{acik === v ? "■" : "▶"}</span>
         <span className="sure">{dakika(v.son - v.bas)} dk</span>
       </span>
-      <span className="kutu-alt"><b>{v.baslik}</b><small>{v.kanal}</small></span>
+      <span className="kutu-alt">
+        <span className="tur-etiket">{tur === "anlatim" ? "📘 Konu anlatımı" : "✏️ Benzer soru çözümü"}</span>
+        <b>{v.baslik}</b>
+        <small>{v.kanal}</small>
+      </span>
     </button>
   );
   return (
     <div className="konu-kart">
-      <div className="konu-ust"><span className="konu-ikon">🎯</span><b>{k.konu}</b></div>
-      {acik ? (
+      <div className="konu-ust"><b>{k.konu}</b></div>
+      <div className="video-kutular">{kutucuk(k.anlatim, "anlatim")}{kutucuk(k.soru, "soru")}</div>
+      {acik && (
         <div className="oynatici">
           <iframe src={`https://www.youtube-nocookie.com/embed/${acik.video_id}?start=${acik.bas}&end=${acik.son}&autoplay=1&rel=0`}
             title={acik.baslik} allow="autoplay; encrypted-media; picture-in-picture" allowFullScreen />
           <div className="oynatici-alt">
             <div><b>{acik.baslik}</b><small className="soluk">{acik.kanal} · {zaman(acik.bas)}–{zaman(acik.son)}</small></div>
-            <div className="eylemler">
-              {acik === k.anlatim && k.soru && <button className="kucuk ikincil" onClick={() => ac(k.soru)}>✏️ Şimdi benzer soruyu gör</button>}
-              {acik === k.soru && k.anlatim && <button className="kucuk ikincil" onClick={() => ac(k.anlatim)}>📘 Konuyu dinle</button>}
-              <button className="kucuk ikincil" onClick={() => ac(null)}>Kapat</button>
-            </div>
+            <button className="kucuk ikincil" onClick={() => ac(null)}>Kapat</button>
           </div>
         </div>
-      ) : (
-        <div className="video-kutular">{kutucuk(k.anlatim, "anlatim")}{kutucuk(k.soru, "soru")}</div>
       )}
     </div>
   );
 }
 
-// Çözüm metnini adımlara böler: cümle sonları ve "b)" gibi alt şık başları.
-function adimlar(metin: string): string[] {
-  return matDisindaBol(metin, /(?<=\.)\s+(?=[A-ZÇĞİÖŞÜ(]|[a-zçğıöşü]\()|\s+(?=[a-h]\)\s)/);
-}
-
 function Cozum({ metin }: { metin: string }) {
-  const a = adimlar(metin);
   return (
     <div className="cozum-kutu">
       <h3>✅ Doğru çözüm, adım adım</h3>
-      {a.length > 1 ? <ol>{a.map((x, i) => <li key={i}><Mat metin={x} /></li>)}</ol> : <p className="t-metin"><Mat metin={metin} /></p>}
+      <CozumMetni metin={metin} />
     </div>
   );
 }
@@ -112,7 +105,7 @@ export default function OgrenciSonuc() {
         </div>
         <span className="buyuk">{d.puan.toFixed(2)} <small className="soluk">/ {d.en_yuksek.toFixed(2)}</small></span>
       </div>
-      {konuSayisi > 0 && <p className="video-ozet">🎬 Eksik kaldığın {konuSayisi} konu için kısa videolar hazır. Her sorunun altında, istersen konu anlatımını dinle, istersen benzer bir sorunun çözümünü izle.</p>}
+      {konuSayisi > 0 && <p className="video-ozet">🎬 Eksik kaldığın {konuSayisi} konu için kısa videolar var. Her sorunun altında 📘 konu anlatımı ya da ✏️ benzer soru çözümü seçebilirsin.</p>}
       {d.genel_geri_bildirim && <section className="kart geri-bildirim"><h2>Öğretmeninden</h2><p className="t-metin"><Mat metin={d.genel_geri_bildirim} /></p></section>}
 
       {d.sorular.map((s) => (
@@ -131,7 +124,7 @@ export default function OgrenciSonuc() {
           {s.aciklama && <div className="hata-aciklama"><h3>{s.durum === "dogru" ? "Öğretmeninin notu" : "Nerede hata yaptın?"}</h3><p className="t-metin"><Mat metin={s.aciklama} /></p></div>}
           {s.konular.length > 0 && (
             <div className="izle">
-              <h3>Eksiğini kapat <small className="soluk">· istersen konuyu dinle, istersen benzer bir sorunun çözümünü izle</small></h3>
+              <h3>Eksiğini kapat <small className="soluk">· konuyu dinle ya da benzer bir sorunun çözümünü izle</small></h3>
               <div className="konu-liste">{s.konular.map((k) => <KonuKart key={k.konu} k={k} acikId={acikId} ac={ac} />)}</div>
             </div>
           )}

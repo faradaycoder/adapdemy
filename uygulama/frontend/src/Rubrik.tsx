@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Mat } from "./Mat";
+import { CozumMetni, Mat } from "./Mat";
 import { Link } from "react-router-dom";
 import { api, type Soru } from "./api";
 
@@ -9,7 +9,7 @@ export function RubrikTablo({ s }: { s: Soru }) {
   return (
     <div className="rubrik-detay">
       <p><b>Doğru cevap:</b> {s.cevap_bicimi === "coktan_secmeli" ? s.secenekler.find((x) => x.dogru)?.harf : <Mat metin={s.dogru_cevap} />}</p>
-      {s.cozum && <div className="cozum-kutu"><h3>Çözüm</h3><p className="t-metin"><Mat metin={s.cozum} /></p></div>}
+      {s.cozum && <div className="cozum-kutu"><h3>Çözüm</h3><CozumMetni metin={s.cozum} /></div>}
       <table className="rubrik">
         <thead><tr><th>#</th><th>Rubrik adımı (öğrenci ne yapmalı)</th><th>MK</th><th>Puan</th></tr></thead>
         <tbody>

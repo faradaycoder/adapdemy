@@ -37,3 +37,13 @@ export function matDisindaBol(metin: string, ayrac: RegExp): string[] {
   parcalar.push(simdiki);
   return parcalar.map((x) => x.trim()).filter(Boolean);
 }
+
+// Çözüm metnini adımlara ayırır (cümle sonları ve a) b) şıkları); tek adımsa metni olduğu gibi gösterir.
+export function cozumAdimlari(metin: string): string[] {
+  return matDisindaBol(metin, /(?<=\.)\s+(?=[A-ZÇĞİÖŞÜ(]|[a-zçğıöşü]\()|\s+(?=[a-h]\)\s)/);
+}
+
+export function CozumMetni({ metin }: { metin: string }) {
+  const a = cozumAdimlari(metin);
+  return a.length > 1 ? <ol className="cozum-adimlari">{a.map((x, i) => <li key={i}><Mat metin={x} /></li>)}</ol> : <p className="t-metin"><Mat metin={metin} /></p>;
+}

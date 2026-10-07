@@ -33,8 +33,10 @@ export default function OgrenciAna() {
       {bekleyen.length > 0 && (
         <div className="kart uyari-bandi">🔔 {bekleyen.length} açık sınavın var. Aşağıdan "Sınava gir"e bas.</div>
       )}
-      <h1>Sınavlarım</h1>
-      <p><Link className="dugme ikincil" to="/rapor">📊 Konu raporum</Link></p>
+      <div className="baslik-satiri">
+        <h1>Sınavlarım</h1>
+        <Link className="dugme ikincil" to="/rapor">📊 Konu raporum</Link>
+      </div>
       <section className="kart">
         {atamalar.length === 0 ? (
           <p className="soluk">{siniflar.length ? "Öğretmenin bir sınav atadığında burada görünecek." : "Henüz bir sınıfa katılmadın. Aşağıdan öğretmeninin verdiği kodla katıl; sınıfına atanan sınavlar burada görünür."}</p>

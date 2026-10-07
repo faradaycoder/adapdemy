@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mat } from "./Mat";
+import { CozumMetni, Mat } from "./Mat";
 import { ADIM_DURUMU, type AdimSonuc, type DegerlendirmeT, type SoruSonuc } from "./api";
 
 // Değerlendirme sonucunun ortak görünümü: öğretmen ekranında düzenlenebilir, öğrenci ekranında salt okunur.
@@ -56,7 +56,7 @@ export function DogruCevap({ s }: { s: SoruSonuc }) {
       <div className="dogru-kutu">
         <span className="soluk">Doğru cevap</span>
         <p className="dogru-cevap"><Mat metin={s.dogru_cevap} /></p>
-        {s.cozum && <><span className="soluk">Çözüm</span><p><Mat metin={s.cozum} /></p></>}
+        {s.cozum && <><span className="soluk">Çözüm</span><CozumMetni metin={s.cozum} /></>}
       </div>
     </div>
   );
