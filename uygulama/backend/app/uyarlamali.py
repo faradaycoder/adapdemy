@@ -7,8 +7,12 @@ Her MK için "biliyor" olasılığı P tutulur. Başlangıç: öğrencinin onayl
 Cevap güncellemesi DINA modeliyle yapılır: doğru cevap için sorunun bütün MK'leri gerekir; P(doğru | hepsi biliniyor)
 = 1 − s, P(doğru | en az biri bilinmiyor) = g = 1 / şık sayısı. Tek MK'li soruda bu, Bayesçi bilgi izlemenin kendisidir.
 
-Çıkarım (Bilgi Uzayı Kuramı): "biliyor" kararı verilen MK'nin ön koşulları da biliniyor sayılır; "bilmiyor" kararı
-verilen MK'ye dayanan MK'ler de bilinmiyor sayılır. Bunlara soru sorulmaz ve raporda "çıkarım" diye geçer.
+Karar eşikleri (Murat, 2026-10-07): %95 ve üstü biliyor, %5 ve altı bilmiyor (sınav değerlendirmesindeki %20 burada
+kullanılmaz: tek yanlışla "bilmiyor" denmez; 4 şıkta bilmiyor için 2 yanlış gerekir).
+
+Çıkarım (Bilgi Uzayı Kuramı) yalnız yukarıdan aşağı: "biliyor" kararı verilen MK'nin ön koşulları da biliniyor sayılır
+ve sorulmaz ("çıkarım"). Ön koşulu bilinmeyen MK "bilmiyor" sayılmaz; sorulmaya devam eder, soru hakkı kalmazsa
+"sorulmadı · ön koşulu eksik" olarak raporlanır.
 
 Soru seçimi: (1) cevabı alınmaya başlanmış ama kararı verilmemiş MK; (2) bilinmeyen bir MK'nin kararı verilmemiş
 ön koşulu (kökü arar: yanlışta aşağı); (3) zincirin en üstündeki kararsız MK (doğruda ön koşulları çıkarımla kapanır).
@@ -23,9 +27,15 @@ from sqlalchemy import select
 from sqlalchemy.orm import Session
 
 from .modeller import MK, MKEsleme, MKOnKosul, Soru, UyarlamaliOturum
-from .rapor import P0, S, durum, mk_kanitlari, onayli_teslimler
+from .rapor import P0, S, mk_kanitlari, onayli_teslimler
 
 MAKS_MK, MAKS_TOPLAM = 4, 15
+BILIYOR, BILMIYOR = 0.95, 0.05
+
+
+def karar(p: float) -> str:
+    p = round(p, 2)
+    return "biliyor" if p >= BILIYOR else "bilmiyor" if p <= BILMIYOR else "belirsiz"
 
 
 def kazanim_sinifi(kazanim: str) -> int:
@@ -101,16 +111,19 @@ class Durum:
     on: dict[str, set[str]]
     p: dict[str, float]
     soru_sayisi: dict[str, int] = field(default_factory=dict)  # bu testte MK başına sorulan
-    cikarim: dict[str, str] = field(default_factory=dict)  # MK → biliyor / bilmiyor (çıkarımla)
+    cikarim: dict[str, str] = field(default_factory=dict)  # MK → biliyor (ön koşul zincirinden çıkarım)
 
     def karar(self, m: str) -> str:
         if m in self.cikarim:
             return self.cikarim[m]
-        return durum(self.p[m])
+        return karar(self.p[m])
 
     def dogrudan_karar(self, m: str) -> str | None:
-        d = durum(self.p[m])
+        d = karar(self.p[m])
         return d if d in ("biliyor", "bilmiyor") else None
+
+    def onkosulu_eksik(self, m: str) -> bool:
+        return any(self.dogrudan_karar(a) == "bilmiyor" for a in _ataları(m, self.on))
 
     def cikarimlari_yenile(self) -> None:
         self.cikarim = {}
@@ -119,15 +132,9 @@ class Durum:
                 for a in _ataları(m, self.on):
                     if self.dogrudan_karar(a) is None:
                         self.cikarim[a] = "biliyor"
-        for m in self.mkler:
-            if self.dogrudan_karar(m) == "bilmiyor":
-                for u in self.mkler:
-                    if m in _ataları(u, self.on) and self.dogrudan_karar(u) is None and u not in self.cikarim:
-                        self.cikarim[u] = "bilmiyor"
 
     def kokler(self) -> list[str]:
-        return [m for m in self.mkler if self.dogrudan_karar(m) == "bilmiyor"
-                and not any(self.karar(a) == "bilmiyor" for a in self.on.get(m, ()))]
+        return [m for m in self.mkler if self.dogrudan_karar(m) == "bilmiyor" and not self.onkosulu_eksik(m)]
 
 
 def baslangic(vt: Session, o: UyarlamaliOturum) -> Durum:

@@ -693,3 +693,6 @@ button.uy-sik b { flex: none; width: 34px; height: 34px; border-radius: 50%; dis
 .uy-gecmis-metin { flex: 1; min-width: 200px; }
 .uy-gecmis p { margin: 8px 0; }
 .uy-mk.cikarim .uy-cubuk em { opacity: .35; }
+.uy-d.sorulmadi { background: var(--cizgi); color: var(--soluk); }
+.uy-mk-durum small.eksik { color: var(--hata); font-weight: 600; }
+.uy-mk.sorulmadi .uy-cubuk em { width: 0 !important; }

@@ -5,12 +5,12 @@ import { api, gorselMi, type UyMKT, type UyOturumT, type VideoT } from "../api";
 import { useOturum } from "../oturum";
 import { KonuKart } from "./OgrenciSonuc";
 
-const DURUM: Record<string, string> = { biliyor: "Biliyor", bilmiyor: "Bilmiyor", belirsiz: "Belirsiz", olculemedi: "Ölçülmedi" };
+const DURUM: Record<string, string> = { biliyor: "Biliyor", bilmiyor: "Bilmiyor", belirsiz: "Belirsiz", sorulmadi: "Sorulmadı" };
 
 // MK satırı: olasılık çubuğu, durum ve (çıkarımsa) etiket. Öğretmen denemesinde canlı panel, sonuçta liste.
 function MKSatir({ m, kok, son }: { m: UyMKT; kok: boolean; son: boolean }) {
   return (
-    <li className={`uy-mk ${m.durum} ${son ? "son" : ""} ${m.cikarim ? "cikarim" : ""}`} title={m.ifade}>
+    <li className={`uy-mk ${m.durum} ${son ? "son" : ""} ${m.cikarim || m.durum === "sorulmadi" ? "cikarim" : ""}`} title={m.ifade}>
       <code>{m.kod.replace("Mat01MK", "").replace(/^Fiz\d\dMK/, "")}</code>
       <span className="uy-mk-ifade">{m.ifade}</span>
       <span className="uy-cubuk" aria-hidden="true"><em style={{ width: `${Math.round(m.p * 100)}%` }} /></span>
@@ -18,7 +18,8 @@ function MKSatir({ m, kok, son }: { m: UyMKT; kok: boolean; son: boolean }) {
         <span className={`uy-d ${m.durum}`}>{DURUM[m.durum] ?? m.durum}</span>
         {m.cikarim && <small>çıkarım</small>}
         {kok && <small className="kok">kök</small>}
-        {!m.cikarim && <small className="soluk">%{Math.round(m.p * 100)}{m.soru_sayisi ? ` · ${m.soru_sayisi} soru` : ""}</small>}
+        {m.durum !== "sorulmadi" && !m.cikarim && <small className="soluk">%{Math.round(m.p * 100)}{m.soru_sayisi ? ` · ${m.soru_sayisi} soru` : ""}</small>}
+        {m.onkosulu_eksik && m.durum !== "bilmiyor" && <small className="eksik">ön koşulu eksik</small>}
       </span>
     </li>
   );
@@ -44,13 +45,13 @@ export default function UyarlamaliTest() {
   if (!o) return <div className="sayfa">{hata ? <p className="hata">{hata}</p> : <p className="soluk">Yükleniyor…</p>}</div>;
   const kendi = o.deneme ? kullanici?.rol === "ogretmen" : kullanici?.rol === "ogrenci";  // öğretmen öğrencinin testini yalnız izler
   const sonMK = o.gecmis.length ? o.gecmis[o.gecmis.length - 1].mk : null;
-  const sira = ["bilmiyor", "belirsiz", "olculemedi", "biliyor"];
+  const sira = ["bilmiyor", "belirsiz", "sorulmadi", "biliyor"];
   const siralı = [...o.mkler].sort((a, b) => sira.indexOf(a.durum) - sira.indexOf(b.durum) || a.kod.localeCompare(b.kod));
 
   const panel = o.mkler.length > 0 && (
     <aside className="kart uy-panel">
       <h3>Mikro kazanımlar <span className="soluk">({o.mkler.length})</span></h3>
-      <p className="soluk kucuk-yazi">Çubuk: “biliyor” olasılığı. %95 ve üstü biliyor, %20 ve altı bilmiyor. Çıkarım: ön koşul zincirinden.</p>
+      <p className="soluk kucuk-yazi">Çubuk: “biliyor” olasılığı. %95 ve üstü biliyor, %5 ve altı bilmiyor. Çıkarım: üstündeki MK bilindiği için sorulmadan “biliyor”.</p>
       <ul>{[...o.mkler].sort((a, b) => Number(b.kod === sonMK) - Number(a.kod === sonMK)
         || Number(b.soru_sayisi > 0 || b.cikarim) - Number(a.soru_sayisi > 0 || a.cikarim) || a.kod.localeCompare(b.kod)).map((m) => <MKSatir key={m.kod} m={m} kok={o.kokler.includes(m.kod)} son={m.kod === sonMK} />)}</ul>
     </aside>

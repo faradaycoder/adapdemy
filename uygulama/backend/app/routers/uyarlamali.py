@@ -50,8 +50,9 @@ class MKDurumC(BaseModel):
     kod: str
     ifade: str
     p: float
-    durum: str  # biliyor / bilmiyor / belirsiz / olculemedi
-    cikarim: bool  # karar ön koşul zincirinden çıkarıldı
+    durum: str  # biliyor / bilmiyor / belirsiz / sorulmadi
+    cikarim: bool  # "biliyor" kararı ön koşul zincirinden çıkarıldı
+    onkosulu_eksik: bool = False  # ön koşullarından biri bilinmiyor
     soru_sayisi: int
     havuz: int  # bu MK için havuzdaki soru sayısı
     on_kosullar: list[str]
@@ -170,7 +171,11 @@ def _cikti(vt: Session, o: UyarlamaliOturum, k: Kullanici) -> OturumC:
     h = u.havuz(vt, _sahipler(vt, o.kullanici), d.mkler)
     for m in d.mkler:
         mk = vt.get(MK, m)
-        c.mkler.append(MKDurumC(kod=m, ifade=mk.ifade if mk else "", p=round(d.p[m], 3), durum=d.karar(m), cikarim=m in d.cikarim,
+        k_ = d.karar(m)
+        if k_ == "belirsiz" and not d.soru_sayisi.get(m) and m not in d.cikarim:
+            k_ = "sorulmadi"  # bu testte kanıt yok (önceki sınavdan gelen belirsiz olasılık da sayılmaz)
+        c.mkler.append(MKDurumC(kod=m, ifade=mk.ifade if mk else "", p=round(d.p[m], 3), durum=k_, cikarim=m in d.cikarim,
+                                onkosulu_eksik=d.onkosulu_eksik(m),
                                 soru_sayisi=d.soru_sayisi.get(m, 0), havuz=len(h[m]), on_kosullar=sorted(d.on.get(m, ()))))
     for x in o.cevaplar:
         if x.secilen is not None:

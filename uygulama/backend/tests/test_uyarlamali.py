@@ -42,7 +42,10 @@ def test_ogretmen_denemesi_koku_bulur(istemci):
     assert o["deneme"] and o["mkler"] and "dogru" not in str(o["soru"]["secenekler"])  # öğretmen olasılıkları canlı görür
     o = _coz(istemci, b, {"Mat01MK0065", "Mat01MK0068", "Mat01MK0070", "Mat01MK0072"}, b)
     assert o["kokler"] == ["Mat01MK0065"] and len(o["gecmis"]) <= 15
-    assert [g["mk"] for g in o["gecmis"]][:2] == ["Mat01MK0072", "Mat01MK0068"]  # tepeden başlar, yanlışta ön koşula iner
+    yol = [g["mk"] for g in o["gecmis"]]
+    assert yol[:4] == ["Mat01MK0072", "Mat01MK0072", "Mat01MK0068", "Mat01MK0068"]  # tepeden başlar; bilmiyor için 2 yanlış, sonra ön koşula iner
+    durum = {m["kod"]: m for m in o["mkler"]}
+    assert durum["Mat01MK0070"]["onkosulu_eksik"] and durum["Mat01MK0070"]["durum"] != "bilmiyor" or durum["Mat01MK0070"]["soru_sayisi"]
 
 
 def test_ogrenci_testi_sonda_acilir_ogretmen_listeler(istemci):
