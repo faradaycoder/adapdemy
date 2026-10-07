@@ -33,7 +33,7 @@ const dakika = (s: number) => Math.max(1, Math.round(s / 60));
 
 // Eksik bir konu için kart: öğrenci "Konuyu dinle" (anlatım) ya da "Benzer soruyu gör" (soru çözümü) seçer.
 // Video yalnız ilgili kısmı (başlangıç–bitiş) oynatır. Sayfada aynı anda tek video açık olur; başkası açılınca önceki kapanır.
-function KonuKart({ k, acikId, ac }: { k: KonuKartiT; acikId: number | null; ac: (v: VideoT | null) => void }) {
+export function KonuKart({ k, acikId, ac }: { k: KonuKartiT; acikId: number | null; ac: (v: VideoT | null) => void }) {
   const acik = [k.anlatim, k.soru].find((v) => v && v.id === acikId) ?? null;
   const kutucuk = (v: VideoT | null, tur: "anlatim" | "soru") => v && (
     <button className={`video-kutu ${tur}`} onClick={() => ac(v)} aria-label={`${v.baslik} videosunu oynat`}>

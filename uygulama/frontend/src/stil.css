@@ -294,3 +294,26 @@ table.rubrik tfoot td { border-top: 2px solid var(--cizgi); }
 .rubrik-soru { page-break-inside: avoid; }
 @media (prefers-color-scheme: dark) { .rubrik-baslik { background: #053321; color: #a6f4c5; } }
 .notlar { margin: 0; padding-left: 18px; } .notlar li { margin: 4px 0; }
+
+/* F. Rapor: ısı haritası ve MK durumu */
+.sayfa.genis { max-width: 1200px; }
+.isi-kap { overflow-x: auto; }
+table.isi { width: auto; border-collapse: separate; border-spacing: 2px; }
+table.isi th { font-size: .7rem; writing-mode: vertical-rl; transform: rotate(180deg); padding: 4px 2px; white-space: nowrap; }
+table.isi th:first-child { writing-mode: horizontal-tb; transform: none; vertical-align: bottom; }
+table.isi td { padding: 0; border: 0; }
+table.isi td.ad { padding: 4px 10px 4px 0; white-space: nowrap; }
+.hucre { display: inline-block; min-width: 22px; height: 22px; border-radius: 4px; }
+table.isi td.hucre { display: table-cell; width: 22px; min-width: 22px; height: 22px; }
+table.isi th:not(:first-child) { width: 22px; }
+.hucre.biliyor { background: #12b76a; } .hucre.belirsiz { background: #fdb022; } .hucre.bilmiyor { background: #f04438; } .hucre.olculemedi { background: #d0d5dd; }
+.lejant { display: flex; gap: 14px; flex-wrap: wrap; font-size: .85rem; margin-bottom: 8px; }
+.lejant i.hucre { width: 14px; min-width: 14px; height: 14px; vertical-align: middle; }
+.cubuk-hucre { width: 40%; }
+.cubuk { display: flex; height: 20px; border-radius: 4px; overflow: hidden; font-size: .75rem; color: #fff; }
+.cubuk .hucre { border-radius: 0; height: 20px; min-width: 0; text-align: center; line-height: 20px; }
+.cubuk .hucre.olculemedi { color: #475467; }
+.adim-durum.belirsiz { background: #fef0c7; color: #93370d; }
+.rapor-mk { padding: 10px 0; border-bottom: 1px solid var(--cizgi); }
+.rapor-mk:last-child { border-bottom: 0; }
+.rapor-mk-ust { display: flex; gap: 10px; align-items: baseline; }

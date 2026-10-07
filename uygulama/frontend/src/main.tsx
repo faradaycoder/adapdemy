@@ -19,6 +19,8 @@ import OgrenciSinav from "./sayfalar/OgrenciSinav";
 import Teslimler from "./sayfalar/Teslimler";
 import Degerlendir from "./sayfalar/Degerlendir";
 import OgrenciSonuc from "./sayfalar/OgrenciSonuc";
+import SinifRapor from "./sayfalar/SinifRapor";
+import OgrenciRapor from "./sayfalar/OgrenciRapor";
 import Zil from "./Zil";
 import "./stil.css";
 
@@ -62,6 +64,9 @@ function Uygulama() {
           <Route path="/giris" element={<Giris />} />
           <Route path="/kayit" element={<Kayit />} />
           <Route path="/sinif/:id" element={<Korumali><SinifSayfasi /></Korumali>} />
+          <Route path="/sinif/:id/rapor" element={<Korumali><SinifRapor /></Korumali>} />
+          <Route path="/sinif/:id/ogrenci/:oid" element={<Korumali><OgrenciRapor /></Korumali>} />
+          <Route path="/rapor" element={<Korumali><OgrenciRapor /></Korumali>} />
           <Route path="/sorular" element={<Korumali><SoruBankasi /></Korumali>} />
           <Route path="/sorular/yukle" element={<Korumali><SoruYukle /></Korumali>} />
           <Route path="/sorular/yeni" element={<Korumali><SoruDuzenle /></Korumali>} />

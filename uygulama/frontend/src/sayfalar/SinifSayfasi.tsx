@@ -23,6 +23,7 @@ export default function SinifSayfasi() {
           <span className="buyuk-kod">{s.kod}</span>
         </div>
       )}
+      <p><Link className="dugme" to={`/sinif/${id}/rapor`}>📊 Sınıf raporu (MK ısı haritası)</Link></p>
       <section className="kart">
         <h2>Öğrenciler ({s.ogrenciler.length})</h2>
         {s.ogrenciler.length === 0 ? <p className="soluk">Henüz katılan öğrenci yok.</p> : (
@@ -30,15 +31,11 @@ export default function SinifSayfasi() {
             <thead><tr><th>Ad</th><th>E-posta</th><th>Katılma</th></tr></thead>
             <tbody>
               {s.ogrenciler.map((o) => (
-                <tr key={o.id}><td>{o.ad}</td><td>{o.eposta}</td><td>{new Date(o.katilma).toLocaleDateString("tr-TR")}</td></tr>
+                <tr key={o.id}><td><Link to={`/sinif/${id}/ogrenci/${o.id}`}>{o.ad}</Link></td><td>{o.eposta}</td><td>{new Date(o.katilma).toLocaleDateString("tr-TR")}</td></tr>
               ))}
             </tbody>
           </table>
         )}
-      </section>
-      <section className="kart">
-        <h2>Sınavlar</h2>
-        <p className="soluk">Sınav oluşturma ve atama sonraki aşamada (C) eklenecek.</p>
       </section>
     </div>
   );

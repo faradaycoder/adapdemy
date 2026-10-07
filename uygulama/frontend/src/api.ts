@@ -131,3 +131,18 @@ export type VideoT = { id: number; video_id: string; kanal: string; baslik: stri
 export type KonuKartiT = { konu: string; anlatim: VideoT | null; soru: VideoT | null };
 export type OgrenciSonucT = { sinav_adi: string; puan: number; en_yuksek: number; genel_geri_bildirim: string; sorular: OgrenciSoruT[]; calis: string[] };
 export const ADIM_DURUMU: Record<string, string> = { biliyor: "Biliyor", bilmiyor: "Bilmiyor", olculemedi: "Ölçülemedi" };
+
+// F. Rapor: MK durumu Bayesçi Bilgi İzleme ile (ALGORITMA.md 6.2); belirsiz = kanıt yetmedi, daha çok soru gerekir.
+export const RAPOR_DURUMU: Record<string, string> = { biliyor: "Biliyor", belirsiz: "Belirsiz", bilmiyor: "Bilmiyor", olculemedi: "Ölçülemedi" };
+export type HucreT = { durum: string; p: number | null };
+export type RaporYanilgiT = { kod: string; ifade: string; sayi: number; ogrenciler: string[] };
+export type SinifRaporT = {
+  sinif: string; ders: string; sinif_duzeyi: number;
+  ogrenciler: { id: number; ad: string; teslim: number; mkler: Record<string, HucreT> }[];
+  mkler: { kod: string; ifade: string; biliyor: number; belirsiz: number; bilmiyor: number; olculemedi: number }[];
+  yanilgilar: RaporYanilgiT[];
+};
+export type OgrenciRaporT = {
+  ogrenci: string; teslim: number; yanilgilar: RaporYanilgiT[];
+  mkler: { kod: string; ifade: string; durum: string; p: number | null; dogru: number; yanlis: number; olculemedi: number; konu: KonuKartiT | null }[];
+};
