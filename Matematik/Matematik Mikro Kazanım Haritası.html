@@ -51,6 +51,9 @@ ul{padding-left:18px;margin:4px 0}
 .hint{color:var(--muted);font-size:13px}
 #kilit{font-weight:600}#kilit.acik{background:var(--hi);border-color:var(--hi);color:#fff}#kilit:disabled{opacity:.45;cursor:default}
 #wrap.kilitli .n.nabiz .kart rect:first-child,.n.nabiz circle{stroke-width:4px;stroke:var(--hi)!important}
+.n.bakilan .kart rect:first-child,.n.bakilan circle{stroke-width:4px;stroke:#2563eb!important}.n.bakilan{opacity:1!important}
+.kilitbant{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:-4px 0 10px;padding:7px 10px;border-radius:8px;background:var(--card);font-size:12px}
+.kilitbant b{color:var(--hi)}.kilitbant button{margin-left:auto;padding:3px 8px;font-size:12px}
 @media (max-width:700px){main{flex-direction:column}aside{width:auto;max-width:none;height:40%;border-left:0;border-top:1px solid var(--line)}}
 </style></head><body>
 <header>
@@ -99,7 +102,7 @@ for(const n of V.dugumler){const ng=el("g",{class:"n"});
  const nk=el("g",{class:"nokta"},ng);
  const ci=el("circle",{r:n.r,fill:c,stroke:c},nk);if(n.tur==="Bilgi"){ci.classList.add("bilgi");ci.style.stroke=c}
  const tt=el("text",{y:n.r+12},nk);tt.textContent=n.kod;
- ng.style.cursor="pointer";ng.addEventListener("click",ev=>{ev.stopPropagation();if(dr&&dr.m)return;if(kilit){goz(n,ev);return}sec(n.kod)});
+ ng.style.cursor="pointer";ng.addEventListener("click",ev=>{ev.stopPropagation();if(dr&&dr.m)return;if(kilit){bak(n.kod);return}sec(n.kod)});
  ng.addEventListener("mouseenter",ev=>{if(mod!=="org"&&!kilit)return;ipucu.innerHTML=`<b>${n.kod}</b> · ${n.tur} · etki ${n.etki}<br>${n.ifade}`;ipucu.style.display="block"});
  ng.addEventListener("mousemove",ev=>{const r=wrap.getBoundingClientRect();ipucu.style.left=Math.min(ev.clientX-r.left+14,r.width-310)+"px";ipucu.style.top=(ev.clientY-r.top+14)+"px"});
  ng.addEventListener("mouseleave",()=>ipucu.style.display="none");
@@ -128,7 +131,7 @@ function sec(k){secili=k;kilitDugme();temizle();const A=zincir(k,"on"),D=zincir(
  panel(k,A,D)}
 const chip=k=>`<span class="chip" data-k="${k}">${k}</span>`;
 function panel(k,A,D){const n=byK[k],p=document.getElementById("panel");
- p.innerHTML=`<h2>${n.kod}</h2><span class="tag" style="border-color:${renk[n.ana]}">${V.birim} ${n.ana}</span><span class="tag">${n.tur}</span><span class="tag">${n.duzey}</span><span class="tag">Derinlik ${n.derinlik}</span><span class="tag">Etki ${n.etki}</span>
+ p.innerHTML=(kilit&&secili&&k!==secili?`<div class="kilitbant"><span>🔒 Kilitli: <b>${secili}</b></span><button id="geri">Kilitli MK'ye dön</button></div>`:"")+`<h2>${n.kod}</h2><span class="tag" style="border-color:${renk[n.ana]}">${V.birim} ${n.ana}</span><span class="tag">${n.tur}</span><span class="tag">${n.duzey}</span><span class="tag">Derinlik ${n.derinlik}</span><span class="tag">Etki ${n.etki}</span>
  <p>${n.ifade}</p>
  <div class="k">Kullanıldığı öğrenme çıktıları</div><ul>${n.es.map(e=>`<li>${e.sinif}. sınıf · ${e.unite} · ${e.cikti} (${e.bilesen})</li>`).join("")}</ul>
  <div class="k">Doğrudan ön koşullar</div>${n.on.map(chip).join("")||'<span class="hint">yok</span>'}${n.diger?`<p class="hint">${n.diger}</p>`:""}
@@ -136,7 +139,8 @@ function panel(k,A,D){const n=byK[k],p=document.getElementById("panel");
  <div class="k">Bu kazanıma dayananlar (${D.size})</div>${[...D].sort().map(chip).join("")||'<span class="hint">yok</span>'}
  <div class="k">Yanılgılar</div><ul>${n.yan.map(y=>`<li><b>${y}</b> ${V.yanilgi[y]||""}</li>`).join("")||'<li class="hint">yok</li>'}</ul>
  <div class="k">Ölçme</div><p>${n.olcme}</p>`;
- p.querySelectorAll(".chip").forEach(c=>c.onclick=()=>{if(kilit){odakla(c.dataset.k);nabiz(c.dataset.k);return}sec(c.dataset.k);odakla(c.dataset.k)})}
+ const gb=p.querySelector("#geri");if(gb)gb.onclick=()=>{bak(secili);odakla(secili)};
+ p.querySelectorAll(".chip").forEach(c=>c.onclick=()=>{if(kilit){bak(c.dataset.k);odakla(c.dataset.k);nabiz(c.dataset.k);return}sec(c.dataset.k);odakla(c.dataset.k)})}
 function filtre(){const q=document.getElementById("q").value.trim().toLocaleLowerCase("tr"),c=cs.value;secili=null;kilitle(false);temizle();
  const gor=new Set();for(const n of V.dugumler){let ok=!gizli.has(n.ana);
   if(ok&&q)ok=(n.kod+" "+n.ifade+" "+n.es.map(e=>e.cikti).join(" ")).toLocaleLowerCase("tr").includes(q);
@@ -151,7 +155,7 @@ function listele(){const q=norm(qk.value.trim());sonuc.innerHTML="";bul=[];akt=0
  if(!bul.length){sonuc.innerHTML='<div>Sonuç yok</div>';sonuc.style.display="block";return}
  bul.forEach((n,i)=>{const d=document.createElement("div");d.innerHTML=`<b>${n.kod}</b>${n.ifade}`;if(i===0)d.className="akt";
   d.onmousedown=ev=>{ev.preventDefault();git(n.kod)};sonuc.appendChild(d)});sonuc.style.display="block"}
-function git(k){sonuc.style.display="none";if(kilit){ts.s=Math.max(ts.s,.9);odakla(k);nabiz(k);return}const c=document.getElementById("cikti");if(c)c.value="";gizli.clear();
+function git(k){sonuc.style.display="none";if(kilit){ts.s=Math.max(ts.s,.9);bak(k);odakla(k);nabiz(k);return}const c=document.getElementById("cikti");if(c)c.value="";gizli.clear();
  document.querySelectorAll("#legend span").forEach(s=>s.style.opacity=1);sec(k);ts.s=Math.max(ts.s,.9);odakla(k)}
 qk.oninput=()=>{listele();if(!kilit)filtre()};
 qk.onkeydown=e=>{const it=sonuc.querySelectorAll("div");
@@ -177,11 +181,10 @@ wrap.addEventListener("click",()=>{if(dr&&dr.m)return;if(kilit){ipucu.style.disp
 let kilit=false;const kd=document.getElementById("kilit");
 function kilitDugme(){kd.disabled=!secili;kd.classList.toggle("acik",kilit);kd.textContent=kilit?"🔒 Kilitli (açmak için tıkla)":"🔓 Seçimi kilitle";
  wrap.classList.toggle("kilitli",kilit)}
-function kilitle(v){kilit=v&&!!secili;if(!kilit)ipucu.style.display="none";kilitDugme()}
+function kilitle(v){kilit=v&&!!secili;if(!kilit){ipucu.style.display="none";for(const x in nodes)nodes[x].classList.remove("bakilan");if(secili)panel(secili,zincir(secili,"on"),zincir(secili,"sonraki"))}kilitDugme()}
 kd.onclick=ev=>{ev.stopPropagation();kilitle(!kilit)};
 document.addEventListener("keydown",e=>{if(e.key.toLowerCase()==="k"&&!e.ctrlKey&&!e.metaKey&&!/INPUT|SELECT|TEXTAREA/.test(document.activeElement.tagName)){kilitle(!kilit)}});
-function goz(n,ev){const r=wrap.getBoundingClientRect();ipucu.innerHTML=`<b>${n.kod}</b> · ${n.tur}<br>${n.ifade}`;ipucu.style.display="block";
- ipucu.style.left=Math.min(ev.clientX-r.left+14,r.width-310)+"px";ipucu.style.top=(ev.clientY-r.top+14)+"px"}
+function bak(k){for(const x in nodes)nodes[x].classList.remove("bakilan");if(k!==secili&&nodes[k])nodes[k].classList.add("bakilan");panel(k,zincir(k,"on"),zincir(k,"sonraki"))}
 function nabiz(k){const x=nodes[k];if(!x)return;x.classList.add("nabiz");setTimeout(()=>x.classList.remove("nabiz"),1400)}
 function odakla(k){const n=byK[k],[x,y]=pos(n),r=wrap.getBoundingClientRect();ts.s=Math.max(ts.s,.8);ts.x=r.width/2-(x+V.en/2)*ts.s;ts.y=r.height/2-(y+V.boy/2)*ts.s;uyg()}
 function sigdir(){const r=wrap.getBoundingClientRect(),w=r.width>50?r.width:innerWidth*.6,h=r.height>50?r.height:innerHeight-110;ts.s=Math.max(.05,Math.min(1,w/W,h/H));ts.x=(w-W*ts.s)/2;ts.y=(h-H*ts.s)/2;uyg()}
