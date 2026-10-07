@@ -1,23 +1,22 @@
 import { useId } from "react";
 
-// EVALORA logosu: renk geçişli "e" (turkuaz Ölç → mor Teşhis et → amber Telafi et) ve ucundaki ok döngüyü anlatır:
-// telafiden sonra yeniden ölçülür. Sağ üstteki parıltılar yapay zekâ desteğini gösterir.
+// EVALORA logosu: renk geçişli "e" (turkuaz Ölç → mor Teşhis et → amber Telafi et); sağ üstteki parıltılar yapay zekâ
+// desteğini gösterir.
 export function LogoIsaret({ boyut = 36 }: { boyut?: number }) {
   const id = useId().replace(/:/g, "");
   return (
     <svg width={boyut} height={boyut} viewBox="0 0 64 64" aria-hidden="true">
       <defs>
         <linearGradient id={`${id}z`} x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#ffffff" /><stop offset="1" stopColor="#eef2ff" /></linearGradient>
-        <linearGradient id={`${id}c`} gradientUnits="userSpaceOnUse" x1="14" y1="22" x2="46" y2="48">
-          <stop offset="0" stopColor="#2dd4bf" /><stop offset=".5" stopColor="#8b5cf6" /><stop offset="1" stopColor="#f59e0b" />
+        <linearGradient id={`${id}c`} gradientUnits="userSpaceOnUse" x1="14" y1="20" x2="48" y2="48">
+          <stop offset="0" stopColor="#14b8a6" /><stop offset=".5" stopColor="#7c3aed" /><stop offset="1" stopColor="#f59e0b" />
         </linearGradient>
       </defs>
       <rect width="64" height="64" rx="16" fill={`url(#${id}z)`} />
       <rect x=".5" y=".5" width="63" height="63" rx="15.5" fill="none" stroke="#c7d2fe" />
-      <path d="M16.5 34 H43.5 A13.5 13.5 0 1 0 40.34 42.68" fill="none" stroke={`url(#${id}c)`} strokeWidth="6.5" strokeLinecap="round" />
-      <path d="M43.88 38.46 L42.59 46.53 L36.16 41.13Z" fill="#f59e0b" stroke="#f59e0b" strokeWidth="1.5" strokeLinejoin="round" />
-      <path d="M49 7.5 C49.84 12.9 51.1 14.16 56.5 15 C51.1 15.84 49.84 17.1 49 22.5 C48.16 17.1 46.9 15.84 41.5 15 C46.9 14.16 48.16 12.9 49 7.5Z" fill="#8b5cf6" />
-      <path d="M55.5 22 C55.836 24.16 56.34 24.664 58.5 25 C56.34 25.336 55.836 25.84 55.5 28 C55.164 25.84 54.66 25.336 52.5 25 C54.66 24.664 55.164 24.16 55.5 22Z" fill="#2dd4bf" opacity=".9" />
+      <path d="M16.5 34 H43.5 A13.5 13.5 0 1 0 41.06 41.74" fill="none" stroke={`url(#${id}c)`} strokeWidth="6.5" strokeLinecap="round" />
+      <path d="M49 8 C49.784 13.04 50.96 14.216 56 15 C50.96 15.784 49.784 16.96 49 22 C48.216 16.96 47.04 15.784 42 15 C47.04 14.216 48.216 13.04 49 8Z" fill="#7c3aed" />
+      <path d="M55.5 22.2 C55.8136 24.216 56.284 24.6864 58.3 25 C56.284 25.3136 55.8136 25.784 55.5 27.8 C55.1864 25.784 54.716 25.3136 52.7 25 C54.716 24.6864 55.1864 24.216 55.5 22.2Z" fill="#14b8a6" />
     </svg>
   );
 }
