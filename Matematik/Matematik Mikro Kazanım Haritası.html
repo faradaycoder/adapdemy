@@ -49,6 +49,10 @@ aside h2{font-size:15px;margin:0 0 6px}
 .tag{display:inline-block;padding:1px 7px;border-radius:10px;font-size:12px;border:1px solid var(--line);margin-right:4px}
 ul{padding-left:18px;margin:4px 0}
 .hint{color:var(--muted);font-size:13px}
+#kilit{font-weight:600}#kilit.acik{background:var(--hi);border-color:var(--hi);color:#fff}#kilit:disabled{opacity:.45;cursor:default}
+#kilitrozet{position:absolute;left:12px;top:10px;z-index:5;display:none;padding:5px 10px;border-radius:8px;background:var(--hi);color:#fff;font-size:12px;font-weight:600;box-shadow:0 2px 8px rgba(0,0,0,.18)}
+#wrap.kilitli #kilitrozet{display:block}
+.n.nabiz .kart rect:first-child,.n.nabiz circle{stroke-width:4px;stroke:var(--hi)!important}
 @media (max-width:700px){main{flex-direction:column}aside{width:auto;max-width:none;height:40%;border-left:0;border-top:1px solid var(--line)}}
 </style></head><body>
 <header>
@@ -56,11 +60,12 @@ ul{padding-left:18px;margin:4px 0}
  <div id="arakutu"><input id="q" placeholder="Ara: kod, ifade ya da çıktı (Enter: ilk sonuca git)" size="34" autocomplete="off"><div id="sonuc"></div></div>
  <select id="cikti"><option value="">Tüm öğrenme çıktıları</option></select>
  <button id="yerlesim" title="Yerleşimi değiştir (bağlantılar aynı kalır)">Görünüm: Harita</button>
+ <button id="kilit" disabled title="Seçili MK'yi kilitle: başka kutulara tıklamak seçimi değiştirmez (kısayol: K)">🔓 Seçimi kilitle</button>
  <button id="sifirla">Sıfırla</button>
  <div id="legend"></div>
 </header>
 <main>
- <div id="wrap"><svg id="svg"></svg><div id="ipucu"></div></div>
+ <div id="wrap"><svg id="svg"></svg><div id="ipucu"></div><div id="kilitrozet"></div></div>
  <aside id="panel"><p class="hint">Bir mikro kazanıma tıklayın: kırmızı oklar ön koşul zincirini (öğrenci neden takılmış olabilir), yeşil oklar ona dayanan mikro kazanımları gösterir. "Harita" görünümünde her nokta bir mikro kazanımdır: renk ana ünite/temayı, büyüklük etkiyi (ona dayanan mikro kazanım sayısı) gösterir; dolu nokta Beceri, halka Bilgi. Aynı ünitedekiler bir arada toplanır, ünite içinde temel kazanımlar solda, ileri kazanımlar sağdadır. Yakınlaşınca kodlar görünür, üzerine gelince ifade çıkar. "Tek zincir" görünümünde tüm mikro kazanımlar kart olarak derinliğe göre soldan sağa dizilir (D = derinlik, E = etki). Sürükleyerek kaydırın, fare tekerleğiyle yakınlaştırın.</p><p class="hint">Adaptif testte kullanım: öğrenci bir kazanımda başarısız olursa kırmızı zincirde geriye inilir; yapabildiği son halka ile yapamadığı ilk halka arasındaki kazanım eksik köktür.</p></aside>
 </main>
 <script>
@@ -96,8 +101,8 @@ for(const n of V.dugumler){const ng=el("g",{class:"n"});
  const nk=el("g",{class:"nokta"},ng);
  const ci=el("circle",{r:n.r,fill:c,stroke:c},nk);if(n.tur==="Bilgi"){ci.classList.add("bilgi");ci.style.stroke=c}
  const tt=el("text",{y:n.r+12},nk);tt.textContent=n.kod;
- ng.style.cursor="pointer";ng.addEventListener("click",ev=>{ev.stopPropagation();sec(n.kod)});
- ng.addEventListener("mouseenter",ev=>{if(mod!=="org")return;ipucu.innerHTML=`<b>${n.kod}</b> · ${n.tur} · etki ${n.etki}<br>${n.ifade}`;ipucu.style.display="block"});
+ ng.style.cursor="pointer";ng.addEventListener("click",ev=>{ev.stopPropagation();if(dr&&dr.m)return;if(kilit){goz(n,ev);return}sec(n.kod)});
+ ng.addEventListener("mouseenter",ev=>{if(mod!=="org"&&!kilit)return;ipucu.innerHTML=`<b>${n.kod}</b> · ${n.tur} · etki ${n.etki}<br>${n.ifade}`;ipucu.style.display="block"});
  ng.addEventListener("mousemove",ev=>{const r=wrap.getBoundingClientRect();ipucu.style.left=Math.min(ev.clientX-r.left+14,r.width-310)+"px";ipucu.style.top=(ev.clientY-r.top+14)+"px"});
  ng.addEventListener("mouseleave",()=>ipucu.style.display="none");
  nodes[n.kod]=ng;}
@@ -118,7 +123,7 @@ const cs=document.getElementById("cikti");for(const c of V.ciktilar){const o=doc
 function zincir(k,yon){const out=new Set(),st=[k];while(st.length){const x=st.pop();for(const y of byK[x][yon])if(!out.has(y)){out.add(y);st.push(y)}}return out}
 let secili=null;
 function temizle(){for(const k in nodes)nodes[k].classList.remove("sel","anc","des","dim");for(const e of edges)e.e.classList.remove("anc","des","dim")}
-function sec(k){secili=k;temizle();const A=zincir(k,"on"),D=zincir(k,"sonraki");
+function sec(k){secili=k;kilitDugme();temizle();const A=zincir(k,"on"),D=zincir(k,"sonraki");
  for(const x in nodes){if(x===k)nodes[x].classList.add("sel");else if(A.has(x))nodes[x].classList.add("anc");else if(D.has(x))nodes[x].classList.add("des");else nodes[x].classList.add("dim")}
  for(const e of edges){const ia=(A.has(e.from)&&(A.has(e.to)||e.to===k)),id=((D.has(e.to))&&(D.has(e.from)||e.from===k));
   if(ia)e.e.classList.add("anc");else if(id)e.e.classList.add("des");else e.e.classList.add("dim")}
@@ -133,8 +138,8 @@ function panel(k,A,D){const n=byK[k],p=document.getElementById("panel");
  <div class="k">Bu kazanıma dayananlar (${D.size})</div>${[...D].sort().map(chip).join("")||'<span class="hint">yok</span>'}
  <div class="k">Yanılgılar</div><ul>${n.yan.map(y=>`<li><b>${y}</b> ${V.yanilgi[y]||""}</li>`).join("")||'<li class="hint">yok</li>'}</ul>
  <div class="k">Ölçme</div><p>${n.olcme}</p>`;
- p.querySelectorAll(".chip").forEach(c=>c.onclick=()=>{sec(c.dataset.k);odakla(c.dataset.k)})}
-function filtre(){const q=document.getElementById("q").value.trim().toLocaleLowerCase("tr"),c=cs.value;secili=null;temizle();
+ p.querySelectorAll(".chip").forEach(c=>c.onclick=()=>{if(kilit){odakla(c.dataset.k);nabiz(c.dataset.k);return}sec(c.dataset.k);odakla(c.dataset.k)})}
+function filtre(){const q=document.getElementById("q").value.trim().toLocaleLowerCase("tr"),c=cs.value;secili=null;kilitle(false);temizle();
  const gor=new Set();for(const n of V.dugumler){let ok=!gizli.has(n.ana);
   if(ok&&q)ok=(n.kod+" "+n.ifade+" "+n.es.map(e=>e.cikti).join(" ")).toLocaleLowerCase("tr").includes(q);
   if(ok&&c)ok=n.es.some(e=>e.cikti===c);if(ok)gor.add(n.kod);else nodes[n.kod].classList.add("dim")}
@@ -148,9 +153,9 @@ function listele(){const q=norm(qk.value.trim());sonuc.innerHTML="";bul=[];akt=0
  if(!bul.length){sonuc.innerHTML='<div>Sonuç yok</div>';sonuc.style.display="block";return}
  bul.forEach((n,i)=>{const d=document.createElement("div");d.innerHTML=`<b>${n.kod}</b>${n.ifade}`;if(i===0)d.className="akt";
   d.onmousedown=ev=>{ev.preventDefault();git(n.kod)};sonuc.appendChild(d)});sonuc.style.display="block"}
-function git(k){sonuc.style.display="none";const c=document.getElementById("cikti");if(c)c.value="";gizli.clear();
+function git(k){sonuc.style.display="none";if(kilit){ts.s=Math.max(ts.s,.9);odakla(k);nabiz(k);return}const c=document.getElementById("cikti");if(c)c.value="";gizli.clear();
  document.querySelectorAll("#legend span").forEach(s=>s.style.opacity=1);sec(k);ts.s=Math.max(ts.s,.9);odakla(k)}
-qk.oninput=()=>{listele();filtre()};
+qk.oninput=()=>{listele();if(!kilit)filtre()};
 qk.onkeydown=e=>{const it=sonuc.querySelectorAll("div");
  if(e.key==="ArrowDown"&&bul.length){akt=Math.min(akt+1,bul.length-1)}
  else if(e.key==="ArrowUp"&&bul.length){akt=Math.max(akt-1,0)}
@@ -169,7 +174,17 @@ wrap.addEventListener("wheel",e=>{e.preventDefault();const r=wrap.getBoundingCli
 let dr=null;wrap.addEventListener("pointerdown",e=>{dr={x:e.clientX,y:e.clientY,ox:ts.x,oy:ts.y,m:false};wrap.classList.add("drag")});
 window.addEventListener("pointermove",e=>{if(!dr)return;const dx=e.clientX-dr.x,dy=e.clientY-dr.y;if(Math.abs(dx)+Math.abs(dy)>3)dr.m=true;ts.x=dr.ox+dx;ts.y=dr.oy+dy;uyg()});
 window.addEventListener("pointerup",()=>{wrap.classList.remove("drag");setTimeout(()=>dr=null,0)});
-wrap.addEventListener("click",()=>{if(dr&&dr.m)return;if(secili){secili=null;filtre()}});
+wrap.addEventListener("click",()=>{if(dr&&dr.m)return;if(kilit){ipucu.style.display="none";return}if(secili){secili=null;filtre()}});
+// Kilit: seçili MK ve zinciri sabit kalır; kutulara tıklamak yalnız ifadesini gösterir, çiplere tıklamak o kutuya götürür
+let kilit=false;const kd=document.getElementById("kilit"),kr=document.getElementById("kilitrozet");
+function kilitDugme(){kd.disabled=!secili;kd.classList.toggle("acik",kilit);kd.textContent=kilit?"🔒 Kilitli (açmak için tıkla)":"🔓 Seçimi kilitle";
+ wrap.classList.toggle("kilitli",kilit);kr.textContent=kilit&&secili?`🔒 ${secili} kilitli · kutulara tıklamak seçimi değiştirmez`:""}
+function kilitle(v){kilit=v&&!!secili;if(!kilit)ipucu.style.display="none";kilitDugme()}
+kd.onclick=ev=>{ev.stopPropagation();kilitle(!kilit)};
+document.addEventListener("keydown",e=>{if(e.key.toLowerCase()==="k"&&!e.ctrlKey&&!e.metaKey&&!/INPUT|SELECT|TEXTAREA/.test(document.activeElement.tagName)){kilitle(!kilit)}});
+function goz(n,ev){const r=wrap.getBoundingClientRect();ipucu.innerHTML=`<b>${n.kod}</b> · ${n.tur}<br>${n.ifade}`;ipucu.style.display="block";
+ ipucu.style.left=Math.min(ev.clientX-r.left+14,r.width-310)+"px";ipucu.style.top=(ev.clientY-r.top+14)+"px"}
+function nabiz(k){const x=nodes[k];if(!x)return;x.classList.add("nabiz");setTimeout(()=>x.classList.remove("nabiz"),1400)}
 function odakla(k){const n=byK[k],[x,y]=pos(n),r=wrap.getBoundingClientRect();ts.s=Math.max(ts.s,.8);ts.x=r.width/2-(x+V.en/2)*ts.s;ts.y=r.height/2-(y+V.boy/2)*ts.s;uyg()}
 function sigdir(){const r=wrap.getBoundingClientRect(),w=r.width>50?r.width:innerWidth*.6,h=r.height>50?r.height:innerHeight-110;ts.s=Math.max(.05,Math.min(1,w/W,h/H));ts.x=(w-W*ts.s)/2;ts.y=(h-H*ts.s)/2;uyg()}
 sigdir();requestAnimationFrame(sigdir);addEventListener("load",sigdir);
