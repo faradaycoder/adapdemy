@@ -1,6 +1,7 @@
 import { useState, type FormEvent } from "react";
 import { Link, Navigate } from "react-router-dom";
 import { useOturum } from "../oturum";
+import GirisMarka from "./GirisMarka";
 
 export default function Giris() {
   const { kullanici, girisYap } = useOturum();
@@ -18,9 +19,11 @@ export default function Giris() {
   }
 
   return (
-    <form className="kart dar" onSubmit={gonder}>
-      <p className="tanitim"><b>EVALORA</b> · Ölç. Teşhis et. Telafi et.<br /><span className="soluk">Mikro kazanım temelli ölçme, teşhis ve telafi</span></p>
-      <h1>Giriş yap</h1>
+    <div className="giris-duzen">
+      <GirisMarka />
+      <form className="giris-form" onSubmit={gonder}>
+      <h1>Hoş geldin</h1>
+      <p className="soluk">Hesabınla giriş yap.</p>
       <label>E-posta<input type="email" value={eposta} onChange={(e) => setEposta(e.target.value)} required autoComplete="email" /></label>
       <label>Şifre<input type="password" value={sifre} onChange={(e) => setSifre(e.target.value)} required autoComplete="current-password" /></label>
       {hata && <p className="hata">{hata}</p>}
@@ -28,5 +31,6 @@ export default function Giris() {
       <button type="button" className="ikincil" disabled title="Yakında">Google ile giriş (yakında)</button>
       <p className="soluk">Hesabın yok mu? <Link to="/kayit">Kayıt ol</Link></p>
     </form>
+    </div>
   );
 }

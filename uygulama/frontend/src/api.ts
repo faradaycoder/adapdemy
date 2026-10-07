@@ -146,3 +146,10 @@ export type OgrenciRaporT = {
   ogrenci: string; teslim: number; yanilgilar: RaporYanilgiT[];
   mkler: { kod: string; ifade: string; durum: string; p: number | null; dogru: number; yanlis: number; olculemedi: number; konu: KonuKartiT | null }[];
 };
+
+export type OzetT = {
+  sinif: number; ogrenci: number; soru_onayli: number; soru_taslak: number; sinav: number;
+  bekleyenler: { atama_id: number; sinav_adi: string; sinif_adi: string; bekleyen: number; teslim: number; ogrenci: number }[];
+  mk: Record<string, number>;
+};
+export const selam = () => { const s = new Date().getHours(); return s < 12 ? "Günaydın" : s < 18 ? "İyi günler" : "İyi akşamlar"; };

@@ -1,6 +1,7 @@
 import { useState, type FormEvent } from "react";
 import { Link, Navigate } from "react-router-dom";
 import { useOturum } from "../oturum";
+import GirisMarka from "./GirisMarka";
 
 export default function Kayit() {
   const { kullanici, kayitOl } = useOturum();
@@ -20,8 +21,11 @@ export default function Kayit() {
   }
 
   return (
-    <form className="kart dar" onSubmit={gonder}>
-      <h1>Kayıt ol</h1>
+    <div className="giris-duzen">
+      <GirisMarka />
+      <form className="giris-form" onSubmit={gonder}>
+      <h1>Hesap oluştur</h1>
+      <p className="soluk">Öğretmen misin, öğrenci mi?</p>
       <div className="secim">
         <button type="button" className={rol === "ogretmen" ? "" : "ikincil"} onClick={() => setRol("ogretmen")}>Öğretmenim</button>
         <button type="button" className={rol === "ogrenci" ? "" : "ikincil"} onClick={() => setRol("ogrenci")}>Öğrenciyim</button>
@@ -33,5 +37,6 @@ export default function Kayit() {
       <button disabled={bekle}>{bekle ? "Kaydediliyor…" : "Kayıt ol"}</button>
       <p className="soluk">Hesabın var mı? <Link to="/giris">Giriş yap</Link></p>
     </form>
+    </div>
   );
 }

@@ -46,3 +46,14 @@ def test_sinif_ve_ogrenci_raporu(istemci):
     assert istemci.get(f"/api/siniflar/{sid}/rapor", headers=baska).status_code == 404
     assert istemci.get(f"/api/siniflar/{sid}/rapor", headers=ogr).status_code == 403
     assert istemci.get("/api/rapor", headers=b).status_code == 403
+
+
+def test_ana_sayfa_ozeti(istemci):
+    b, ogr, a, q1, q2 = _kurulum(istemci, "oz1")
+    o = istemci.get("/api/ozet", headers=b).json()
+    assert o["sinif"] == 1 and o["ogrenci"] == 1 and o["soru_onayli"] == 2 and o["sinav"] == 1 and o["bekleyenler"] == []
+    istemci.post(f"/api/teslim/{a['id']}/basla", headers=ogr)
+    istemci.post(f"/api/teslim/{a['id']}/gonder", headers=ogr)
+    o = istemci.get("/api/ozet", headers=b).json()
+    assert o["bekleyenler"][0]["bekleyen"] == 1 and o["bekleyenler"][0]["ogrenci"] == 1
+    assert istemci.get("/api/ozet", headers=ogr).json()["mk"] == {"biliyor": 0, "belirsiz": 0, "bilmiyor": 0}

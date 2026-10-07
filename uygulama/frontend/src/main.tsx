@@ -1,6 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter, Link, Navigate, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Link, Navigate, NavLink, Route, Routes } from "react-router-dom";
+import { Logo } from "./Logo";
 import { OturumSaglayici, useOturum } from "./oturum";
 import Giris from "./sayfalar/Giris";
 import Kayit from "./sayfalar/Kayit";
@@ -26,15 +27,22 @@ import "./stil.css";
 
 function Ust() {
   const { kullanici, cikis } = useOturum();
+  const bas = (kullanici?.ad ?? "").split(/\s+/).filter(Boolean).slice(0, 2).map((x) => x[0]).join("").toLocaleUpperCase("tr-TR");
   return (
     <header className="ust">
-      <Link to="/" className="logo" title="Micro-skill based assessment, diagnosis and remediation · Mikro kazanım temelli ölçme, teşhis ve telafi">EVALORA <span>Measure. Diagnose. Remediate.</span></Link>
+      <Link to="/" className="logo" title="Micro-skill based assessment, diagnosis and remediation · Mikro kazanım temelli ölçme, teşhis ve telafi"><Logo boyut={34} /></Link>
       {kullanici && (
         <nav>
-          {kullanici.rol === "ogretmen" && <><Link to="/sorular">Soru bankası</Link><Link to="/sinavlar">Sınavlar</Link><Link to="/mk">MK haritası</Link></>}
+          <div className="ust-linkler">
+            <NavLink to="/" end>Ana sayfa</NavLink>
+            {kullanici.rol === "ogretmen"
+              ? <><NavLink to="/sorular">Soru bankası</NavLink><NavLink to="/sinavlar">Sınavlar</NavLink><NavLink to="/mk">MK haritası</NavLink></>
+              : <NavLink to="/rapor">Konu raporum</NavLink>}
+          </div>
           <Zil />
+          <span className="avatar" title={kullanici.ad}>{bas}</span>
           <span className="kim">{kullanici.ad}</span>
-          <button className="ikincil" onClick={cikis}>Çıkış</button>
+          <button className="ikincil kucuk" onClick={cikis}>Çıkış</button>
         </nav>
       )}
     </header>

@@ -1,18 +1,21 @@
 import { useEffect, useState, type FormEvent } from "react";
 import { Link } from "react-router-dom";
-import { api, ATAMA_DURUMU, tarihSaat, type AtamaT, type Sinif } from "../api";
+import { api, ATAMA_DURUMU, selam, tarihSaat, type AtamaT, type OzetT, type Sinif } from "../api";
+import { useOturum } from "../oturum";
 
+// Öğrenci ana sayfası: karşılama ve konu durumu, açık sınavlar, sonuçlar, sınıflar ve sınıfa katılma.
 export default function OgrenciAna() {
+  const { kullanici } = useOturum();
   const [siniflar, setSiniflar] = useState<Sinif[]>([]);
   const [kod, setKod] = useState("");
   const [hata, setHata] = useState("");
   const [atamalar, setAtamalar] = useState<AtamaT[]>([]);
-  const bekleyen = atamalar.filter((a) => a.durum === "acik" && a.teslim_durumu !== "teslim");
-  const sonuclar = atamalar.filter((a) => a.sonuc_yeni);
+  const [ozet, setOzet] = useState<OzetT | null>(null);
 
   useEffect(() => {
     api<Sinif[]>("/api/siniflar").then(setSiniflar).catch((e) => setHata(e.message));
     api<AtamaT[]>("/api/atamalar").then(setAtamalar).catch(() => {});
+    api<OzetT>("/api/ozet").then(setOzet).catch(() => {});
   }, []);
 
   async function katil(e: FormEvent) {
@@ -25,70 +28,79 @@ export default function OgrenciAna() {
     } catch (err) { setHata((err as Error).message); }
   }
 
+  const acik = atamalar.filter((a) => a.durum === "acik" && a.teslim_durumu !== "teslim");
+  const digerleri = atamalar.filter((a) => !acik.includes(a));
+  const yeniSonuc = atamalar.filter((a) => a.sonuc_yeni).length;
+  const mk = ozet?.mk ?? {};
+
   return (
     <div className="sayfa">
-      {sonuclar.length > 0 && (
-        <div className="kart basari">🔔 {sonuclar.length === 1 ? `“${sonuclar[0].sinav_adi}” sınavının sonucu açıklandı.` : `${sonuclar.length} sınavının sonucu açıklandı.`} Aşağıdan "Sonucu gör"e bas.</div>
-      )}
-      {bekleyen.length > 0 && (
-        <div className="kart uyari-bandi">🔔 {bekleyen.length} açık sınavın var. Aşağıdan "Sınava gir"e bas.</div>
-      )}
-      <div className="baslik-satiri">
-        <h1>Sınavlarım</h1>
-        <Link className="dugme ikincil" to="/rapor">📊 Konu raporum</Link>
+      <section className="karsilama">
+        <h1>{selam()}, {kullanici?.ad?.split(" ")[0]} 👋</h1>
+        <p>{acik.length ? `${acik.length} açık sınavın var.` : "Şu an açık sınavın yok."}{yeniSonuc ? ` ${yeniSonuc} yeni sonucun açıklandı.` : ""} Her sınavdan sonra hangi konuları bildiğini, hangilerini tekrar etmen gerektiğini görürsün.</p>
+        <div className="eylemler"><Link className="dugme" to="/rapor">📊 Konu raporum</Link></div>
+      </section>
+
+      <div className="sayilar">
+        <Link className="sayi-kutu biliyor" to="/rapor"><b>{mk.biliyor ?? 0}</b><span>Bildiğin konu</span></Link>
+        <Link className="sayi-kutu belirsiz" to="/rapor"><b>{mk.belirsiz ?? 0}</b><span>Biraz daha çalış</span></Link>
+        <Link className="sayi-kutu bilmiyor" to="/rapor"><b>{mk.bilmiyor ?? 0}</b><span>Tekrar etmen gereken</span></Link>
       </div>
-      <section className="kart">
-        {atamalar.length === 0 ? (
-          <p className="soluk">{siniflar.length ? "Öğretmenin bir sınav atadığında burada görünecek." : "Henüz bir sınıfa katılmadın. Aşağıdan öğretmeninin verdiği kodla katıl; sınıfına atanan sınavlar burada görünür."}</p>
-        ) : (
-          <div className="o-sinav-liste">
-            {atamalar.map((a) => (
-              <div key={a.id} className="o-sinav-satir">
-                <div>
-                  <strong>{a.sinav_adi}</strong>
-                  <span className="soluk"> · {a.sinif_adi} · {a.soru_sayisi} soru</span>
-                  <div className="soluk">{tarihSaat(a.baslangic)} – {tarihSaat(a.bitis)}</div>
-                </div>
+
+      <div className="bolum-baslik"><h2>Açık sınavlar</h2></div>
+      {acik.length === 0 ? (
+        <div className="kart bos-durum"><b>Şimdilik sınav yok</b>{siniflar.length ? "Öğretmenin bir sınav atadığında burada görünecek." : "Önce aşağıdan öğretmeninin verdiği kodla sınıfına katıl."}</div>
+      ) : (
+        <div className="sinav-kartlar">
+          {acik.map((a) => (
+            <div key={a.id} className="kart sinav-kart">
+              <div className="ust-satir"><strong>{a.sinav_adi}</strong><span className="durum onayli">{a.teslim_durumu === "devam" ? "Devam ediyor" : "Açık"}</span></div>
+              <small className="soluk">{a.sinif_adi} · {a.soru_sayisi} soru · Son: {tarihSaat(a.bitis)}</small>
+              <div className="eylemler">
+                <Link className="dugme" to={`/sinav/${a.id}`}>{a.teslim_durumu === "devam" ? "Devam et" : "Sınava gir"}</Link>
+                <Link className="dugme ikincil" to={`/sinav/${a.id}/yazdir`} target="_blank" title="Kâğıda yazdırıp çöz, sonra fotoğrafını yükle. Yazdırma ekranını açınca süren başlar.">🖨 Yazdır</Link>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {digerleri.length > 0 && <>
+        <div className="bolum-baslik"><h2>Sonuçlar ve geçmiş</h2></div>
+        <section className="kart">
+          <div className="liste">
+            {digerleri.map((a) => (
+              <div key={a.id} className="liste-satir">
+                <div><strong>{a.sinav_adi}</strong><br /><small>{a.sinif_adi} · {tarihSaat(a.baslangic)}</small></div>
                 <div className="kucuk-dugmeler">
-                  {a.teslim_durumu === "teslim"
-                    ? (a.sonuc_acik
-                      ? <><span className="durum onayli">Sonuç açıklandı</span><Link className="dugme" to={`/sonuc/${a.id}`}>Sonucu gör</Link></>
-                      : <><span className="durum onayli">Teslim edildi</span><span className="soluk">Değerlendiriliyor</span><Link to={`/sinav/${a.id}`}>Cevaplarım</Link></>)
-                    : <>
-                      <span className={`durum ${a.durum === "acik" ? "onayli" : ""}`}>{ATAMA_DURUMU[a.durum]}</span>
-                      {a.durum === "acik" && <Link className="dugme" to={`/sinav/${a.id}`}>{a.teslim_durumu === "devam" ? "Devam et" : "Sınava gir"}</Link>}
-                      {a.durum === "acik" && <Link className="dugme ikincil" to={`/sinav/${a.id}/yazdir`} target="_blank"
-                        title="Kâğıda yazdırıp çöz, sonra tarayıp yükle. Yazdırma ekranını açınca süren başlar.">🖨 Yazdır</Link>}
-                      {a.durum === "bitti" && <Link to={`/sinav/${a.id}`}>Gör</Link>}
-                    </>}
+                  {a.sonuc_acik ? <>{a.sonuc_yeni && <span className="durum">Yeni</span>}<Link className="dugme" to={`/sonuc/${a.id}`}>Sonucu gör</Link></>
+                    : a.teslim_durumu === "teslim" ? <><span className="durum onayli">Teslim edildi</span><small>Değerlendiriliyor</small></>
+                    : <><span className="durum">{ATAMA_DURUMU[a.durum]}</span>{a.durum === "bitti" && <Link to={`/sinav/${a.id}`}>Gör</Link>}</>}
                 </div>
               </div>
             ))}
           </div>
-        )}
-      </section>
+        </section>
+      </>}
 
-      <h2>Sınıflarım</h2>
+      <div className="bolum-baslik"><h2>Sınıflarım</h2></div>
       <div className="izgara">
         {siniflar.map((s) => (
-          <div key={s.id} className="kart sinif">
-            <strong>{s.ad}</strong>
-            <span>{s.ders} · {s.sinif_duzeyi}. sınıf</span>
-            <span>Öğretmen: {s.ogretmen}</span>
+          <div key={s.id} className={`kart sinif-kart ${s.ders}`}>
+            <span className="ad">{s.ad}</span>
+            <span className="bilgi">{s.ders} · {s.sinif_duzeyi}. sınıf</span>
+            <span className="bilgi">Öğretmen: {s.ogretmen}</span>
           </div>
         ))}
-      </div>
-
-      <details className="kart" open={siniflar.length === 0}>
-        <summary><strong>Yeni bir sınıfa katıl</strong></summary>
-        <form onSubmit={katil} className="katil-form">
+        <form onSubmit={katil} className="kart sinif-kart katil-form">
+          <span className="ad">Yeni sınıfa katıl</span>
           <label>Öğretmeninin verdiği 6 haneli kod
-            <input value={kod} onChange={(e) => setKod(e.target.value.toUpperCase())} maxLength={6} minLength={6} required className="kod-girdi" />
+            <input value={kod} onChange={(e) => setKod(e.target.value.toUpperCase())} maxLength={6} minLength={6} required className="kod-girdi" placeholder="ABC123" />
           </label>
           {hata && <p className="hata">{hata}</p>}
           <button>Katıl</button>
         </form>
-      </details>
+      </div>
     </div>
   );
 }
