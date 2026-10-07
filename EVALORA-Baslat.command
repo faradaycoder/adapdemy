@@ -21,7 +21,8 @@ guncelle() {
 }
 
 guncelle
-cd "$KOK/backend" && .venv/bin/uvicorn app.main:app --port 8000 &
+# --reload: GitHub'dan gelen arka uç değişiklikleri yeniden başlatmadan devreye girer
+cd "$KOK/backend" && .venv/bin/uvicorn app.main:app --port 8000 --reload --reload-dir app &
 ARKA=$!
 cd "$KOK/frontend" && npm run dev -- --host 127.0.0.1 &
 ON=$!
