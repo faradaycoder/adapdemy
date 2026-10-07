@@ -123,6 +123,8 @@ def test_sure_dolunca_kendiliginden_teslim_ve_uzatma(istemci):
     assert "süre doldu, cevapları kendiliğinden teslim edildi" in istemci.get("/api/bildirimler", headers=b).json()["ogeler"][0]["metin"]
     o = istemci.post(f"/api/teslim/{a['id']}/basla", headers=ogr).json()
     assert o["durum"] == "teslim" and o["otomatik_teslim"]
+    ana = istemci.get("/api/atamalar", headers=ogr).json()[0]  # öğrencinin ana sayfası: "Süre uzatma iste" gösterilir
+    assert ana["teslim_durumu"] == "teslim" and ana["otomatik_teslim"] and ana["uzatma"] is None
     assert istemci.put(f"/api/teslim/{a['id']}/cevap/{q2['id']}", json={"metin": "x"}, headers=ogr).status_code == 409
 
     # öğrenci uzatma ister → öğretmene bildirim

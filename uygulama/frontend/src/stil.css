@@ -638,3 +638,4 @@ a.filtre-cip-baglanti { border: 1px solid var(--cizgi); border-radius: 999px; pa
 @media (prefers-color-scheme: dark) { .uzatma-talep { background: #2a2210; border-color: #5c4a12; } }
 tr.talep-var td { background: color-mix(in srgb, #f59e0b 8%, transparent); }
 .durum.otomatik { background: #fef3c7; color: #92400e; }
+.sinav-kart .ust-satir .durum { white-space: nowrap; flex: none; }

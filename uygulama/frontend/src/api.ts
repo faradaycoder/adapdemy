@@ -72,6 +72,7 @@ export type AtamaT = {
   teslim_durumu: "devam" | "teslim" | null;
   sonuc_acik: boolean;
   sonuc_yeni: boolean;
+  otomatik_teslim?: boolean; uzatma?: "bekliyor" | "verildi" | "reddedildi" | null;  // öğrenci için
   ogrenci?: number; teslim?: number; degerlendirilen?: number;  // öğretmen için
 };
 export type SinavT = {

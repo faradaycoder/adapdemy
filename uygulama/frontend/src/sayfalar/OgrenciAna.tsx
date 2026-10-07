@@ -28,7 +28,8 @@ export default function OgrenciAna() {
     } catch (err) { setHata((err as Error).message); }
   }
 
-  const acik = atamalar.filter((a) => a.durum === "acik" && a.teslim_durumu !== "teslim");
+  // açık: süresi içinde olanlar ve öğretmenin ek süre verdiği (atamanın bitişi geçmiş olsa da) devam eden sınavlar
+  const acik = atamalar.filter((a) => (a.durum === "acik" && a.teslim_durumu !== "teslim") || (a.uzatma === "verildi" && a.teslim_durumu === "devam"));
   const digerleri = atamalar.filter((a) => !acik.includes(a));
   const yeniSonuc = atamalar.filter((a) => a.sonuc_yeni).length;
   const mk = ozet?.mk ?? {};
@@ -54,7 +55,7 @@ export default function OgrenciAna() {
         <div className="sinav-kartlar">
           {acik.map((a) => (
             <div key={a.id} className="kart sinav-kart">
-              <div className="ust-satir"><strong>{a.sinav_adi}</strong><span className="durum onayli">{a.teslim_durumu === "devam" ? "Devam ediyor" : "Açık"}</span></div>
+              <div className="ust-satir"><strong>{a.sinav_adi}</strong><span className="durum onayli">{a.uzatma === "verildi" && a.teslim_durumu === "devam" ? "Ek süre verildi" : a.teslim_durumu === "devam" ? "Devam ediyor" : "Açık"}</span></div>
               <small className="soluk">{a.sinif_adi} · {a.soru_sayisi} soru · Son: {tarihSaat(a.bitis)}</small>
               <div className="eylemler">
                 <Link className="dugme" to={`/sinav/${a.id}`}>{a.teslim_durumu === "devam" ? "Devam et" : "Sınava gir"}</Link>
@@ -74,6 +75,11 @@ export default function OgrenciAna() {
                 <div><strong>{a.sinav_adi}</strong><br /><small>{a.sinif_adi} · {tarihSaat(a.baslangic)}</small></div>
                 <div className="kucuk-dugmeler">
                   {a.sonuc_acik ? <>{a.sonuc_yeni && <span className="durum">Yeni</span>}<Link className="dugme" to={`/sonuc/${a.id}`}>Sonucu gör</Link></>
+                    : a.teslim_durumu === "teslim" && a.otomatik_teslim ? <>
+                      <span className="durum otomatik">Süre doldu</span>
+                      {a.uzatma === "bekliyor" ? <small>Uzatma talebin öğretmeninde</small>
+                        : a.uzatma === "reddedildi" ? <small>Uzatma kabul edilmedi · Değerlendiriliyor</small>
+                        : <Link className="dugme kucuk" to={`/sinav/${a.id}`}>⏱ Süre uzatma iste</Link>}</>
                     : a.teslim_durumu === "teslim" ? <><span className="durum onayli">Teslim edildi</span><small>Değerlendiriliyor</small></>
                     : <><span className="durum">{ATAMA_DURUMU[a.durum]}</span>{a.durum === "bitti" && <Link to={`/sinav/${a.id}`}>Gör</Link>}</>}
                 </div>

@@ -52,6 +52,8 @@ class AtamaC(BaseModel):
     teslim_durumu: str | None = None  # öğrenci için: devam / teslim (başlamadıysa boş)
     sonuc_acik: bool = False  # öğrenci için: öğretmen değerlendirmeyi onayladı mı
     sonuc_yeni: bool = False  # öğrenci için: açıklanan sonucu henüz görmedi
+    otomatik_teslim: bool = False  # öğrenci için: süre dolunca kendiliğinden teslim edildi (uzatma istenebilir)
+    uzatma: str | None = None  # öğrenci için: bekliyor / verildi / reddedildi
     ogrenci: int = 0  # öğretmen için: sınıftaki öğrenci sayısı
     teslim: int = 0  # öğretmen için: teslim eden öğrenci sayısı
     degerlendirilen: int = 0  # öğretmen için: değerlendirmesi onaylanan teslim sayısı
@@ -252,7 +254,10 @@ def atamalarim(k: Kullanici = Depends(gecerli_kullanici), vt: Session = Depends(
     for a in vt.scalars(q.order_by(Atama.baslangic.desc())):
         t = next((t for t in a.teslimler if t.ogrenci_id == k.id), None)
         acik = bool(t and t.degerlendirme == "onayli")
-        sonuc.append(_atama_c(a, t.durum if t else None, acik, acik and not t.ogrenci_gordu))
+        c = _atama_c(a, t.durum if t else None, acik, acik and not t.ogrenci_gordu)
+        if t:
+            c.otomatik_teslim, c.uzatma = t.otomatik_teslim, t.uzatma
+        sonuc.append(c)
     return sonuc
 
 
