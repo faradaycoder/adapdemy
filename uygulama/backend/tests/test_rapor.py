@@ -75,3 +75,10 @@ def test_mufredat_agaci_ve_mk_ile_soru_filtresi(istemci):
     ids = [s["id"] for s in istemci.get("/api/sorular", params={"mkler": f"{mk},Yok0000"}, headers=b).json()]
     assert q2["id"] in ids and q1["id"] not in ids
     assert istemci.get("/api/mufredat", params={"ders": "Fizik", "sinif": 12}, headers=ogr).status_code == 403
+
+
+def test_mk_haritasi_html_doner(istemci):
+    r = istemci.get("/api/harita/Matematik")
+    assert r.status_code == 200 and r.headers["content-type"].startswith("text/html")
+    assert "Matematik Mikro Kazanım Haritası" in r.text
+    assert istemci.get("/api/harita/Kimya").status_code == 404

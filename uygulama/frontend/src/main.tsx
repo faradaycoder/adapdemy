@@ -9,6 +9,7 @@ import OgretmenAna from "./sayfalar/OgretmenAna";
 import OgrenciAna from "./sayfalar/OgrenciAna";
 import SinifSayfasi from "./sayfalar/SinifSayfasi";
 import MKGezgini from "./sayfalar/MKGezgini";
+import MKHarita from "./sayfalar/MKHarita";
 import SoruBankasi from "./sayfalar/SoruBankasi";
 import SoruYukle from "./sayfalar/SoruYukle";
 import SoruDuzenle from "./sayfalar/SoruDuzenle";
@@ -89,8 +90,10 @@ function Uygulama() {
           <Route path="/atama/:atamaId/teslimler" element={<Korumali><Teslimler /></Korumali>} />
           <Route path="/atama/:atamaId/teslimler/:teslimId" element={<Korumali><Degerlendir /></Korumali>} />
           <Route path="/sonuc/:atamaId" element={<Korumali><OgrenciSonuc /></Korumali>} />
-          <Route path="/mk" element={<Korumali><MKGezgini /></Korumali>} />
-          <Route path="/mk/:kod" element={<Korumali><MKGezgini /></Korumali>} />
+          <Route path="/mk" element={<Korumali><MKHarita /></Korumali>} />
+          <Route path="/mk/liste" element={<Korumali><MKGezgini /></Korumali>} />
+          <Route path="/mk/liste/:kod" element={<Korumali><MKGezgini /></Korumali>} />
+          <Route path="/mk/:kod" element={<Korumali><MKHarita /></Korumali>} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>

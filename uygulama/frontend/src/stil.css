@@ -608,3 +608,12 @@ button.bk-arac.aktif { background: var(--r); border-color: var(--r); color: #fff
 .bk-cubuk em { display: block; height: 100%; background: var(--teshis); border-radius: 999px; }
 .bk-zorluk-liste li.toplam { grid-template-columns: 1fr auto; background: color-mix(in srgb, var(--teshis) 12%, transparent); font-weight: 700; }
 @media (max-width: 640px) { .bk-zorluk-liste li { grid-template-columns: auto 1fr 52px; } .bk-cubuk { display: none; } }
+
+/* MK haritası (2026-10-07): üretilen HTML harita uygulama içinde, ekranı doldurur */
+main:has(.mk-harita-sayfa) { max-width: none; padding: 0; }
+.mk-harita-sayfa { display: flex; flex-direction: column; height: calc(100vh - 61px); }
+.mk-harita-ust { display: flex; align-items: center; gap: 10px 16px; flex-wrap: wrap; padding: 10px 16px; background: var(--kart); border-bottom: 1px solid var(--cizgi); }
+.mk-harita-ust h1 { margin: 0; font-size: 1.2rem; }
+.mk-harita-ipucu { font-size: .82rem; flex: 1; min-width: 200px; }
+a.filtre-cip-baglanti { border: 1px solid var(--cizgi); border-radius: 999px; padding: 6px 13px; font-size: .88rem; font-weight: 600; color: var(--yazi); text-decoration: none; }
+.mk-harita { flex: 1; width: 100%; border: 0; background: #fbfbfa; }

@@ -4,7 +4,7 @@ import { api, type MKAyrinti, type MKKisa } from "../api";
 
 function MKSatir({ m }: { m: MKKisa }) {
   return (
-    <Link to={`/mk/${m.kod}`} className="mk-satir">
+    <Link to={`/mk/liste/${m.kod}`} className="mk-satir">
       <code>{m.kod}</code>
       <span className="ifade">{m.ifade}</span>
       <span className="etiket">{m.islem_turu}</span>
@@ -38,7 +38,7 @@ export default function MKGezgini() {
   return (
     <div className="sayfa mk-duzen">
       <section>
-        <h1>MK haritası</h1>
+        <div className="baslik-satiri"><h1>MK listesi</h1><Link to="/mk" className="dugme ikincil">🗺️ Haritaya dön</Link></div>
         <div className="satir">
           <label>Ders<select value={ders} onChange={(e) => { setDers(e.target.value); setSinif(""); }}><option>Fizik</option><option>Matematik</option></select></label>
           <label>Sınıf<select value={sinif} onChange={(e) => setSinif(e.target.value)}>

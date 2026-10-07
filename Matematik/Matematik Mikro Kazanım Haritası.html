@@ -173,4 +173,7 @@ wrap.addEventListener("click",()=>{if(dr&&dr.m)return;if(secili){secili=null;fil
 function odakla(k){const n=byK[k],[x,y]=pos(n),r=wrap.getBoundingClientRect();ts.s=Math.max(ts.s,.8);ts.x=r.width/2-(x+V.en/2)*ts.s;ts.y=r.height/2-(y+V.boy/2)*ts.s;uyg()}
 function sigdir(){const r=wrap.getBoundingClientRect(),w=r.width>50?r.width:innerWidth*.6,h=r.height>50?r.height:innerHeight-110;ts.s=Math.max(.05,Math.min(1,w/W,h/H));ts.x=(w-W*ts.s)/2;ts.y=(h-H*ts.s)/2;uyg()}
 sigdir();requestAnimationFrame(sigdir);addEventListener("load",sigdir);
+// Adres #KOD ile açılınca o MK seçilir ve ortalanır (EVALORA uygulamasındaki MK bağlantıları)
+function adresten(){const k=decodeURIComponent(location.hash.slice(1));if(k&&byK[k]){sec(k);odakla(k)}}
+addEventListener("load",()=>setTimeout(adresten,0));addEventListener("hashchange",adresten);
 </script></body></html>
