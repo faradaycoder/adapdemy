@@ -364,9 +364,8 @@ h1 { letter-spacing: -.01em; }
 /* Karşılama alanı */
 .karsilama { position: relative; overflow: hidden; border-radius: 18px; padding: 24px; margin: 12px 0 16px; color: #fff;
   background: radial-gradient(120% 140% at 100% 0%, #3b5bdb 0%, #1e3a8a 55%, #172554 100%); box-shadow: var(--golge-buyuk); }
-.karsilama::after { content: ""; position: absolute; right: 36px; top: 50%; width: 150px; height: 150px; margin-top: -75px; border-radius: 50%;
-  border: 14px solid transparent; border-top-color: rgba(45, 212, 191, .55); border-right-color: rgba(167, 139, 250, .55);
-  border-bottom-color: rgba(251, 191, 36, .55); border-left-color: rgba(255, 255, 255, .08); transform: rotate(-30deg); pointer-events: none; }
+.karsilama::after { content: ""; position: absolute; right: 28px; top: 50%; width: 170px; height: 170px; margin-top: -85px; pointer-events: none; opacity: .9;
+  background: url("/logo-isaret.svg") center / contain no-repeat; }
 @media (max-width: 760px) { .karsilama::after { display: none; } }
 .karsilama h1 { margin: 0 0 4px; font-size: 1.6rem; }
 .karsilama p { margin: 0; color: #c7d2fe; max-width: 620px; }
@@ -453,3 +452,6 @@ a.dongu-adim:hover { box-shadow: var(--golge); background: var(--kart); }
 }
 @media (max-width: 1000px) { .ust nav .kim { display: none; } }
 .giris-form > p.soluk:first-of-type { margin: -6px 0 6px; }
+.logo-ad { display: inline-flex; align-items: center; gap: 6px; }
+.ai-rozet { font-size: .6rem; font-weight: 800; letter-spacing: .04em; color: #fff; padding: 2px 6px; border-radius: 6px;
+  background: linear-gradient(90deg, #2dd4bf, #8b5cf6, #f59e0b); }

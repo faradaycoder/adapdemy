@@ -1,13 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <defs><linearGradient id="z" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1e3a8a"/><stop offset="1" stop-color="#3b5bdb"/></linearGradient></defs>
-  <rect width="64" height="64" rx="16" fill="url(#z)"/>
-  <g fill="none" stroke-width="4.5" stroke-linecap="round">
-    <path d="M33.66 13.07A19 19 0 0 1 49.22 40.03" stroke="#2dd4bf"/>
-    <path d="M47.56 42.90A19 19 0 0 1 16.44 42.90" stroke="#a78bfa"/>
-    <path d="M14.78 40.03A19 19 0 0 1 30.34 13.07" stroke="#fbbf24"/>
-  </g>
-  <path d="M24 39 L31.5 31.5 L40.5 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="24" cy="39" r="3.2" fill="#fff"/>
-  <circle cx="31.5" cy="31.5" r="3.2" fill="#fff"/>
-  <circle cx="40.5" cy="24" r="4" fill="#fbbf24" stroke="#fff" stroke-width="1.6"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><defs><linearGradient id="z" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#eef2ff"/></linearGradient><linearGradient id="c" gradientUnits="userSpaceOnUse" x1="14" y1="22" x2="46" y2="48"><stop offset="0" stop-color="#2dd4bf"/><stop offset=".5" stop-color="#8b5cf6"/><stop offset="1" stop-color="#f59e0b"/></linearGradient></defs>
+<rect width="64" height="64" rx="16" fill="url(#z)"/><rect x=".5" y=".5" width="63" height="63" rx="15.5" fill="none" stroke="#c7d2fe"/>
+<path d="M16.5 34 H43.5 A13.5 13.5 0 1 0 40.34 42.68" fill="none" stroke="url(#c)" stroke-width="6.5" stroke-linecap="round"/>
+<path d="M43.88 38.46 L42.59 46.53 L36.16 41.13Z" fill="#f59e0b" stroke="#f59e0b" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M49 7.5 C49.84 12.9 51.1 14.16 56.5 15 C51.1 15.84 49.84 17.1 49 22.5 C48.16 17.1 46.9 15.84 41.5 15 C46.9 14.16 48.16 12.9 49 7.5Z" fill="#8b5cf6"/>
+<path d="M55.5 22 C55.836 24.16 56.34 24.664 58.5 25 C56.34 25.336 55.836 25.84 55.5 28 C55.164 25.84 54.66 25.336 52.5 25 C54.66 24.664 55.164 24.16 55.5 22Z" fill="#2dd4bf" opacity=".9"/>
 </svg>

@@ -1,22 +1,23 @@
 import { useId } from "react";
 
-// EVALORA logosu. Üç renkli halka döngüyü anlatır: turkuaz Ölç, mor Teşhis et, amber Telafi et.
-// İçteki yükselen düğümler MK haritasını ve öğrencinin ilerleyişini; amber uç, telafiyle ulaşılan hedefi gösterir.
+// EVALORA logosu: renk geçişli "e" (turkuaz Ölç → mor Teşhis et → amber Telafi et) ve ucundaki ok döngüyü anlatır:
+// telafiden sonra yeniden ölçülür. Sağ üstteki parıltılar yapay zekâ desteğini gösterir.
 export function LogoIsaret({ boyut = 36 }: { boyut?: number }) {
   const id = useId().replace(/:/g, "");
   return (
     <svg width={boyut} height={boyut} viewBox="0 0 64 64" aria-hidden="true">
-      <defs><linearGradient id={id} x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#1e3a8a" /><stop offset="1" stopColor="#3b5bdb" /></linearGradient></defs>
-      <rect width="64" height="64" rx="16" fill={`url(#${id})`} />
-      <g fill="none" strokeWidth="4.5" strokeLinecap="round">
-        <path d="M33.66 13.07A19 19 0 0 1 49.22 40.03" stroke="#2dd4bf" />
-        <path d="M47.56 42.90A19 19 0 0 1 16.44 42.90" stroke="#a78bfa" />
-        <path d="M14.78 40.03A19 19 0 0 1 30.34 13.07" stroke="#fbbf24" />
-      </g>
-      <path d="M24 39 L31.5 31.5 L40.5 24" fill="none" stroke="#fff" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" />
-      <circle cx="24" cy="39" r="3.2" fill="#fff" />
-      <circle cx="31.5" cy="31.5" r="3.2" fill="#fff" />
-      <circle cx="40.5" cy="24" r="4" fill="#fbbf24" stroke="#fff" strokeWidth="1.6" />
+      <defs>
+        <linearGradient id={`${id}z`} x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#ffffff" /><stop offset="1" stopColor="#eef2ff" /></linearGradient>
+        <linearGradient id={`${id}c`} gradientUnits="userSpaceOnUse" x1="14" y1="22" x2="46" y2="48">
+          <stop offset="0" stopColor="#2dd4bf" /><stop offset=".5" stopColor="#8b5cf6" /><stop offset="1" stopColor="#f59e0b" />
+        </linearGradient>
+      </defs>
+      <rect width="64" height="64" rx="16" fill={`url(#${id}z)`} />
+      <rect x=".5" y=".5" width="63" height="63" rx="15.5" fill="none" stroke="#c7d2fe" />
+      <path d="M16.5 34 H43.5 A13.5 13.5 0 1 0 40.34 42.68" fill="none" stroke={`url(#${id}c)`} strokeWidth="6.5" strokeLinecap="round" />
+      <path d="M43.88 38.46 L42.59 46.53 L36.16 41.13Z" fill="#f59e0b" stroke="#f59e0b" strokeWidth="1.5" strokeLinejoin="round" />
+      <path d="M49 7.5 C49.84 12.9 51.1 14.16 56.5 15 C51.1 15.84 49.84 17.1 49 22.5 C48.16 17.1 46.9 15.84 41.5 15 C46.9 14.16 48.16 12.9 49 7.5Z" fill="#8b5cf6" />
+      <path d="M55.5 22 C55.836 24.16 56.34 24.664 58.5 25 C56.34 25.336 55.836 25.84 55.5 28 C55.164 25.84 54.66 25.336 52.5 25 C54.66 24.664 55.164 24.16 55.5 22Z" fill="#2dd4bf" opacity=".9" />
     </svg>
   );
 }
@@ -26,8 +27,8 @@ export function Logo({ boyut = 36, slogan = true }: { boyut?: number; slogan?: b
     <span className="logo-tam">
       <LogoIsaret boyut={boyut} />
       <span className="logo-yazi">
-        <span className="logo-ad">EVALORA</span>
-        {slogan && <span className="logo-slogan">Ölç · Teşhis et · Telafi et</span>}
+        <span className="logo-ad">EVALORA <span className="ai-rozet">AI</span></span>
+        {slogan && <span className="logo-slogan">Yapay zekâ ile ölç · teşhis et · telafi et</span>}
       </span>
     </span>
   );
