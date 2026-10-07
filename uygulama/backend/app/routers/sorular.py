@@ -276,7 +276,8 @@ def kaydet(g: SoruG, k: Kullanici = Depends(ogretmen), vt: Session = Depends(vt_
 
 @router.get("", response_model=list[SoruKisa])
 def liste(ders: str | None = None, sinif: int | None = None, mk: str | None = None, durum: str | None = None,
-          k: Kullanici = Depends(ogretmen), vt: Session = Depends(vt_oturumu)):
+          mkler: str | None = None, k: Kullanici = Depends(ogretmen), vt: Session = Depends(vt_oturumu)):
+    """mkler: virgülle ayrılmış MK kodları; sorunun MK'si ya da bir rubrik adımı bunlardan biri olan sorular."""
     q = select(Soru).where(Soru.olusturan_id == k.id)
     if ders:
         q = q.where(Soru.ders == ders)
@@ -286,6 +287,10 @@ def liste(ders: str | None = None, sinif: int | None = None, mk: str | None = No
         q = q.where(Soru.durum == durum)
     if mk:
         q = q.where(Soru.id.in_(select(SoruMK.soru_id).where(SoruMK.mk_kod == mk)))
+    if mkler:
+        kodlar = [x for x in mkler.split(",") if x]
+        q = q.where(Soru.id.in_(select(SoruMK.soru_id).where(SoruMK.mk_kod.in_(kodlar)))
+                    | Soru.id.in_(select(RubrikAdim.soru_id).where(RubrikAdim.mk_kod.in_(kodlar))))
     return [soru_kisa(s) for s in vt.scalars(q.order_by(Soru.olusturma.desc()))]
 
 

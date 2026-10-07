@@ -57,3 +57,19 @@ def test_ana_sayfa_ozeti(istemci):
     o = istemci.get("/api/ozet", headers=b).json()
     assert o["bekleyenler"][0]["bekleyen"] == 1 and o["bekleyenler"][0]["ogrenci"] == 1
     assert istemci.get("/api/ozet", headers=ogr).json()["mk"] == {"biliyor": 0, "belirsiz": 0, "bilmiyor": 0}
+
+
+def test_mufredat_agaci_ve_mk_ile_soru_filtresi(istemci):
+    b, ogr, a, q1, q2 = _kurulum(istemci, "mf1")  # Fizik 11 ve 12 soruları
+    agac = istemci.get("/api/mufredat", params={"ders": "Matematik", "sinif": 6}, headers=b).json()
+    tema1 = agac[0]
+    assert tema1["ad"] == "Sayılar ve Nicelikler" and len(agac) >= 5
+    k = next(x for x in tema1["kazanimlar"] if x["kod"] == "MAT.6.1.2")
+    assert "bölünebilme" in k["ifade"] and any(m["kod"] == "Mat01MK0068" for m in k["mkler"])
+    f = istemci.get("/api/mufredat", params={"ders": "Fizik", "sinif": 12}, headers=b).json()
+    assert f and all(x["kazanimlar"] is not None for x in f)
+    hepsi = {s["id"]: s for s in istemci.get("/api/sorular", headers=b).json()}
+    mk = next(m for m in hepsi[q2["id"]]["soru_mkleri"] if m not in hepsi[q1["id"]]["soru_mkleri"])
+    ids = [s["id"] for s in istemci.get("/api/sorular", params={"mkler": f"{mk},Yok0000"}, headers=b).json()]
+    assert q2["id"] in ids and q1["id"] not in ids
+    assert istemci.get("/api/mufredat", params={"ders": "Fizik", "sinif": 12}, headers=ogr).status_code == 403

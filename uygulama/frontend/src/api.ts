@@ -153,3 +153,6 @@ export type OzetT = {
   mk: Record<string, number>;
 };
 export const selam = () => { const s = new Date().getHours(); return s < 12 ? "Günaydın" : s < 18 ? "İyi günler" : "İyi akşamlar"; };
+
+export type MufredatT = { no: number; ad: string; kazanimlar: { kod: string; ifade: string; mkler: { kod: string; ifade: string; soru_sayisi: number }[] }[] }[];
+export const gorselMi = (g: string | null | undefined) => !!g && !g.endsWith(".pdf");

@@ -3,7 +3,8 @@ import { Mat } from "../Mat";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import MKAkordeon from "../MKAkordeon";
 import { RubrikAkordeon } from "../Rubrik";
-import { api, ATAMA_DURUMU, tarihSaat, type Sinif, type SinavT, type SoruKisa } from "../api";
+import { api, ATAMA_DURUMU, gorselMi, tarihSaat, type Sinif, type SinavT, type SoruKisa } from "../api";
+import SoruEkle from "../SoruEkle";
 
 function yerelTarih(d: Date) {
   const p = (n: number) => String(n).padStart(2, "0");
@@ -19,10 +20,9 @@ export default function SinavDuzenle() {
   const [sure, setSure] = useState<number | "">(40);
   const [aciklama, setAciklama] = useState("");
   const [secilen, setSecilen] = useState<SoruKisa[]>([]);
-  const [banka, setBanka] = useState<SoruKisa[]>([]);
+  const [panel, setPanel] = useState(false);
+  const [surukle, setSurukle] = useState<number | null>(null);
   const [sinav, setSinav] = useState<SinavT | null>(null);
-  const [cikti, setCikti] = useState("");
-  const [mkler, setMkler] = useState("");
   const [siniflar, setSiniflar] = useState<Sinif[]>([]);
   const [atamaSinif, setAtamaSinif] = useState<number | "">("");
   const [bas, setBas] = useState(yerelTarih(new Date()));
@@ -34,10 +34,6 @@ export default function SinavDuzenle() {
     api<Sinif[]>("/api/siniflar").then(setSiniflar).catch(() => {});
     if (id) api<SinavT>(`/api/sinavlar/${id}`).then(yukle).catch((e) => setHata(e.message));
   }, [id]);
-
-  useEffect(() => {
-    api<SoruKisa[]>(`/api/sorular?ders=${ders}`).then(setBanka).catch((e) => setHata(e.message));
-  }, [ders]);
 
   function yukle(s: SinavT) {
     setSinav(s); setAd(s.ad); setDers(s.ders); setDuzey(s.sinif_duzeyi); setSure(s.sure_dk ?? ""); setAciklama(s.aciklama);
@@ -52,16 +48,11 @@ export default function SinavDuzenle() {
     [y[i], y[j]] = [y[j], y[i]]; setSecilen(y);
   };
 
-  async function oner() {
-    setHata("");
-    try {
-      const o = await api<SoruKisa[]>("/api/sinavlar/oneri", { govde: {
-        ders, sinif_duzeyi: duzey, ogrenme_ciktisi: cikti.trim() || null,
-        mk_kodlari: mkler.split(/[\s,;]+/).filter(Boolean), adet: 10 } });
-      if (!o.length) setBilgi("Bu ölçüte uyan onaylı soru bulunamadı.");
-      setSecilen([...secilen, ...o.filter((q) => !secilen.some((x) => x.id === q.id))]);
-    } catch (e) { setHata((e as Error).message); }
-  }
+  const birak = (hedef: number) => {
+    if (surukle === null || surukle === hedef) return;
+    const y = [...secilen]; const [x] = y.splice(surukle, 1); y.splice(hedef, 0, x);
+    setSecilen(y); setSurukle(null);
+  };
 
   async function kaydet() {
     setHata(""); setBilgi("");
@@ -112,85 +103,73 @@ export default function SinavDuzenle() {
   const kayitli = !!sinav && sinav.sorular.map((q) => q.id).join() === secilen.map((q) => q.id).join();
 
   return (
-    <div className="sayfa">
+    <div className="sayfa genis sinav-duzen">
       <p><Link to="/sinavlar">← Sınavlar</Link></p>
-      <h1>{id ? ad || "Sınav" : "Yeni sınav"}</h1>
 
-      <section className="kart">
+      <section className="kart sinav-baslik">
+        <input className="sinav-ad" value={ad} onChange={(e) => setAd(e.target.value)} placeholder="Sınav adı (ör. 6-A bölünebilme yoklaması)" aria-label="Sınav adı" />
         <div className="satir">
-          <label>Sınav adı<input value={ad} onChange={(e) => setAd(e.target.value)} placeholder="ör. Enerji ve Hareket yoklaması" /></label>
-          <label>Ders<select value={ders} onChange={(e) => { setDers(e.target.value); setDuzey(e.target.value === "Fizik" ? 10 : 8); }}><option>Fizik</option><option>Matematik</option></select></label>
-          <label>Sınıf<select value={duzey} onChange={(e) => setDuzey(Number(e.target.value))}>{duzeyler.map((d) => <option key={d} value={d}>{d}</option>)}</select></label>
+          <label>Ders<select value={ders} onChange={(e) => { setDers(e.target.value); setDuzey(e.target.value === "Fizik" ? 10 : 6); }}><option>Matematik</option><option>Fizik</option></select></label>
+          <label>Sınıf<select value={duzey} onChange={(e) => setDuzey(Number(e.target.value))}>{duzeyler.map((d) => <option key={d} value={d}>{d}. sınıf</option>)}</select></label>
           <label>Süre (dk)<input type="number" min={1} value={sure} onChange={(e) => setSure(e.target.value ? Number(e.target.value) : "")} /></label>
         </div>
-        <label>Açıklama (öğrenci görür)<textarea rows={2} value={aciklama} onChange={(e) => setAciklama(e.target.value)} /></label>
+        <label>Açıklama (öğrenci görür)<textarea rows={2} value={aciklama} onChange={(e) => setAciklama(e.target.value)} placeholder="ör. Soruları kâğıtta çözüp fotoğrafını yükleyebilirsin." /></label>
       </section>
 
-      <div className="soru-duzen">
-        <section className="kart">
-          <h2>Soru seç</h2>
-          <p className="soluk">Bankadaki {ders} soruları (taslaklar da seçilebilir; atamadan önce onaylanmalı). Kazanım ya da MK verirsen sistem o MK'leri ve öncüllerini ölçen soruları kapsamı geniş tutarak önerir.</p>
-          <div className="satir">
-            <label>Kazanım<input value={cikti} onChange={(e) => setCikti(e.target.value)} placeholder="ör. FİZ.12.2.4" /></label>
-            <label>MK kodları<input value={mkler} onChange={(e) => setMkler(e.target.value)} placeholder="ör. Fiz04MK0133" /></label>
-          </div>
-          <button className="ikincil" onClick={oner}>Soru öner</button>
-          <div className="mk-liste banka">
-            {banka.map((q) => (
-              <button key={q.id} className="banka-soru" disabled={secilen.some((x) => x.id === q.id)} onClick={() => ekle(q)}>
-                <span className="soru-metin">#{q.id} <Mat metin={q.metin} /></span>
-                <span className="etiketler"><span>{q.sinif_duzeyi}. sınıf</span>{q.durum !== "onayli" && <span className="durum taslak">Taslak</span>}<span className="seviye">Zorluk {q.zorluk?.toFixed(2)}</span>{q.mk_detay.map((m) => <code key={m.kod} title={m.ifade}>{m.kod}</code>)}</span>
-              </button>
-            ))}
-            {banka.length === 0 && <p className="soluk">Bankada {ders} sorusu yok.</p>}
-          </div>
-        </section>
+      <div className="sinav-ozet">
+        <span><b>{secilen.length}</b> soru</span>
+        <span>Toplam zorluk <b>{toplam.toFixed(1)}</b></span>
+        {sinav && kayitli && <span><b>{sinav.kapsam.length}</b> MK ölçülüyor</span>}
+        <span className="bosluk" />
+        {hata && <span className="hata">{hata}</span>}
+        {bilgi && <span className="basari-yazi">{bilgi}</span>}
+        {id && <button className="ikincil tehlike kucuk" onClick={sil}>Sınavı sil</button>}
+        <button disabled={!ad.trim() || secilen.length === 0} onClick={kaydet}
+          title={!ad.trim() ? "Önce sınav adı yaz" : secilen.length === 0 ? "Önce soru ekle" : ""}>{id ? (kayitli ? "✓ Kaydedildi" : "Değişiklikleri kaydet") : "Sınavı kaydet"}</button>
+      </div>
 
-        <section className="kart">
-          <h2>Sınavdaki sorular ({secilen.length})</h2>
-          <p>Toplam zorluk: <strong>{toplam.toFixed(2)}</strong></p>
-          {taslaklar.length > 0 && (
-            <div className="kart uyari-bandi">
-              Bu sınavda {taslaklar.length} onaylanmamış (taslak) soru var. Sınav kaydedilebilir, ama öğrenciye atanmadan önce soruların onaylanması gerekir.
-              <div className="eylemler"><button className="kucuk" onClick={taslaklariOnayla}>Taslak soruları onayla</button>
-              <span className="soluk">ya da önce soru bankasında tek tek incele</span></div>
+      {taslaklar.length > 0 && (
+        <div className="kart uyari-bandi">
+          Bu sınavda {taslaklar.length} onaylanmamış (taslak) soru var. Öğrenciye atanmadan önce onaylanmalı.
+          <div className="eylemler"><button className="kucuk" onClick={taslaklariOnayla}>Taslak soruları onayla</button></div>
+        </div>
+      )}
+
+      <ol className="sinav-sorulari">
+        {secilen.map((q, i) => (
+          <li key={q.id} className={`kart sinav-soru ${surukle === i ? "surukleniyor" : ""}`} draggable
+            onDragStart={() => setSurukle(i)} onDragEnd={() => setSurukle(null)}
+            onDragOver={(e) => e.preventDefault()} onDrop={() => birak(i)}>
+            <div className="soru-kenar">
+              <span className="tutamac" title="Sürükleyerek sırasını değiştir">⠿</span>
+              <span className="soru-no">{i + 1}</span>
+              <button className="ikincil kucuk" disabled={i === 0} onClick={() => tasi(i, -1)} title="Yukarı taşı">↑</button>
+              <button className="ikincil kucuk" disabled={i === secilen.length - 1} onClick={() => tasi(i, 1)} title="Aşağı taşı">↓</button>
             </div>
-          )}
-          <ol className="secilen">
-            {secilen.map((q, i) => (
-              <li key={q.id}>
-                <span className="soru-metin"><Mat metin={q.metin} /></span>
-                <span className="etiketler"><span className="seviye">{q.zorluk?.toFixed(2)}</span>{q.durum !== "onayli" && <Link to={`/sorular/${q.id}`} className="durum taslak">Taslak</Link>}</span>
-                <MKAkordeon q={q} />
-                <RubrikAkordeon soruId={q.id} />
-                <span className="kucuk-dugmeler">
-                  <button className="ikincil kucuk" onClick={() => tasi(i, -1)} title="Yukarı">↑</button>
-                  <button className="ikincil kucuk" onClick={() => tasi(i, 1)} title="Aşağı">↓</button>
-                  <button className="ikincil kucuk" onClick={() => cikar(q.id)} title="Çıkar">✕</button>
-                </span>
-              </li>
-            ))}
-          </ol>
-          {sinav && kayitli && sinav.kapsam.length > 0 && (<>
-            <h3>Sınavın ölçtüğü MK'ler ({sinav.kapsam.length})</h3>
-            <ul className="kapsam">{sinav.kapsam.map((m) => <li key={m.kod}><Link to={`/mk/${m.kod}`}><code>{m.kod}</code></Link> {m.ifade} <span className="soluk">({m.soru_sayisi} soru)</span></li>)}</ul>
-          </>)}
-        </section>
-      </div>
+            <div className="soru-govde">
+              {gorselMi(q.gorsel) ? <img className="soru-gorsel" src={`/api/gorsel/${q.gorsel}`} alt={`Soru ${i + 1}`} /> : <p className="soru-yazi"><Mat metin={q.metin} /></p>}
+              <div className="etiketler">
+                {q.durum !== "onayli" && <Link to={`/sorular/${q.id}`} className="durum taslak">Taslak</Link>}
+                <span className="seviye">Zorluk {q.zorluk?.toFixed(2)}</span>
+                <Link to={`/sorular/${q.id}`} className="soluk">Soruyu düzenle</Link>
+              </div>
+              <MKAkordeon q={q} />
+              <RubrikAkordeon soruId={q.id} />
+            </div>
+            <button className="ikincil kucuk cikar" onClick={() => cikar(q.id)} title="Sınavdan çıkar">✕</button>
+          </li>
+        ))}
+      </ol>
+      {secilen.length === 0 && <div className="kart bos-durum"><b>Sınavda henüz soru yok</b>Aşağıdaki düğmeyle sınıf, ünite, kazanım ve mikro kazanım seçerek soru ekle.</div>}
+      <button className="soru-ekle-dugme" onClick={() => setPanel(true)}>＋ Soru ekle</button>
+      {panel && <SoruEkle ders={ders} duzey={duzey} secili={secilen.map((q) => q.id)} ekle={ekle} kapat={() => setPanel(false)} />}
 
-      {hata && <p className="hata">{hata}</p>}
-      {bilgi && <p className="basari">{bilgi}</p>}
-      <div className="eylemler">
-        <button disabled={!ad.trim() || secilen.length === 0} onClick={kaydet}>{id ? "Değişiklikleri kaydet" : "Sınavı kaydet"}</button>
-        {(!ad.trim() || secilen.length === 0) && (
-          <span className="soluk">
-            {!ad.trim() && secilen.length === 0 ? "Kaydetmek için yukarıya sınav adı yaz ve soldaki listeden en az bir soru seç (soruya tıkla ya da \"Soru öner\")."
-              : !ad.trim() ? "Kaydetmek için yukarıya sınav adı yaz."
-              : "Kaydetmek için soldaki listeden en az bir soru seç (soruya tıkla ya da \"Soru öner\")."}
-          </span>
-        )}
-        {id && <button className="ikincil tehlike" onClick={sil}>Sınavı sil</button>}
-      </div>
+      {sinav && kayitli && sinav.kapsam.length > 0 && (
+        <details className="kart">
+          <summary><b>Sınavın ölçtüğü MK'ler ({sinav.kapsam.length})</b></summary>
+          <ul className="kapsam">{sinav.kapsam.map((m) => <li key={m.kod}><Link to={`/mk/${m.kod}`}><code>{m.kod}</code></Link> {m.ifade} <span className="soluk">({m.soru_sayisi} soru)</span></li>)}</ul>
+        </details>
+      )}
 
       {sinav && (
         <section className="kart">
