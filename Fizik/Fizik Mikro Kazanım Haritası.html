@@ -50,9 +50,7 @@ aside h2{font-size:15px;margin:0 0 6px}
 ul{padding-left:18px;margin:4px 0}
 .hint{color:var(--muted);font-size:13px}
 #kilit{font-weight:600}#kilit.acik{background:var(--hi);border-color:var(--hi);color:#fff}#kilit:disabled{opacity:.45;cursor:default}
-#kilitrozet{position:absolute;left:12px;top:10px;z-index:5;display:none;padding:5px 10px;border-radius:8px;background:var(--hi);color:#fff;font-size:12px;font-weight:600;box-shadow:0 2px 8px rgba(0,0,0,.18)}
-#wrap.kilitli #kilitrozet{display:block}
-.n.nabiz .kart rect:first-child,.n.nabiz circle{stroke-width:4px;stroke:var(--hi)!important}
+#wrap.kilitli .n.nabiz .kart rect:first-child,.n.nabiz circle{stroke-width:4px;stroke:var(--hi)!important}
 @media (max-width:700px){main{flex-direction:column}aside{width:auto;max-width:none;height:40%;border-left:0;border-top:1px solid var(--line)}}
 </style></head><body>
 <header>
@@ -65,7 +63,7 @@ ul{padding-left:18px;margin:4px 0}
  <div id="legend"></div>
 </header>
 <main>
- <div id="wrap"><svg id="svg"></svg><div id="ipucu"></div><div id="kilitrozet"></div></div>
+ <div id="wrap"><svg id="svg"></svg><div id="ipucu"></div></div>
  <aside id="panel"><p class="hint">Bir mikro kazanıma tıklayın: kırmızı oklar ön koşul zincirini (öğrenci neden takılmış olabilir), yeşil oklar ona dayanan mikro kazanımları gösterir. "Harita" görünümünde her nokta bir mikro kazanımdır: renk ana ünite/temayı, büyüklük etkiyi (ona dayanan mikro kazanım sayısı) gösterir; dolu nokta Beceri, halka Bilgi. Aynı ünitedekiler bir arada toplanır, ünite içinde temel kazanımlar solda, ileri kazanımlar sağdadır. Yakınlaşınca kodlar görünür, üzerine gelince ifade çıkar. "Tek zincir" görünümünde tüm mikro kazanımlar kart olarak derinliğe göre soldan sağa dizilir (D = derinlik, E = etki). Sürükleyerek kaydırın, fare tekerleğiyle yakınlaştırın.</p><p class="hint">Adaptif testte kullanım: öğrenci bir kazanımda başarısız olursa kırmızı zincirde geriye inilir; yapabildiği son halka ile yapamadığı ilk halka arasındaki kazanım eksik köktür.</p></aside>
 </main>
 <script>
@@ -176,9 +174,9 @@ window.addEventListener("pointermove",e=>{if(!dr)return;const dx=e.clientX-dr.x,
 window.addEventListener("pointerup",()=>{wrap.classList.remove("drag");setTimeout(()=>dr=null,0)});
 wrap.addEventListener("click",()=>{if(dr&&dr.m)return;if(kilit){ipucu.style.display="none";return}if(secili){secili=null;filtre()}});
 // Kilit: seçili MK ve zinciri sabit kalır; kutulara tıklamak yalnız ifadesini gösterir, çiplere tıklamak o kutuya götürür
-let kilit=false;const kd=document.getElementById("kilit"),kr=document.getElementById("kilitrozet");
+let kilit=false;const kd=document.getElementById("kilit");
 function kilitDugme(){kd.disabled=!secili;kd.classList.toggle("acik",kilit);kd.textContent=kilit?"🔒 Kilitli (açmak için tıkla)":"🔓 Seçimi kilitle";
- wrap.classList.toggle("kilitli",kilit);kr.textContent=kilit&&secili?`🔒 ${secili} kilitli · kutulara tıklamak seçimi değiştirmez`:""}
+ wrap.classList.toggle("kilitli",kilit)}
 function kilitle(v){kilit=v&&!!secili;if(!kilit)ipucu.style.display="none";kilitDugme()}
 kd.onclick=ev=>{ev.stopPropagation();kilitle(!kilit)};
 document.addEventListener("keydown",e=>{if(e.key.toLowerCase()==="k"&&!e.ctrlKey&&!e.metaKey&&!/INPUT|SELECT|TEXTAREA/.test(document.activeElement.tagName)){kilitle(!kilit)}});
