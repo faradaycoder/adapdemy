@@ -52,6 +52,9 @@ class AtamaC(BaseModel):
     teslim_durumu: str | None = None  # öğrenci için: devam / teslim (başlamadıysa boş)
     sonuc_acik: bool = False  # öğrenci için: öğretmen değerlendirmeyi onayladı mı
     sonuc_yeni: bool = False  # öğrenci için: açıklanan sonucu henüz görmedi
+    ogrenci: int = 0  # öğretmen için: sınıftaki öğrenci sayısı
+    teslim: int = 0  # öğretmen için: teslim eden öğrenci sayısı
+    degerlendirilen: int = 0  # öğretmen için: değerlendirmesi onaylanan teslim sayısı
 
 
 class SinavC(BaseModel):
@@ -234,7 +237,14 @@ def atamalarim(k: Kullanici = Depends(gecerli_kullanici), vt: Session = Depends(
     """Öğretmen: kendi sınavlarının atamaları. Öğrenci: üyesi olduğu sınıflara atanan sınavlar."""
     if k.rol == "ogretmen":
         q = select(Atama).join(Sinav).where(Sinav.olusturan_id == k.id)
-        return [_atama_c(a) for a in vt.scalars(q.order_by(Atama.baslangic.desc()))]
+        sonuc = []
+        for a in vt.scalars(q.order_by(Atama.baslangic.desc())):
+            c = _atama_c(a)
+            teslimler = [t for t in a.teslimler if t.durum == "teslim"]
+            c.ogrenci, c.teslim = len(a.sinif.uyeler), len(teslimler)
+            c.degerlendirilen = sum(1 for t in teslimler if t.degerlendirme == "onayli")
+            sonuc.append(c)
+        return sonuc
     q = select(Atama).where(Atama.sinif_id.in_(select(SinifUye.sinif_id).where(SinifUye.ogrenci_id == k.id)))
     sonuc = []
     for a in vt.scalars(q.order_by(Atama.baslangic.desc())):

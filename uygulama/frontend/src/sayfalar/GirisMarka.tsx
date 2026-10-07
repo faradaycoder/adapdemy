@@ -7,7 +7,7 @@ export default function GirisMarka() {
       <Logo boyut={48} />
       <div>
         <h2>Her öğrencinin eksiğini mikro kazanım düzeyinde bul, hemen kapat.</h2>
-        <p>EVALORA yapay zekâyla sınavı puandan öteye taşır: soruyu okur ve çözer, her çözüm adımını bir mikro kazanıma bağlar, öğrencinin neyi bilip neyi bilmediğini gösterir ve eksiği için doğru içeriği önerir. Son söz her zaman öğretmendedir.</p>
+        <p>EVALORA sınavı puandan öteye taşır: her çözüm adımını bir mikro kazanıma bağlar, öğrencinin neyi bilip neyi bilmediğini gösterir ve eksiği için doğru içeriği önerir. Son söz her zaman öğretmendedir.</p>
       </div>
       <ul>
         <li><i style={{ background: "#0ea5a4" }}>1</i><div><b>Ölç</b><small>Sorular ve rubrik adımları mikro kazanımlara eşlenir.</small></div></li>

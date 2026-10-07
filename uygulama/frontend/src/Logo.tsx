@@ -27,8 +27,8 @@ export function Logo({ boyut = 36, slogan = true }: { boyut?: number; slogan?: b
     <span className="logo-tam">
       <LogoIsaret boyut={boyut} />
       <span className="logo-yazi">
-        <span className="logo-ad">EVALORA <span className="ai-rozet">AI</span></span>
-        {slogan && <span className="logo-slogan">Yapay zekâ ile ölç · teşhis et · telafi et</span>}
+        <span className="logo-ad">EVALORA</span>
+        {slogan && <span className="logo-slogan">Ölç · Teşhis et · Telafi et</span>}
       </span>
     </span>
   );

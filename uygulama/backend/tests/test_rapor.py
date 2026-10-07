@@ -56,6 +56,8 @@ def test_ana_sayfa_ozeti(istemci):
     istemci.post(f"/api/teslim/{a['id']}/gonder", headers=ogr)
     o = istemci.get("/api/ozet", headers=b).json()
     assert o["bekleyenler"][0]["bekleyen"] == 1 and o["bekleyenler"][0]["ogrenci"] == 1
+    at = next(x for x in istemci.get("/api/atamalar", headers=b).json() if x["id"] == a["id"])
+    assert (at["ogrenci"], at["teslim"], at["degerlendirilen"]) == (1, 1, 0)
     assert istemci.get("/api/ozet", headers=ogr).json()["mk"] == {"biliyor": 0, "belirsiz": 0, "bilmiyor": 0}
 
 
