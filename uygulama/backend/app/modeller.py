@@ -229,6 +229,14 @@ class Teslim(Taban):
     ogrenci_gordu: Mapped[bool] = mapped_column(Boolean, default=False)  # sonuç bildirimi okundu mu
     genel_geri_bildirim: Mapped[str] = mapped_column(Text, default="")  # öğrenciye sınavın geneli için kısa geri bildirim
     genel_kaynak: Mapped[str] = mapped_column(String(12), default="ogretmen")
+    # Süre dolunca kendiliğinden teslim (öğrenci "teslim et"e basmadan; hiç açmadıysa boş kâğıt) ve süre uzatma
+    otomatik_teslim: Mapped[bool] = mapped_column(Boolean, default=False)
+    uzatma: Mapped[str | None] = mapped_column(String(12))  # None / bekliyor / verildi / reddedildi
+    uzatma_notu: Mapped[str] = mapped_column(Text, default="")  # öğrencinin talep gerekçesi
+    uzatma_zamani: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))  # talep ya da karar anı
+    uzatma_dk: Mapped[int | None] = mapped_column(Integer)  # öğretmenin verdiği ek süre
+    uzatma_bitis: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))  # verilen sürenin sonu (atama bitişini de aşar)
+    uzatma_ogrenci_gordu: Mapped[bool] = mapped_column(Boolean, default=True)  # karar bildirimi okundu mu
     atama: Mapped[Atama] = relationship(back_populates="teslimler")
     ogrenci: Mapped[Kullanici] = relationship()
     cevaplar: Mapped[list["Cevap"]] = relationship(back_populates="teslim", cascade="all, delete-orphan")

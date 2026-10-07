@@ -79,8 +79,15 @@ export default function OgrenciSinav() {
   const [simdi, setSimdi] = useState(Date.now());
   const [kaydediliyor, setKaydediliyor] = useState(false);
 
-  useEffect(() => { api<OturumT>(`/api/teslim/${atamaId}/basla`, { method: "POST" }).then(setO).catch((e) => setHata(e.message)); }, [atamaId]);
+  const [gerekce, setGerekce] = useState("");
+  const yukle = () => api<OturumT>(`/api/teslim/${atamaId}/basla`, { method: "POST" }).then(setO).catch((e) => setHata(e.message));
+  useEffect(() => { yukle(); }, [atamaId]);
   useEffect(() => { const t = setInterval(() => setSimdi(Date.now()), 1000); return () => clearInterval(t); }, []);
+  // süre dolunca sunucu sınavı teslim eder: durumu yenile
+  const doldu = !!o && o.durum === "devam" && new Date(o.bitis).getTime() <= simdi;
+  useEffect(() => { if (doldu) { const t = setTimeout(yukle, 1500); return () => clearTimeout(t); } }, [doldu]);
+  // uzatma talebi bekliyorsa öğretmenin kararını yakala
+  useEffect(() => { if (o?.uzatma === "bekliyor") { const t = setInterval(yukle, 20000); return () => clearInterval(t); } }, [o?.uzatma]);
 
   if (hata && !o) return <div className="sayfa"><p className="hata">{hata}</p><Link to="/">← Ana sayfa</Link></div>;
   if (!o) return <p className="orta">Sınav açılıyor…</p>;
@@ -112,12 +119,43 @@ export default function OgrenciSinav() {
     try { setO(await api<OturumT>(`/api/teslim/${atamaId}/gonder`, { method: "POST" })); } catch (e) { setHata((e as Error).message); }
   }
 
+  async function uzatmaIste() {
+    setHata("");
+    try { setO(await api<OturumT>(`/api/teslim/${atamaId}/uzatma`, { govde: { aciklama: gerekce } })); } catch (e) { setHata((e as Error).message); }
+  }
+
+  if (o.durum === "teslim" && o.otomatik_teslim) return (
+    <div className="sayfa o-sinav">
+      <div className="kart sure-doldu">
+        <div className="sure-doldu-ikon">⏰</div>
+        <h1>{o.sinav_adi}</h1>
+        <h2>Süre doldu, sınavın teslim edildi</h2>
+        <p className="soluk">{cevaplanan ? `${o.sorular.length} sorudan ${cevaplanan} tanesine verdiğin cevaplar öğretmenine gönderildi.` : "Sınava cevap vermediğin için boş kâğıt olarak teslim edildi."}</p>
+        {o.uzatma === "bekliyor" ? (
+          <div className="uzatma-kutu bekliyor"><b>⏳ Uzatma talebin öğretmenine iletildi.</b><span>Öğretmenin süre verirse sınav burada yeniden açılır; bu sayfa kendiliğinden yenilenir.</span></div>
+        ) : o.uzatma === "reddedildi" ? (
+          <div className="uzatma-kutu red"><b>Öğretmenin uzatma talebini kabul etmedi.</b><span>Sınavın teslim edildi; değerlendirme sonucu açıklanınca bildirim alacaksın.</span></div>
+        ) : (
+          <div className="uzatma-kutu">
+            <b>Ek süreye mi ihtiyacın var?</b>
+            <span>Öğretmeninden süre uzatma isteyebilirsin. Kabul ederse sınav yeniden açılır ve kaldığın yerden devam edersin.</span>
+            <textarea rows={2} maxLength={500} value={gerekce} onChange={(e) => setGerekce(e.target.value)} placeholder="Nedenini kısaca yaz (isteğe bağlı), ör. internetim kesildi" />
+            <button onClick={uzatmaIste}>⏱ Süre uzatma iste</button>
+          </div>
+        )}
+        {hata && <p className="hata">{hata}</p>}
+        <Link to="/">← Ana sayfa</Link>
+      </div>
+    </div>
+  );
+
   return (
     <div className="sayfa o-sinav">
+      {o.uzatma === "verildi" && o.durum === "devam" && <p className="uzatma-bant">⏱ Öğretmenin {o.uzatma_dk} dakika ek süre verdi; kaldığın yerden devam et.</p>}
       <div className="o-ust kart">
         <div>
           <h1>{o.sinav_adi}</h1>
-          {o.aciklama && <p className="soluk">{o.aciklama}</p>}
+          {o.aciklama && <p className="soluk"><Mat metin={o.aciklama} /></p>}
         </div>
         <div className="o-durum">
           {o.durum === "teslim" ? <span className="durum onayli">Teslim edildi</span>

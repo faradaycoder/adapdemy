@@ -235,6 +235,8 @@ def ata(sinav_id: int, istek: AtamaIstek, k: Kullanici = Depends(ogretmen), vt: 
 @atama_router.get("", response_model=list[AtamaC])
 def atamalarim(k: Kullanici = Depends(gecerli_kullanici), vt: Session = Depends(vt_oturumu)):
     """Öğretmen: kendi sınavlarının atamaları. Öğrenci: üyesi olduğu sınıflara atanan sınavlar."""
+    from .teslim import sure_dolanlari_teslim_et  # süre dolanlar teslim sayılsın (döngüsel içe aktarma yüzünden burada)
+    sure_dolanlari_teslim_et(vt)
     if k.rol == "ogretmen":
         q = select(Atama).join(Sinav).where(Sinav.olusturan_id == k.id)
         sonuc = []

@@ -34,6 +34,8 @@ class OzetC(BaseModel):
 
 @router.get("", response_model=OzetC)
 def ozet(k: Kullanici = Depends(gecerli_kullanici), vt: Session = Depends(vt_oturumu)):
+    from .teslim import sure_dolanlari_teslim_et  # süre dolanlar teslim sayılsın (döngüsel içe aktarma yüzünden burada)
+    sure_dolanlari_teslim_et(vt)
     if k.rol != "ogretmen":
         sayac: dict[str, int] = {"biliyor": 0, "belirsiz": 0, "bilmiyor": 0}
         for x in mk_kanitlari(vt, onayli_teslimler(vt, k.id)).values():

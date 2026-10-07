@@ -3,6 +3,10 @@
 Kurallar:
 - Öğrenci yalnız üyesi olduğu sınıfa atanmış ve şu an açık olan sınavı çözebilir.
 - Süre (sure_dk) varsa öğrencinin ilk açtığı andan başlar; süre ya da atamanın bitişi dolunca cevap kaydedilmez.
+- Süre dolunca sınav kendiliğinden teslim edilir (öğrenci "teslim et"e basmasa da); atamanın bitişine kadar hiç açmayan
+  öğrenci için boş kâğıt teslim edilir. Öğretmene "teslim etti" bildirimi gider.
+- Kendiliğinden teslim edilen sınav için öğrenci süre uzatma ister; öğretmen ek süre (dakika) verir ya da reddeder.
+  Verilirse sınav yeniden açılır ve öğrenci kaldığı yerden devam eder; reddedilirse teslim olduğu gibi kalır.
 - Teslim edilen sınavda cevap değiştirilemez.
 - Doğru cevap ve çözüm öğrenciye gönderilmez.
 """
@@ -64,6 +68,18 @@ class OturumC(BaseModel):
     sorular: list[SinavSorusuC]
     cevaplar: list[CevapC]
     genel_dosyalar: list[DosyaC] = []  # sınavın tamamı için yüklenenler
+    otomatik_teslim: bool = False  # süre dolunca kendiliğinden teslim edildi
+    uzatma: str | None = None  # bekliyor / verildi / reddedildi
+    uzatma_dk: int | None = None
+
+
+class UzatmaTalepG(BaseModel):
+    aciklama: str = Field("", max_length=500)
+
+
+class UzatmaKararG(BaseModel):
+    karar: str = Field(pattern="^(ver|reddet)$")
+    dk: int | None = Field(None, ge=1, le=1440)
 
 
 class CevapG(BaseModel):
@@ -87,6 +103,11 @@ class TeslimSatir(BaseModel):
     genel_dosya: int = 0  # sınavın tamamı için yüklenen dosya sayısı
     puan: float | None = None
     en_yuksek: float | None = None
+    otomatik_teslim: bool = False
+    uzatma: str | None = None
+    uzatma_notu: str = ""
+    uzatma_zamani: datetime | None = None
+    uzatma_dk: int | None = None
 
 
 class TeslimAyrinti(BaseModel):
@@ -109,6 +130,8 @@ def _atama_ogrenci(vt: Session, atama_id: int, k: Kullanici) -> Atama:
 
 
 def _bitis(a: Atama, t: Teslim) -> datetime:
+    if t.uzatma == "verildi" and t.uzatma_bitis:
+        return _utc(t.uzatma_bitis)
     son = _utc(a.bitis)
     if a.sinav.sure_dk:
         son = min(son, _utc(t.baslama) + timedelta(minutes=a.sinav.sure_dk))
@@ -123,6 +146,47 @@ def _sorular(a: Atama) -> list[SinavSorusuC]:
 def _cevaplar(t: Teslim) -> list[CevapC]:
     return [CevapC(soru_id=c.soru_id, secilen=c.secilen, metin=c.metin, dosyalar=[DosyaC(id=d.id, dosya=d.dosya, kaynak=d.kaynak) for d in c.dosyalar])
             for c in t.cevaplar]
+
+
+def _teslim_et(vt: Session, a: Atama, t: Teslim, zaman: datetime, otomatik_mi: bool = False) -> None:
+    t.durum, t.teslim_zamani, t.otomatik_teslim, t.ogretmen_gordu = "teslim", zaman, otomatik_mi, False
+    sorular = {x.soru_id: x.soru for x in a.sinav.sorular}
+    for c in t.cevaplar:  # çoktan seçmeliler teslimde otomatik değerlendirilir
+        otomatik(vt, c, sorular[c.soru_id])
+
+
+def sure_dolanlari_teslim_et(vt: Session) -> int:
+    """Süresi dolan açık oturumları teslim eder; bitmiş atamada hiç başlamamış (atama bitmeden sınıfa katılmış)
+    öğrenciler için boş teslim oluşturur. Bildirim ve listeler okunmadan önce çağrılır. Teslim edilen sayısını döndürür."""
+    simdi, n = datetime.now(timezone.utc), 0
+    for t in vt.scalars(select(Teslim).where(Teslim.durum == "devam")).all():
+        son = _bitis(t.atama, t)
+        if simdi > son:
+            _teslim_et(vt, t.atama, t, son, otomatik_mi=True)
+            n += 1
+    for a in vt.scalars(select(Atama).where(Atama.bitis < simdi)).all():
+        if not _utc(a.bitis) < simdi:  # SQLite saat dilimini saklamaz; kesin karşılaştırma
+            continue
+        var = set(vt.scalars(select(Teslim.ogrenci_id).where(Teslim.atama_id == a.id)))
+        for u in a.sinif.uyeler:
+            if u.ogrenci_id not in var and _utc(u.katilma) < _utc(a.bitis):
+                t = Teslim(atama_id=a.id, ogrenci_id=u.ogrenci_id, baslama=_utc(a.bitis))
+                vt.add(t)
+                vt.flush()
+                _teslim_et(vt, a, t, _utc(a.bitis), otomatik_mi=True)
+                n += 1
+    if n:
+        vt.commit()
+    return n
+
+
+def _oturum(a: Atama, t: Teslim) -> OturumC:
+    bitis = _bitis(a, t)
+    durum = t.durum if t.durum == "teslim" or datetime.now(timezone.utc) <= bitis else "kapali"
+    return OturumC(atama_id=a.id, sinav_adi=a.sinav.ad, ders=a.sinav.ders, aciklama=a.sinav.aciklama, sure_dk=a.sinav.sure_dk,
+                   bitis=bitis, durum=durum, sorular=_sorular(a), cevaplar=_cevaplar(t),
+                   genel_dosyalar=[DosyaC(id=d.id, dosya=d.dosya) for d in t.genel_dosyalar],
+                   otomatik_teslim=t.otomatik_teslim, uzatma=t.uzatma, uzatma_dk=t.uzatma_dk)
 
 
 def _yazilabilir(vt: Session, atama_id: int, k: Kullanici) -> tuple[Atama, Teslim]:
@@ -154,6 +218,7 @@ def _cevap(vt: Session, t: Teslim, soru_id: int, a: Atama) -> Cevap:
 def basla(atama_id: int, k: Kullanici = Depends(ogrenci), vt: Session = Depends(vt_oturumu)):
     """Sınavı açar (ilk açılışta süre başlar) ve soruları ile kayıtlı cevapları döndürür."""
     a = _atama_ogrenci(vt, atama_id, k)
+    sure_dolanlari_teslim_et(vt)
     t = vt.scalar(select(Teslim).where(Teslim.atama_id == a.id, Teslim.ogrenci_id == k.id))
     if not t:
         if _durum(a) != "acik":
@@ -161,11 +226,10 @@ def basla(atama_id: int, k: Kullanici = Depends(ogrenci), vt: Session = Depends(
         t = Teslim(atama_id=a.id, ogrenci_id=k.id)
         vt.add(t)
         vt.commit()
-    bitis = _bitis(a, t)
-    durum = t.durum if t.durum == "teslim" or datetime.now(timezone.utc) <= bitis else "kapali"
-    return OturumC(atama_id=a.id, sinav_adi=a.sinav.ad, ders=a.sinav.ders, aciklama=a.sinav.aciklama, sure_dk=a.sinav.sure_dk,
-                   bitis=bitis, durum=durum, sorular=_sorular(a), cevaplar=_cevaplar(t),
-                   genel_dosyalar=[DosyaC(id=d.id, dosya=d.dosya) for d in t.genel_dosyalar])
+    if not t.uzatma_ogrenci_gordu:  # uzatma kararını gördü
+        t.uzatma_ogrenci_gordu = True
+        vt.commit()
+    return _oturum(a, t)
 
 
 @router.get("/{atama_id}/yazdir", response_model=YazdirC)
@@ -254,12 +318,28 @@ def gonder(atama_id: int, k: Kullanici = Depends(ogrenci), vt: Session = Depends
     if not t:
         raise HTTPException(status.HTTP_409_CONFLICT, "Önce sınavı başlat.")
     if t.durum != "teslim":  # süre dolduktan sonra da teslim edilebilir; cevaplar zaten kilitli
-        t.durum, t.teslim_zamani = "teslim", datetime.now(timezone.utc)
-        sorular = {x.soru_id: x.soru for x in a.sinav.sorular}
-        for c in t.cevaplar:  # çoktan seçmeliler teslimde otomatik değerlendirilir
-            otomatik(vt, c, sorular[c.soru_id])
+        _teslim_et(vt, a, t, datetime.now(timezone.utc))
         vt.commit()
     return basla(atama_id, k, vt)
+
+
+@router.post("/{atama_id}/uzatma", response_model=OturumC)
+def uzatma_iste(atama_id: int, g: UzatmaTalepG, k: Kullanici = Depends(ogrenci), vt: Session = Depends(vt_oturumu)):
+    """Süre dolunca kendiliğinden teslim edilen sınav için ek süre ister; öğretmene bildirim gider."""
+    a = _atama_ogrenci(vt, atama_id, k)
+    sure_dolanlari_teslim_et(vt)
+    t = vt.scalar(select(Teslim).where(Teslim.atama_id == a.id, Teslim.ogrenci_id == k.id))
+    if not t or t.durum != "teslim" or not t.otomatik_teslim:
+        raise HTTPException(status.HTTP_409_CONFLICT, "Uzatma yalnız süresi dolan sınav için istenir.")
+    if t.degerlendirme == "onayli":
+        raise HTTPException(status.HTTP_409_CONFLICT, "Sınav değerlendirildi; uzatma istenemez.")
+    if t.uzatma == "bekliyor":
+        raise HTTPException(status.HTTP_409_CONFLICT, "Talebin öğretmeninde; kararı bekleniyor.")
+    if t.uzatma == "reddedildi":
+        raise HTTPException(status.HTTP_409_CONFLICT, "Öğretmenin uzatma talebini kabul etmedi; sınav teslim edildi.")
+    t.uzatma, t.uzatma_notu, t.uzatma_zamani, t.uzatma_ogrenci_gordu = "bekliyor", g.aciklama.strip(), datetime.now(timezone.utc), True
+    vt.commit()
+    return _oturum(a, t)
 
 
 # ---------- öğretmen ----------
@@ -274,6 +354,7 @@ def _atama_ogretmen(vt: Session, atama_id: int, k: Kullanici) -> Atama:
 @ogretmen_router.get("/{atama_id}/teslimler", response_model=list[TeslimSatir])
 def teslimler(atama_id: int, k: Kullanici = Depends(ogretmen), vt: Session = Depends(vt_oturumu)):
     a = _atama_ogretmen(vt, atama_id, k)
+    sure_dolanlari_teslim_et(vt)
     ts = {t.ogrenci_id: t for t in vt.scalars(select(Teslim).where(Teslim.atama_id == a.id))}
     n = len(a.sinav.sorular)
     satirlar = []
@@ -285,8 +366,33 @@ def teslimler(atama_id: int, k: Kullanici = Depends(ogretmen), vt: Session = Dep
                                     teslim_zamani=t.teslim_zamani if t else None,
                                     degerlendirme=t.degerlendirme if t and t.durum == "teslim" else None,
                                     puan=t.puan if t else None, en_yuksek=t.en_yuksek if t else None,
-                                    genel_dosya=len(t.genel_dosyalar) if t else 0))
+                                    genel_dosya=len(t.genel_dosyalar) if t else 0,
+                                    otomatik_teslim=bool(t and t.otomatik_teslim), uzatma=t.uzatma if t else None,
+                                    uzatma_notu=t.uzatma_notu if t else "", uzatma_zamani=t.uzatma_zamani if t else None,
+                                    uzatma_dk=t.uzatma_dk if t else None))
     return satirlar
+
+
+@ogretmen_router.post("/{atama_id}/teslimler/{teslim_id}/uzatma", response_model=list[TeslimSatir])
+def uzatma_karar(atama_id: int, teslim_id: int, g: UzatmaKararG, k: Kullanici = Depends(ogretmen), vt: Session = Depends(vt_oturumu)):
+    """Öğrencinin uzatma talebine karar: 'ver' (dk dakika, şu andan başlar; sınav yeniden açılır) ya da 'reddet'."""
+    a = _atama_ogretmen(vt, atama_id, k)
+    t = vt.get(Teslim, teslim_id)
+    if not t or t.atama_id != a.id:
+        raise HTTPException(status.HTTP_404_NOT_FOUND, "Teslim bulunamadı.")
+    if t.uzatma != "bekliyor":
+        raise HTTPException(status.HTTP_409_CONFLICT, "Bekleyen uzatma talebi yok.")
+    simdi = datetime.now(timezone.utc)
+    if g.karar == "ver":
+        if not g.dk:
+            raise HTTPException(422, "Ek süreyi dakika olarak gir.")
+        t.uzatma, t.uzatma_dk, t.uzatma_bitis = "verildi", g.dk, simdi + timedelta(minutes=g.dk)
+        t.durum, t.teslim_zamani, t.otomatik_teslim, t.ogretmen_gordu = "devam", None, False, True
+    else:
+        t.uzatma = "reddedildi"
+    t.uzatma_zamani, t.uzatma_ogrenci_gordu = simdi, False
+    vt.commit()
+    return teslimler(atama_id, k, vt)
 
 
 @ogretmen_router.get("/{atama_id}/teslimler/{teslim_id}", response_model=TeslimAyrinti)

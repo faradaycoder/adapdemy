@@ -95,13 +95,15 @@ export type OturumT = {
   atama_id: number; sinav_adi: string; ders: string; aciklama: string; sure_dk: number | null; bitis: string;
   durum: "devam" | "teslim" | "kapali"; sorular: SinavSorusu[]; cevaplar: CevapT[];
   genel_dosyalar: { id: number; dosya: string }[];
+  otomatik_teslim: boolean; uzatma: "bekliyor" | "verildi" | "reddedildi" | null; uzatma_dk: number | null;
 };
-export type TeslimSatir = { teslim_id: number | null; ogrenci_id: number; ogrenci: string; durum: string; cevaplanan: number; soru_sayisi: number; teslim_zamani: string | null; degerlendirme: string | null; puan: number | null; en_yuksek: number | null; genel_dosya: number };
+export type TeslimSatir = { teslim_id: number | null; ogrenci_id: number; ogrenci: string; durum: string; cevaplanan: number; soru_sayisi: number; teslim_zamani: string | null; degerlendirme: string | null; puan: number | null; en_yuksek: number | null; genel_dosya: number;
+  otomatik_teslim: boolean; uzatma: "bekliyor" | "verildi" | "reddedildi" | null; uzatma_notu: string; uzatma_zamani: string | null; uzatma_dk: number | null };
 export type TeslimAyrinti = { teslim_id: number; ogrenci: string; durum: string; teslim_zamani: string | null; sorular: SinavSorusu[]; cevaplar: CevapT[] };
 export const TESLIM_DURUMU: Record<string, string> = { baslamadi: "Başlamadı", devam: "Çözüyor", teslim: "Teslim etti", kapali: "Süre doldu" };
 
 // ---------- Bildirimler ----------
-export type Bildirim = { tur: "acik_sinav" | "sonuc" | "teslim"; metin: string; baglanti: string; zaman: string; son: string | null };
+export type Bildirim = { tur: "acik_sinav" | "sonuc" | "teslim" | "uzatma" | "uzatma_sonuc"; metin: string; baglanti: string; zaman: string; son: string | null };
 export type Bildirimler = { sayi: number; ogeler: Bildirim[] };
 
 // ---------- Değerlendirme ----------
