@@ -50,7 +50,7 @@ export default function UyarlamaliTest() {
   const panel = o.mkler.length > 0 && (
     <aside className="kart uy-panel">
       <h3>Mikro kazanımlar <span className="soluk">({o.mkler.length})</span></h3>
-      <p className="soluk kucuk-yazi">Çubuk: “biliyor” olasılığı. %95 ve üstü biliyor, %20 ve altı bilmiyor. Çıkarım: ön koşul zincirinden.</p>
+      <p className="soluk kucuk-yazi">Çubuk: “biliyor” olasılığı. %95 ve üstü biliyor, %5 ve altı bilmiyor. Çıkarım: ön koşul zincirinden.</p>
       <ul>{[...o.mkler].sort((a, b) => Number(b.kod === sonMK) - Number(a.kod === sonMK)
         || Number(b.soru_sayisi > 0 || b.cikarim) - Number(a.soru_sayisi > 0 || a.cikarim) || a.kod.localeCompare(b.kod)).map((m) => <MKSatir key={m.kod} m={m} kok={o.kokler.includes(m.kod)} son={m.kod === sonMK} />)}</ul>
     </aside>

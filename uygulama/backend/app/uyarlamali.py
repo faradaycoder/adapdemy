@@ -7,6 +7,9 @@ Her MK için "biliyor" olasılığı P tutulur. Başlangıç: öğrencinin onayl
 Cevap güncellemesi DINA modeliyle yapılır: doğru cevap için sorunun bütün MK'leri gerekir; P(doğru | hepsi biliniyor)
 = 1 − s, P(doğru | en az biri bilinmiyor) = g = 1 / şık sayısı. Tek MK'li soruda bu, Bayesçi bilgi izlemenin kendisidir.
 
+Karar eşikleri (Murat, 2026-10-07: standart değerler): %95 ve üstü biliyor, %5 ve altı bilmiyor; ikisi de %95 güven.
+Sınav değerlendirmesindeki %20 burada kullanılmaz: 4 şıkta "bilmiyor" için 2 yanlış gerekir (%50 → %12 → %2).
+
 Çıkarım (Bilgi Uzayı Kuramı): "biliyor" kararı verilen MK'nin ön koşulları da biliniyor sayılır; "bilmiyor" kararı
 verilen MK'ye dayanan MK'ler de bilinmiyor sayılır. Bunlara soru sorulmaz ve raporda "çıkarım" diye geçer.
 
@@ -23,9 +26,15 @@ from sqlalchemy import select
 from sqlalchemy.orm import Session
 
 from .modeller import MK, MKEsleme, MKOnKosul, Soru, UyarlamaliOturum
-from .rapor import P0, S, durum, mk_kanitlari, onayli_teslimler
+from .rapor import P0, S, mk_kanitlari, onayli_teslimler
 
 MAKS_MK, MAKS_TOPLAM = 4, 15
+BILIYOR, BILMIYOR = 0.95, 0.05
+
+
+def karar(p: float) -> str:
+    p = round(p, 2)
+    return "biliyor" if p >= BILIYOR else "bilmiyor" if p <= BILMIYOR else "belirsiz"
 
 
 def kazanim_sinifi(kazanim: str) -> int:
@@ -106,10 +115,10 @@ class Durum:
     def karar(self, m: str) -> str:
         if m in self.cikarim:
             return self.cikarim[m]
-        return durum(self.p[m])
+        return karar(self.p[m])
 
     def dogrudan_karar(self, m: str) -> str | None:
-        d = durum(self.p[m])
+        d = karar(self.p[m])
         return d if d in ("biliyor", "bilmiyor") else None
 
     def cikarimlari_yenile(self) -> None:
