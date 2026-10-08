@@ -42,7 +42,7 @@ export default function Uyarlamali() {
             <div key={k.kod} className="kart uy-kazanim">
               <div className="uy-kazanim-ust"><code>{k.kod}</code><span className="soluk">{k.ders} · {k.sinif_duzeyi}. sınıf</span></div>
               <h3>{k.ifade}</h3>
-              <p className="soluk">{k.mk_sayisi} mikro kazanım · havuzda {k.soru_sayisi} soru · en çok 15 soru</p>
+              <p className="soluk">{k.mk_sayisi} mikro kazanım · havuzda {k.soru_sayisi} soru · en çok 20 soru</p>
               <button onClick={() => basla(k.kod)}>{ogretmen ? "▶ Dene" : "▶ Başla"}</button>
             </div>
           ))}

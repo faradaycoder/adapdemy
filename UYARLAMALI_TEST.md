@@ -73,7 +73,7 @@ Test tepeden başlar: öğrenci en üstteki MK'yi biliyorsa altındaki zincir ç
 
 *(Akış şeması: `UYARLAMALI_TEST_AKIS.html`)*
 
-Her cevaptan sonra döngü başa döner; aday MK kalmadığında ya da 15 soru dolduğunda kök raporlanır.
+Her cevaptan sonra döngü başa döner; aday MK kalmadığında ya da 20 soru dolduğunda kök raporlanır.
 
 Aday MK = kararı verilmemiş (çıkarım dahil), havuzda sorulmamış sorusu olan ve 4 soru sınırına gelmemiş MK. Adaylar arasından sırayla:
 
@@ -83,14 +83,14 @@ Aday MK = kararı verilmemiş (çıkarım dahil), havuzda sorulmamış sorusu ol
 
 Soru, o MK'nin havuzdaki henüz sorulmamış ilk sorusudur. Test sırasında doğru/yanlış gösterilmez.
 
-**Durma:** aday kalmadıysa ya da 15 soru soruldu ise. Karara ulaşamayan MK "belirsiz" olarak raporlanır.
+**Durma:** aday kalmadıysa ya da 20 soru soruldu ise. Karara ulaşamayan MK "belirsiz" olarak raporlanır.
 
 **Eksiğin kökü:** doğrudan "bilmiyor" kararı verilen ve ön koşullarından hiçbiri bilinmiyor olmayan MK. Telafi videoları bu MK'ye gelir; üstteki belirtilere değil.
 
 | Sınır | Değer | Neden |
 | --- | --- | --- |
 | MK başına soru | 4 | 3 doğru "biliyor" için yeter; bir yanlışa tolerans |
-| Test başına soru | 15 | Bir ders saatinin bir bölümü; 20 MK'nin çoğu çıkarımla kapanır |
+| Test başına soru | 20 | Değişken uzunluk + üst sınır (uyarlamalı testte yerleşik kural); karışık profilde 20 MK'ye karar için; 20–30 dakika (Murat, 2026-10-08; önce 15) |
 | Havuz | MK başına 4 soru | MK başına sınırla eş |
 
 ## Soru havuzu nasıl hazırlandı
@@ -120,7 +120,7 @@ Soru, o MK'nin havuzdaki henüz sorulmamış ilk sorusudur. Test sırasında do�
 
 ## Örnek iz: kök 9. soruda kesinleşiyor
 
-Uygulamadaki motorla çalıştırılan bir deneme: örnek öğrenci 3 ile bölünebilmeyi (0065) ve ona dayanan MK'leri bilmiyor, gerisini biliyor. "Bilmiyor" için iki yanlış gerektiğinden test kökü 9. soruda kesinleştirdi, kalan sorularla diğer dalları yokladı ve 15 soruda durdu.
+Uygulamadaki motorla çalıştırılan bir deneme: örnek öğrenci 3 ile bölünebilmeyi (0065) ve ona dayanan MK'leri bilmiyor, gerisini biliyor. "Bilmiyor" için iki yanlış gerektiğinden test kökü 9. soruda kesinleştirdi, kalan sorularla diğer dalları yokladı ve 15 soruda durdu (bu deneme sınır 15 iken yapıldı).
 
 | # | Sorulan MK | Cevap | Sonuç | Neden bu MK |
 | --- | --- | --- | --- | --- |
@@ -170,7 +170,7 @@ Yöntem literatüre dayanıyor ama dört varsayımı henüz veriyle sınanmadı;
 
 - Havuz yalnız MAT.6.1.2 için var; başka kazanım için MK başına 4 soru yazılmalı.
 - Uyarlamalı test sonuçları henüz "Konu raporum" ve sınıf raporuna eklenmiyor.
-- 4 şıkta "biliyor" için 3 doğru gerekiyor; 15 soruda 20 MK'nin bir kısmı "belirsiz" kalabiliyor.
+- 4 şıkta "biliyor" için 3 doğru gerekiyor; karışık profilde 20 soruda da bazı MK'ler "belirsiz" kalabilir (sınır 15 iken daha sıktı).
 - Zorluğa (Z) göre başlangıç olasılığı ayarı henüz uygulanmadı; bütün MK'ler kanıt yoksa 0,5'ten başlıyor.
 
 **Sonraki adımlar:**
@@ -189,6 +189,6 @@ Aşağıdakiler pedagojik tercihler; şimdilik "şu an" sütunundaki değerlerle
 | --- | --- | --- |
 | "Bilmiyor" çıkarımı | Karar: kalır (Bilgi Uzayı Kuramı standardı). Ön koşulu bilinmeyen MK de "bilmiyor" sayılır; artık ancak iki yanlışla verilen karardan sonra | "Sorulmadı: ön koşulu eksik" diye ayrı gösterilsin; karar ancak soruyla verilsin |
 | Alt sınıfa inme | İnilmez (kapsam 6. sınıf) | 5. sınıf ön koşullarına da inilsin |
-| Soru sınırları | MK başına 4, test başına 15 | Test başına 20 (20 MK'nin hepsine karar için) |
+| Soru sınırları | MK başına 4, test başına 20 | Karar verildi (Murat, 2026-10-08): 20 |
 | Yanlışın suçu (çok MK'li soru) | DINA ile paylaştırılır | Z'ye göre başlangıç olasılığı da düşürülsün |
 | Kullanım | Sınavdan sonra "eksiğini bul" | Sınavın yerine |

@@ -41,7 +41,7 @@ def test_ogretmen_denemesi_koku_bulur(istemci):
     o = istemci.post("/api/uyarlamali", json={"kazanim": "MAT.6.1.2"}, headers=b).json()
     assert o["deneme"] and o["mkler"] and "dogru" not in str(o["soru"]["secenekler"])  # öğretmen olasılıkları canlı görür
     o = _coz(istemci, b, {"Mat01MK0065", "Mat01MK0068", "Mat01MK0070", "Mat01MK0072"}, b)
-    assert o["kokler"] == ["Mat01MK0065"] and len(o["gecmis"]) <= 15
+    assert o["kokler"] == ["Mat01MK0065"] and len(o["gecmis"]) <= 20
     assert [g["mk"] for g in o["gecmis"]][:4] == ["Mat01MK0072"] * 2 + ["Mat01MK0068"] * 2  # tepeden başlar; bilmiyor için 2 yanlış, sonra ön koşula iner
 
 

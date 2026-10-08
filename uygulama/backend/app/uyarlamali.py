@@ -28,7 +28,7 @@ from sqlalchemy.orm import Session
 from .modeller import MK, MKEsleme, MKOnKosul, Soru, UyarlamaliOturum
 from .rapor import P0, S, mk_kanitlari, onayli_teslimler
 
-MAKS_MK, MAKS_TOPLAM = 4, 15
+MAKS_MK, MAKS_TOPLAM = 4, 20  # test başına üst sınır: Murat, 2026-10-08 (15 → 20)
 BILIYOR, BILMIYOR = 0.95, 0.05
 
 
