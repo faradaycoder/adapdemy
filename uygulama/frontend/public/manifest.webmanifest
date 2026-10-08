@@ -6,6 +6,6 @@
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#13306a",
-  "icons": [{ "src": "/logo.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }],
+  "icons": [{ "src": "/logo-isaret.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }],
   "lang": "tr"
 }

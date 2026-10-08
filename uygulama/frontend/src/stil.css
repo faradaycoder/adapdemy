@@ -369,7 +369,7 @@ h1 { letter-spacing: -.01em; }
 .karsilama { position: relative; overflow: hidden; border-radius: 18px; padding: 24px; margin: 12px 0 16px; color: #fff;
   background: radial-gradient(120% 140% at 100% 0%, #3b5bdb 0%, #1e3a8a 55%, #172554 100%); box-shadow: var(--golge-buyuk); }
 .karsilama::after { content: ""; position: absolute; right: 28px; top: 50%; width: 170px; height: 170px; margin-top: -85px; pointer-events: none; opacity: .9;
-  background: url("/logo-isaret.svg") center / contain no-repeat; }
+  border-radius: 50%; background: #fff url("/logo-isaret.png") center / 82% no-repeat; box-shadow: 0 10px 30px rgba(0,0,0,.25); }
 @media (max-width: 760px) { .karsilama::after { display: none; } }
 .karsilama h1 { margin: 0 0 4px; font-size: 1.6rem; }
 .karsilama p { margin: 0; color: #c7d2fe; max-width: 620px; }
@@ -693,3 +693,16 @@ button.uy-sik b { flex: none; width: 34px; height: 34px; border-radius: 50%; dis
 .uy-gecmis-metin { flex: 1; min-width: 200px; }
 .uy-gecmis p { margin: 8px 0; }
 .uy-mk.cikarim .uy-cubuk em { opacity: .35; }
+
+/* Logo (2026-10-08): Murat'ın logosundan kesilmiş PNG'ler; hizalama: işaret ve yazı dikey ortalı */
+.logo-tam { display: inline-flex; align-items: center; gap: 10px; }
+.logo-isaret { display: inline-grid; place-items: center; flex: none; }
+.logo-isaret img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.logo-isaret.rozet { background: #fff; border-radius: 50%; padding: 3px; box-shadow: 0 2px 8px rgba(0,0,0,.2); }
+.logo-yazi { display: flex; flex-direction: column; justify-content: center; gap: 3px; line-height: 1; }
+.logo-ad-img { display: block; width: auto; }
+.logo-tam.koyu .logo-ad-img { filter: brightness(0) invert(1); }
+.logo-tam.koyu .logo-slogan { color: #c7d2fe; }
+.giris-logo { background: #fff; border-radius: 14px; padding: 10px 14px; box-shadow: 0 8px 24px rgba(0,0,0,.18); align-self: flex-start; }
+.giris-logo img { display: block; width: 230px; max-width: 100%; height: auto; }
+.giris-form > * { flex: none; }

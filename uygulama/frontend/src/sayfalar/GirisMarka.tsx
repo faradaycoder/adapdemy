@@ -1,11 +1,9 @@
-import { Logo } from "../Logo";
 
 // Giriş ve kayıt sayfalarının sol paneli: EVALORA'nın misyonu ve üç adımı.
 export default function GirisMarka() {
   return (
     <aside className="giris-marka">
-      <Logo boyut={64} koyuZemin />
-      <p className="logo-acilim">Education-focused Virtual Assistant for Learning-based Optimized Recommendations and Assessments</p>
+      <div className="giris-logo"><img src="/logo-tam.png" alt="EVALORA · Ölç · Teşhis et · Telafi et · Education-focused Virtual Assistant for Learning-based Optimized Recommendations and Assessments" /></div>
       <div>
         <h2>Her öğrencinin eksiğini mikro kazanım düzeyinde bul, hemen kapat.</h2>
         <p>EVALORA sınavı puandan öteye taşır: her çözüm adımını bir mikro kazanıma bağlar, öğrencinin neyi bilip neyi bilmediğini gösterir ve eksiği için doğru içeriği önerir. Son söz her zaman öğretmendedir.</p>
